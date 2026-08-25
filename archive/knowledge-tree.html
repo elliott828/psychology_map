@@ -1,0 +1,2213 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>心理学知识星图：人物与理论的双重视角</title>
+    <style>
+      :root {
+        --bg: #f3f0e8;
+        --paper: #fffdf7;
+        --ink: #17201d;
+        --muted: #66716d;
+        --line: rgba(23, 32, 29, 0.13);
+        --deep: #12352f;
+        --teal: #007f7a;
+        --gold: #d6a441;
+        --rose: #bb5966;
+        --blue: #496ea8;
+        --violet: #675aa9;
+        --green: #5a8f61;
+        --shadow: 0 24px 80px rgba(23, 32, 29, 0.13);
+        color: var(--ink);
+        background: var(--bg);
+        font-family:
+          -apple-system, "SF Pro Text", "Segoe UI", "PingFang SC", "Noto Sans SC",
+          "Hiragino Sans", "Noto Sans JP", sans-serif;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        min-height: 100vh;
+        background:
+          linear-gradient(110deg, rgba(0, 127, 122, 0.12), transparent 32%),
+          linear-gradient(300deg, rgba(187, 89, 102, 0.1), transparent 30%),
+          var(--bg);
+      }
+
+      button,
+      input {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .shell {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr;
+      }
+
+      .hero {
+        padding: 28px clamp(18px, 4vw, 56px) 20px;
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 253, 247, 0.76);
+        backdrop-filter: blur(22px);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(280px, 1fr) auto;
+        gap: 22px;
+        align-items: end;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        color: var(--teal);
+        font-size: 12px;
+        font-weight: 850;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 980px;
+        margin: 0;
+        font-size: clamp(30px, 4.6vw, 70px);
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        max-width: 900px;
+        margin: 16px 0 0;
+        color: #47544f;
+        font-size: clamp(15px, 1.45vw, 19px);
+        line-height: 1.75;
+      }
+
+      .toolbar {
+        display: grid;
+        gap: 10px;
+        min-width: min(420px, 100%);
+      }
+
+      .segmented,
+      .searchbox {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.74);
+        box-shadow: 0 12px 34px rgba(23, 32, 29, 0.07);
+      }
+
+      .segmented button {
+        min-height: 34px;
+        padding: 0 12px;
+        border: 0;
+        border-radius: 7px;
+        color: var(--muted);
+        background: transparent;
+        font-weight: 750;
+      }
+
+      .segmented button.active {
+        color: var(--ink);
+        background: #ecd188;
+      }
+
+      .searchbox {
+        padding: 0 12px;
+        min-height: 44px;
+      }
+
+      .searchbox input {
+        width: 100%;
+        min-width: 0;
+        border: 0;
+        outline: 0;
+        color: var(--ink);
+        background: transparent;
+      }
+
+      .main {
+        display: grid;
+        grid-template-columns: 280px minmax(580px, 1fr) minmax(340px, 420px);
+        gap: 16px;
+        padding: 16px;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(255, 253, 247, 0.84);
+        box-shadow: var(--shadow);
+      }
+
+      .nav {
+        padding: 16px;
+        align-self: start;
+        position: sticky;
+        top: 150px;
+        max-height: calc(100vh - 170px);
+        overflow: auto;
+      }
+
+      .nav h2,
+      .detail h2,
+      .section h2 {
+        margin: 0;
+        font-size: 15px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .nav-note,
+      .source-note {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.65;
+      }
+
+      .lens-list {
+        display: grid;
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .group-block + .group-block {
+        margin-top: 16px;
+      }
+
+      .group-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin: 0 2px 7px;
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 850;
+      }
+
+      .group-label span:last-child {
+        font-weight: 650;
+      }
+
+      .lens {
+        display: grid;
+        grid-template-columns: 12px 1fr auto;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+        min-height: 54px;
+        border: 1px solid transparent;
+        border-radius: 9px;
+        padding: 10px;
+        color: var(--ink);
+        background: rgba(255, 255, 255, 0.5);
+        text-align: left;
+      }
+
+      .lens.active {
+        border-color: rgba(0, 127, 122, 0.34);
+        background: linear-gradient(120deg, rgba(0, 127, 122, 0.13), rgba(214, 164, 65, 0.16));
+      }
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--color, var(--teal));
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.88);
+      }
+
+      .lens strong {
+        font-size: 13px;
+        line-height: 1.25;
+      }
+
+      .lens small {
+        color: var(--muted);
+        font-size: 11px;
+      }
+
+      .canvas {
+        min-height: 760px;
+        overflow: hidden;
+        position: sticky;
+        top: 150px;
+        align-self: start;
+        background:
+          linear-gradient(rgba(23, 32, 29, 0.055) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(23, 32, 29, 0.055) 1px, transparent 1px),
+          radial-gradient(circle at 42% 38%, rgba(0, 127, 122, 0.12), transparent 32%),
+          radial-gradient(circle at 72% 72%, rgba(187, 89, 102, 0.1), transparent 34%),
+          #fbfcf6;
+        background-size: 34px 34px, 34px 34px, auto, auto, auto;
+      }
+
+      .map-head {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        right: 16px;
+        z-index: 3;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        align-items: center;
+        padding: 12px 14px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(255, 253, 247, 0.82);
+        backdrop-filter: blur(14px);
+      }
+
+      .map-head strong {
+        font-size: 18px;
+      }
+
+      .map-head span {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .map-modes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .map-modes button {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 6px 10px;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.64);
+        font-size: 12px;
+        font-weight: 750;
+      }
+
+      .map-modes button.active {
+        color: var(--paper);
+        background: var(--deep);
+      }
+
+      .map-stage {
+        position: relative;
+        width: 100%;
+        height: 760px;
+      }
+
+      .link-layer {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .link-layer line {
+        stroke: rgba(18, 53, 47, 0.18);
+        stroke-width: 2;
+      }
+
+      .link-layer line.active {
+        stroke: var(--rose);
+        stroke-width: 4;
+      }
+
+      .node {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: var(--size, 118px);
+        min-height: var(--size, 118px);
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(23, 32, 29, 0.2);
+        border-radius: 50%;
+        padding: 12px;
+        color: var(--paper);
+        background:
+          radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.42), transparent 27%),
+          var(--color, var(--teal));
+        box-shadow:
+          0 20px 38px rgba(23, 32, 29, 0.16),
+          inset 0 -18px 28px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+      }
+
+      .node:hover,
+      .node.active {
+        transform: translate(-50%, -50%) scale(1.06);
+        box-shadow:
+          0 26px 54px rgba(23, 32, 29, 0.22),
+          0 0 0 7px rgba(214, 164, 65, 0.22);
+      }
+
+      .node.dimmed {
+        filter: grayscale(0.65);
+        opacity: 0.45;
+      }
+
+      .node strong {
+        font-size: 13px;
+        line-height: 1.24;
+      }
+
+      .node span {
+        display: block;
+        margin-top: 4px;
+        font-size: 10px;
+        opacity: 0.86;
+      }
+
+      .detail {
+        align-self: start;
+        position: sticky;
+        top: 150px;
+        max-height: calc(100vh - 170px);
+        overflow: auto;
+        padding: 18px;
+      }
+
+      .badge {
+        display: inline-flex;
+        width: fit-content;
+        margin-bottom: 12px;
+        border-radius: 999px;
+        padding: 5px 9px;
+        color: var(--paper);
+        background: var(--teal);
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .detail-title {
+        margin: 0;
+        font-size: clamp(24px, 2.5vw, 34px);
+        line-height: 1.12;
+      }
+
+      .detail-sub {
+        margin: 10px 0 0;
+        color: #40504a;
+        line-height: 1.74;
+      }
+
+      .fact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin: 16px 0;
+      }
+
+      .fact {
+        border: 1px solid var(--line);
+        border-radius: 9px;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.56);
+      }
+
+      .fact small {
+        display: block;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+
+      .fact strong {
+        font-size: 13px;
+      }
+
+      .chips,
+      .people-list,
+      .book-grid,
+      .source-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+      }
+
+      .chip {
+        border: 1px solid rgba(0, 127, 122, 0.18);
+        border-radius: 999px;
+        padding: 6px 9px;
+        background: rgba(0, 127, 122, 0.1);
+        font-size: 12px;
+      }
+
+      .section {
+        margin: 16px;
+        padding: 18px;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 18px;
+        margin-bottom: 14px;
+      }
+
+      .section-head p {
+        max-width: 760px;
+        margin: 6px 0 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .taxonomy-summary {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+        margin: 0 0 14px;
+      }
+
+      .taxonomy-bar {
+        margin: 16px 16px 0;
+        padding: 14px 14px 0;
+      }
+
+      .taxonomy-item {
+        border-top: 3px solid var(--group-color);
+        padding: 9px 10px;
+        background: rgba(255, 255, 255, 0.48);
+      }
+
+      .taxonomy-item strong,
+      .taxonomy-item span {
+        display: block;
+      }
+
+      .taxonomy-item strong {
+        font-size: 12px;
+      }
+
+      .taxonomy-item span {
+        margin-top: 3px;
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.45;
+      }
+
+      .book-controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin: 0 0 14px;
+      }
+
+      .book-controls button {
+        min-height: 34px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        padding: 0 11px;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.58);
+        font-size: 12px;
+        font-weight: 750;
+      }
+
+      .book-controls button.active {
+        border-color: rgba(0, 127, 122, 0.38);
+        color: var(--ink);
+        background: rgba(0, 127, 122, 0.12);
+      }
+
+      .book-route {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 9px 0 0;
+      }
+
+      .route-tag {
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        padding: 3px 6px;
+        color: var(--muted);
+        background: rgba(255, 253, 247, 0.78);
+        font-size: 10px;
+        font-weight: 800;
+      }
+
+      .people-list {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(160px, 1fr));
+      }
+
+      .person-card,
+      .book-card,
+      .source-card {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.6);
+      }
+
+      .person-card {
+        min-height: 172px;
+        padding: 12px;
+      }
+
+      .person-card strong,
+      .book-card strong {
+        display: block;
+        line-height: 1.3;
+      }
+
+      .person-card span {
+        display: block;
+        margin: 4px 0 8px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .person-card p,
+      .book-card p {
+        margin: 0;
+        color: #3f4c48;
+        font-size: 12px;
+        line-height: 1.62;
+      }
+
+      .book-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(220px, 1fr));
+      }
+
+      .book-card {
+        min-height: 228px;
+        padding: 14px;
+      }
+
+      .book-meta {
+        display: grid;
+        gap: 5px;
+        margin: 10px 0;
+        color: #4d5a55;
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .source-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(220px, 1fr));
+      }
+
+      .source-card {
+        padding: 12px;
+      }
+
+      .source-card a {
+        color: var(--teal);
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .source-card p {
+        margin: 7px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.62;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      @media (max-width: 1280px) {
+        .main {
+          grid-template-columns: 250px minmax(500px, 1fr);
+        }
+
+        .detail {
+          grid-column: 1 / -1;
+          position: relative;
+          top: auto;
+          max-height: none;
+        }
+
+        .people-list {
+          grid-template-columns: repeat(4, minmax(160px, 1fr));
+        }
+
+        .book-grid,
+        .source-grid {
+          grid-template-columns: repeat(2, minmax(220px, 1fr));
+        }
+      }
+
+      @media (max-width: 820px) {
+        .hero {
+          position: relative;
+        }
+
+        .hero-grid,
+        .main {
+          grid-template-columns: 1fr;
+        }
+
+        .toolbar,
+        .nav,
+        .canvas {
+          position: relative;
+          top: auto;
+          max-height: none;
+        }
+
+        .map-stage {
+          height: 650px;
+          transform: scale(0.84);
+          transform-origin: top left;
+          width: 119%;
+        }
+
+        .canvas {
+          min-height: 580px;
+        }
+
+        .people-list,
+        .book-grid,
+        .source-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .taxonomy-summary {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .fact-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <style>
+      .atlas-page > .shell { display: none; }
+      .atlas-app {
+        --atlas-ink: #17201d;
+        --atlas-paper: #fffdf7;
+        --atlas-line: rgba(23, 32, 29, .14);
+        min-height: 100vh;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr);
+        color: var(--atlas-ink);
+        background: #eeeae0;
+        overflow: hidden;
+      }
+      .atlas-header {
+        min-height: 86px;
+        padding: 14px 20px;
+        display: grid;
+        grid-template-columns: minmax(280px, 1fr) auto auto;
+        gap: 20px;
+        align-items: center;
+        border-bottom: 1px solid var(--atlas-line);
+        background: rgba(255, 253, 247, .96);
+        z-index: 5;
+      }
+      .atlas-brand { min-width: 0; }
+      .atlas-kicker {
+        margin: 0 0 3px;
+        color: #007f7a;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+      .atlas-brand h1 {
+        margin: 0;
+        font-family: Georgia, "Songti SC", serif;
+        font-size: clamp(22px, 2.2vw, 32px);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+      .atlas-brand p:last-child {
+        margin: 5px 0 0;
+        color: #66716d;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .atlas-segmented {
+        display: inline-grid;
+        grid-auto-flow: column;
+        gap: 3px;
+        padding: 3px;
+        border: 1px solid var(--atlas-line);
+        background: #e8e4da;
+      }
+      .atlas-segmented button {
+        min-width: 96px;
+        min-height: 36px;
+        padding: 0 12px;
+        border: 0;
+        border-radius: 3px;
+        color: #56615d;
+        background: transparent;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .atlas-segmented button.active {
+        color: #fff;
+        background: #12352f;
+        box-shadow: 0 3px 10px rgba(18, 53, 47, .18);
+      }
+      .atlas-search {
+        width: min(27vw, 330px);
+        height: 42px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0 12px;
+        border: 1px solid var(--atlas-line);
+        background: #fff;
+      }
+      .atlas-search span { color: #007f7a; font-size: 18px; }
+      .atlas-search input { width: 100%; border: 0; outline: 0; color: inherit; background: transparent; }
+      .atlas-main {
+        min-height: 0;
+        display: grid;
+        grid-template-columns: 236px minmax(0, 1fr) 330px;
+        gap: 1px;
+        background: var(--atlas-line);
+      }
+      .atlas-rail, .atlas-detail, .atlas-stage { min-height: 0; background: var(--atlas-paper); }
+      .atlas-rail, .atlas-detail { padding: 18px; overflow-y: auto; }
+      .atlas-section-title {
+        margin: 0 0 8px;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+      .atlas-help { margin: 0 0 18px; color: #66716d; font-size: 12px; line-height: 1.65; }
+      .atlas-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 20px; }
+      .atlas-stat { padding: 10px; border: 1px solid var(--atlas-line); background: #f7f4ec; }
+      .atlas-stat strong { display: block; font: 700 22px/1 Georgia, serif; }
+      .atlas-stat span { display: block; margin-top: 4px; color: #66716d; font-size: 10px; }
+      .atlas-legend { display: grid; gap: 9px; margin-bottom: 20px; }
+      .atlas-legend-row { display: grid; grid-template-columns: 14px 1fr; gap: 8px; align-items: center; color: #4f5a56; font-size: 11px; }
+      .atlas-mark { width: 12px; height: 12px; border: 2px solid var(--mark); background: color-mix(in srgb, var(--mark) 16%, white); }
+      .atlas-mark.unit { border-radius: 50%; }
+      .atlas-mark.book { height: 9px; border-radius: 1px; }
+      .atlas-distance { display: grid; gap: 7px; }
+      .atlas-distance span { display: flex; gap: 8px; align-items: center; color: #66716d; font-size: 11px; }
+      .atlas-distance i { width: 22px; height: 3px; background: var(--distance); }
+      .atlas-reference {
+        display: block;
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid var(--atlas-line);
+        color: #46615a;
+        font-size: 11px;
+        line-height: 1.6;
+        text-decoration: none;
+      }
+      .atlas-stage { position: relative; overflow: hidden; cursor: grab; }
+      .atlas-stage.dragging { cursor: grabbing; }
+      .atlas-toolbar {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        z-index: 3;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 4px;
+      }
+      .atlas-icon-button {
+        width: 38px;
+        height: 38px;
+        display: grid;
+        place-items: center;
+        padding: 0;
+        border: 1px solid var(--atlas-line);
+        border-radius: 3px;
+        color: #12352f;
+        background: rgba(255, 253, 247, .96);
+        font-weight: 800;
+        box-shadow: 0 5px 15px rgba(23, 32, 29, .08);
+      }
+      .atlas-svg { width: 100%; height: 100%; display: block; touch-action: none; }
+      .atlas-edge { fill: none; stroke: #96a09c; stroke-width: 1.4; opacity: .42; vector-effect: non-scaling-stroke; transition: opacity .2s, stroke .2s, stroke-width .2s; }
+      .atlas-edge.cross { stroke-dasharray: 7 6; stroke: #8d6c35; }
+      .atlas-edge.reading { stroke: #675aa9; stroke-dasharray: 3 5; }
+      .atlas-edge.muted { opacity: .035; }
+      .atlas-edge.level-1 { opacity: .95; stroke: #159987; stroke-width: 2.5; }
+      .atlas-edge.level-2 { opacity: .78; stroke: #496ea8; stroke-width: 2.1; }
+      .atlas-edge.level-3 { opacity: .62; stroke: #bb5966; stroke-width: 1.8; }
+      .atlas-node { cursor: pointer; transition: opacity .2s; }
+      .atlas-node .node-shape { stroke: color-mix(in srgb, var(--node-color) 72%, #17201d); stroke-width: 1.6; fill: color-mix(in srgb, var(--node-color) 9%, #fffdf7); vector-effect: non-scaling-stroke; }
+      .atlas-node.domain .node-shape { fill: color-mix(in srgb, var(--node-color) 18%, #fffdf7); stroke-width: 2.5; }
+      .atlas-node.book .node-shape { fill: #fff; stroke: #675aa9; }
+      .atlas-node .node-eyebrow { font-size: 9px; font-weight: 800; fill: var(--node-color); letter-spacing: 0; }
+      .atlas-node .node-title { font-size: 13px; font-weight: 800; fill: #17201d; letter-spacing: 0; }
+      .atlas-node.domain .node-title { font-size: 17px; font-family: Georgia, "Songti SC", serif; }
+      .atlas-node .node-subtitle { font-size: 9px; fill: #66716d; letter-spacing: 0; }
+      .atlas-node .node-count { font-size: 9px; font-weight: 800; fill: #fff; }
+      .atlas-node.muted { opacity: .11; }
+      .atlas-node.selected .node-shape { stroke: #d6a441; stroke-width: 4; filter: drop-shadow(0 5px 7px rgba(23, 32, 29, .18)); }
+      .atlas-node.level-1 .node-shape { stroke: #159987; stroke-width: 3; }
+      .atlas-node.level-2 .node-shape { stroke: #496ea8; stroke-width: 2.7; }
+      .atlas-node.level-3 .node-shape { stroke: #bb5966; stroke-width: 2.4; }
+      .atlas-detail-type { display: inline-block; padding: 4px 7px; border-left: 4px solid var(--detail-color); background: #f1eee5; color: #4e5955; font-size: 10px; font-weight: 800; }
+      .atlas-detail h2 { margin: 12px 0 3px; font: 700 24px/1.15 Georgia, "Songti SC", serif; letter-spacing: 0; }
+      .atlas-detail .atlas-byline { margin: 0 0 12px; color: #007f7a; font-size: 12px; font-weight: 700; }
+      .atlas-detail-copy { margin: 0 0 15px; color: #56615d; font-size: 13px; line-height: 1.68; }
+      .atlas-pair-box { padding: 11px; border-left: 3px solid var(--detail-color); background: #f5f2ea; margin-bottom: 16px; }
+      .atlas-pair-box span { display: block; color: #66716d; font-size: 10px; }
+      .atlas-pair-box strong { display: block; margin-top: 3px; font-size: 13px; line-height: 1.45; }
+      .atlas-reading { margin-top: 18px; }
+      .atlas-reading h3, .atlas-relations h3 { margin: 0 0 8px; font-size: 12px; }
+      .atlas-book-step, .atlas-related-button {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 24px minmax(0, 1fr) auto;
+        gap: 7px;
+        align-items: center;
+        padding: 8px 0;
+        border: 0;
+        border-bottom: 1px solid var(--atlas-line);
+        text-align: left;
+        background: transparent;
+      }
+      .atlas-book-step b { width: 20px; height: 20px; display: grid; place-items: center; border-radius: 50%; color: #fff; background: #675aa9; font-size: 9px; }
+      .atlas-book-step span, .atlas-related-button span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; font-weight: 700; }
+      .atlas-book-step small, .atlas-related-button small { color: #77817d; font-size: 9px; }
+      .atlas-relations { margin-top: 20px; }
+      .atlas-related-button { grid-template-columns: 10px minmax(0, 1fr) auto; }
+      .atlas-related-button i { width: 7px; height: 7px; border-radius: 50%; background: var(--related-color); }
+      @media (max-width: 1050px) {
+        .atlas-main { grid-template-columns: 190px minmax(0, 1fr) 280px; }
+        .atlas-header { grid-template-columns: minmax(240px, 1fr) auto; }
+        .atlas-search { grid-column: 1 / -1; width: 100%; height: 36px; }
+        .atlas-app { grid-template-rows: auto minmax(0, 1fr); }
+      }
+      @media (max-width: 760px) {
+        .atlas-app { height: auto; min-height: 100vh; overflow: visible; }
+        .atlas-header { position: sticky; top: 0; grid-template-columns: 1fr; gap: 10px; padding: 12px; }
+        .atlas-brand p:last-child { white-space: normal; }
+        .atlas-segmented { width: 100%; grid-template-columns: 1fr 1fr; }
+        .atlas-main { display: grid; grid-template-columns: 1fr; }
+        .atlas-rail { display: none; }
+        .atlas-stage { height: 62vh; min-height: 440px; }
+        .atlas-detail { max-height: none; border-top: 1px solid var(--atlas-line); }
+      }
+    </style>
+  </head>
+  <body class="atlas-page">
+    <div class="shell">
+      <header class="hero">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow" data-i18n="eyebrow">Research map · depth psychology to contemporary science</p>
+            <h1 data-i18n="title">从荣格到当代心理学体系</h1>
+            <p class="subtitle" data-i18n="subtitle">
+              一个证据导向的全景框架：把深度心理学、精神分析、认知行为、神经科学、临床医学、发展与社会文化心理学放在同一张地图上，说明它们如何解释“人为什么这样想、感受、行动与改变”。
+            </p>
+          </div>
+          <div class="toolbar">
+            <div class="segmented" aria-label="Language">
+              <button class="active" data-lang="zh">中文</button>
+              <button data-lang="en">EN</button>
+              <button data-lang="ja">日本語</button>
+            </div>
+            <label class="searchbox">
+              <span>⌕</span>
+              <input id="search" type="search" placeholder="搜索框架、人物、著作、观点" />
+            </label>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="taxonomy-bar panel" aria-label="four-layer taxonomy">
+          <div id="taxonomySummary" class="taxonomy-summary"></div>
+        </section>
+        <div class="main">
+          <aside class="nav panel">
+            <h2 data-i18n="frameworks">理论框架</h2>
+            <p class="nav-note" data-i18n="navNote">点击一个框架，看它的核心问题、代表人物、主要观点和与荣格谱系的关系。</p>
+            <div id="lensList" class="lens-list"></div>
+          </aside>
+
+          <section class="canvas panel" aria-label="knowledge map">
+            <div class="map-head">
+              <div>
+                <strong id="mapTitle">知识框架地图</strong>
+                <span id="mapSubtitle">核心框架按解释层级排列：意义/经验、行为/认知、神经/医学、社会/文化。</span>
+              </div>
+              <div class="map-modes">
+                <button class="active" data-mode="frameworks">框架</button>
+                <button data-mode="jung">荣格路径</button>
+                <button data-mode="clinical">临床路径</button>
+              </div>
+            </div>
+            <div id="mapStage" class="map-stage">
+              <svg id="linkLayer" class="link-layer" viewBox="0 0 1000 760" preserveAspectRatio="none"></svg>
+            </div>
+          </section>
+
+          <aside class="detail panel" id="detail"></aside>
+        </div>
+
+        <section class="section panel">
+          <div class="section-head">
+            <div>
+              <h2 data-i18n="peopleTitle">主要人物谱系</h2>
+              <p data-i18n="peopleNote">这里按知识谱系而非简单年代排序：荣格只是入口，现代心理学已经分化为临床、认知神经、发展、社会文化和健康行为等多个互相校正的系统。</p>
+            </div>
+          </div>
+          <div id="peopleList" class="people-list"></div>
+        </section>
+
+        <section class="section panel">
+          <div class="section-head">
+            <div>
+              <h2 data-i18n="booksTitle">面向普通人的关键读物</h2>
+              <p data-i18n="booksNote">书名列出英文原名与常见中文、日文译名或馆藏题名。不同地区版本可能有差异，适合后续继续补 ISBN 与出版社校验。</p>
+            </div>
+          </div>
+          <div class="book-controls" aria-label="reading route">
+            <button class="active" data-book-type="all" data-i18n="bookAll">全部读物</button>
+            <button data-book-type="overview" data-i18n="bookOverview">快速认识</button>
+            <button data-book-type="biography" data-i18n="bookBiography">人物与自传</button>
+            <button data-book-type="theory" data-i18n="bookTheory">理论入口</button>
+            <button data-book-type="practice" data-i18n="bookPractice">生活应用</button>
+          </div>
+          <div id="bookGrid" class="book-grid"></div>
+        </section>
+
+        <section class="section panel">
+          <div class="section-head">
+            <div>
+              <h2 data-i18n="sourcesTitle">证据来源</h2>
+              <p class="source-note" data-i18n="sourcesNote">本版优先用学会、政府/国际机构、出版社、国家图书馆/馆藏目录和作者/机构页面建立框架。心理学实践需由合格专业人员评估，本图不构成诊断或治疗建议。</p>
+            </div>
+          </div>
+          <div id="sourceGrid" class="source-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const i18n = {
+        zh: {
+          eyebrow: 'Research map · depth psychology to contemporary science',
+          title: '从荣格到当代心理学体系',
+          subtitle:
+            '一个证据导向的全景框架：把深度心理学、精神分析、认知行为、神经科学、临床医学、发展与社会文化心理学放在同一张地图上，说明它们如何解释“人为什么这样想、感受、行动与改变”。',
+          frameworks: '理论框架',
+          navNote: '点击一个框架，看它的核心问题、代表人物、主要观点和与荣格谱系的关系。',
+          peopleTitle: '主要人物谱系',
+          peopleNote:
+            '人物不是按每组 3–4 人配额挑选，而按思想独创性、历史影响和对该节点的解释力收录。人数来自下方实际人物条目，因此不同节点可以只有 1 人，也可以有 4 人。',
+          booksTitle: '面向普通人的关键读物',
+          booksNote: '不是“每位大师一本原著”，而是为每个节点配置多种入口：短简介、传记/自传、理论导读与生活应用。译名因地区和版本可能不同。',
+          bookAll: '全部读物',
+          bookOverview: '快速认识',
+          bookBiography: '人物与自传',
+          bookTheory: '理论入口',
+          bookPractice: '生活应用',
+          sourcesTitle: '证据来源',
+          sourcesNote:
+            '本版优先用学会、政府/国际机构、出版社、国家图书馆/馆藏目录和作者/机构页面建立框架。心理学实践需由合格专业人员评估，本图不构成诊断或治疗建议。',
+          mapTitle: '知识框架地图',
+          mapSubtitle: '15 个节点不是同一种东西：它们被整合为理论传统、基础科学、临床组织、应用与情境四层。',
+          coreQuestion: '核心问题',
+          keyIdeas: '主要观点',
+          relation: '与荣格路径的关系',
+          people: '代表人物',
+          works: '入门读物',
+          evidence: '证据入口',
+          era: '时期',
+          field: '领域',
+          point: '主要论述',
+          layer: '上位层级',
+        },
+        en: {
+          eyebrow: 'Research map · depth psychology to contemporary science',
+          title: 'From Jung to Contemporary Psychology',
+          subtitle:
+            'An evidence-oriented map that places depth psychology, psychoanalysis, cognitive-behavioral science, neuroscience, clinical medicine, development, and sociocultural psychology in one navigable framework.',
+          frameworks: 'Frameworks',
+          navNote: 'Select a framework to see its core question, figures, claims, and relation to the Jungian lineage.',
+          peopleTitle: 'Major Figures',
+          peopleNote:
+            'Figures are not assigned by a three-or-four-person quota. They are included for conceptual originality, historical influence, and explanatory value; counts come from the actual entries below and therefore vary by node.',
+          booksTitle: 'Public-Facing Books',
+          booksNote: 'Each node now has several ways in: a concise overview, biography or memoir, theory primer, and practical application. Translation titles vary by edition and region.',
+          bookAll: 'All books',
+          bookOverview: 'Quick overview',
+          bookBiography: 'Lives & memoirs',
+          bookTheory: 'Theory primer',
+          bookPractice: 'Life application',
+          sourcesTitle: 'Evidence Sources',
+          sourcesNote:
+            'This version prioritizes professional associations, governmental/international bodies, publishers, national library records, and institutional pages. It is not diagnostic or treatment advice.',
+          mapTitle: 'Knowledge Framework Map',
+          mapSubtitle: 'The 15 nodes are not peers of one kind: they sit within four layers—traditions, basic science, clinical organization, and applied/contextual work.',
+          coreQuestion: 'Core question',
+          keyIdeas: 'Key ideas',
+          relation: 'Relation to Jungian path',
+          people: 'Representative figures',
+          works: 'Public books',
+          evidence: 'Evidence entry',
+          era: 'Era',
+          field: 'Field',
+          point: 'Main claim',
+          layer: 'Upper layer',
+        },
+        ja: {
+          eyebrow: 'Research map · depth psychology to contemporary science',
+          title: 'ユングから現代心理学体系へ',
+          subtitle:
+            '深層心理学、精神分析、認知行動科学、神経科学、臨床医学、発達心理学、社会文化心理学を一枚の地図に置き、人間の思考・感情・行動・変化をどう説明するかを整理する。',
+          frameworks: '理論枠組み',
+          navNote: '枠組みを選ぶと、中心問題、人物、主要論点、ユング系譜との関係が見られます。',
+          peopleTitle: '主要人物の系譜',
+          peopleNote:
+            '各群を3～4人にそろえる配分ではありません。概念上の独創性、歴史的影響、各ノードを説明する力で選び、人数は下の実際の人物項目から算出しています。',
+          booksTitle: '一般向け主要書',
+          booksNote: '各ノードに、短い概説、伝記・回想、理論入門、生活への応用という複数の入口を用意しました。訳題は版・地域により異なります。',
+          bookAll: 'すべて',
+          bookOverview: '短い概説',
+          bookBiography: '人物・回想',
+          bookTheory: '理論入門',
+          bookPractice: '生活への応用',
+          sourcesTitle: '出典',
+          sourcesNote:
+            '学会、政府・国際機関、出版社、国立図書館・所蔵目録、機関ページを優先しました。本図は診断・治療助言ではありません。',
+          mapTitle: '知識枠組みマップ',
+          mapSubtitle: '15項目は同種の並列分類ではなく、理論伝統、基礎科学、臨床的整理、応用・文脈の4層に統合。',
+          coreQuestion: '中心問題',
+          keyIdeas: '主要論点',
+          relation: 'ユング系譜との関係',
+          people: '代表人物',
+          works: '一般向け書籍',
+          evidence: '出典入口',
+          era: '時期',
+          field: '領域',
+          point: '主要な主張',
+          layer: '上位層',
+        },
+      };
+
+      const sources = [
+        ['apa-subfields', 'APA Psychology subfields', 'https://www.apa.org/education-career/guide/subfields', 'Defines broad contemporary psychology subfields.'],
+        ['apa-therapy', 'APA approaches to psychotherapy', 'https://www.apa.org/topics/psychotherapy/approaches', 'Groups psychotherapy into psychoanalytic/psychodynamic, behavioral, cognitive, humanistic, and integrative traditions.'],
+        ['apa-ebpp', 'APA evidence-based practice statement', 'https://www.apa.org/practice/guidelines/evidence-based-statement.html', 'Defines evidence-based practice as integration of research, clinical expertise, and patient context.'],
+        ['apa-specialties', 'APA recognized specialties', 'https://www.apa.org/ed/graduate/specialize/recognized.html', 'Lists recognized professional psychology specialties and proficiencies.'],
+        ['nimh-rdoc', 'NIMH RDoC', 'https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc', 'Research framework for mental disorders using domains, constructs, and units of analysis.'],
+        ['who-icd11', 'WHO ICD-11 CDDR', 'https://www.who.int/publications/i/item/9789240077263', 'Clinical descriptions and diagnostic requirements for mental, behavioural and neurodevelopmental disorders.'],
+        ['dsm5tr', 'American Psychiatric Association DSM-5-TR', 'https://www.psychiatry.org/psychiatrists/practice/dsm/about-dsm', 'DSM-5-TR components and role in diagnostic classification.'],
+        ['nice-depression', 'NICE depression guideline NG222', 'https://www.nice.org.uk/guidance/ng222/chapter/Recommendations', 'Evidence-based psychological and medical care recommendations for depression.'],
+        ['nice-ptsd', 'NICE PTSD guideline NG116', 'https://www.nice.org.uk/guidance/ng116/chapter/recommendations', 'Trauma-focused CBT and PTSD treatment recommendations.'],
+        ['iajs', 'International Association for Jungian Studies', 'https://jungstudies.net/about-the-iajs/', 'Jungian and post-Jungian studies as a multidisciplinary scholarly field.'],
+        ['jung-chicago', 'C. G. Jung Institute of Chicago', 'https://jungchicago.org/about/', 'Historical note on analytical psychology emerging from psychoanalysis.'],
+        ['apa-humanistic', 'APA Division 32 humanistic psychology', 'https://www.apa.org/about/division/div32', 'Humanistic psychology as holistic, phenomenological, sociocultural, and meaning-oriented.'],
+        ['apa-neuro', 'APA neuropsychology topic', 'https://www.apa.org/topics/neuropsychology', 'Neuropsychology studies nervous system processes in relation to behavior and cognition.'],
+        ['apa-health', 'APA clinical health psychology', 'https://www.apa.org/ed/graduate/specialize/health', 'Health psychology integrates psychological, social, cultural, and biological factors.'],
+        ['abct-dbt', 'ABCT DBT fact sheet', 'https://www.abct.org/fact-sheets/dialectical-behavior-therapy/', 'DBT as a cognitive-behavioral therapy balancing acceptance and change.'],
+        ['prh-jung-symbols', 'Penguin Random House: Man and His Symbols', 'https://www.penguinrandomhouse.com/books/89056/man-and-his-symbols-by-carl-g-jung/9780593499993/', 'Publisher page for Jung public-facing symbolic psychology text.'],
+        ['frankl-books', 'Viktor Frankl Institute books', 'https://www.viktorfrankl.org/books_by_vf.html', 'Lists Frankl editions and translations including Man’s Search for Meaning.'],
+        ['prh-kahneman', 'Penguin Random House: Thinking, Fast and Slow', 'https://www.penguinrandomhouse.com/books/89308/thinking-fast-and-slow-by-daniel-kahneman/', 'Publisher page for Kahneman public synthesis.'],
+        ['prh-sapolsky', 'Penguin Random House: Behave', 'https://www.penguinrandomhouse.com/books/311787/behave-by-robert-m-sapolsky/', 'Publisher page for Sapolsky behavior synthesis.'],
+        ['kabat-zinn', 'Jon Kabat-Zinn: Full Catastrophe Living', 'https://jonkabat-zinn.com/book/full-catastrophe-livingusing-the-wisdom-of-your-body-and-mind-to-face-stress-pain-and-illness-second-edition-revised-and-updated/', 'Author page for MBSR public text.'],
+        ['damasio', 'Penguin Random House: Descartes’ Error', 'https://www.penguinrandomhouseretail.com/book/?isbn=9780143036227', 'Publisher page for Damasio’s emotion/reason book.'],
+        ['prh-body-score', 'Penguin Random House: The Body Keeps the Score', 'https://www.penguinrandomhouse.com/books/313183/the-body-keeps-the-score-by-bessel-van-der-kolk-md/', 'Publisher page for van der Kolk’s public trauma synthesis.'],
+        ['harper-feeling-good', 'HarperCollins: Feeling Good', 'https://www.harperacademic.com/book/9780380731763/feeling-good/', 'Publisher page for Burns’s cognitive therapy self-help classic.'],
+        ['harper-flow', 'HarperCollins: Flow', 'https://www.harperacademic.com/book/9780061339202/flow/', 'Publisher page for Csikszentmihalyi’s flow book.'],
+        ['simon-flourish', 'Simon & Schuster: Flourish', 'https://www.simonandschuster.com/books/Flourish/Martin-E-P-Seligman/9781439190760', 'Publisher page for Seligman’s well-being book.'],
+        ['hachette-happiness', 'Hachette: The Happiness Hypothesis', 'https://www.hachettebookgroup.com/titles/jonathan-haidt/the-happiness-hypothesis/9780465028023/', 'Publisher page for Haidt’s social and moral psychology synthesis.'],
+        ['oup-psychology', 'Oxford: Psychology — A Very Short Introduction', 'https://academic.oup.com/book/610', 'A concise field-wide introduction written for non-specialists.'],
+        ['oup-jung', 'Oxford: Jung — A Very Short Introduction', 'https://www.oupjapan.co.jp/en/products/detail/1317?language=en', 'Anthony Stevens introduces Jung’s life and central concepts in a compact form.'],
+        ['oup-freud', 'Oxford: Freud — A Very Short Introduction', 'https://academic.oup.com/book/433', 'Anthony Storr’s concise introduction to Freud’s life, work, and legacy.'],
+        ['grosz-examined', 'Stephen Grosz: The Examined Life', 'https://stephengrosz.com/books/the-examined-life/', 'Psychoanalytic case stories written without specialist jargon.'],
+        ['simon-pryor', 'Simon & Schuster: Don’t Shoot the Dog', 'https://www.simonandschuster.com/books/Dont-Shoot-the-Dog/Karen-Pryor/9781982106461', 'An accessible explanation of reinforcement and behavior change.'],
+        ['ilabs-scientist', 'I-LABS: The Scientist in the Crib', 'https://ilabs.uw.edu/scientist-crib-preface/', 'An introduction to the science of children’s minds.'],
+        ['prh-kandel', 'Penguin Random House: In Search of Memory', 'https://www.penguinrandomhouse.ca/books/403658/in-search-of-memory-by-eric-kandel/9780393329377', 'Memoir, history, and science of the biological basis of memory.'],
+        ['open-library', 'Open Library catalog', 'https://openlibrary.org/search', 'Catalog search used where a stable publisher page is not available.'],
+      ];
+
+      const domains = [
+        {
+          id: 'jungian',
+          color: '#007f7a',
+          x: 500,
+          y: 360,
+          size: 142,
+          title: { zh: '荣格与深度心理学', en: 'Jungian / Depth Psychology', ja: 'ユング派・深層心理学' },
+          tag: { zh: '意义与象征', en: 'Meaning & symbols', ja: '意味と象徴' },
+          question: {
+            zh: '无意识、梦、神话与象征如何塑造人格发展？',
+            en: 'How do unconscious processes, dreams, myth, and symbols shape personality development?',
+            ja: '無意識、夢、神話、象徴は人格発達をどう形づくるか。',
+          },
+          ideas: {
+            zh: ['集体无意识与原型', '个体化与自性', '阴影、人格面具、阿尼玛/阿尼姆斯', '符号与文化想象'],
+            en: ['Collective unconscious and archetypes', 'Individuation and the Self', 'Shadow, persona, anima/animus', 'Symbolic and cultural imagination'],
+            ja: ['集合的無意識と元型', '個性化と自己', '影・ペルソナ・アニマ/アニムス', '象徴と文化的想像力'],
+          },
+          relation: {
+            zh: '它是本图入口：从临床精神病学和精神分析中分化，同时保留“意义、梦、象征”的问题意识。',
+            en: 'This is the entry point: it split from psychiatry and psychoanalysis while retaining questions of meaning, dreams, and symbols.',
+            ja: '本図の入口。精神医学・精神分析から分化しつつ、意味・夢・象徴の問いを保持した。',
+          },
+          people: ['Jung', 'Marie-Louise von Franz', 'James Hillman', 'Andrew Samuels'],
+          books: ['Man and His Symbols', 'Memories, Dreams, Reflections'],
+          sources: ['jung-chicago', 'iajs', 'prh-jung-symbols'],
+        },
+        {
+          id: 'psychodynamic',
+          color: '#675aa9',
+          x: 300,
+          y: 260,
+          size: 126,
+          title: { zh: '精神分析/心理动力', en: 'Psychoanalytic / Psychodynamic', ja: '精神分析・心理力動' },
+          tag: { zh: '无意识与关系', en: 'Unconscious & relations', ja: '無意識と関係' },
+          question: { zh: '早期关系、冲突、防御和移情如何影响当下？', en: 'How do early relationships, conflict, defenses, and transference shape the present?', ja: '早期関係、葛藤、防衛、転移は現在をどう形づくるか。' },
+          ideas: {
+            zh: ['无意识冲突', '防御机制', '客体关系与依恋', '治疗关系作为改变场域'],
+            en: ['Unconscious conflict', 'Defense mechanisms', 'Object relations and attachment', 'Therapeutic relationship as a field of change'],
+            ja: ['無意識的葛藤', '防衛機制', '対象関係と愛着', '治療関係を変化の場として扱う'],
+          },
+          relation: { zh: '荣格从弗洛伊德运动中分化，但后荣格学派仍持续与客体关系、依恋和关系精神分析对话。', en: 'Jung separated from Freud, yet post-Jungian work continues to converse with object relations, attachment, and relational psychoanalysis.', ja: 'ユングはフロイトから分岐したが、ポスト・ユング派は対象関係、愛着、関係精神分析と対話し続けた。' },
+          people: ['Sigmund Freud', 'Melanie Klein', 'Donald Winnicott', 'John Bowlby'],
+          books: ['The Interpretation of Dreams', 'Attachment'],
+          sources: ['apa-therapy', 'apa-specialties'],
+        },
+        {
+          id: 'behavioral',
+          color: '#4f7d56',
+          x: 305,
+          y: 510,
+          size: 116,
+          title: { zh: '行为与学习科学', en: 'Behavioral & Learning Science', ja: '行動・学習科学' },
+          tag: { zh: '环境塑造行为', en: 'Environment shapes action', ja: '環境が行動を形成' },
+          question: { zh: '行为如何被条件反射、强化、观察学习和情境维持？', en: 'How are actions shaped by conditioning, reinforcement, observation, and context?', ja: '行動は条件づけ、強化、観察学習、文脈によりどう維持されるか。' },
+          ideas: {
+            zh: ['经典条件作用', '操作性条件作用', '暴露与行为激活', '社会学习'],
+            en: ['Classical conditioning', 'Operant conditioning', 'Exposure and behavioral activation', 'Social learning'],
+            ja: ['古典的条件づけ', 'オペラント条件づけ', '曝露と行動活性化', '社会的学習'],
+          },
+          relation: { zh: '它挑战“只解释内在意义”的路径，把可观察行为和环境反馈放到中心。', en: 'It challenges meaning-only accounts by putting observable behavior and environmental feedback at the center.', ja: '内的意味だけでなく、観察可能な行動と環境フィードバックを中心に置く。' },
+          people: ['Ivan Pavlov', 'B. F. Skinner', 'Albert Bandura', 'Joseph Wolpe'],
+          books: ['Science and Human Behavior'],
+          sources: ['apa-therapy'],
+        },
+        {
+          id: 'cognitive',
+          color: '#496ea8',
+          x: 505,
+          y: 585,
+          size: 124,
+          title: { zh: '认知科学与 CBT', en: 'Cognitive Science & CBT', ja: '認知科学とCBT' },
+          tag: { zh: '思维影响情绪', en: 'Thinking shapes emotion', ja: '思考が感情を形づくる' },
+          question: { zh: '信念、注意、解释和决策偏差如何改变情绪与行为？', en: 'How do beliefs, attention, interpretations, and biases alter emotion and behavior?', ja: '信念、注意、解釈、バイアスは感情と行動をどう変えるか。' },
+          ideas: {
+            zh: ['自动思维与图式', '认知重评', '双系统决策', '问题解决与技能训练'],
+            en: ['Automatic thoughts and schemas', 'Cognitive reappraisal', 'Dual-process decision making', 'Problem solving and skills practice'],
+            ja: ['自動思考とスキーマ', '認知的再評価', '二重過程意思決定', '問題解決とスキル訓練'],
+          },
+          relation: { zh: '它把“意义”转化为可检验的认知过程，是现代临床和行为经济学的重要桥。', en: 'It translates meaning into testable cognitive processes, bridging clinical practice and behavioral economics.', ja: '意味を検証可能な認知過程へ翻訳し、臨床と行動経済学をつなぐ。' },
+          people: ['Aaron Beck', 'Albert Ellis', 'Daniel Kahneman', 'Amos Tversky'],
+          books: ['Feeling Good', 'Thinking, Fast and Slow'],
+          sources: ['apa-therapy', 'prh-kahneman'],
+        },
+        {
+          id: 'contextual',
+          color: '#3f8c77',
+          x: 700,
+          y: 515,
+          size: 108,
+          title: { zh: '第三波 CBT/情境疗法', en: 'Third-Wave / Contextual Therapies', ja: '第三世代CBT・文脈療法' },
+          tag: { zh: '接纳、价值、技能', en: 'Acceptance, values, skills', ja: '受容・価値・技能' },
+          question: { zh: '人能否不消除痛苦，而是改变与痛苦的关系？', en: 'Can people change their relationship to distress rather than eliminate it first?', ja: '苦痛を消す前に、苦痛との関係を変えられるか。' },
+          ideas: {
+            zh: ['接纳与承诺', '辩证行为疗法', '正念与去融合', '价值导向行动'],
+            en: ['Acceptance and commitment', 'Dialectical behavior therapy', 'Mindfulness and defusion', 'Values-guided action'],
+            ja: ['アクセプタンス&コミットメント', '弁証法的行動療法', 'マインドフルネスと脱フュージョン', '価値に基づく行動'],
+          },
+          relation: { zh: '它在科学化行为疗法中重新容纳“意义、痛苦、接纳”等接近存在主义和荣格的问题。', en: 'It reintroduces meaning, suffering, and acceptance into scientifically oriented behavioral therapy.', ja: '科学的行動療法に、意味・苦痛・受容という実存的/ユング的問いを再導入する。' },
+          people: ['Marsha Linehan', 'Steven Hayes', 'Zindel Segal', 'Jon Kabat-Zinn'],
+          books: ['Building a Life Worth Living', 'Full Catastrophe Living'],
+          sources: ['abct-dbt', 'kabat-zinn', 'nice-depression'],
+        },
+        {
+          id: 'humanistic',
+          color: '#c58b32',
+          x: 505,
+          y: 160,
+          size: 118,
+          title: { zh: '人本/存在主义', en: 'Humanistic / Existential', ja: '人間性・実存心理学' },
+          tag: { zh: '自由、意义、自我实现', en: 'Freedom, meaning, growth', ja: '自由・意味・成長' },
+          question: { zh: '人在痛苦中如何选择、承担意义并走向成长？', en: 'How do people choose, make meaning, and grow through suffering?', ja: '人はいかに選択し、意味を担い、苦悩を通して成長するか。' },
+          ideas: {
+            zh: ['无条件积极关注', '自我实现', '意义治疗', '死亡、孤独、自由、无意义'],
+            en: ['Unconditional positive regard', 'Self-actualization', 'Logotherapy', 'Death, isolation, freedom, meaninglessness'],
+            ja: ['無条件の肯定的関心', '自己実現', 'ロゴセラピー', '死・孤独・自由・無意味'],
+          },
+          relation: { zh: '与荣格共同关心人格完整和意义，但更强调经验、选择与治疗关系。', en: 'It shares Jung’s concern with wholeness and meaning, while emphasizing lived experience, choice, and the therapeutic relationship.', ja: '全体性と意味への関心を共有しつつ、経験・選択・治療関係を重視する。' },
+          people: ['Carl Rogers', 'Abraham Maslow', 'Viktor Frankl', 'Irvin Yalom'],
+          books: ['Man’s Search for Meaning', 'On Becoming a Person'],
+          sources: ['apa-humanistic', 'frankl-books'],
+        },
+        {
+          id: 'neuro',
+          color: '#2f668f',
+          x: 705,
+          y: 260,
+          size: 126,
+          title: { zh: '神经科学/神经心理', en: 'Neuroscience / Neuropsychology', ja: '神経科学・神経心理学' },
+          tag: { zh: '脑-身-行为', en: 'Brain-body-behavior', ja: '脳・身体・行動' },
+          question: { zh: '神经环路、身体状态、情绪和激素如何生成行为？', en: 'How do circuits, body states, emotion, and hormones produce behavior?', ja: '神経回路、身体状態、情動、ホルモンは行動をどう生むか。' },
+          ideas: {
+            zh: ['情绪不是理性的敌人', '脑网络与可塑性', '压力生物学', '跨层级解释行为'],
+            en: ['Emotion is not the enemy of reason', 'Brain networks and plasticity', 'Biology of stress', 'Multi-level explanation of behavior'],
+            ja: ['情動は理性の敵ではない', '脳ネットワークと可塑性', 'ストレス生物学', '多層的行動説明'],
+          },
+          relation: { zh: '它把“心灵图像”推进到脑、身体和生理调节层面，也提醒任何象征解释都要接受生物证据校正。', en: 'It moves psyche-talk into brain, body, and regulation, forcing symbolic accounts to meet biological evidence.', ja: '心の語りを脳・身体・調節へ接続し、象徴解釈を生物学的証拠で校正する。' },
+          people: ['Antonio Damasio', 'Joseph LeDoux', 'Eric Kandel', 'Robert Sapolsky'],
+          books: ['Descartes’ Error', 'Behave'],
+          sources: ['apa-neuro', 'nimh-rdoc', 'damasio', 'prh-sapolsky'],
+        },
+        {
+          id: 'clinical',
+          color: '#b8525e',
+          x: 830,
+          y: 385,
+          size: 122,
+          title: { zh: '临床医学/精神病学', en: 'Clinical Medicine / Psychiatry', ja: '臨床医学・精神医学' },
+          tag: { zh: '诊断与治疗系统', en: 'Diagnosis & care systems', ja: '診断と治療体系' },
+          question: { zh: '如何可靠命名痛苦，并把人送到有效、可及的照护中？', en: 'How can suffering be named reliably and connected to effective care?', ja: '苦痛を信頼できる形で名づけ、有効なケアへつなぐには。' },
+          ideas: {
+            zh: ['DSM/ICD 分类', '临床判断与鉴别诊断', '药物、心理治疗与整合照护', '指南和风险管理'],
+            en: ['DSM/ICD classification', 'Clinical judgment and differential diagnosis', 'Medication, psychotherapy, integrated care', 'Guidelines and risk management'],
+            ja: ['DSM/ICD分類', '臨床判断と鑑別診断', '薬物療法・心理療法・統合ケア', 'ガイドラインとリスク管理'],
+          },
+          relation: { zh: '荣格本人来自精神医学；当代临床体系则更强调诊断可靠性、循证治疗和公共卫生。', en: 'Jung came from psychiatry; contemporary systems emphasize diagnostic reliability, evidence-based care, and public health.', ja: 'ユング自身は精神医学出身。現代臨床は診断信頼性、エビデンス、公共衛生を重視する。' },
+          people: ['Emil Kraepelin', 'Eugen Bleuler', 'Allen Frances', 'Thomas Insel'],
+          books: ['DSM-5-TR', 'ICD-11 CDDR'],
+          sources: ['who-icd11', 'dsm5tr', 'apa-ebpp', 'nice-depression'],
+        },
+        {
+          id: 'rdoc',
+          color: '#345c82',
+          x: 835,
+          y: 620,
+          size: 106,
+          title: { zh: 'RDoC/维度化研究', en: 'RDoC / Dimensional Research', ja: 'RDoC・次元的研究' },
+          tag: { zh: '跨诊断机制', en: 'Transdiagnostic mechanisms', ja: '診断横断的機制' },
+          question: { zh: '能否超越症状标签，用神经行为功能维度研究精神障碍？', en: 'Can mental disorders be studied through neurobehavioral dimensions rather than symptom labels alone?', ja: '症状ラベルだけでなく神経行動次元から精神障害を研究できるか。' },
+          ideas: {
+            zh: ['负性/正性效价', '认知系统', '社会过程', '唤醒与调节', '基因、环路、行为、自陈等分析单位'],
+            en: ['Negative/positive valence', 'Cognitive systems', 'Social processes', 'Arousal and regulation', 'Genes, circuits, behavior, self-report units'],
+            ja: ['負性/正性価', '認知システム', '社会過程', '覚醒と調節', '遺伝子・回路・行動・自己報告'],
+          },
+          relation: { zh: '它几乎走到荣格象征解释的另一极：用可测量系统重新切割心理痛苦。', en: 'It sits near the opposite pole from symbolic interpretation: carving distress by measurable systems.', ja: '象徴解釈の対極に近く、測定可能なシステムで苦痛を切り分ける。' },
+          people: ['Thomas Insel', 'Bruce Cuthbert', 'NIMH Workgroups'],
+          books: ['RDoC Matrix'],
+          sources: ['nimh-rdoc'],
+        },
+        {
+          id: 'developmental',
+          color: '#9c7246',
+          x: 160,
+          y: 385,
+          size: 116,
+          title: { zh: '发展/依恋/生命周期', en: 'Development / Attachment / Lifespan', ja: '発達・愛着・生涯発達' },
+          tag: { zh: '人成为人的过程', en: 'Becoming across life', ja: '人になる過程' },
+          question: { zh: '从婴儿到老年，认知、情绪与关系如何分阶段改变？', en: 'How do cognition, emotion, and relationships change from infancy to old age?', ja: '乳幼児から老年まで、認知・情動・関係はどう変化するか。' },
+          ideas: {
+            zh: ['认知发展阶段', '社会文化脚手架', '依恋模式', '生态系统与生命周期'],
+            en: ['Cognitive developmental stages', 'Sociocultural scaffolding', 'Attachment patterns', 'Ecological systems and lifespan'],
+            ja: ['認知発達段階', '社会文化的足場かけ', '愛着パターン', '生態システムと生涯発達'],
+          },
+          relation: { zh: '个体化可以被重新放进生命周期：不同年龄有不同的发展任务、依恋风险和环境支持。', en: 'Individuation can be re-situated in lifespan development, with age-specific tasks, attachment risks, and environmental supports.', ja: '個性化を生涯発達の中に置き直し、年齢ごとの課題・愛着リスク・環境支援を見る。' },
+          people: ['Jean Piaget', 'Lev Vygotsky', 'John Bowlby', 'Urie Bronfenbrenner'],
+          books: ['Attachment', 'The Ecology of Human Development'],
+          sources: ['apa-subfields'],
+        },
+        {
+          id: 'social',
+          color: '#7b5a9f',
+          x: 500,
+          y: 725,
+          size: 106,
+          title: { zh: '社会/文化/群体心理', en: 'Social / Cultural / Group Psychology', ja: '社会・文化・集団心理学' },
+          tag: { zh: '人在关系中行动', en: 'Mind in relation', ja: '関係の中の心' },
+          question: { zh: '群体、身份、规范、偏见和文化如何塑造自我？', en: 'How do groups, identity, norms, prejudice, and culture shape the self?', ja: '集団、アイデンティティ、規範、偏見、文化は自己をどう形づくるか。' },
+          ideas: {
+            zh: ['社会影响', '认知失调', '社会认同', '文化自我与共同体'],
+            en: ['Social influence', 'Cognitive dissonance', 'Social identity', 'Cultural self and community'],
+            ja: ['社会的影響', '認知的不協和', '社会的アイデンティティ', '文化的自己と共同体'],
+          },
+          relation: { zh: '它把荣格所谓“集体层面”从神话结构转到可研究的群体、规范、文化和制度。', en: 'It translates collective dimensions from mythic structure into groups, norms, culture, and institutions.', ja: '集合的次元を神話構造から、研究可能な集団・規範・文化・制度へ移す。' },
+          people: ['Gordon Allport', 'Kurt Lewin', 'Leon Festinger', 'Henri Tajfel'],
+          books: ['The Nature of Prejudice', 'The Happiness Hypothesis'],
+          sources: ['apa-subfields'],
+        },
+        {
+          id: 'health',
+          color: '#678b47',
+          x: 690,
+          y: 115,
+          size: 105,
+          title: { zh: '健康/行为医学', en: 'Health Psychology / Behavioral Medicine', ja: '健康心理学・行動医学' },
+          tag: { zh: '心理进入医疗系统', en: 'Psychology in healthcare', ja: '医療の中の心理学' },
+          question: { zh: '行为、压力、社会支持和医疗依从性如何影响身体健康？', en: 'How do behavior, stress, social support, and adherence affect physical health?', ja: '行動、ストレス、社会的支援、アドヒアランスは身体健康にどう影響するか。' },
+          ideas: {
+            zh: ['生物-心理-社会模型', '压力与慢病', '行为改变', '整合照护与公共卫生'],
+            en: ['Biopsychosocial model', 'Stress and chronic disease', 'Behavior change', 'Integrated care and public health'],
+            ja: ['生物心理社会モデル', 'ストレスと慢性疾患', '行動変容', '統合ケアと公衆衛生'],
+          },
+          relation: { zh: '它把“身心关系”变成临床路径：疼痛、慢病、睡眠、饮食、成瘾、医疗沟通。', en: 'It turns mind-body questions into care pathways: pain, chronic illness, sleep, diet, addiction, and medical communication.', ja: '心身関係を疼痛、慢性疾患、睡眠、食、依存、医療コミュニケーションのケア経路へ変える。' },
+          people: ['George Engel', 'Jon Kabat-Zinn', 'Shelley Taylor', 'Julian Rotter'],
+          books: ['Full Catastrophe Living', 'Why Zebras Don’t Get Ulcers'],
+          sources: ['apa-health', 'kabat-zinn'],
+        },
+        {
+          id: 'trauma',
+          color: '#a64c4e',
+          x: 150,
+          y: 620,
+          size: 104,
+          title: { zh: '创伤/身体取向', en: 'Trauma / Somatic Approaches', ja: 'トラウマ・身体志向' },
+          tag: { zh: '身体记忆与安全', en: 'Body memory & safety', ja: '身体記憶と安全' },
+          question: { zh: '创伤如何改变记忆、神经调节、身体感和关系安全？', en: 'How does trauma alter memory, regulation, bodily experience, and relational safety?', ja: 'トラウマは記憶、調節、身体感覚、関係安全をどう変えるか。' },
+          ideas: {
+            zh: ['创伤记忆与回避', '神经调节和安全感', '创伤聚焦 CBT/EMDR', '身体觉察和关系修复'],
+            en: ['Traumatic memory and avoidance', 'Regulation and safety', 'Trauma-focused CBT/EMDR', 'Body awareness and relational repair'],
+            ja: ['トラウマ記憶と回避', '調節と安全感', 'トラウマ焦点化CBT/EMDR', '身体認識と関係修復'],
+          },
+          relation: { zh: '与荣格的“象征创伤/神话化理解”不同，当代创伤研究更强调神经调节、证据疗法和安全重建。', en: 'Unlike symbolic/mythic readings, contemporary trauma work emphasizes regulation, evidence-based treatment, and rebuilding safety.', ja: '象徴的理解よりも、調節、エビデンス治療、安全の再構築を重視する。' },
+          people: ['Bessel van der Kolk', 'Judith Herman', 'Francine Shapiro', 'Edna Foa'],
+          books: ['The Body Keeps the Score', 'Trauma and Recovery'],
+          sources: ['nice-ptsd', 'prh-body-score'],
+        },
+        {
+          id: 'positive',
+          color: '#d6a441',
+          x: 185,
+          y: 130,
+          size: 104,
+          title: { zh: '积极心理/福祉科学', en: 'Positive Psychology / Well-being', ja: 'ポジティブ心理学・ウェルビーイング' },
+          tag: { zh: '不仅治病，也研究繁荣', en: 'Beyond illness to flourishing', ja: '病理を超えた繁栄' },
+          question: { zh: '幸福、优势、意义、心流和关系如何被研究和培养？', en: 'How can happiness, strengths, meaning, flow, and relationships be studied and cultivated?', ja: '幸福、強み、意味、フロー、関係はどう研究・育成されるか。' },
+          ideas: {
+            zh: ['PERMA', '心流', '自我决定', '品格优势与韧性'],
+            en: ['PERMA', 'Flow', 'Self-determination', 'Character strengths and resilience'],
+            ja: ['PERMA', 'フロー', '自己決定', '性格的強みとレジリエンス'],
+          },
+          relation: { zh: '它把“完整人格/生命意义”转向可测量的幸福、优势和关系质量。', en: 'It turns wholeness and meaning into measurable well-being, strengths, and relationship quality.', ja: '全体性と意味を測定可能な幸福、強み、関係性へ変換する。' },
+          people: ['Martin Seligman', 'Mihaly Csikszentmihalyi', 'Edward Deci', 'Richard Ryan'],
+          books: ['Flourish', 'Flow'],
+          sources: ['apa-subfields', 'simon-flourish', 'harper-flow'],
+        },
+        {
+          id: 'systems',
+          color: '#596b75',
+          x: 842,
+          y: 145,
+          size: 98,
+          title: { zh: '系统/家庭/组织', en: 'Systems / Family / Organizations', ja: 'システム・家族・組織' },
+          tag: { zh: '个体嵌在系统里', en: 'Person inside systems', ja: 'システム内の個人' },
+          question: { zh: '家庭、学校、组织和制度如何维持问题或制造改变？', en: 'How do families, schools, organizations, and institutions maintain problems or enable change?', ja: '家族、学校、組織、制度は問題維持や変化をどう生むか。' },
+          ideas: {
+            zh: ['家庭系统', '组织行为', '人因工程', '社区与制度干预'],
+            en: ['Family systems', 'Organizational behavior', 'Human factors', 'Community and institutional interventions'],
+            ja: ['家族システム', '組織行動', 'ヒューマンファクター', 'コミュニティ・制度介入'],
+          },
+          relation: { zh: '它提醒我们不要只在个体内部找答案：很多“心理问题”被关系网络和制度环境维持。', en: 'It warns against locating all answers inside the individual; many problems are maintained by relational and institutional systems.', ja: '答えを個人内部だけに置かず、関係網と制度環境を見る。' },
+          people: ['Murray Bowen', 'Salvador Minuchin', 'Kurt Lewin', 'Edgar Schein'],
+          books: ['Family Therapy in Clinical Practice', 'Organizational Culture and Leadership'],
+          sources: ['apa-subfields', 'apa-specialties'],
+        },
+      ];
+
+      const links = [
+        ['jungian', 'psychodynamic'], ['jungian', 'humanistic'], ['jungian', 'developmental'], ['jungian', 'social'],
+        ['psychodynamic', 'developmental'], ['developmental', 'social'], ['behavioral', 'cognitive'], ['cognitive', 'contextual'],
+        ['contextual', 'health'], ['health', 'clinical'], ['trauma', 'clinical'], ['trauma', 'neuro'],
+        ['neuro', 'rdoc'], ['rdoc', 'clinical'], ['clinical', 'contextual'], ['clinical', 'psychodynamic'],
+        ['positive', 'humanistic'], ['positive', 'social'], ['systems', 'social'], ['systems', 'health'], ['neuro', 'cognitive'],
+      ];
+
+      const people = [
+        ['Carl Gustav Jung', '1875-1961', 'jungian', { zh: '分析心理学、集体无意识、原型、个体化。', en: 'Analytical psychology, collective unconscious, archetypes, individuation.', ja: '分析心理学、集合的無意識、元型、個性化。' }],
+        ['Sigmund Freud', '1856-1939', 'psychodynamic', { zh: '精神分析、无意识冲突、梦和症状解释。', en: 'Psychoanalysis, unconscious conflict, dreams and symptoms.', ja: '精神分析、無意識的葛藤、夢と症状の解釈。' }],
+        ['Marie-Louise von Franz', '1915-1998', 'jungian', { zh: '童话、炼金术与原型解释。', en: 'Fairy tales, alchemy, and archetypal interpretation.', ja: '童話、錬金術、元型解釈。' }],
+        ['James Hillman', '1926-2011', 'jungian', { zh: '原型心理学，强调图像、灵魂语言与文化想象。', en: 'Archetypal psychology, images, soul-language, cultural imagination.', ja: '元型的心理学、イメージ、魂の言語、文化的想像力。' }],
+        ['Melanie Klein', '1882-1960', 'psychodynamic', { zh: '儿童精神分析与客体关系。', en: 'Child psychoanalysis and object relations.', ja: '児童精神分析と対象関係。' }],
+        ['Donald Winnicott', '1896-1971', 'psychodynamic', { zh: '抱持环境、真/假自体、过渡客体。', en: 'Holding environment, true/false self, transitional objects.', ja: '抱える環境、真/偽自己、移行対象。' }],
+        ['John Bowlby', '1907-1990', 'developmental', { zh: '依恋理论连接发展、关系和临床风险。', en: 'Attachment theory connecting development, relationships, and clinical risk.', ja: '愛着理論により発達・関係・臨床リスクを接続。' }],
+        ['Jean Piaget', '1896-1980', 'developmental', { zh: '儿童认知发展阶段。', en: 'Stages of child cognitive development.', ja: '子どもの認知発達段階。' }],
+        ['Lev Vygotsky', '1896-1934', 'developmental', { zh: '社会文化学习与最近发展区。', en: 'Sociocultural learning and zone of proximal development.', ja: '社会文化的学習と最近接発達領域。' }],
+        ['B. F. Skinner', '1904-1990', 'behavioral', { zh: '操作性条件作用与强化。', en: 'Operant conditioning and reinforcement.', ja: 'オペラント条件づけと強化。' }],
+        ['Albert Bandura', '1925-2021', 'behavioral', { zh: '社会学习、自我效能。', en: 'Social learning and self-efficacy.', ja: '社会的学習と自己効力感。' }],
+        ['Aaron Beck', '1921-2021', 'cognitive', { zh: '认知治疗，抑郁的自动思维和图式。', en: 'Cognitive therapy, automatic thoughts and schemas in depression.', ja: '認知療法、抑うつの自動思考とスキーマ。' }],
+        ['Albert Ellis', '1913-2007', 'cognitive', { zh: '理性情绪行为疗法。', en: 'Rational emotive behavior therapy.', ja: '論理情動行動療法。' }],
+        ['Daniel Kahneman', '1934-2024', 'cognitive', { zh: '双系统、启发式、偏差和决策。', en: 'Dual systems, heuristics, biases, and judgment.', ja: '二重過程、ヒューリスティック、バイアス、判断。' }],
+        ['Marsha Linehan', '1943-', 'contextual', { zh: 'DBT：接纳与改变的辩证平衡。', en: 'DBT: dialectical balance of acceptance and change.', ja: 'DBT：受容と変化の弁証法的バランス。' }],
+        ['Steven C. Hayes', '1948-', 'contextual', { zh: 'ACT、心理灵活性和价值行动。', en: 'ACT, psychological flexibility, values-guided action.', ja: 'ACT、心理的柔軟性、価値に基づく行動。' }],
+        ['Carl Rogers', '1902-1987', 'humanistic', { zh: '来访者中心疗法与无条件积极关注。', en: 'Client-centered therapy and unconditional positive regard.', ja: '来談者中心療法と無条件の肯定的関心。' }],
+        ['Abraham Maslow', '1908-1970', 'humanistic', { zh: '需求层次与自我实现。', en: 'Hierarchy of needs and self-actualization.', ja: '欲求階層と自己実現。' }],
+        ['Viktor Frankl', '1905-1997', 'humanistic', { zh: '意义治疗：人在极端处境中仍可承担意义。', en: 'Logotherapy: meaning remains possible under extreme conditions.', ja: 'ロゴセラピー：極限状況でも意味を担える。' }],
+        ['Irvin Yalom', '1931-', 'humanistic', { zh: '存在主义心理治疗与团体治疗。', en: 'Existential psychotherapy and group therapy.', ja: '実存的心理療法と集団療法。' }],
+        ['Antonio Damasio', '1944-', 'neuro', { zh: '躯体标记假说：情绪参与理性。', en: 'Somatic marker hypothesis: emotion participates in reason.', ja: 'ソマティック・マーカー仮説：情動は理性に関与する。' }],
+        ['Joseph LeDoux', '1949-', 'neuro', { zh: '恐惧、威胁处理与情绪神经环路。', en: 'Fear, threat processing, and emotion circuits.', ja: '恐怖、脅威処理、情動回路。' }],
+        ['Eric Kandel', '1929-', 'neuro', { zh: '记忆、突触可塑性与精神医学基础科学。', en: 'Memory, synaptic plasticity, and basic science for psychiatry.', ja: '記憶、シナプス可塑性、精神医学の基礎科学。' }],
+        ['Robert Sapolsky', '1957-', 'neuro', { zh: '行为的生物学：基因、激素、脑、文化和历史。', en: 'Biology of behavior across genes, hormones, brain, culture, and history.', ja: '遺伝子、ホルモン、脳、文化、歴史を横断する行動生物学。' }],
+        ['Emil Kraepelin', '1856-1926', 'clinical', { zh: '现代精神病学分类传统。', en: 'Modern psychiatric classification tradition.', ja: '現代精神医学分類の伝統。' }],
+        ['Eugen Bleuler', '1857-1939', 'clinical', { zh: '精神分裂症概念；荣格早年所在布尔格赫尔茨利语境。', en: 'Schizophrenia concept; Jung’s early Burgholzli context.', ja: '統合失調症概念；ユング初期のブルクヘルツリ文脈。' }],
+        ['Thomas Insel', '1951-', 'rdoc', { zh: '推动以神经行为维度研究精神障碍。', en: 'Promoted neurobehavioral dimensional research on mental disorders.', ja: '精神障害の神経行動次元研究を推進。' }],
+        ['Gordon Allport', '1897-1967', 'social', { zh: '偏见、人格与社会影响。', en: 'Prejudice, personality, and social influence.', ja: '偏見、人格、社会的影響。' }],
+        ['Kurt Lewin', '1890-1947', 'social', { zh: '场论、群体动力、行动研究。', en: 'Field theory, group dynamics, action research.', ja: '場の理論、集団力学、アクションリサーチ。' }],
+        ['Henri Tajfel', '1919-1982', 'social', { zh: '社会认同和群体间关系。', en: 'Social identity and intergroup relations.', ja: '社会的アイデンティティと集団間関係。' }],
+        ['George Engel', '1913-1999', 'health', { zh: '生物-心理-社会模型。', en: 'Biopsychosocial model.', ja: '生物心理社会モデル。' }],
+        ['Jon Kabat-Zinn', '1944-', 'health', { zh: 'MBSR，把正念带入压力、疼痛和慢病照护。', en: 'MBSR: mindfulness for stress, pain, and chronic illness care.', ja: 'MBSR：ストレス、疼痛、慢性疾患ケアへのマインドフルネス。' }],
+        ['Bessel van der Kolk', '1943-', 'trauma', { zh: '创伤、身体记忆与恢复路径。', en: 'Trauma, body memory, and paths to recovery.', ja: 'トラウマ、身体記憶、回復経路。' }],
+        ['Judith Herman', '1942-', 'trauma', { zh: '创伤、恢复与社会语境。', en: 'Trauma, recovery, and social context.', ja: 'トラウマ、回復、社会的文脈。' }],
+        ['Martin Seligman', '1942-', 'positive', { zh: '习得性无助、积极心理学、PERMA。', en: 'Learned helplessness, positive psychology, PERMA.', ja: '学習性無力感、ポジティブ心理学、PERMA。' }],
+        ['Mihaly Csikszentmihalyi', '1934-2021', 'positive', { zh: '心流：高度投入与最优体验。', en: 'Flow: deep engagement and optimal experience.', ja: 'フロー：深い没入と最適経験。' }],
+        ['Murray Bowen', '1913-1990', 'systems', { zh: '家庭系统与分化。', en: 'Family systems and differentiation.', ja: '家族システムと分化。' }],
+        ['Salvador Minuchin', '1921-2017', 'systems', { zh: '结构式家庭治疗。', en: 'Structural family therapy.', ja: '構造的家族療法。' }],
+      ];
+
+      const books = [
+        ['Man and His Symbols', '人及其象征', '人間と象徴', 'jungian', 'Carl G. Jung et al.', { zh: '从梦、象征和原型进入荣格，图像多、门槛低。', en: 'A visual, low-barrier entry into dreams, symbols, and archetypes.', ja: '夢・象徴・元型への視覚的な入口。' }, 'prh-jung-symbols', 'overview', 'easy'],
+        ['Memories, Dreams, Reflections', '回忆·梦·思考', 'ユング自伝', 'jungian', 'C. G. Jung / Aniela Jaffe', { zh: '以自传式叙述理解荣格的经历、梦与思想形成。', en: 'An autobiographical route into Jung’s life, dreams, and intellectual formation.', ja: '自伝的叙述からユングの生涯と思想形成をたどる。' }, 'prh-jung-symbols', 'biography', 'easy'],
+        ['Jung: A Very Short Introduction', '荣格：牛津通识读本', 'ユング：一冊でわかる', 'jungian', 'Anthony Stevens', { zh: '比荣格原著更清楚地解释情结、原型、阴影与个体化。', en: 'A concise guide to complexes, archetypes, shadow, and individuation.', ja: 'コンプレックス、元型、影、個性化を簡潔に解説。' }, 'oup-jung', 'overview', 'easy'],
+        ['Jung: A Biography', '荣格传', 'ユング伝', 'jungian', 'Deirdre Bair', { zh: '把理论放回荣格的人生、时代与争议中理解。', en: 'Places Jung’s ideas within his life, historical setting, and controversies.', ja: '思想を生涯、時代、論争の中に位置づける伝記。' }, 'open-library', 'biography', 'medium'],
+
+        ['Freud: A Very Short Introduction', '弗洛伊德：牛津通识读本', 'フロイト：一冊でわかる', 'psychodynamic', 'Anthony Storr', { zh: '先认识弗洛伊德的生平、核心概念与当代遗产。', en: 'A first look at Freud’s life, core concepts, and legacy.', ja: 'フロイトの生涯、主要概念、遺産への入門。' }, 'oup-freud', 'overview', 'easy'],
+        ['The Examined Life', '被审视的人生', 'とらわれない生き方', 'psychodynamic', 'Stephen Grosz', { zh: '用短篇咨询故事展示无意识、重复与改变，没有术语负担。', en: 'Brief clinical stories about unconscious patterns, repetition, and change without jargon.', ja: '専門用語を抑えた臨床物語から無意識と変化を読む。' }, 'grosz-examined', 'practice', 'easy'],
+        ['The Interpretation of Dreams', '梦的解析', '夢判断', 'psychodynamic', 'Sigmund Freud', { zh: '经典原著；适合在读过导论后选读，不建议作为第一本。', en: 'A classic primary text, best sampled after an introduction rather than read first.', ja: '古典的原典。入門後の選読向き。' }, 'apa-therapy', 'theory', 'hard'],
+
+        ['Don’t Shoot the Dog', '别毙了那只狗', 'うまくやるための強化の原理', 'behavioral', 'Karen Pryor', { zh: '用日常训练案例讲清强化、塑造与行为改变。', en: 'Explains reinforcement, shaping, and behavior change through everyday training examples.', ja: '日常の訓練例で強化と行動形成を説明。' }, 'simon-pryor', 'practice', 'easy'],
+        ['About Behaviorism', '关于行为主义', '行動主義について', 'behavioral', 'B. F. Skinner', { zh: '由斯金纳直接澄清行为主义常见误解，理论性较强。', en: 'Skinner’s own clarification of common misunderstandings about behaviorism.', ja: 'スキナー自身が行動主義への誤解を解く。' }, 'open-library', 'theory', 'medium'],
+        ['The Power of Habit', '习惯的力量', '習慣の力', 'behavioral', 'Charles Duhigg', { zh: '用通俗故事理解线索、惯例和奖赏如何维持习惯。', en: 'Popular stories about cues, routines, rewards, and habit change.', ja: 'きっかけ、ルーティン、報酬から習慣を理解する。' }, 'open-library', 'practice', 'easy'],
+
+        ['Thinking, Fast and Slow', '思考，快与慢', 'ファスト＆スロー', 'cognitive', 'Daniel Kahneman', { zh: '认识启发式、偏差、直觉与审慎思考。', en: 'A public introduction to heuristics, biases, intuition, and deliberation.', ja: 'ヒューリスティック、バイアス、直観と熟慮への入門。' }, 'prh-kahneman', 'overview', 'medium'],
+        ['Feeling Good', '伯恩斯新情绪疗法', 'いやな気分よ、さようなら', 'cognitive', 'David D. Burns', { zh: '把自动思维、认知重评和练习带入日常。', en: 'Brings automatic thoughts, cognitive reappraisal, and exercises into daily life.', ja: '自動思考と認知的再評価を日常の練習へ。' }, 'harper-feeling-good', 'practice', 'easy'],
+        ['The Seven Sins of Memory', '记忆的七宗罪', 'なぜ「あれ」が思い出せなくなるのか', 'cognitive', 'Daniel L. Schacter', { zh: '用记忆的七类偏差理解遗忘、错记与暗示。', en: 'Explains forgetting, distortion, and suggestibility through seven memory errors.', ja: '忘却、歪み、暗示を記憶の七つの誤りから理解。' }, 'open-library', 'overview', 'easy'],
+
+        ['The Happiness Trap', '幸福的陷阱', '幸福になりたいなら幸福になろうとしてはいけない', 'contextual', 'Russ Harris', { zh: 'ACT 的大众入口：接纳不适、澄清价值并采取行动。', en: 'A public ACT primer on accepting discomfort, clarifying values, and taking action.', ja: '不快感の受容、価値の明確化、行動を学ぶACT入門。' }, 'open-library', 'practice', 'easy'],
+        ['Building a Life Worth Living', '此生值得', '生きるに値する人生', 'contextual', 'Marsha Linehan', { zh: 'DBT 创始人的自传，也是接纳与改变哲学的入口。', en: 'The DBT founder’s memoir and an entry into its acceptance-and-change philosophy.', ja: 'DBT創始者の回想と、受容と変化の哲学。' }, 'abct-dbt', 'biography', 'easy'],
+        ['Wherever You Go, There You Are', '正念：此刻是一枝花', 'マインドフルネスを始めたいあなたへ', 'contextual', 'Jon Kabat-Zinn', { zh: '短章形式的正念入门，先体验再理解理论。', en: 'Short chapters that invite readers to experience mindfulness before theorizing it.', ja: '短い章で体験から入るマインドフルネス入門。' }, 'kabat-zinn', 'practice', 'easy'],
+
+        ['Man’s Search for Meaning', '活出生命的意义', '夜と霧', 'humanistic', 'Viktor Frankl', { zh: '通过生命经历进入意义治疗与人的选择。', en: 'Life narrative as an entry into logotherapy, meaning, and human choice.', ja: '体験からロゴセラピー、意味、選択へ入る。' }, 'frankl-books', 'biography', 'easy'],
+        ['On Becoming a Person', '个人形成论', 'ロジャーズが語る自己実現の道', 'humanistic', 'Carl Rogers', { zh: '理解共情、真诚与无条件积极关注如何促成改变。', en: 'Introduces empathy, congruence, and unconditional positive regard as conditions for change.', ja: '共感、自己一致、無条件の肯定的関心を学ぶ。' }, 'apa-humanistic', 'theory', 'medium'],
+        ['Love’s Executioner', '爱情刽子手', '恋の死刑執行人', 'humanistic', 'Irvin D. Yalom', { zh: '以治疗故事进入死亡、自由、孤独与意义等存在议题。', en: 'Therapy stories opening onto death, freedom, isolation, and meaning.', ja: '治療物語から死、自由、孤独、意味へ。' }, 'open-library', 'practice', 'easy'],
+
+        ['Descartes’ Error', '笛卡尔的错误', 'デカルトの誤り', 'neuro', 'Antonio Damasio', { zh: '理解情绪如何参与理性判断与决策。', en: 'Explains how emotion participates in rational judgment and decision-making.', ja: '情動が合理的判断と意思決定に関わる仕組み。' }, 'damasio', 'theory', 'medium'],
+        ['Behave', '行为', '行動', 'neuro', 'Robert Sapolsky', { zh: '从前一秒到数千年前，多尺度解释行为如何发生。', en: 'Explains behavior across timescales from the prior second to deep history.', ja: '直前の一秒から遠い歴史まで多層的に行動を説明。' }, 'prh-sapolsky', 'overview', 'hard'],
+        ['In Search of Memory', '追寻记忆的痕迹', '記憶のしくみ', 'neuro', 'Eric R. Kandel', { zh: '科学家自传、思想史与记忆神经科学的结合。', en: 'A combination of scientific memoir, intellectual history, and memory neuroscience.', ja: '科学者の回想、思想史、記憶神経科学を結ぶ。' }, 'prh-kandel', 'biography', 'medium'],
+
+        ['An Unquiet Mind', '躁郁之心', '躁うつ病を生きる', 'clinical', 'Kay Redfield Jamison', { zh: '临床心理学家以亲历写躁郁症、诊断与治疗。', en: 'A clinical psychologist’s memoir of bipolar illness, diagnosis, and treatment.', ja: '臨床心理学者が双極症、診断、治療を語る回想。' }, 'open-library', 'biography', 'easy'],
+        ['The Noonday Demon', '正午之魔', '真昼の悪魔', 'clinical', 'Andrew Solomon', { zh: '把抑郁的个人经历、临床知识与社会文化放在一起。', en: 'Combines lived experience of depression with clinical and sociocultural inquiry.', ja: 'うつの体験、臨床知、社会文化を統合する。' }, 'open-library', 'overview', 'medium'],
+        ['The Center Cannot Hold', '我穿越疯狂的旅程', '統合失調症と生きる', 'clinical', 'Elyn R. Saks', { zh: '以自传理解严重精神障碍背后的完整人格与生活。', en: 'A memoir that preserves the full person behind severe mental illness.', ja: '重い精神障害の背後にいる一人の人間を描く回想。' }, 'open-library', 'biography', 'easy'],
+
+        ['The Book of Woe', 'DSM-5 的哀歌', '精神診断の「聖書」を問う', 'rdoc', 'Gary Greenberg', { zh: '从记者视角理解 DSM 分类的形成、争议与局限。', en: 'A journalistic account of how DSM categories are made, debated, and limited.', ja: 'DSM分類の形成、論争、限界を記者の視点から読む。' }, 'open-library', 'overview', 'medium'],
+        ['Mind Fixers', '心灵修理者', '精神医学と生物学の探究', 'rdoc', 'Anne Harrington', { zh: '梳理精神医学寻找生物学解释的历史，帮助理解 RDoC 为何出现。', en: 'A history of psychiatry’s search for biological explanations and the context behind RDoC.', ja: '精神医学の生物学的説明探求の歴史からRDoCの背景を知る。' }, 'open-library', 'theory', 'medium'],
+
+        ['The Scientist in the Crib', '摇篮里的科学家', '赤ちゃんは小さな科学者', 'developmental', 'Alison Gopnik, Andrew Meltzoff, Patricia Kuhl', { zh: '用婴幼儿研究说明学习、语言与心智如何发展。', en: 'Uses infant research to explain the development of learning, language, and mind.', ja: '乳幼児研究から学習、言語、心の発達を説明。' }, 'ilabs-scientist', 'overview', 'easy'],
+        ['The Gardener and the Carpenter', '园丁与木匠', '子どもは「育てる」のではなく「育つ」', 'developmental', 'Alison Gopnik', { zh: '把发展科学转化为对养育控制欲的反思。', en: 'Turns developmental science into a reflection on control in parenting.', ja: '発達科学から子育てのコントロールを問い直す。' }, 'open-library', 'practice', 'easy'],
+        ['Attached', '依恋', '異性の心を上手に透視する方法', 'developmental', 'Amir Levine / Rachel Heller', { zh: '成人依恋的流行入门；模型有帮助，但不应把人永久贴标签。', en: 'A popular adult-attachment primer, useful when treated as a lens rather than a fixed label.', ja: '成人愛着の一般向け入門。固定的なラベルとしては扱わない。' }, 'open-library', 'practice', 'easy'],
+
+        ['The Social Animal', '社会性动物', '社会的動物', 'social', 'Elliot Aronson', { zh: '从从众、偏见、吸引到说服，系统进入社会心理学。', en: 'A broad entry into conformity, prejudice, attraction, and persuasion.', ja: '同調、偏見、魅力、説得から社会心理学へ。' }, 'open-library', 'overview', 'medium'],
+        ['Influence', '影响力', '影響力の武器', 'social', 'Robert Cialdini', { zh: '用日常案例认识说服与社会影响的关键机制。', en: 'Everyday cases introduce key mechanisms of persuasion and social influence.', ja: '日常例から説得と社会的影響の仕組みを学ぶ。' }, 'open-library', 'practice', 'easy'],
+        ['The Righteous Mind', '正义之心', '社会はなぜ左と右にわかれるのか', 'social', 'Jonathan Haidt', { zh: '理解道德直觉、群体认同与政治分歧。', en: 'Explores moral intuition, group identity, and political division.', ja: '道徳直観、集団同一性、政治的分断を理解する。' }, 'hachette-happiness', 'overview', 'medium'],
+
+        ['Full Catastrophe Living', '多舛的生命', 'マインドフルネスストレス低減法', 'health', 'Jon Kabat-Zinn', { zh: 'MBSR 的核心大众读物，连接压力、疼痛和慢病照护。', en: 'The main public MBSR text connecting stress, pain, and chronic-illness care.', ja: 'ストレス、痛み、慢性疾患ケアを結ぶMBSRの主要書。' }, 'kabat-zinn', 'practice', 'medium'],
+        ['Why Zebras Don’t Get Ulcers', '斑马为什么不得胃溃疡', 'なぜシマウマは胃潰瘍にならないか', 'health', 'Robert Sapolsky', { zh: '以生理学和行为科学解释慢性压力。', en: 'An accessible physiological and behavioral account of chronic stress.', ja: '慢性ストレスを生理学と行動科学から説明。' }, 'prh-sapolsky', 'overview', 'easy'],
+        ['The Stress Prescription', '压力处方', 'ストレスへの処方箋', 'health', 'Elissa Epel', { zh: '把压力研究转为可执行的日常练习。', en: 'Translates stress research into practical daily exercises.', ja: 'ストレス研究を実行しやすい日常練習へ。' }, 'open-library', 'practice', 'easy'],
+
+        ['The Body Keeps the Score', '身体从未忘记', '身体はトラウマを記録する', 'trauma', 'Bessel van der Kolk', { zh: '创伤、身体与治疗方法的综合读物；具体疗法仍需结合指南判断。', en: 'A broad trauma-body synthesis; treatment claims should still be read alongside guidelines.', ja: 'トラウマと身体の総合書。治療法はガイドラインと併読したい。' }, 'prh-body-score', 'overview', 'medium'],
+        ['Trauma and Recovery', '创伤与复原', '心的外傷と回復', 'trauma', 'Judith Herman', { zh: '把安全、回忆与重建连接到社会权力和关系语境。', en: 'Connects safety, remembrance, and reconnection with social power and relationships.', ja: '安全、想起すこと、再結合を社会的権力と関係性へつなぐ。' }, 'nice-ptsd', 'theory', 'medium'],
+        ['What My Bones Know', '我的骨头知道', '私の骨が知っていること', 'trauma', 'Stephanie Foo', { zh: '复杂创伤的个人回忆与求助历程，适合从经验进入。', en: 'A memoir of complex trauma and help-seeking, useful as an experiential doorway.', ja: '複雑性トラウマと助けを求める過程を描く回想。' }, 'open-library', 'biography', 'easy'],
+        ['The Boy Who Was Raised as a Dog', '被当作狗养大的男孩', '犬として育てられた少年', 'trauma', 'Bruce D. Perry / Maia Szalavitz', { zh: '通过儿童个案理解发展、依恋与创伤反应。', en: 'Child cases connect development, attachment, and trauma responses.', ja: '子どもの事例から発達、愛着、トラウマ反応を理解。' }, 'open-library', 'practice', 'easy'],
+
+        ['Flow', '心流', 'フロー体験 喜びの現象学', 'positive', 'Mihaly Csikszentmihalyi', { zh: '理解能力与挑战匹配时的高度投入体验。', en: 'Explains deep engagement when challenge and skill are well matched.', ja: '挑戦と技能が釣り合うときの深い没入を説明。' }, 'harper-flow', 'overview', 'easy'],
+        ['Flourish', '持续的幸福', 'ポジティブ心理学の挑戦', 'positive', 'Martin Seligman', { zh: '从快乐扩展到积极情绪、投入、关系、意义与成就。', en: 'Expands happiness into emotion, engagement, relationships, meaning, and accomplishment.', ja: '幸福を感情、没入、関係、意味、達成へ広げる。' }, 'simon-flourish', 'theory', 'easy'],
+        ['The How of Happiness', '幸福的方法', '幸せがずっと続く12の行動習慣', 'positive', 'Sonja Lyubomirsky', { zh: '把幸福研究转为可尝试、可复盘的行为策略。', en: 'Turns well-being research into testable, reviewable behavioral strategies.', ja: '幸福研究を試して振り返れる行動方略へ。' }, 'open-library', 'practice', 'easy'],
+
+        ['The Family Crucible', '家庭会伤人', '家族という坩堝', 'systems', 'Augustus Napier / Carl Whitaker', { zh: '用完整治疗故事展示家庭如何维持问题，又如何一起改变。', en: 'A full therapy narrative showing how families maintain problems and change together.', ja: '家族が問題を維持し、共に変化する過程を治療物語で描く。' }, 'open-library', 'overview', 'easy'],
+        ['The Dance of Anger', '愤怒之舞', '怒りのダンス', 'systems', 'Harriet Lerner', { zh: '从关系模式而非个人缺陷理解愤怒与边界。', en: 'Frames anger and boundaries through relationship patterns rather than personal defects.', ja: '怒りと境界を個人の欠陥ではなく関係パターンから捉える。' }, 'open-library', 'practice', 'easy'],
+        ['You Can Go Home Again', '你可以再次回家', '家族の物語をたどり直す', 'systems', 'Monica McGoldrick', { zh: '借名人家族故事理解代际模式、迁移、失落与身份。', en: 'Uses family stories to explore intergenerational patterns, migration, loss, and identity.', ja: '家族物語から世代間パターン、移住、喪失、アイデンティティを読む。' }, 'open-library', 'theory', 'medium'],
+      ];
+
+      const domainGroups = [
+        {
+          id: 'traditions',
+          color: '#007f7a',
+          domains: ['jungian', 'psychodynamic', 'behavioral', 'cognitive', 'contextual', 'humanistic'],
+          title: { zh: '一 · 理论与治疗传统', en: 'I · Theoretical traditions', ja: 'I · 理論・治療の伝統' },
+          note: { zh: '用不同语言解释经验与改变', en: 'Different languages for experience and change', ja: '経験と変化を説明する異なる言語' },
+        },
+        {
+          id: 'sciences',
+          color: '#496ea8',
+          domains: ['neuro', 'developmental', 'social'],
+          title: { zh: '二 · 基础心理科学', en: 'II · Basic psychological sciences', ja: 'II · 基礎心理科学' },
+          note: { zh: '脑、毕生发展与社会情境的可检验研究', en: 'Testable research on brain, lifespan, and social context', ja: '脳、生涯発達、社会文脈の検証可能な研究' },
+        },
+        {
+          id: 'clinical',
+          color: '#bb5966',
+          domains: ['clinical', 'rdoc', 'trauma'],
+          title: { zh: '三 · 临床组织与问题框架', en: 'III · Clinical organizing frameworks', ja: 'III · 臨床的整理と問題枠組み' },
+          note: { zh: '分类、维度研究与跨诊断议题', en: 'Categories, dimensions, and transdiagnostic problems', ja: '分類、次元研究、診断横断的課題' },
+        },
+        {
+          id: 'applied',
+          color: '#d6a441',
+          domains: ['health', 'positive', 'systems'],
+          title: { zh: '四 · 应用、福祉与关系情境', en: 'IV · Application, well-being, and context', ja: 'IV · 応用・ウェルビーイング・関係文脈' },
+          note: { zh: '把个人放回身体、家庭、组织与生活质量中', en: 'The person within body, family, organization, and quality of life', ja: '身体、家族、組織、生活の質の中の人間' },
+        },
+      ];
+
+      const groupByDomain = Object.fromEntries(
+        domainGroups.flatMap((group) => group.domains.map((id) => [id, group])),
+      );
+      domains.forEach((domain) => {
+        domain.people = people.filter((person) => person[2] === domain.id).map((person) => person[0]);
+        domain.books = books.filter((book) => book[3] === domain.id).map((book) => book[0]);
+        domain.group = groupByDomain[domain.id];
+      });
+
+      const state = { lang: 'zh', active: 'jungian', mode: 'frameworks', query: '', bookType: 'all' };
+      const byId = Object.fromEntries(domains.map((d) => [d.id, d]));
+      const sourceById = Object.fromEntries(sources.map((s) => [s[0], s]));
+
+      function t(value) {
+        if (typeof value === 'string') return value;
+        return value[state.lang] || value.zh || value.en || '';
+      }
+
+      function updateStaticText() {
+        document.documentElement.lang = state.lang;
+        Object.entries(i18n[state.lang]).forEach(([key, value]) => {
+          const node = document.querySelector(`[data-i18n="${key}"]`);
+          if (node) node.textContent = value;
+        });
+        document.getElementById('mapTitle').textContent = i18n[state.lang].mapTitle;
+        document.getElementById('mapSubtitle').textContent = i18n[state.lang].mapSubtitle;
+        document.getElementById('search').placeholder =
+          state.lang === 'zh' ? '搜索框架、人物、著作、观点' : state.lang === 'en' ? 'Search frameworks, people, books, ideas' : '枠組み・人物・書籍・論点を検索';
+      }
+
+      function matchesText(domain) {
+        if (!state.query) return true;
+        const hay = [
+          t(domain.title),
+          t(domain.tag),
+          t(domain.question),
+          t(domain.relation),
+          ...domain.people,
+          ...domain.books,
+          ...domain.ideas.zh,
+          ...domain.ideas.en,
+          ...domain.ideas.ja,
+        ].join(' ').toLowerCase();
+        return hay.includes(state.query.toLowerCase());
+      }
+
+      function relatedIds() {
+        if (state.mode === 'frameworks') return new Set(domains.map((d) => d.id));
+        if (state.mode === 'jung') return new Set(['jungian', 'psychodynamic', 'humanistic', 'developmental', 'social', 'positive']);
+        return new Set(['clinical', 'rdoc', 'neuro', 'contextual', 'health', 'trauma', 'cognitive', 'behavioral']);
+      }
+
+      function renderNav() {
+        const root = document.getElementById('lensList');
+        root.innerHTML = '';
+        domainGroups.forEach((group) => {
+          const block = document.createElement('div');
+          block.className = 'group-block';
+          const visibleDomains = group.domains.map((id) => byId[id]).filter(matchesText);
+          block.classList.toggle('hidden', visibleDomains.length === 0);
+          block.innerHTML = `<div class="group-label"><span>${t(group.title)}</span><span>${group.domains.length}</span></div>`;
+          group.domains.forEach((id) => {
+            const domain = byId[id];
+            const button = document.createElement('button');
+            button.className = `lens ${domain.id === state.active ? 'active' : ''} ${matchesText(domain) ? '' : 'hidden'}`;
+            button.style.setProperty('--color', domain.color);
+            button.innerHTML = `
+              <span class="dot"></span>
+              <strong>${t(domain.title)}</strong>
+              <small>${domain.people.length}</small>
+            `;
+            button.addEventListener('click', () => {
+              state.active = domain.id;
+              renderAll();
+            });
+            block.appendChild(button);
+          });
+          root.appendChild(block);
+        });
+      }
+
+      function renderTaxonomy() {
+        document.getElementById('taxonomySummary').innerHTML = domainGroups
+          .map(
+            (group) => `
+              <div class="taxonomy-item" style="--group-color:${group.color}">
+                <strong>${t(group.title)} · ${group.domains.length}</strong>
+                <span>${t(group.note)}</span>
+              </div>
+            `,
+          )
+          .join('');
+      }
+
+      function renderMap() {
+        const stage = document.getElementById('mapStage');
+        [...stage.querySelectorAll('.node')].forEach((n) => n.remove());
+        const svg = document.getElementById('linkLayer');
+        svg.innerHTML = '';
+        const visible = relatedIds();
+        links.forEach(([a, b]) => {
+          const da = byId[a];
+          const db = byId[b];
+          const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+          line.setAttribute('x1', da.x);
+          line.setAttribute('y1', da.y);
+          line.setAttribute('x2', db.x);
+          line.setAttribute('y2', db.y);
+          if (a === state.active || b === state.active) line.classList.add('active');
+          if (!visible.has(a) || !visible.has(b)) line.style.opacity = '0.18';
+          svg.appendChild(line);
+        });
+        domains.forEach((domain) => {
+          const node = document.createElement('button');
+          node.className = `node ${domain.id === state.active ? 'active' : ''} ${visible.has(domain.id) && matchesText(domain) ? '' : 'dimmed'}`;
+          node.style.left = `${domain.x / 10}%`;
+          node.style.top = `${domain.y / 7.6}%`;
+          node.style.setProperty('--color', domain.color);
+          node.style.setProperty('--size', `${domain.size}px`);
+          node.innerHTML = `<strong>${t(domain.title)}</strong><span>${t(domain.tag)}</span>`;
+          node.addEventListener('click', () => {
+            state.active = domain.id;
+            renderAll();
+          });
+          stage.appendChild(node);
+        });
+      }
+
+      function renderDetail() {
+        const domain = byId[state.active];
+        const labels = i18n[state.lang];
+        const sourcesHtml = domain.sources
+          .map((id) => sourceById[id])
+          .filter(Boolean)
+          .map((s) => `<a class="chip" href="${s[2]}" target="_blank" rel="noreferrer">${s[1]}</a>`)
+          .join('');
+        document.getElementById('detail').innerHTML = `
+          <span class="badge" style="background:${domain.color}">${t(domain.tag)}</span>
+          <h2 class="detail-title">${t(domain.title)}</h2>
+          <p class="detail-sub">${t(domain.question)}</p>
+          <div class="fact-grid">
+            <div class="fact"><small>${labels.people}</small><strong>${domain.people.length}</strong></div>
+            <div class="fact"><small>${labels.works}</small><strong>${domain.books.length}</strong></div>
+          </div>
+          <h2>${labels.layer}</h2>
+          <p class="detail-sub">${t(domain.group.title)} · ${t(domain.group.note)}</p>
+          <h2>${labels.keyIdeas}</h2>
+          <div class="chips">${domain.ideas[state.lang].map((idea) => `<span class="chip">${idea}</span>`).join('')}</div>
+          <h2 style="margin-top:18px">${labels.people}</h2>
+          <div class="chips">${domain.people.map((p) => `<span class="chip">${p}</span>`).join('')}</div>
+          <h2 style="margin-top:18px">${labels.works}</h2>
+          <div class="chips">${domain.books.map((p) => `<span class="chip">${p}</span>`).join('')}</div>
+          <h2 style="margin-top:18px">${labels.relation}</h2>
+          <p class="detail-sub">${t(domain.relation)}</p>
+          <h2 style="margin-top:18px">${labels.evidence}</h2>
+          <div class="chips">${sourcesHtml}</div>
+        `;
+      }
+
+      function renderPeople() {
+        const root = document.getElementById('peopleList');
+        const q = state.query.toLowerCase();
+        root.innerHTML = people
+          .filter((p) => !q || [p[0], p[1], byId[p[2]]?.title.zh, byId[p[2]]?.title.en, t(p[3])].join(' ').toLowerCase().includes(q))
+          .map((p) => {
+            const domain = byId[p[2]];
+            return `
+              <article class="person-card">
+                <span class="dot" style="--color:${domain.color}"></span>
+                <strong>${p[0]}</strong>
+                <span>${p[1]} · ${t(domain.title)}</span>
+                <p>${t(p[3])}</p>
+              </article>
+            `;
+          })
+          .join('');
+      }
+
+      function renderBooks() {
+        const root = document.getElementById('bookGrid');
+        const q = state.query.toLowerCase();
+        const typeLabels = {
+          zh: { overview: '快速认识', biography: '人物／自传', theory: '理论入口', practice: '生活应用', easy: '轻松读', medium: '稍进阶', hard: '原著选读' },
+          en: { overview: 'Quick overview', biography: 'Life / memoir', theory: 'Theory primer', practice: 'Life application', easy: 'Easy', medium: 'Intermediate', hard: 'Primary text' },
+          ja: { overview: '短い概説', biography: '人物／回想', theory: '理論入門', practice: '生活への応用', easy: '読みやすい', medium: 'やや発展', hard: '原典選読' },
+        }[state.lang];
+        root.innerHTML = books
+          .filter((book) => state.bookType === 'all' || book[7] === state.bookType)
+          .filter((book) => !q || book.slice(0, 6).join(' ').toLowerCase().includes(q) || t(book[5]).toLowerCase().includes(q))
+          .map((book) => {
+            const domain = byId[book[3]];
+            const src = sourceById[book[6]];
+            const href = book[6] === 'open-library'
+              ? `https://openlibrary.org/search?q=${encodeURIComponent(`${book[0]} ${book[4]}`)}`
+              : src[2];
+            return `
+              <article class="book-card">
+                <span class="badge" style="background:${domain.color}">${t(domain.title)}</span>
+                <strong>${book[0]}</strong>
+                <div class="book-route">
+                  <span class="route-tag">${typeLabels[book[7]]}</span>
+                  <span class="route-tag">${typeLabels[book[8]]}</span>
+                </div>
+                <div class="book-meta">
+                  <span>中文：${book[1]}</span>
+                  <span>日本語：${book[2]}</span>
+                  <span>${book[4]}</span>
+                </div>
+                <p>${t(book[5])}</p>
+                <p style="margin-top:10px"><a href="${href}" target="_blank" rel="noreferrer">${src[1]}</a></p>
+              </article>
+            `;
+          })
+          .join('');
+      }
+
+      function renderSources() {
+        const root = document.getElementById('sourceGrid');
+        root.innerHTML = sources
+          .map(
+            (source) => `
+              <article class="source-card">
+                <a href="${source[2]}" target="_blank" rel="noreferrer">${source[1]}</a>
+                <p>${source[3]}</p>
+              </article>
+            `,
+          )
+          .join('');
+      }
+
+      function renderAll() {
+        updateStaticText();
+        renderNav();
+        renderTaxonomy();
+        renderMap();
+        renderDetail();
+        renderPeople();
+        renderBooks();
+        renderSources();
+      }
+
+      document.querySelectorAll('[data-lang]').forEach((button) => {
+        button.addEventListener('click', () => {
+          state.lang = button.dataset.lang;
+          document.querySelectorAll('[data-lang]').forEach((b) => b.classList.toggle('active', b === button));
+          renderAll();
+        });
+      });
+
+      document.querySelectorAll('[data-mode]').forEach((button) => {
+        button.addEventListener('click', () => {
+          state.mode = button.dataset.mode;
+          document.querySelectorAll('[data-mode]').forEach((b) => b.classList.toggle('active', b === button));
+          renderMap();
+        });
+      });
+
+      document.querySelectorAll('[data-book-type]').forEach((button) => {
+        button.addEventListener('click', () => {
+          state.bookType = button.dataset.bookType;
+          document.querySelectorAll('[data-book-type]').forEach((b) => b.classList.toggle('active', b === button));
+          renderBooks();
+        });
+      });
+
+      document.getElementById('search').addEventListener('input', (event) => {
+        state.query = event.target.value.trim();
+        renderAll();
+      });
+
+      renderAll();
+    </script>
+
+    <div id="knowledgeAtlas" class="atlas-app" data-screen-label="心理学知识星图">
+      <header class="atlas-header">
+        <div class="atlas-brand">
+          <p class="atlas-kicker">One graph · two lenses · three degrees</p>
+          <h1>心理学知识星图</h1>
+          <p>人物不是理论的上级或下级，而是理论在历史中的承担者。切换视角，只改变观看方式。</p>
+        </div>
+        <div class="atlas-segmented" role="group" aria-label="切换知识图谱视角">
+          <button class="active" data-atlas-lens="person">人物视角</button>
+          <button data-atlas-lens="theory">理论视角</button>
+        </div>
+        <label class="atlas-search" aria-label="搜索人物、理论或书籍">
+          <span aria-hidden="true">⌕</span>
+          <input id="atlasSearch" list="atlasSuggestions" type="search" placeholder="搜索人物、概念、体系或书名" />
+          <datalist id="atlasSuggestions"></datalist>
+        </label>
+      </header>
+
+      <main class="atlas-main">
+        <aside class="atlas-rail">
+          <h2 class="atlas-section-title">同一张图，两种读法</h2>
+          <p class="atlas-help">圆角方节点是一组不可拆开的“人物 × 理论贡献”。切换视角后，节点位置、身份和连线都不改变，只交换标题与说明的优先级。</p>
+          <div id="atlasStats" class="atlas-stat-grid"></div>
+          <h2 class="atlas-section-title">视觉语法</h2>
+          <div class="atlas-legend">
+            <div class="atlas-legend-row"><i class="atlas-mark" style="--mark:#007f7a"></i><span>体系星座：共同问题域</span></div>
+            <div class="atlas-legend-row"><i class="atlas-mark unit" style="--mark:#d6a441"></i><span>复合单元：人物 × 理论</span></div>
+            <div class="atlas-legend-row"><i class="atlas-mark book" style="--mark:#675aa9"></i><span>阅读入口：传记、导论、原典、实践</span></div>
+          </div>
+          <h2 class="atlas-section-title">三级关系</h2>
+          <div class="atlas-distance">
+            <span><i style="--distance:#159987"></i>一级：直接归属、著作或影响</span>
+            <span><i style="--distance:#496ea8"></i>二级：同体系或桥接体系</span>
+            <span><i style="--distance:#bb5966"></i>三级：延展、批判或邻接实践</span>
+          </div>
+          <a class="atlas-reference" href="https://docs.kumu.io/about-kumu/how-does-it-work" target="_blank" rel="noreferrer">设计参考：Kumu 的同图多视角、Musicmap 的分层谱系、Graph Commons 的关系探索、Palladio 的维度切换。↗</a>
+        </aside>
+
+        <section id="atlasStage" class="atlas-stage" aria-label="可缩放心理学知识星图">
+          <div class="atlas-toolbar">
+            <button id="atlasZoomIn" class="atlas-icon-button" title="放大" aria-label="放大">＋</button>
+            <button id="atlasZoomOut" class="atlas-icon-button" title="缩小" aria-label="缩小">−</button>
+            <button id="atlasFit" class="atlas-icon-button" title="显示全图" aria-label="显示全图">⌗</button>
+            <button id="atlasFocus" class="atlas-icon-button" title="聚焦当前节点" aria-label="聚焦当前节点">◎</button>
+          </div>
+          <svg id="atlasSvg" class="atlas-svg" role="img" aria-label="人物、理论与阅读路径共同构成的心理学知识图谱">
+            <rect width="100%" height="100%" fill="transparent"></rect>
+            <g id="atlasTransform">
+              <g id="atlasEdgeLayer"></g>
+              <g id="atlasNodeLayer"></g>
+            </g>
+          </svg>
+        </section>
+
+        <aside id="atlasDetail" class="atlas-detail" aria-live="polite"></aside>
+      </main>
+    </div>
+
+    <script>
+      const atlasRoleLabels = {
+        overview: '全景导论', biography: '传记／自传', theory: '理论／原典', practice: '生活实践',
+        history: '思想史', extension: '体系延展', translation: '跨文化转译', adjacent: '邻接读物', critique: '批判性伴读'
+      };
+      const atlasDepthOrder = { easy: 0, medium: 1, hard: 2 };
+      const atlasDepthLabels = { easy: '入门', medium: '进阶', hard: '深读' };
+      const atlasState = { lens: 'person', selected: 'domain-jungian', scale: .5, tx: 0, ty: 0, dragging: false, px: 0, py: 0 };
+      const atlasCanvas = { width: 2380, height: 1840 };
+      const atlasNodes = [];
+      const atlasEdges = [];
+      const atlasNodeById = new Map();
+      const atlasAdjacency = new Map();
+      const atlasPeopleByDomain = Object.fromEntries(domains.map((domain) => [domain.id, people.filter((person) => person[2] === domain.id)]));
+      const atlasBooksByDomain = Object.fromEntries(domains.map((domain) => [domain.id, books.filter((book) => book[3] === domain.id)]));
+
+      function atlasSlug(value) {
+        let hash = 0;
+        for (let i = 0; i < value.length; i += 1) hash = ((hash << 5) - hash + value.charCodeAt(i)) | 0;
+        return Math.abs(hash).toString(36);
+      }
+
+      function atlasEscape(value) {
+        return String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
+      }
+
+      function atlasShort(value, length) {
+        const text = String(value ?? '');
+        return text.length > length ? `${text.slice(0, length - 1)}…` : text;
+      }
+
+      function atlasContribution(note) {
+        return String(note || '').split(/[。，；：:]/)[0].trim();
+      }
+
+      function atlasWorldPosition(domain) {
+        return { x: 80 + domain.x * 2.22, y: 90 + domain.y * 2.05 };
+      }
+
+      domains.forEach((domain) => {
+        const center = atlasWorldPosition(domain);
+        const domainPeople = atlasPeopleByDomain[domain.id];
+        const domainBooks = atlasBooksByDomain[domain.id];
+        atlasNodes.push({
+          id: `domain-${domain.id}`, type: 'domain', domainId: domain.id, color: domain.color, x: center.x, y: center.y,
+          title: domain.title.zh, theory: domain.title.zh, people: domainPeople.map((person) => person[0]),
+          note: domain.question.zh, ideas: domain.ideas.zh, desc: domain.relation.zh
+        });
+
+        domainPeople.forEach((person, index) => {
+          const angle = -Math.PI * .92 + (Math.PI * 1.84 * index) / Math.max(1, domainPeople.length - 1);
+          const radiusX = 192;
+          const radiusY = 134;
+          atlasNodes.push({
+            id: `unit-${atlasSlug(person[0])}`, type: 'unit', domainId: domain.id, color: domain.color,
+            x: center.x + Math.cos(angle) * radiusX, y: center.y + Math.sin(angle) * radiusY,
+            person: person[0], years: person[1], theory: atlasContribution(person[3].zh), note: person[3].zh,
+            title: person[0], desc: person[3].zh
+          });
+          atlasEdges.push({ id: `edge-domain-unit-${domain.id}-${index}`, source: `domain-${domain.id}`, target: `unit-${atlasSlug(person[0])}`, type: 'membership', label: '人物与理论共同构成该体系' });
+        });
+
+        domainBooks.forEach((book, index) => {
+          const angle = Math.PI * .08 + (Math.PI * .84 * index) / Math.max(1, domainBooks.length - 1);
+          const radiusX = 210;
+          const radiusY = 178;
+          const bookId = `book-${atlasSlug(`${book[1]}-${book[4]}`)}`;
+          atlasNodes.push({
+            id: bookId, type: 'book', domainId: domain.id, color: '#675aa9',
+            x: center.x + Math.cos(angle) * radiusX, y: center.y + Math.sin(angle) * radiusY,
+            title: book[1], originalTitle: book[0], author: book[4], note: book[5].zh, sourceId: book[6], role: book[7], depth: book[8], desc: book[5].zh
+          });
+          atlasEdges.push({ id: `edge-domain-book-${domain.id}-${index}`, source: `domain-${domain.id}`, target: bookId, type: 'reading', label: '进入该体系的阅读路径' });
+
+          domainPeople.forEach((person) => {
+            const familyName = person[0].split(' ').pop().replace(/[^a-z]/gi, '').toLowerCase();
+            if (familyName.length > 3 && book[4].toLowerCase().includes(familyName)) {
+              atlasEdges.push({ id: `edge-author-${atlasSlug(person[0] + book[1])}`, source: `unit-${atlasSlug(person[0])}`, target: bookId, type: 'authorship', label: '作者与其理论著作' });
+            }
+          });
+        });
+      });
+
+      links.forEach(([source, target], index) => atlasEdges.push({
+        id: `edge-cross-${index}`, source: `domain-${source}`, target: `domain-${target}`, type: 'cross', label: '体系之间的继承、争论或方法桥接'
+      }));
+
+      atlasNodes.forEach((node) => { atlasNodeById.set(node.id, node); atlasAdjacency.set(node.id, new Set()); });
+      atlasEdges.forEach((edge) => {
+        if (!atlasAdjacency.has(edge.source) || !atlasAdjacency.has(edge.target)) return;
+        atlasAdjacency.get(edge.source).add(edge.target);
+        atlasAdjacency.get(edge.target).add(edge.source);
+      });
+
+      const atlasSvg = document.getElementById('atlasSvg');
+      const atlasStage = document.getElementById('atlasStage');
+      const atlasTransform = document.getElementById('atlasTransform');
+      const atlasEdgeLayer = document.getElementById('atlasEdgeLayer');
+      const atlasNodeLayer = document.getElementById('atlasNodeLayer');
+
+      function atlasNodeSize(node) {
+        if (node.type === 'domain') return { width: 250, height: 86 };
+        if (node.type === 'unit') return { width: 176, height: 62 };
+        return { width: 164, height: 48 };
+      }
+
+      function atlasEdgePath(edge) {
+        const source = atlasNodeById.get(edge.source);
+        const target = atlasNodeById.get(edge.target);
+        if (edge.type === 'cross') {
+          const mx = (source.x + target.x) / 2;
+          const my = Math.min(source.y, target.y) - Math.min(110, Math.abs(source.x - target.x) * .12);
+          return `M ${source.x} ${source.y} Q ${mx} ${my} ${target.x} ${target.y}`;
+        }
+        return `M ${source.x} ${source.y} L ${target.x} ${target.y}`;
+      }
+
+      function atlasNodeLabels(node) {
+        if (node.type === 'domain') {
+          const names = node.people.slice(0, 2).join(' · ');
+          return atlasState.lens === 'person'
+            ? { eyebrow: '人物群像 · 理论共同体', title: names || node.title, subtitle: node.title }
+            : { eyebrow: '理论体系 · 人物共同体', title: node.title, subtitle: names };
+        }
+        if (node.type === 'unit') {
+          return atlasState.lens === 'person'
+            ? { eyebrow: '人物 × 理论贡献', title: node.person, subtitle: node.theory }
+            : { eyebrow: '理论贡献 × 人物', title: node.theory, subtitle: `${node.person} · ${node.years}` };
+        }
+        return { eyebrow: atlasRoleLabels[node.role] || '阅读入口', title: node.title, subtitle: node.author };
+      }
+
+      function atlasRenderGraph() {
+        atlasEdgeLayer.innerHTML = atlasEdges.map((edge) => `<path id="${edge.id}" class="atlas-edge ${edge.type}" data-source="${edge.source}" data-target="${edge.target}" d="${atlasEdgePath(edge)}"><title>${atlasEscape(edge.label)}</title></path>`).join('');
+        atlasNodeLayer.innerHTML = atlasNodes.map((node) => {
+          const size = atlasNodeSize(node);
+          const labels = atlasNodeLabels(node);
+          const count = node.type === 'domain' ? (atlasPeopleByDomain[node.domainId].length + atlasBooksByDomain[node.domainId].length) : 0;
+          return `<g id="${node.id}" class="atlas-node ${node.type}" role="button" tabindex="0" data-node-id="${node.id}" style="--node-color:${node.color}" transform="translate(${node.x} ${node.y})">
+            <rect class="node-shape" x="${-size.width / 2}" y="${-size.height / 2}" width="${size.width}" height="${size.height}" rx="${node.type === 'book' ? 2 : 5}"></rect>
+            <text class="node-eyebrow" x="${-size.width / 2 + 12}" y="${node.type === 'domain' ? -22 : -13}">${atlasEscape(atlasShort(labels.eyebrow, 30))}</text>
+            <text class="node-title" x="${-size.width / 2 + 12}" y="${node.type === 'domain' ? 3 : 7}">${atlasEscape(atlasShort(labels.title, node.type === 'domain' ? 25 : node.type === 'unit' ? 23 : 21))}</text>
+            <text class="node-subtitle" x="${-size.width / 2 + 12}" y="${node.type === 'domain' ? 25 : 22}">${atlasEscape(atlasShort(labels.subtitle, node.type === 'domain' ? 39 : 29))}</text>
+            ${count ? `<circle cx="${size.width / 2 - 17}" cy="${-size.height / 2 + 17}" r="11" fill="${node.color}"></circle><text class="node-count" text-anchor="middle" x="${size.width / 2 - 17}" y="${-size.height / 2 + 20}">${count}</text>` : ''}
+            <title>${atlasEscape(`${labels.title}\n${node.desc || ''}`)}</title>
+          </g>`;
+        }).join('');
+        atlasNodeLayer.querySelectorAll('.atlas-node').forEach((element) => {
+          const activate = () => atlasSelect(element.dataset.nodeId);
+          element.addEventListener('click', activate);
+          element.addEventListener('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') activate(); });
+        });
+      }
+
+      function atlasDistances(startId) {
+        const result = new Map([[startId, 0]]);
+        const queue = [startId];
+        while (queue.length) {
+          const current = queue.shift();
+          const distance = result.get(current);
+          if (distance >= 3) continue;
+          atlasAdjacency.get(current).forEach((next) => {
+            if (!result.has(next)) { result.set(next, distance + 1); queue.push(next); }
+          });
+        }
+        return result;
+      }
+
+      function atlasSelect(id) {
+        if (!atlasNodeById.has(id)) return;
+        atlasState.selected = id;
+        const distances = atlasDistances(id);
+        atlasNodeLayer.querySelectorAll('.atlas-node').forEach((element) => {
+          const distance = distances.get(element.dataset.nodeId);
+          element.classList.remove('selected', 'level-1', 'level-2', 'level-3', 'muted');
+          if (distance === 0) element.classList.add('selected');
+          else if (distance && distance <= 3) element.classList.add(`level-${distance}`);
+          else element.classList.add('muted');
+        });
+        atlasEdgeLayer.querySelectorAll('.atlas-edge').forEach((element) => {
+          const a = distances.get(element.dataset.source);
+          const b = distances.get(element.dataset.target);
+          element.classList.remove('level-1', 'level-2', 'level-3', 'muted');
+          if (a !== undefined && b !== undefined) element.classList.add(`level-${Math.max(1, Math.min(3, Math.max(a, b)))}`);
+          else element.classList.add('muted');
+        });
+        atlasRenderDetail(distances);
+      }
+
+      function atlasDomainFor(node) { return domains.find((domain) => domain.id === node.domainId); }
+
+      function atlasSourceUrl(node) {
+        if (!node.sourceId) return '';
+        const source = sourceById[node.sourceId];
+        if (!source) return '';
+        if (node.sourceId === 'open-library') return `https://openlibrary.org/search?q=${encodeURIComponent(node.title)}`;
+        return source[2];
+      }
+
+      function atlasRenderDetail(distances) {
+        const node = atlasNodeById.get(atlasState.selected);
+        const domain = atlasDomainFor(node) || domains.find((item) => `domain-${item.id}` === node.id);
+        const domainId = node.domainId || domain.id;
+        const reading = atlasBooksByDomain[domainId].slice().sort((a, b) => (atlasDepthOrder[a[8]] - atlasDepthOrder[b[8]]) || a[7].localeCompare(b[7])).slice(0, 5);
+        const labels = atlasNodeLabels(node);
+        const related = [...distances.entries()].filter(([, distance]) => distance > 0 && distance <= 3).sort((a, b) => a[1] - b[1]).slice(0, 13);
+        const pairing = node.type === 'unit'
+          ? `<span>这一节点不可拆开的两面</span><strong>${atlasEscape(node.person)} ↔ ${atlasEscape(node.theory)}</strong>`
+          : node.type === 'domain'
+            ? `<span>理论共同体</span><strong>${atlasEscape(node.title)} ↔ ${atlasEscape(node.people.join('、'))}</strong>`
+            : `<span>阅读与知识的连接</span><strong>${atlasEscape(node.title)} ↔ ${atlasEscape(domain.title.zh)}</strong>`;
+        const sourceUrl = atlasSourceUrl(node);
+        document.getElementById('atlasDetail').innerHTML = `
+          <span class="atlas-detail-type" style="--detail-color:${node.color}">${node.type === 'domain' ? '体系星座' : node.type === 'unit' ? '人物 × 理论' : atlasRoleLabels[node.role] || '阅读入口'}</span>
+          <h2>${atlasEscape(labels.title)}</h2>
+          <p class="atlas-byline">${atlasEscape(labels.subtitle || domain.title.zh)}</p>
+          <p class="atlas-detail-copy">${atlasEscape(node.note || node.desc || domain.question.zh)}</p>
+          <div class="atlas-pair-box" style="--detail-color:${node.color}">${pairing}</div>
+          ${sourceUrl ? `<a class="atlas-reference" style="margin-top:0;padding-top:0;border:0" href="${sourceUrl}" target="_blank" rel="noreferrer">查看书目或来源 ↗</a>` : ''}
+          <section class="atlas-reading"><h3>从易到深的阅读入口</h3>${reading.map((book, index) => `<button class="atlas-book-step" data-atlas-target="book-${atlasSlug(`${book[1]}-${book[4]}`)}"><b>${index + 1}</b><span>${atlasEscape(book[1])}</span><small>${atlasDepthLabels[book[8]]}</small></button>`).join('')}</section>
+          <section class="atlas-relations"><h3>当前节点的三级关系</h3>${related.map(([id, distance]) => { const item = atlasNodeById.get(id); const itemLabels = atlasNodeLabels(item); const color = distance === 1 ? '#159987' : distance === 2 ? '#496ea8' : '#bb5966'; return `<button class="atlas-related-button" data-atlas-target="${id}" style="--related-color:${color}"><i></i><span>${atlasEscape(itemLabels.title)}</span><small>${distance} 级</small></button>`; }).join('')}</section>`;
+        document.querySelectorAll('[data-atlas-target]').forEach((button) => button.addEventListener('click', () => { atlasSelect(button.dataset.atlasTarget); atlasFocus(button.dataset.atlasTarget); }));
+      }
+
+      function atlasApplyTransform() { atlasTransform.setAttribute('transform', `translate(${atlasState.tx} ${atlasState.ty}) scale(${atlasState.scale})`); }
+      function atlasZoom(factor, centerX, centerY) {
+        const rect = atlasStage.getBoundingClientRect();
+        const cx = centerX ?? rect.width / 2;
+        const cy = centerY ?? rect.height / 2;
+        const next = Math.max(.22, Math.min(1.6, atlasState.scale * factor));
+        atlasState.tx = cx - ((cx - atlasState.tx) / atlasState.scale) * next;
+        atlasState.ty = cy - ((cy - atlasState.ty) / atlasState.scale) * next;
+        atlasState.scale = next;
+        atlasApplyTransform();
+      }
+      function atlasFit() {
+        const rect = atlasStage.getBoundingClientRect();
+        atlasState.scale = Math.max(.22, Math.min(.62, Math.min((rect.width - 30) / atlasCanvas.width, (rect.height - 30) / atlasCanvas.height)));
+        atlasState.tx = (rect.width - atlasCanvas.width * atlasState.scale) / 2;
+        atlasState.ty = (rect.height - atlasCanvas.height * atlasState.scale) / 2;
+        atlasApplyTransform();
+      }
+      function atlasFocus(id) {
+        const node = atlasNodeById.get(id);
+        const rect = atlasStage.getBoundingClientRect();
+        atlasState.scale = Math.max(atlasState.scale, .7);
+        atlasState.tx = rect.width / 2 - node.x * atlasState.scale;
+        atlasState.ty = rect.height / 2 - node.y * atlasState.scale;
+        atlasApplyTransform();
+      }
+
+      atlasStage.addEventListener('wheel', (event) => { event.preventDefault(); const rect = atlasStage.getBoundingClientRect(); atlasZoom(event.deltaY < 0 ? 1.12 : .89, event.clientX - rect.left, event.clientY - rect.top); }, { passive: false });
+      atlasStage.addEventListener('pointerdown', (event) => { if (event.target.closest('.atlas-node')) return; atlasState.dragging = true; atlasState.px = event.clientX; atlasState.py = event.clientY; atlasStage.classList.add('dragging'); atlasStage.setPointerCapture(event.pointerId); });
+      atlasStage.addEventListener('pointermove', (event) => { if (!atlasState.dragging) return; atlasState.tx += event.clientX - atlasState.px; atlasState.ty += event.clientY - atlasState.py; atlasState.px = event.clientX; atlasState.py = event.clientY; atlasApplyTransform(); });
+      atlasStage.addEventListener('pointerup', () => { atlasState.dragging = false; atlasStage.classList.remove('dragging'); });
+      document.getElementById('atlasZoomIn').addEventListener('click', () => atlasZoom(1.2));
+      document.getElementById('atlasZoomOut').addEventListener('click', () => atlasZoom(.82));
+      document.getElementById('atlasFit').addEventListener('click', atlasFit);
+      document.getElementById('atlasFocus').addEventListener('click', () => atlasFocus(atlasState.selected));
+      document.querySelectorAll('[data-atlas-lens]').forEach((button) => button.addEventListener('click', () => {
+        atlasState.lens = button.dataset.atlasLens;
+        document.querySelectorAll('[data-atlas-lens]').forEach((item) => item.classList.toggle('active', item === button));
+        atlasRenderGraph();
+        atlasSelect(atlasState.selected);
+      }));
+
+      const atlasSearch = document.getElementById('atlasSearch');
+      document.getElementById('atlasSuggestions').innerHTML = atlasNodes.map((node) => `<option value="${atlasEscape([node.person, node.theory, node.title].filter(Boolean).join(' · '))}"></option>`).join('');
+      function atlasRunSearch() {
+        const query = atlasSearch.value.trim().toLowerCase();
+        if (!query) return;
+        const match = atlasNodes.find((node) => [node.person, node.theory, node.title, node.originalTitle, node.author, node.note].filter(Boolean).join(' ').toLowerCase().includes(query));
+        if (match) { atlasSelect(match.id); atlasFocus(match.id); }
+      }
+      atlasSearch.addEventListener('change', atlasRunSearch);
+      atlasSearch.addEventListener('keydown', (event) => { if (event.key === 'Enter') atlasRunSearch(); });
+
+      document.getElementById('atlasStats').innerHTML = [
+        [domains.length, '体系星座'], [people.length, '人物理论单元'], [books.length, '阅读入口'], [atlasEdges.length, '关系连线']
+      ].map(([value, label]) => `<div class="atlas-stat"><strong>${value}</strong><span>${label}</span></div>`).join('');
+
+      atlasRenderGraph();
+      atlasSelect('domain-jungian');
+      requestAnimationFrame(atlasFit);
+      window.addEventListener('resize', atlasFit);
+    </script>
+  </body>
+</html>
