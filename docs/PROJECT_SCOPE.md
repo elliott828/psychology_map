@@ -2,7 +2,7 @@
 
 ## Purpose
 
-`spyschology_map` is a public-facing visual guide to the history and structure of modern psychology. It is designed to help learners understand when systems appeared, how they relate, which people shaped them, and where to begin reading.
+`psychology_map` is a public-facing visual guide to the history and structure of modern psychology. It is designed to help learners understand when systems appeared, how they relate, which people shaped them, and where to begin reading.
 
 It is an orientation map, not a diagnostic instrument, clinical decision system, bibliometric database, or claim of a final historical canon.
 

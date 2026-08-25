@@ -1,4 +1,4 @@
-# spyschology_map
+# psychology_map
 
 An interactive, multilingual map of modern psychology: schools, lineages, people, theories, relationships, and reading paths from 1880 to the present.
 
@@ -17,7 +17,7 @@ Then visit `http://localhost:4311/`.
 ## Repository structure
 
 ```text
-spyschology_map/
+psychology_map/
 ├─ index.html                    # Current production prototype
 ├─ assets/                       # Required visual assets
 ├─ docs/
