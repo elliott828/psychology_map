@@ -14,7 +14,9 @@ The mountain photograph remains quiet background texture. Information geometry, 
 - Column height represents the provisional Literature Contribution Index.
 - Column width represents constrained structural breadth.
 - Adjacent columns use a consistent 2pt perceived gap.
-- Sloped tops connect visually into one mountain ridge.
+- Every column has exactly one flat or sloped top edge.
+- A column's left and right top heights are shared with the neighboring column boundaries, creating one continuous mountain ridge without putting a peak inside an individual column.
+- Columns use one translucent solid fill with no sheen, gradient, or decorative border, allowing the background mountain to remain visible.
 
 ### Genealogy
 
@@ -27,8 +29,9 @@ The mountain photograph remains quiet background texture. Information geometry, 
 
 - People are connected in chronological order using a serpentine constellation path.
 - Circle size represents the provisional people contribution index.
-- Stars, rays, and orbit marks add atmosphere without obscuring the historical chain.
-- Localized names and years must remain legible at the default fitted scale.
+- Localized names sit inside sufficiently large circles and years remain directly below them.
+- A restrained double halo provides depth; decorative stars and rays are intentionally excluded.
+- Contribution numbers are hidden by default and revealed on hover or keyboard focus.
 
 ## Interaction rules
 
@@ -52,4 +55,3 @@ Exact values remain implementation tokens in `pmOverviewBaseColors` inside `inde
 ## Typography
 
 The interface uses system fonts for fast loading and broad CJK coverage. Labels should be assessed at their actual fitted browser scale, not only by their SVG font-size value. Chinese, English, and Japanese names require language-specific length checks.
-
