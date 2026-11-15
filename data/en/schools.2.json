@@ -1,0 +1,235 @@
+{
+ "multiple-intelligences": {
+  "summary": "Intelligence is not one thing. Language, logic-mathematics, spatial, musical, bodily-kinesthetic, interpersonal and intrapersonal abilities are distinct, but schools value only one or two of them.",
+  "landmark": "Gardner's Frames of Mind proposes seven relatively independent intelligences",
+  "evidenceNote": "The 'intelligences' are not fully independent of one another; they remain positively correlated, and they lack testable measures. Still, they have had a large influence on educational practice.",
+  "title.enShort": "Multiple Intell."
+ },
+ "big-five": {
+  "summary": "Most personality differences can be described with five dimensions: openness, conscientiousness, extraversion, agreeableness and neuroticism. Each dimension is continuous, and people fall at different points along it.",
+  "landmark": "Costa and McCrae publish the NEO personality inventory, popularizing the five-factor model",
+  "evidenceNote": "The five dimensions are broadly replicable across many languages and cultures, and they stably predict academic performance, career and health. It is a descriptive model and does not explain causes.",
+  "title.enShort": "Big Five"
+ },
+ "open-science": {
+  "summary": "Many published psychology findings fail to hold up in replication. Causes include small samples, flexible data analysis and publishing only positive results. Reforms include preregistration, open data and large-sample collaboration.",
+  "landmark": "Simmons and colleagues publish 'False-Positive Psychology,' showing how flexible analysis can 'prove' absurd conclusions",
+  "evidenceNote": "In the large-scale 2015 replication project, roughly a third to 40 percent of studies replicated. Reforms such as preregistration have already noticeably improved research quality.",
+  "title.enShort": "Replication Crisis"
+ },
+ "child-study": {
+  "summary": "From the late nineteenth century, researchers began systematically collecting data on children's development through questionnaires and observation. Children became a subject worth studying in their own right.",
+  "landmark": "Hall publishes The Contents of Children's Minds, using questionnaires to survey what entering school children already know",
+  "evidenceNote": "It pioneered the systematic study of children, but specific conclusions (such as recapitulation theory) have been abandoned.",
+  "title.enShort": "Child Study"
+ },
+ "sociocultural": {
+  "summary": "Children first accomplish things through interaction with others, then internalize those interactions as their own thinking. Language and symbols are tools of thought.",
+  "landmark": "Vygotsky's Thought and Language: higher mental functions come from social interaction and are mediated by symbolic tools",
+  "evidenceNote": "Ideas such as 'language and cultural tools shape thinking' and the 'zone of proximal development' have considerable support in instructional research, but many core concepts are hard to test directly.",
+  "title.enShort": "Sociocultural"
+ },
+ "cognitive-development": {
+  "summary": "Children do not passively receive knowledge. Through handling things, trying and failing, they actively build their understanding of the world, and the way they understand changes qualitatively.",
+  "landmark": "Piaget's The Origins of Intelligence in Children: intelligence is gradually constructed from sensorimotor activity",
+  "evidenceNote": "The core idea that children actively construct knowledge is widely accepted. The strict stage divisions and the specific ages for 'what children can do at what age' have been revised by later research.",
+  "title.enShort": "Cognitive Dev."
+ },
+ "psychosocial": {
+  "summary": "Each stage of life has a core psychological conflict, such as 'identity versus role confusion' in adolescence. How well it is handled affects later development.",
+  "landmark": "Erikson's Childhood and Society proposes eight stages of life",
+  "evidenceNote": "There is much research on the concept of identity, but the order and universality of the eight stages lack direct testing.",
+  "title.enShort": "Psychosocial Dev."
+ },
+ "attachment": {
+  "summary": "Infants are born needing a close bond with caregivers, from which they gain a sense of security. The quality of early care forms expectations about relationships, which shape how a person relates to others later.",
+  "landmark": "Bowlby's The Nature of the Child's Tie to His Mother",
+  "evidenceNote": "Types of infant attachment are moderately linked to adult relationships. The claim that 'attachment type determines a whole life' lacks support."
+ },
+ "moral-development": {
+  "summary": "How people judge right and wrong changes with age: from avoiding punishment and following rules, to reasoning from universal principles.",
+  "landmark": "Kohlberg's doctoral dissertation proposes stages in the development of moral judgment",
+  "evidenceNote": "The trend of moral reasoning maturing with age is confirmed. The universality of the stages, and their applicability to women and to non-Western populations, have been questioned."
+ },
+ "ecological": {
+  "summary": "Children live in nested layers of environment: family, school, community policies and culture, and the historical era. Development is the result of the person's ongoing interaction with these environments.",
+  "landmark": "Bronfenbrenner's The Ecology of Human Development",
+  "evidenceNote": "It is a framework that places family, school, community, institutions and era side by side to organize research. It does not make specific predictions on its own.",
+  "title.enShort": "Ecological Systems"
+ },
+ "lifespan": {
+  "summary": "Development does not stop at childhood or adolescence; it continues into old age, and includes both growth and decline. The interaction between the individual and the historical era cannot be ignored.",
+  "landmark": "Baltes, Reese and Lipsitt publish 'Life-Span Developmental Psychology' in the Annual Review of Psychology",
+  "evidenceNote": "The view that development runs through the whole life, with both gains and losses, is supported by research on aging and cognitive aging. The strength of evidence for individual models varies.",
+  "title.enShort": "Lifespan Dev."
+ },
+ "theory-of-mind": {
+  "summary": "How people come to understand that others' minds differ from their own: knowing that others have their own beliefs and desires, and act on them.",
+  "landmark": "Wimmer and Perner design the 'false belief task' to test whether children understand that others can hold mistaken ideas",
+  "evidenceNote": "There is much cross-cultural evidence for a turning point at ages three to five, when children understand false beliefs. Earlier implicit understanding is still debated."
+ },
+ "infant-cognition": {
+  "summary": "Uses how long infants look at something to infer what they understand: scenes that surprise them are looked at longer. The results suggest that infants have some basic knowledge earlier than Piaget believed.",
+  "landmark": "Baillargeon and colleagues' experiments: five-month-olds appear to 'know' that a hidden object still exists",
+  "evidenceNote": "There are many findings on infants' early understanding of objects, number and other people, but the interpretation of looking-time measures and the replicability of some conclusions are still debated."
+ },
+ "crowd": {
+  "summary": "In groups, people are subject to suggestion and emotional contagion. Their behavior differs from when they are alone: more impulsive and more extreme. This is one of the earliest systematic accounts in social psychology.",
+  "landmark": "Le Bon's The Crowd: individuals in a group lose their judgment and are swept along by emotion",
+  "evidenceNote": "The claim that 'groups make people stupid and fanatical' is oversimplified. Later research found that group behavior mostly follows the group's own norms."
+ },
+ "field-theory": {
+  "summary": "Behavior depends not only on the person or only on the environment, but on the 'field' formed by both. From this he founded group dynamics, studies of leadership styles and action research.",
+  "landmark": "Lewin's Principles of Topological Psychology: behavior is a function of person and environment",
+  "evidenceNote": "'Behavior is shaped jointly by the person and the situation' is a widely accepted framework. The specific models he proposed (life space, the three steps of change) are more heuristic tools.",
+  "title.enShort": "Field Theory"
+ },
+ "conformity-obedience": {
+  "summary": "Under group pressure and authority, ordinary people act against their own judgment or conscience. These experiments made people aware of the power of the situation.",
+  "landmark": "Asch's line experiment: many people changed their answers in the face of an obviously wrong majority (Milgram, 1963)",
+  "evidenceNote": "Conformity and obedience experiments have been repeated many times since, but their scale and interpretation need revision. Most people do not obey 'blindly.'",
+  "title.enShort": "Conformity"
+ },
+ "prejudice": {
+  "summary": "Prejudice is not a problem of a few bad people but the result of ordinary people's categorization, group membership and competition. Contact under the right conditions can reduce it.",
+  "landmark": "Allport's The Nature of Prejudice: a systematic analysis of how prejudice forms and how it can be reduced",
+  "evidenceNote": "The contact hypothesis has good support in large meta-analyses. The predictive power of implicit bias tests for individual behavior is weaker."
+ },
+ "dissonance": {
+  "summary": "When a person's ideas and behavior contradict each other, they feel uncomfortable and tend to change their ideas to ease the discomfort, rather than changing their behavior.",
+  "landmark": "Festinger's A Theory of Cognitive Dissonance",
+  "evidenceNote": "The core phenomenon of self-justification is stable, but whether dissonance is the only source of motivation, and whether it requires a threat to the self, remain debated.",
+  "title.enShort": "Dissonance"
+ },
+ "attribution": {
+  "summary": "People look for causes of their own and others' behavior. Whether they attribute it to personality or to the situation affects how they evaluate others and how they respond.",
+  "landmark": "Heider's The Psychology of Interpersonal Relations: people look for the causes of others' behavior like naive scientists",
+  "evidenceNote": "The tendency to attribute others' behavior to their personality is robust in Western samples, weaker in East Asian samples, and varies clearly across conditions."
+ },
+ "indigenous": {
+  "summary": "Psychology developed in the West does not always apply to other societies. Each culture should study its own psychology with its own concepts and methods, such as 'amae,' 'relationship' and 'face.'",
+  "landmark": "Doi Takeo's The Anatomy of Dependence ('amae'); Chinese indigenous psychology, developed by Yang Kuo-shu in the 1980s",
+  "evidenceNote": "It has proposed many illuminating concepts, but most have not yet been subjected to systematic, replicable empirical testing.",
+  "title.enShort": "Indigenous Psych."
+ },
+ "social-identity": {
+  "summary": "People treat the groups they belong to as part of the 'self,' so they favor their own group and draw self-esteem from the group's status.",
+  "landmark": "Tajfel and Turner publish 'An Integrative Theory of Intergroup Conflict'",
+  "evidenceNote": "The minimal group paradigm and in-group favoritism have been replicated many times. Its explanatory power for real-world conflict is limited and needs supplementing with factors such as group interests.",
+  "title.enShort": "Social Identity"
+ },
+ "social-cognition": {
+  "summary": "Uses the methods of cognitive psychology to study how people understand others and themselves: how they categorize people, form impressions and remember information about others, and as a result develop biases and errors.",
+  "landmark": "Fiske and Taylor's Social Cognition",
+  "evidenceNote": "The distinctions among schemas, stereotypes, and controlled versus automatic processing have considerable support. Many social priming effects have failed to replicate."
+ },
+ "cultural": {
+  "summary": "Culture is not just an external background. It is an inherent part of what shapes the self, emotion and ways of thinking, and many conclusions treated as 'universal' hold only in Western samples.",
+  "landmark": "Markus and Kitayama publish Culture and the Self",
+  "evidenceNote": "Differences between Eastern and Western views of the self have been replicated in several studies, but the effect sizes are moderate and individual variation is large. They should not be reduced to 'Eastern collectivism, Western individualism.'",
+  "title.enShort": "Cultural Psych."
+ },
+ "needs": {
+  "summary": "Human motivation moves from survival, safety, belonging and esteem up to self-actualization. Higher growth needs become the main drive only after more basic needs are met.",
+  "landmark": "Maslow publishes A Theory of Human Motivation",
+  "evidenceNote": "'Need satisfaction is related to happiness' has support. The strict hierarchical order has not been confirmed, and the ranking of needs is not fixed across cultures.",
+  "title.enShort": "Hierarchy of Needs"
+ },
+ "logotherapy": {
+  "summary": "A person's most basic motivation is the search for meaning in life. Even in suffering that cannot be changed, one can choose an attitude toward it, and find meaning in doing so.",
+  "landmark": "Frankl's Man's Search for Meaning (German edition, 1946)",
+  "evidenceNote": "There is much research support for 'a sense of meaning is related to mental health,' but there are few controlled trials of logotherapy itself."
+ },
+ "person-centered": {
+  "summary": "The key to therapy lies not in technique but in whether the therapist offers empathy, genuineness and unconditional acceptance. In such a relationship, people naturally change in the direction of growth.",
+  "landmark": "Rogers's Client-Centered Therapy",
+  "evidenceNote": "Empathy, respect and genuineness are indeed related to therapy outcomes, but they are more like conditions that are necessary but not sufficient.",
+  "title.enShort": "Person-Centered"
+ },
+ "gestalt-therapy": {
+  "summary": "Emphasizes awareness of the 'here and now' and the processing of unfinished emotions. Techniques such as the empty chair and role play are used to act out inner conflicts.",
+  "landmark": "Perls, Hefferline and Goodman's Gestalt Therapy",
+  "evidenceNote": "Techniques such as the empty chair have been effective in some studies, but controlled studies of the school as a whole are few."
+ },
+ "existential": {
+  "summary": "Anxiety and suffering often come from avoiding the basic conditions of human life: death, freedom, isolation and meaninglessness. Therapy helps people face them.",
+  "landmark": "Rollo May and others edit Existence, bringing European existentialism into American psychology",
+  "evidenceNote": "Its themes (death, freedom, isolation, meaninglessness) have some empirical research, but the evidence for the therapy itself is limited.",
+  "title.enShort": "Existential Ther."
+ },
+ "flow": {
+  "summary": "When the difficulty of a task matches your ability, the goals are clear and feedback is immediate, people enter a state of absorbed, enjoyable engagement.",
+  "landmark": "Csikszentmihalyi's Beyond Boredom and Anxiety",
+  "evidenceNote": "'Engagement is highest when challenge and skill match' has considerable support, but flow is measured in inconsistent ways, and the causal relationships are still being tested."
+ },
+ "sdt": {
+  "summary": "People have three basic psychological needs: autonomy, competence and relatedness. When these needs are met, intrinsic motivation is stronger and people are healthier.",
+  "landmark": "Deci and Ryan's Intrinsic Motivation and Self-Determination in Human Behavior",
+  "evidenceNote": "The three needs (autonomy, competence and relatedness) have wide support across cultures and domains, and there is debate about whether these 'basic needs' are universal.",
+  "title.enShort": "Self-Determination"
+ },
+ "eft": {
+  "summary": "Treats emotion as the core of change: first helping people become aware of and accept their real feelings, and then using those feelings to change patterns in relationships or in the self.",
+  "landmark": "Greenberg and Johnson's Emotionally Focused Therapy for Couples",
+  "evidenceNote": "The couple version has support from several controlled trials and meta-analyses. The individual version has some evidence for depression and similar conditions.",
+  "title.enShort": "Emotion-Focused"
+ },
+ "positive": {
+  "summary": "Psychology should study not only illness but also how people live well: well-being, strengths, meaning, engagement and good relationships.",
+  "landmark": "Seligman, while president of the American Psychological Association, advocates studying human strengths and well-being",
+  "evidenceNote": "Some simple interventions (such as gratitude exercises) have small but stable effects. Early headline findings such as the 'positivity ratio' were retracted, and overall research quality varies.",
+  "title.enShort": "Positive Psych."
+ },
+ "dissociation": {
+  "summary": "Consciousness is not always unified. In hypnosis, hysteria or after intense trauma, part of experience can split off from consciousness and operate independently.",
+  "landmark": "Janet's Psychological Automatism; Charcot's hysteria research in the 1880s",
+  "evidenceNote": "Dissociation as a symptom is widely recognized. The causal chain from trauma to dissociation, and the origins of dissociative identity disorder, remain debated.",
+  "title.enShort": "Dissociation"
+ },
+ "psychoanalysis": {
+  "summary": "Psychological symptoms come from repressed conflicts. Through free association, dream interpretation and analysis of transference, unconscious material is brought into awareness, reducing symptoms.",
+  "landmark": "Breuer and Freud's Studies on Hysteria",
+  "evidenceNote": "Unconscious processing, defense and the influence of early relationships have support. Core theories such as libido and the Oedipus complex are mostly untestable, and the evidence for its efficacy is limited but not zero.",
+  "title.enShort": "Psychoanalysis"
+ },
+ "individual-psychology": {
+  "summary": "A person is a goal-oriented whole. The core drives are overcoming inferiority, striving for superiority and integrating into community; neurosis is avoidance of life's tasks.",
+  "landmark": "Adler founds the 'Society for Individual Psychology' and parts ways with Freud's circle",
+  "evidenceNote": "The concepts of inferiority, compensation and social interest are stimulating, but specific claims such as birth order have not been supported by several large-sample studies.",
+  "title.enShort": "Individual Psych."
+ },
+ "analytical-psychology": {
+  "summary": "Beyond the unconscious left by personal experience, there is a shared human 'collective unconscious,' whose archetypes (mother, hero, shadow) shape dreams and myths. The task of life is individuation: becoming a whole self.",
+  "landmark": "Jung breaks with Freud and adopts the name 'analytical psychology'",
+  "evidenceNote": "It is a framework that explains the psyche through symbol and myth. 'Archetypes' and the 'collective unconscious' are hard to test experimentally, and the correspondence between its typology and the Five-Factor model is only partial.",
+  "title.enShort": "Analytical Psych."
+ },
+ "object-relations": {
+  "summary": "The most fundamental human drive is to form relationships with others. Early experiences with caregivers are internalized as 'internal objects' and continue to shape later interpersonal patterns.",
+  "landmark": "Klein's The Psycho-Analysis of Children",
+  "evidenceNote": "Support from many sources for early relationships shaping later interpersonal relations and self-image. Klein's specific developmental stages lack empirical evidence."
+ },
+ "ego-psychology": {
+  "summary": "Focuses on how the ego regulates conflicts among instinct, reality and conscience, using defense mechanisms to protect the self. Adaptation becomes the focus of analysis.",
+  "landmark": "Anna Freud's The Ego and the Mechanisms of Defence",
+  "evidenceNote": "Research on defense mechanisms (such as the relationship between the maturity of defenses and adaptation) has some empirical support, but the overall structural theory of the ego lacks testing."
+ },
+ "neo-freudian": {
+  "summary": "Keeps the view of unconscious conflict but holds that culture and interpersonal relationships matter more than sexual instincts, as in Horney's 'basic anxiety.'",
+  "landmark": "Horney's The Neurotic Personality of Our Time",
+  "evidenceNote": "The direction of emphasizing cultural and interpersonal factors was later widely adopted, but specific theories have seen little empirical testing.",
+  "title.enShort": "Neo-Freudian"
+ },
+ "post-jungian": {
+  "summary": "Developments after Jung: Neumann and Fordham studied the development of consciousness and the ego; Hillman developed an image-centered archetypal psychology. There is also sandplay and cross-cultural application.",
+  "landmark": "Neumann's The Origins and History of Consciousness",
+  "evidenceNote": "Some claims of the developmental school can be compared with attachment research, while archetypal psychology belongs to the interpretive tradition.",
+  "title.enShort": "Post-Jungian"
+ },
+ "lacanian": {
+  "summary": "The unconscious is not a storehouse of instincts but is structured like a language. A person becomes a subject within the discourse of the 'Other.'",
+  "landmark": "Lacan's Rome Report, 'Return to Freud,' treats the unconscious as structured like language",
+  "evidenceNote": "It is used mainly in philosophy, literary theory and clinical circles in continental Europe and Latin America, and it is not tested by empirical methods.",
+  "title.enShort": "Lacanian Theory"
+ }
+}

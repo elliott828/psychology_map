@@ -1,0 +1,217 @@
+{
+ "synchronicity-theory": {
+  "summary": "Two events with no causal link occur together because of their meaning. For example, you dream of someone and that same day you receive a letter from them.",
+  "landmark": "Jung, 'Synchronicity: An Acausal Connecting Principle'.",
+  "evidenceNote": "There is no replicable evidence. So-called meaningful coincidences are better explained by probability and cognitive bias."
+ },
+ "inferiority-compensation": {
+  "summary": "People are born with a sense of inferiority, and they respond by striving for superiority and compensating for their flaws. This can become a motive force, or it can grow into an excessive 'inferiority complex'.",
+  "landmark": "Adler, 'Study of Organ Inferiority and Its Psychical Compensation'.",
+  "evidenceNote": "'Feelings of inferiority drive behavior' is a common clinical observation. But it has not been tested as the core motive of everyone."
+ },
+ "social-interest": {
+  "summary": "The sign of mental health is care for and contribution to others and to the community, not a focus on one's own superiority.",
+  "landmark": "Adler, 'Understanding Human Nature'.",
+  "evidenceNote": "Research supports the link between connection with others and mental health. Social interest has been measured little as an independent construct."
+ },
+ "birth-order": {
+  "summary": "The firstborn is more like a deposed king who has lost the throne, and the youngest is easily spoiled. These ideas are widely repeated, but large-sample studies have not supported them.",
+  "landmark": "Adler's descriptions of the firstborn, second child, and youngest child.",
+  "evidenceNote": "Large-sample studies, such as a 2015 analysis of more than 20,000 people, found birth order has very little or no effect on personality."
+ },
+ "object-relations-core": {
+  "summary": "Infants form internal images of 'good' and 'bad' from their interactions with the mother. These internal objects shape how they perceive others later on.",
+  "landmark": "Klein, 'A Contribution to the Psychogenesis of Manic-Depressive States'.",
+  "evidenceNote": "Attachment research indirectly supports the idea that early relationships shape later interpersonal relations and self-image. Klein's specific 'positions' lack empirical testing."
+ },
+ "paranoid-schizoid": {
+  "summary": "Infants first divide the world into 'all good' and 'all bad' (splitting). Later they can see the good and bad in the same person at once, and feel guilt and concern.",
+  "landmark": "Klein, 'Notes on Some Schizoid Mechanisms'.",
+  "evidenceNote": "It is widely used as a clinical description and is hard to test independently."
+ },
+ "holding-environment": {
+  "summary": "Infants need a stable environment. The mother does not have to be perfect, only 'good enough' in responding. Without this holding, a 'false self' tends to form.",
+  "landmark": "Winnicott, 'Theory of the Parent-Infant Relationship'.",
+  "evidenceNote": "The idea that 'responsive but not perfect' care is what matters fits attachment research. The specific terms are mainly used clinically."
+ },
+ "transitional-object": {
+  "summary": "The blanket or toy an infant clings to is a bridge from 'being one with the mother' to 'the outside world'.",
+  "landmark": "Winnicott, 'Transitional Objects and Transitional Phenomena'.",
+  "evidenceNote": "The widespread attachment of children to comfort objects is well documented. But the explanation of its developmental meaning has not been rigorously tested."
+ },
+ "ego-defenses": {
+  "summary": "To reduce anxiety, the ego unconsciously uses methods such as denial, projection, rationalization, and sublimation to cope with conflict.",
+  "landmark": "Anna Freud, 'The Ego and the Mechanisms of Defence'.",
+  "evidenceNote": "Empirical evidence supports the existence of defenses and their link to adjustment, including how mature they are. But the lists of defenses differ widely."
+ },
+ "defense-hierarchy": {
+  "summary": "Defenses can be sorted into pathological (such as projection), immature, neurotic, and mature (such as humor and sublimation). The more mature the defense, the better it supports adjustment.",
+  "landmark": "Vaillant, 'Adaptation to Life'.",
+  "evidenceNote": "Long-term follow-up studies find that mature defenses are linked to better social adjustment and health."
+ },
+ "basic-anxiety": {
+  "summary": "Children raised in environments that lack security develop 'basic anxiety'. They then adopt one of three strategies: moving toward others, moving against others, or moving away from others.",
+  "landmark": "Horney, 'The Neurotic Personality of Our Time'.",
+  "evidenceNote": "Her criticism of views on women and her emphasis on cultural factors were influential. The specific categories have not been tested."
+ },
+ "interpersonal-theory": {
+  "summary": "Personality is not something inside a person alone. It is a pattern of recurring interpersonal situations. Anxiety comes from the experience of not being approved of by significant others.",
+  "landmark": "Sullivan, 'The Interpersonal Theory of Psychiatry'.",
+  "evidenceNote": "The view that personality forms through relationships was later taken up by several schools. The specific theory has not been tested."
+ },
+ "london-developmental-school": {
+  "summary": "Fordham argued that the 'self' exists from infancy and unfolds gradually through the relationship with the mother. Neumann traced the development of consciousness through myth.",
+  "landmark": "Fordham, 'Children as Individuals'.",
+  "evidenceNote": "By bringing infant observation and object relations into Jungian thinking, this school can engage with attachment research. But it still relies mainly on clinical observation."
+ },
+ "archetypal-psychology": {
+  "summary": "The psyche is not run by the ego. It is a theater of many images. Symptoms are the soul's way of speaking, and therapy should listen to these images rather than try to 'fix' them.",
+  "landmark": "Hillman, 'Re-Visioning Psychology'.",
+  "evidenceNote": "This is an interpretive tradition centered on images, myth, and soul. It is not tested empirically, and it deliberately keeps a distance from empirical psychology."
+ },
+ "sandplay": {
+  "summary": "The client arranges small objects in a sand tray and builds scenes, expressing in symbolic form inner states that are hard to put into words. The therapist accompanies them.",
+  "landmark": "Kalff, 'Sandplay', with Kawai Hayao introducing it to Japan in 1965.",
+  "evidenceNote": "There are many case studies of its use in child therapy, but few controlled studies. Evidence of its effectiveness is still limited."
+ },
+ "mirror-stage": {
+  "summary": "An infant recognizes themselves in a mirror and gains a complete image. But this image is external, so the self is alienated from the start.",
+  "landmark": "Lacan, 'The Mirror Stage' (first reported in 1936).",
+  "evidenceNote": "This is a philosophical theory. It has only a surface connection to experimental studies of mirror self-recognition, which appears around 18 months in children."
+ },
+ "selfobject": {
+  "summary": "People need others to mirror their worth and to idealize them. These others are called 'selfobjects'. When they are missing, the self becomes fragile.",
+  "landmark": "Kohut, 'The Analysis of the Self'.",
+  "evidenceNote": "The evidence that empathy helps the therapeutic alliance is reliable. Selfobject theory itself rests on clinical observation."
+ },
+ "intersubjectivity": {
+  "summary": "In therapy, both people are subjects. Change happens through mutual recognition and interaction, not through one-sided interpretation.",
+  "landmark": "Mitchell, 'Relational Concepts in Psychoanalysis'; Benjamin, 'The Bonds of Love'.",
+  "evidenceNote": "This is mainly clinical and theoretical discussion. It fits the empirical finding that the therapy relationship influences outcomes."
+ },
+ "reflective-function": {
+  "summary": "Whether a mother can understand her infant's behavior as coming from a person with thoughts and feelings shapes whether the child can later understand themselves and others.",
+  "landmark": "Fonagy and colleagues, 'The Capacity for Understanding Mental States: The Reflective Self in Parent and Child'.",
+  "evidenceNote": "The Reflective Functioning scale has been linked to attachment and personality disorders in several studies. But it is time-consuming to measure, and scoring depends on the rater."
+ },
+ "mbt": {
+  "summary": "The core of treatment is to help the patient pause when emotions run out of control, and try to think about their own and others' thoughts and feelings.",
+  "landmark": "Bateman and Fonagy published a randomized controlled trial of partial hospitalization for borderline personality disorder.",
+  "evidenceNote": "Several randomized controlled trials for borderline personality disorder show it is effective, with results close to other specialized therapies."
+ },
+ "scientist-practitioner": {
+  "summary": "Clinical psychologists must be able to do research as well as clinical work, using research evidence to guide practice.",
+  "landmark": "The Boulder Conference established the PhD training model for clinical psychology.",
+  "evidenceNote": "This is a training model rather than a theory. It has been widely adopted over the long term, and it is often criticized for the gap between research and practice."
+ },
+ "kraepelin-dichotomy": {
+  "summary": "Psychotic illnesses are divided into two major groups: one begins early in life and declines (dementia praecox), and the other occurs in episodes and can recover (manic-depressive illness).",
+  "landmark": "Kraepelin's sixth edition of his textbook.",
+  "evidenceNote": "The dichotomy was later found to have many overlaps, and it is now a target of criticism in current discussions of a psychosis spectrum."
+ },
+ "schizophrenia-concept": {
+  "summary": "The core of the illness is not necessarily decline into dementia. It is a 'splitting' between thought, emotion, and reality, and its course varies.",
+  "landmark": "Bleuler, 'Dementia Praecox or the Group of Schizophrenias'.",
+  "evidenceNote": "The core diagnostic features (splitting of thought, emotion, and will) have been revised by later research. Whether it is a single disease is still debated."
+ },
+ "morita-model": {
+  "summary": "Neurotic people pay excessive attention to their discomfort, and the more they focus on it, the worse it gets. Treatment is to help them accept their symptoms while returning to everyday action.",
+  "landmark": "Morita Masatake, 'The Essence of Shinkeishitsu and Its Treatment'.",
+  "evidenceNote": "Some studies suggest it helps anxiety disorders. There have been few large-scale comparisons with mainstream therapies."
+ },
+ "rosenhan-experiment": {
+  "summary": "Eight people with no mental illness claimed to hear voices and were admitted to psychiatric hospitals. After admission they behaved normally but were not recognized as sane. It was used to show that diagnosis is unreliable.",
+  "landmark": "Rosenhan published 'On Being Sane in Insane Places' in Science.",
+  "evidenceNote": "A 2019 investigative book pointed to doubtful data and procedures in the study. It is better regarded as a landmark that drove reform than as reliable evidence."
+ },
+ "dsm-iii-criteria": {
+  "summary": "Each disorder is defined by how many symptoms are present and how long they last. This reduced disagreement between doctors, but it also made diagnosis more like a checklist.",
+  "landmark": "DSM-III, led by Spitzer, introduced explicit symptom checklists and exclusion criteria.",
+  "evidenceNote": "Inter-rater reliability clearly improved. But that does not mean diagnostic validity improved, and the 'neo-Kraepelinian' tendency has been criticized."
+ },
+ "cognitive-model-depression": {
+  "summary": "Depressed people hold a negative 'cognitive triad' about themselves, the world, and the future, and treat these views as facts. Therapy changes mood by testing these thoughts.",
+  "landmark": "Beck, 'Depression: Clinical, Experimental, and Theoretical Aspects'.",
+  "evidenceNote": "Negative cognition is linked to depression, and cognitive therapy has strong support for treating depression. Whether cognition comes before mood, causally, is still debated."
+ },
+ "rebt-abc": {
+  "summary": "Emotions are caused not by the event (A) but by your beliefs about the event (B), and beliefs have consequences (C). Emotions are changed by challenging irrational beliefs.",
+  "landmark": "Ellis proposed rational therapy.",
+  "evidenceNote": "Some controlled studies support it, and its effects are comparable to cognitive therapy. The model's list of 'irrational beliefs' has not been consistently tested."
+ },
+ "double-bind": {
+  "summary": "A child who repeatedly receives two contradictory messages, and can neither avoid them nor comment on them, is caught in a bind.",
+  "landmark": "Bateson, Jackson, Haley, and Weakland, 'Toward a Theory of Schizophrenia'.",
+  "evidenceNote": "The causal claim that contradictory communication causes schizophrenia has not been confirmed. But it encouraged research on family communication."
+ },
+ "bowen-theory": {
+  "summary": "Anxiety is passed down through families. People with low levels of self-differentiation are easily pulled into emotional triangles and pass conflict on to the next generation.",
+  "landmark": "Bowen, 'Family Therapy in Clinical Practice'.",
+  "evidenceNote": "The concept of 'differentiation of self' has some supporting research. The overall theory has not been tested."
+ },
+ "structural-therapy": {
+  "summary": "A family is made up of boundaries, alliances, and hierarchy. Symptoms often come from structural imbalance. The therapist adjusts the structure by changing seating, alliances, and similar elements.",
+  "landmark": "Minuchin, 'Families and Family Therapy'.",
+  "evidenceNote": "Research supports it for adolescent conduct problems and eating disorders. The theory's concept of 'boundaries' is hard to measure."
+ },
+ "expressed-emotion": {
+  "summary": "When family members are highly critical, hostile, or overinvolved with a patient, the patient is more likely to relapse. Teaching families to reduce these behaviors helps prevent relapse.",
+  "landmark": "Brown, Birley, and Wing published work showing that family criticism, hostility, and overinvolvement predict relapse in schizophrenia.",
+  "evidenceNote": "Many studies repeatedly find higher relapse rates in families with high expressed emotion. The direction of causation is still debated, and patients may simply be harder to cope with."
+ },
+ "dodo-bird": {
+  "summary": "In 'Alice's Adventures in Wonderland', the Dodo says 'everyone has won and all must have prizes'. The average effects of different psychotherapies are about the same.",
+  "landmark": "Luborsky and colleagues published a review comparing psychotherapy outcomes, drawing on Rosenzweig's 1936 metaphor.",
+  "evidenceNote": "There is considerable support for the view that the overall effects of major therapies are similar. But for specific problems, such as phobias and obsessive-compulsive disorder, differences do exist."
+ },
+ "working-alliance": {
+  "summary": "Whether therapist and client agree on goals and methods, and whether they trust each other, is one of the most stable predictors of therapy outcome.",
+  "landmark": "Bordin proposed that the alliance consists of goals, tasks, and emotional bond.",
+  "evidenceNote": "The link between the alliance and outcome is stable and moderate (correlation about 0.28). It holds across types of therapy."
+ },
+ "contextual-model": {
+  "summary": "Therapy works through three routes: a real relationship, expectations of change, and a credible plan of action offered by the therapist. Specific techniques are only one part of this.",
+  "landmark": "Wampold, 'The Great Psychotherapy Debate'.",
+  "evidenceNote": "It integrates evidence on relationships, expectations, and specific techniques. But the relative size of each route is still debated."
+ },
+ "engel-model": {
+  "summary": "It is not enough for doctors to look only at biological markers of disease. They must also consider the patient's psychological state, family, and social circumstances.",
+  "landmark": "Engel's article in Science.",
+  "evidenceNote": "It criticizes the biomedical model as overly reductionist and calls for integration. But it does not offer an operational method for how to integrate."
+ },
+ "diathesis-stress": {
+  "summary": "Mental disorders are triggered by an interaction between an inherited or early-formed vulnerability and later stressful events.",
+  "landmark": "Zubin and Spring published 'Vulnerability: A New View of Schizophrenia'.",
+  "evidenceNote": "The interaction of 'vulnerability plus stressful events' has been repeatedly confirmed across many disorders. But the specific vulnerability factors are often unknown."
+ },
+ "cognitive-behavior-modification": {
+  "summary": "What people say to themselves affects their behavior. Learning more helpful 'inner dialogue' can improve impulsivity, anxiety, and stress coping.",
+  "landmark": "Meichenbaum, 'Cognitive-Behavior Modification'.",
+  "evidenceNote": "Self-instruction training, stress inoculation training, and similar methods have controlled-trial support for several problems."
+ },
+ "behavioral-activation": {
+  "summary": "Depressed people stop doing things because they have no interest, which leaves them with fewer rewards in life. Acting first and scheduling meaningful activities leads mood to improve afterward.",
+  "landmark": "Jacobson and colleagues published a component analysis of cognitive-behavioral treatment for depression.",
+  "evidenceNote": "The component analysis found that behavioral activation alone worked about as well as full cognitive therapy. Later trials confirmed its effectiveness."
+ },
+ "exposure-response-prevention": {
+  "summary": "People with obsessive-compulsive disorder are exposed to the things that cause anxiety while not performing rituals such as handwashing. Anxiety naturally declines, and the compulsions weaken with it.",
+  "landmark": "Meyer treated obsessive-compulsive disorder with exposure and response prevention.",
+  "evidenceNote": "It is the method with the strongest evidence for treating obsessive-compulsive disorder, supported by several controlled trials."
+ },
+ "panic-cognitive-model": {
+  "summary": "A panic attack happens when bodily sensations, such as a racing heart, are misread as 'I am dying'. This triggers stronger anxiety and creates a vicious cycle.",
+  "landmark": "Clark, 'A Cognitive Model of Panic'.",
+  "evidenceNote": "The model, which explains bodily sensations as catastrophic signs of danger, is supported by many experiments and outcome studies."
+ },
+ "mbsr-program": {
+  "summary": "An eight-week course of body scan, sitting meditation, yoga, and daily practice. Participants learn to notice the present moment with a non-judgmental attitude.",
+  "landmark": "Kabat-Zinn opened a stress reduction clinic at the University of Massachusetts Medical Center. The first paper was published in 1982.",
+  "evidenceNote": "The evidence for stress and chronic pain shows moderate effects. Many studies lack an active control group."
+ },
+ "three-stage-recovery": {
+  "summary": "Recovery has three steps: establishing safety and stability, remembering and mourning the trauma, and reconnecting with life and other people.",
+  "landmark": "Herman, 'Trauma and Recovery'.",
+  "evidenceNote": "This is a framework widely used in clinical work. There is debate over the order of 'stabilize first, then process memories'. Some evidence suggests processing can begin directly."
+ }
+}

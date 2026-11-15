@@ -1,0 +1,317 @@
+{
+ "broca": {
+  "summary": "French surgeon who, through the case of the patient known as \"Tan,\" linked speech production to the left frontal lobe"
+ },
+ "wernicke": {
+  "summary": "German neuropsychiatrist who described temporal lobe damage affecting speech comprehension"
+ },
+ "geschwind": {
+  "summary": "American neurologist who revived and systematized behavioral neurology and disconnection syndromes"
+ },
+ "penfield": {
+  "summary": "Canadian neurosurgeon who used electrical stimulation to map functional areas of the human cortex"
+ },
+ "cajal": {
+  "summary": "Spanish histologist who used silver staining to show that neurons are independent cells"
+ },
+ "waldeyer": {
+  "summary": "German anatomist who formally introduced the term \"neuron\" in 1891"
+ },
+ "lorenz": {
+  "summary": "Austrian ethologist who shared the Nobel Prize with Tinbergen and others for his work on imprinting"
+ },
+ "tinbergen": {
+  "summary": "Dutch ethologist who proposed four questions for the study of behavior"
+ },
+ "selye": {
+  "summary": "Canadian endocrinologist who brought the word \"stress\" into medicine and everyday language"
+ },
+ "cannon": {
+  "summary": "American physiologist who proposed the \"fight or flight\" response and the concept of homeostasis"
+ },
+ "mcewen": {
+  "summary": "American neuroendocrinologist who proposed the concept of allostatic load"
+ },
+ "shelley-taylor": {
+  "summary": "American social psychologist who proposed the \"tend and befriend\" response to stress, and co-wrote \"Social Cognition\" with Fiske"
+ },
+ "hebb": {
+  "summary": "Canadian psychologist who proposed the learning rule that synapses strengthen with repeated co-activation"
+ },
+ "bliss": {
+  "summary": "British neuroscientist who, with Lomo, discovered long-term potentiation"
+ },
+ "lomo": {
+  "summary": "Norwegian neurophysiologist who, with Bliss, discovered long-term potentiation"
+ },
+ "delay": {
+  "summary": "French psychiatrist who, with Deniker, reported the effects of chlorpromazine on psychosis"
+ },
+ "deniker": {
+  "summary": "French psychiatrist who, with Delay, helped found psychopharmacology"
+ },
+ "carlsson": {
+  "summary": "Swedish pharmacologist who showed that dopamine is a neurotransmitter and proposed the dopamine hypothesis of psychosis"
+ },
+ "schildkraut": {
+  "summary": "American psychiatrist who proposed the catecholamine hypothesis of depression"
+ },
+ "scoville": {
+  "summary": "American neurosurgeon who removed the medial temporal lobes of patient H.M."
+ },
+ "milner": {
+  "summary": "British-born Canadian neuropsychologist who studied patient H.M. in depth and helped establish a multi-system view of memory"
+ },
+ "squire": {
+  "summary": "American neuroscientist who distinguished declarative from procedural memory"
+ },
+ "luria": {
+  "summary": "Soviet neuropsychologist who systematized the case study of brain injury and methods of assessment"
+ },
+ "plomin": {
+  "summary": "British behavioral geneticist who has long studied the genetic basis of intelligence and personality"
+ },
+ "bouchard": {
+  "summary": "American psychologist who directed the Minnesota Study of Twins Reared Apart"
+ },
+ "sperry": {
+  "summary": "American neuroscientist who received the 1981 Nobel Prize for his split-brain research"
+ },
+ "gazzaniga": {
+  "summary": "American neuroscientist who studied split-brain patients and is one of the founders of cognitive neuroscience"
+ },
+ "bogen": {
+  "summary": "American neurosurgeon who performed early corpus callosotomy operations and worked with Sperry"
+ },
+ "kandel": {
+  "summary": "American neuroscientist who studied the molecular mechanisms of learning in sea slugs and won the 2000 Nobel Prize"
+ },
+ "crick": {
+  "summary": "British molecular biologist who in later life turned to studying consciousness through vision"
+ },
+ "koch": {
+  "summary": "German-American neuroscientist who worked with Crick on the neural correlates of consciousness"
+ },
+ "charles-darwin": {
+  "summary": "British naturalist who proposed the theory of natural selection and also wrote \"The Expression of the Emotions in Man and Animals\""
+ },
+ "hamilton": {
+  "summary": "British evolutionary biologist who proposed kin selection theory"
+ },
+ "trivers": {
+  "summary": "American evolutionary biologist who proposed theories of reciprocal altruism and parental investment"
+ },
+ "cosmides": {
+  "summary": "American psychologist and one of the main founders of evolutionary psychology"
+ },
+ "tooby": {
+  "summary": "American anthropologist who co-founded evolutionary psychology with Cosmides"
+ },
+ "buss": {
+  "summary": "American psychologist who studies mate preferences and sex differences through an evolutionary lens"
+ },
+ "damasio": {
+  "summary": "Portuguese-born American neurologist who proposed the somatic marker hypothesis"
+ },
+ "ledoux": {
+  "summary": "American neuroscientist who studies fear and the amygdala circuits that underlie it"
+ },
+ "panksepp": {
+  "summary": "Estonian-born American neuroscientist who proposed a set of basic emotional systems"
+ },
+ "ekman": {
+  "summary": "American psychologist who studied facial expressions and the cross-cultural universality of emotion"
+ },
+ "barrett": {
+  "summary": "American psychologist who proposed the theory of constructed emotion"
+ },
+ "sapolsky": {
+  "summary": "American neuroendocrinologist who studies the biology of stress and behavior and is known for popular science writing"
+ },
+ "thorndike": {
+  "summary": "American psychologist who proposed the law of effect based on puzzle-box experiments, and a founder of educational psychology"
+ },
+ "pavlov": {
+  "summary": "Russian physiologist who won the Nobel Prize for his research on digestion, and is known for his work on conditioned reflexes"
+ },
+ "watson": {
+  "summary": "American psychologist who proclaimed behaviorism and later moved into the advertising industry"
+ },
+ "rayner": {
+  "summary": "American psychologist who collaborated with Watson on the \"Little Albert\" study"
+ },
+ "rescorla": {
+  "summary": "American psychologist who proposed that conditioning depends on how well a signal predicts the outcome"
+ },
+ "wagner": {
+  "summary": "American psychologist who worked with Rescorla to develop an associative learning model"
+ },
+ "garcia": {
+  "summary": "American psychologist who discovered taste aversion learning and the biological preparedness of learning"
+ },
+ "tolman": {
+  "summary": "American psychologist who proposed cognitive maps and latent learning"
+ },
+ "hull": {
+  "summary": "American psychologist whose mathematical drive-reduction theory dominated learning research in the 1940s"
+ },
+ "skinner": {
+  "summary": "American psychologist who founded operant conditioning and radical behaviorism"
+ },
+ "ferster": {
+  "summary": "American psychologist who co-authored \"Schedules of Reinforcement\" with Skinner"
+ },
+ "herrnstein": {
+  "summary": "American psychologist who proposed the matching law and later became known for \"The Bell Curve\""
+ },
+ "wolpe": {
+  "summary": "South African-born American psychiatrist who developed systematic desensitization"
+ },
+ "bandura": {
+  "summary": "Canadian-born American psychologist who proposed observational learning and self-efficacy, linking behaviorist and cognitive traditions"
+ },
+ "seligman": {
+  "summary": "American psychologist who moved from research on learned helplessness to positive psychology"
+ },
+ "baer": {
+  "summary": "American psychologist and one of the founders of applied behavior analysis"
+ },
+ "wolf": {
+  "summary": "American psychologist and one of the founders of applied behavior analysis, who developed the \"Teaching-Family\" model"
+ },
+ "risley": {
+  "summary": "American psychologist who, with Baer and Wolf, defined applied behavior analysis and later studied children's language environments"
+ },
+ "lovaas": {
+  "summary": "Norwegian-born American psychologist and early advocate of intensive behavioral intervention for autism"
+ },
+ "fechner": {
+  "summary": "German physicist and philosopher who founded psychophysics"
+ },
+ "e-h-weber": {
+  "summary": "German physiologist who found that the just noticeable difference in sensation is proportional to stimulus intensity"
+ },
+ "wundt": {
+  "summary": "German psychologist who founded the first psychology laboratory in Leipzig"
+ },
+ "titchener": {
+  "summary": "English-born American student of Wundt who advocated structuralism and introspection"
+ },
+ "donders": {
+  "summary": "Dutch physiologist who devised the subtraction method for analyzing mental processes through reaction times"
+ },
+ "ebbinghaus": {
+  "summary": "German psychologist who was the first to study memory experimentally"
+ },
+ "james": {
+  "summary": "American philosopher and psychologist, author of \"The Principles of Psychology\" and a leading figure of pragmatism"
+ },
+ "wertheimer": {
+  "summary": "German psychologist and founder of Gestalt psychology"
+ },
+ "koffka": {
+  "summary": "German psychologist and one of the three founders of Gestalt psychology"
+ },
+ "kohler": {
+  "summary": "German psychologist known for his experiments on insight in chimpanzees"
+ },
+ "bartlett": {
+  "summary": "British psychologist who proposed schemas and reconstructive memory"
+ },
+ "miller": {
+  "summary": "American psychologist, a central figure in the cognitive revolution and author of \"The Magical Number Seven, Plus or Minus Two\""
+ },
+ "broadbent": {
+  "summary": "British psychologist who studied attention using the metaphor of an information channel"
+ },
+ "chomsky": {
+  "summary": "American linguist who used linguistic arguments to refute the behaviorist account of language"
+ },
+ "neisser": {
+  "summary": "American psychologist, author of \"Cognitive Psychology,\" who later criticized laboratory cognitive research for lacking ecological validity"
+ },
+ "atkinson": {
+  "summary": "American psychologist and co-proposer of the multi-store model of memory"
+ },
+ "shiffrin": {
+  "summary": "American psychologist and co-proposer of the multi-store model of memory"
+ },
+ "baddeley": {
+  "summary": "British psychologist who proposed the model of working memory"
+ },
+ "kahneman": {
+  "summary": "Israeli-American psychologist who received the 2002 Nobel Prize in Economic Sciences for prospect theory"
+ },
+ "tversky": {
+  "summary": "Israeli-American psychologist who, with Kahneman, founded the study of judgment and decision-making"
+ },
+ "gigerenzer": {
+  "summary": "German psychologist who criticized explanations of human irrationality and advocated ecological rationality"
+ },
+ "loftus": {
+  "summary": "American psychologist who studies eyewitness testimony and false memories"
+ },
+ "schacter": {
+  "summary": "American psychologist who studies memory errors and implicit memory"
+ },
+ "rumelhart": {
+  "summary": "American psychologist, a founder of connectionism and a co-developer of the backpropagation algorithm"
+ },
+ "mcclelland": {
+  "summary": "American psychologist who worked with Rumelhart to develop the parallel distributed processing model"
+ },
+ "pinker": {
+  "summary": "Canadian-born American cognitive scientist and popular science writer who criticized connectionist models of language"
+ },
+ "lakoff": {
+  "summary": "American cognitive linguist who proposed the theory of conceptual metaphor"
+ },
+ "varela": {
+  "summary": "Chilean biologist and neuroscientist, a proponent of embodied mind and enactive cognition"
+ },
+ "rosch": {
+  "summary": "American cognitive psychologist who proposed prototype theory of categories and contributed to \"The Embodied Mind\""
+ },
+ "gibson": {
+  "summary": "American perceptual psychologist who proposed ecological perception and affordances"
+ },
+ "friston": {
+  "summary": "British neuroscientist who proposed the free energy principle"
+ },
+ "dayan": {
+  "summary": "British computational neuroscientist who studies reinforcement learning and computational psychiatry"
+ },
+ "dolan": {
+  "summary": "British psychiatrist and neuroscientist who studies the brain mechanisms of decision-making and emotion"
+ },
+ "bransford": {
+  "summary": "American cognitive scientist and a leading advocate of the learning sciences, and co-editor of \"How People Learn\""
+ },
+ "ann-brown": {
+  "summary": "American developmental and educational psychologist who studied metacognition and reciprocal teaching"
+ },
+ "galton": {
+  "summary": "British polymath and cousin of Darwin who pioneered the study of individual differences and proposed eugenics"
+ },
+ "pearson": {
+  "summary": "British statistician who gave the mathematical form of the correlation coefficient and was also an advocate of eugenics"
+ },
+ "spearman": {
+  "summary": "British psychologist who proposed the general intelligence factor g and developed factor analysis"
+ },
+ "thurstone": {
+  "summary": "American psychologist who developed multiple factor analysis and the concept of \"primary mental abilities\""
+ },
+ "cattell": {
+  "summary": "British-born American psychologist who proposed fluid and crystallized intelligence and the 16 personality factors"
+ },
+ "carroll": {
+  "summary": "American psychologist who built a three-stratum model of intelligence through a large-scale reanalysis of data"
+ },
+ "binet": {
+  "summary": "French psychologist who designed the first practical intelligence scale"
+ },
+ "simon": {
+  "summary": "French physician who collaborated with Binet on the Binet-Simon scale"
+ }
+}

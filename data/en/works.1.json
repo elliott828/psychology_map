@@ -1,0 +1,305 @@
+{
+ "bio-w-behave": {
+  "summary": "Explains the same behavior in layers, from milliseconds to millions of years. It is a long book.",
+  "enRec.note": "The first edition is the standard version; the paperback has the same content"
+ },
+ "bio-w-why-zebras": {
+  "summary": "Explains with humor how chronic stress harms the body.",
+  "enRec.note": "Third edition, currently the most common paperback"
+ },
+ "bio-w-in-search-memory": {
+  "summary": "Combines a scientist's autobiography, a history of ideas, and the neuroscience of memory.",
+  "enRec.note": "An autobiography by a Nobel laureate; the Norton edition is the standard one"
+ },
+ "bio-w-descartes-error": {
+  "summary": "Uses cases of brain damage to show how emotion shapes rational judgment and decision-making.",
+  "enRec.note": "Paperback with a new preface by the author; easy to find"
+ },
+ "bio-w-determined": {
+  "summary": "Argues that humans have no free will and should be read alongside philosophical debates about responsibility.",
+  "enRec.note": "First edition"
+ },
+ "bio-w-emotional-brain": {
+  "summary": "Explains fear and emotional memory through amygdala circuits.",
+  "enRec.note": "First edition; the paperback has the same content"
+ },
+ "bio-w-how-emotions": {
+  "summary": "Challenges the view that there are basic emotions and argues that the brain constructs emotions.",
+  "enRec.note": "First edition"
+ },
+ "bio-w-man-who-mistook": {
+  "summary": "Uses neurological case studies to show how brain damage changes a person's perception and sense of self.",
+  "enRec.note": "First edition; the paperback editions have the same content"
+ },
+ "bio-w-blueprint": {
+  "summary": "The author argues that DNA is the main force shaping who we are. The views are forceful and should be read alongside critics.",
+  "enRec.note": "First edition"
+ },
+ "bio-w-who-in-charge": {
+  "summary": "Uses split-brain research to discuss consciousness, free will and responsibility.",
+  "enRec.note": "First edition"
+ },
+ "bio-w-origin-of-species": {
+  "summary": "The original source of the theory of natural selection and the starting point for every evolutionary perspective.",
+  "enRec.note": "Includes an introduction and notes, so it is easier to read"
+ },
+ "bio-w-adapted-mind": {
+  "summary": "A foundational collection of essays in evolutionary psychology.",
+  "enRec.note": "A foundational collection of evolutionary psychology"
+ },
+ "bio-w-brain-that-changes": {
+  "summary": "Tells stories about neuroplasticity. Some claimed benefits are overstated, so it works best as an introduction read with a healthy dose of skepticism.",
+  "enRec.note": "First edition; the paperback has the same content"
+ },
+ "bio-w-mind-of-a-mnemonist": {
+  "summary": "Luria's long-term case record of a man who almost never forgot anything.",
+  "enRec.note": "The standard English translation, with a foreword by Bruner"
+ },
+ "bio-w-the-selfish-gene": {
+  "summary": "Explains altruism and competition in terms of genes, and has shaped popular understanding of evolutionary thought.",
+  "enRec.note": "Includes a new preface by the author; the current standard edition"
+ },
+ "bhv-w-dont-shoot-dog": {
+  "summary": "Uses everyday training examples to explain reinforcement, shaping and behavior change.",
+  "enRec.note": "Revised edition, widely available"
+ },
+ "bhv-w-about-behaviorism": {
+  "summary": "Skinner's own clarification of common misunderstandings about behaviorism.",
+  "enRec.note": "First edition"
+ },
+ "bhv-w-power-of-habit": {
+  "summary": "Uses stories to show how cues, routines and rewards form habits. The science is uneven, but it is suitable as an introduction.",
+  "enRec.note": "First edition"
+ },
+ "bhv-w-science-human-behavior": {
+  "summary": "Skinner's systematic account of applying operant principles to education, government and religion.",
+  "enRec.note": "Foundation reprint, currently the easiest version to find"
+ },
+ "bhv-w-beyond-freedom": {
+  "summary": "Argues that designing the behavioral environment should replace talk of \"freedom and dignity,\" and it provoked a long debate.",
+  "enRec.note": "Newer reprint, easy to find"
+ },
+ "bhv-w-social-learning-theory": {
+  "summary": "Bandura's systematic account of observational learning and the mediating role of cognition.",
+  "enRec.note": "First edition; short"
+ },
+ "bhv-w-self-efficacy": {
+  "summary": "The most complete work on self-efficacy research.",
+  "enRec.note": "First edition; a systematic account of self-efficacy"
+ },
+ "bhv-w-conditioned-reflexes": {
+  "summary": "Pavlov's original work summarizing his research on conditioned reflexes.",
+  "enRec.note": "Anrep's English translation; the Dover reprint is easy to find"
+ },
+ "bhv-w-atomic-habits": {
+  "summary": "Organizes cues, cravings, responses and rewards into practical methods for everyday habits. It is a self-help book.",
+  "enRec.note": "First edition"
+ },
+ "bhv-w-learned-optimism": {
+  "summary": "Extends learned helplessness to explanatory style and training in optimism.",
+  "enRec.note": "Newer paperback reprint"
+ },
+ "bhv-w-behaviorism-watson": {
+  "summary": "Watson's popular account of behaviorism, including the extreme environmental determinism that was later criticized.",
+  "enRec.note": "Reprint of the revised edition, easy to find"
+ },
+ "cog-w-thinking-fast-slow": {
+  "summary": "Covers heuristics, biases, intuition and deliberate thinking. Several priming studies it discusses later failed to replicate, so read it critically.",
+  "enRec.note": "First edition; the paperback has the same content"
+ },
+ "cog-w-seven-sins": {
+  "summary": "Uses seven types of memory error to explain forgetting, misremembering and suggestion.",
+  "enRec.note": "First edition"
+ },
+ "cog-w-minds-new-science": {
+  "summary": "A history of how cognitive science took shape, from the cognitive revolution to artificial intelligence.",
+  "enRec.note": "Paperback with a new afterword"
+ },
+ "cog-w-invisible-gorilla": {
+  "summary": "Starts from the gorilla experiment to discuss attention, memory and the illusions of confidence.",
+  "enRec.note": "First edition"
+ },
+ "cog-w-principles-psychology": {
+  "summary": "A classic foundational text of psychology. Its chapters on the stream of consciousness and habit are still readable today.",
+  "enRec.note": "Two-volume reprint, easy to find"
+ },
+ "cog-w-remembering": {
+  "summary": "The original work on reconstructive memory, including the \"War of the Ghosts\" experiment.",
+  "enRec.note": "Reprint with an introduction by Kintsch"
+ },
+ "cog-w-metaphors": {
+  "summary": "Uses many everyday expressions to show how metaphor organizes thinking.",
+  "enRec.note": "The standard edition, with an afterword"
+ },
+ "cog-w-embodied-mind": {
+  "summary": "The founding work on embodied cognition, which brings cognitive science into dialogue with Buddhist traditions of awareness.",
+  "enRec.note": "Revised edition with a new introduction"
+ },
+ "cog-w-make-it-stick": {
+  "summary": "Turns research on retrieval practice and spaced repetition into study methods.",
+  "enRec.note": "First edition"
+ },
+ "cog-w-surfing-uncertainty": {
+  "summary": "An introduction to predictive processing in philosophy and cognitive science.",
+  "enRec.note": "First edition"
+ },
+ "cog-w-gestalt-psychology": {
+  "summary": "Köhler's systematic statement of Gestalt views.",
+  "enRec.note": "The 1947 new edition, revised by the author"
+ },
+ "cog-w-geb": {
+  "summary": "Uses self-reference and recursion as threads to discuss mind and computation. A neighboring read for cognitive science.",
+  "enRec.note": "Twentieth-anniversary edition with a new preface"
+ },
+ "dif-w-mismeasure-of-man": {
+  "summary": "A critique of intelligence testing and the history of race science. Some specific charges were later revised, so read it alongside the original data.",
+  "enRec.note": "Expanded edition, which responds to The Bell Curve"
+ },
+ "dif-w-frames-of-mind": {
+  "summary": "The original statement of the theory of multiple intelligences. It is best read alongside the current evidence.",
+  "enRec.note": "Tenth-anniversary edition with a new introduction"
+ },
+ "dif-w-marshmallow-test": {
+  "summary": "The author describes his delayed gratification research and his \"if... then...\" view of personality. Later replications showed that the early results were overstated.",
+  "enRec.note": "First edition"
+ },
+ "dif-w-personality-assessment": {
+  "summary": "The original work that set off the person-situation debate.",
+  "enRec.note": "First edition; later reprints exist"
+ },
+ "dif-w-hereditary-genius": {
+  "summary": "The starting point of eugenics. Read it as a historical source, alongside critical literature.",
+  "enRec.note": "The original text is in the public domain and easy to find online"
+ },
+ "dif-w-intelligence-vsi": {
+  "summary": "A concise introduction to intelligence testing, g, and the evidence on genetic and environmental influences.",
+  "enRec.note": "First edition; short"
+ },
+ "dif-w-why-we-differ": {
+  "summary": "Introduces modern personality psychology through the Big Five, the origins of personality, and personality dynamics."
+ },
+ "dif-w-quiet": {
+  "summary": "A popular discussion of introversion and extraversion with some scientific basis. Its criticism of extravert-oriented society is advocacy.",
+  "enRec.note": "First edition"
+ },
+ "dif-w-science-fictions": {
+  "summary": "Describes how fraud, bias, carelessness and hype damage scientific research, including the reproducibility crisis in psychology.",
+  "enRec.note": "First edition; the UK edition is the same book under the same title"
+ },
+ "dif-w-statistical-method": {
+  "summary": "A history of statistical thought, including Galton's work on regression and correlation. It is background reading for understanding measurement and research on differences.",
+  "enRec.note": "First edition"
+ },
+ "dev-w-scientist-crib": {
+  "summary": "Uses research on infants and toddlers to show how learning, language and the mind develop.",
+  "enRec.note": "First edition"
+ },
+ "dev-w-gardener-carpenter": {
+  "summary": "Turns developmental science into a reflection on parents' need for control.",
+  "enRec.note": "First edition"
+ },
+ "dev-w-attached": {
+  "summary": "A popular introduction to adult attachment. The models are helpful, but people should not be permanently labeled by them.",
+  "enRec.note": "The standard paperback"
+ },
+ "dev-w-mind-in-society": {
+  "summary": "An English compilation of Vygotsky's main essays, including the discussion of the zone of proximal development.",
+  "enRec.note": "An English compilation edited from Vygotsky's writings of the 1930s"
+ },
+ "dev-w-thought-language": {
+  "summary": "Vygotsky discusses the relationship between language and thought and critiques Piaget.",
+  "enRec.note": "The standard English translation, with an introduction by Kozulin and a new preface"
+ },
+ "dev-w-psychology-child": {
+  "summary": "Piaget's concise late summary of his developmental theory.",
+  "enRec.note": "The standard English translation"
+ },
+ "dev-w-childhood-society": {
+  "summary": "The original work on the eight-stage theory, which also includes anthropology and social criticism.",
+  "enRec.note": "Expanded second edition, the standard version"
+ },
+ "dev-w-attachment-loss": {
+  "summary": "A classic statement of attachment theory. It is long and better suited to readers with some background.",
+  "enRec.note": "Second edition with a new preface"
+ },
+ "dev-w-secure-base": {
+  "summary": "Bowlby's late lectures on the clinical application of attachment theory.",
+  "enRec.note": "First edition; a collection of Bowlby's late lectures, which is easier to read"
+ },
+ "dev-w-ecology-human-development": {
+  "summary": "The original work on ecological systems theory.",
+  "enRec.note": "First edition"
+ },
+ "dev-w-different-voice": {
+  "summary": "Criticizes Kohlberg and proposes the ethics of care.",
+  "enRec.note": "New edition with a note to readers"
+ },
+ "dev-w-boy-raised-dog": {
+  "summary": "Uses a child case study to understand development, attachment and trauma responses.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-social-animal": {
+  "summary": "From conformity, prejudice and attraction to persuasion, a systematic introduction to social psychology.",
+  "enRec.note": "A continually updated textbook-style read; the twelfth edition"
+ },
+ "soc-w-influence": {
+  "summary": "Uses everyday cases to explain the key mechanisms of persuasion and social influence.",
+  "enRec.note": "New edition that adds a seventh principle"
+ },
+ "soc-w-righteous-mind": {
+  "summary": "Explains moral intuition, group identity and political division.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-nature-of-prejudice": {
+  "summary": "A classic study of prejudice that proposes the contact hypothesis.",
+  "enRec.note": "The 25th-anniversary edition, with an introduction by Clark"
+ },
+ "soc-w-happiness-hypothesis": {
+  "summary": "Discusses happiness, morality and human nature through ancient wisdom and modern psychology.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-the-crowd": {
+  "summary": "A pioneering work of crowd psychology. Read it as a text in the history of ideas, not as settled conclusions.",
+  "enRec.note": "Reprint of the 1896 English translation"
+ },
+ "soc-w-obedience-authority": {
+  "summary": "Milgram's own account of the obedience experiments and his explanation of them.",
+  "enRec.note": "The standard paperback"
+ },
+ "soc-w-geography-thought": {
+  "summary": "Compares differences between Eastern and Western ways of thinking. Some conclusions should be treated with caution.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-mistakes-were-made": {
+  "summary": "Uses cognitive dissonance to explain why people find it hard to admit they were wrong.",
+  "enRec.note": "Third edition, with new chapters"
+ },
+ "soc-w-org-culture": {
+  "summary": "Schein's systematic account of organizational culture.",
+  "enRec.note": "Fifth edition, co-written with his son Peter"
+ },
+ "soc-w-lucifer-effect": {
+  "summary": "Zimbardo's own account of the Stanford prison experiment, which should be read together with later criticism of it.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-culture-self": {
+  "summary": "The original paper on independent and interdependent views of the self.",
+  "enRec.note": "A journal article, available online"
+ },
+ "hum-w-mans-search": {
+  "summary": "Introduces logotherapy and human choice through the author's life experiences.",
+  "enRec.note": "The standard Beacon edition, with a foreword by Kushner"
+ },
+ "hum-w-on-becoming-person": {
+  "summary": "Explains how empathy, genuineness and unconditional positive regard support change.",
+  "enRec.note": "First edition; the Mariner paperback has the same content"
+ },
+ "hum-w-loves-executioner": {
+  "summary": "Uses therapy stories to explore existential themes such as death, freedom, isolation and meaning.",
+  "enRec.note": "First edition"
+ },
+ "hum-w-flow": {
+  "summary": "Explains the deeply absorbing experience that occurs when ability and challenge are well matched.",
+  "enRec.note": "Standard paperback"
+ }
+}

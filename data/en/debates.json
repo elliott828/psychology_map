@@ -1,0 +1,62 @@
+{
+  "d-freud-jung": {
+    "title": "The Freud-Jung Split",
+    "summary": "The two men met in 1907. In 1912, Jung's “Symbols of Transformation” redefined libido, which made their disagreement public, and by 1913 they had openly parted ways. The split involved theoretical differences as well as personal relations, power and the question of who would be the successor.",
+    "sides.0.position": "Libido is essentially a sexual drive. Religion and myth should be reduced to repressed desire, and the status of the “sexual theory” must be defended.",
+    "sides.1.position": "Libido is general psychic energy. Symbols and myths point toward the future and carry meaning of their own. They are not merely disguises for the past."
+  },
+  "d-behaviorism-cognitive": {
+    "title": "Behaviorism and the Cognitive Revolution",
+    "summary": "Chomsky's 1959 review of Skinner's “Verbal Behavior” is often taken as the turning point. The laws of learning remain valid, however, and cognitive behavioral therapy is a blend of the two traditions.",
+    "sides.0.position": "Science can only study observable behavior. Internal processes are not proper objects of science, and behavior is shaped by the environment.",
+    "sides.1.position": "Language and thought cannot be explained without internal representations and rules. The way the mind processes information has to be studied directly."
+  },
+  "d-person-situation": {
+    "title": "Person Versus Situation",
+    "summary": "Mischel's critique in 1968 set off more than a decade of debate. The later compromise view is that averaging behavior across many occasions lets traits predict quite well, while for any single situation, the situation itself exerts the stronger pull.",
+    "sides.0.position": "Personality consists of stable tendencies that predict behavior across time and situations, and it is worth measuring.",
+    "sides.1.position": "Traits predict single acts of behavior poorly. The situation is the main determinant."
+  },
+  "d-nature-nurture": {
+    "title": "Nature and Nurture",
+    "summary": "This either-or split has largely been replaced by the idea of gene-environment interaction. Today's debate centers on how much each contributes, how to measure it, and what it means for education and policy.",
+    "sides.0.position": "Twin and adoption studies show that almost all traits have a genetic component, and that the shared family environment matters less than people imagine.",
+    "sides.1.position": "Development happens in nested environments. Genes exert their effects through the environment, and heritability does not mean that a trait cannot be changed."
+  },
+  "d-dsm-dimensional": {
+    "title": "DSM Categories Versus Dimensional Models",
+    "summary": "DSM-5 was published in 2013 and adopted dimensional approaches only to a limited extent. RDoC (2010) and HiTOP (2017) are research-driven alternatives. Clinical practice still relies mainly on categorical diagnosis.",
+    "sides.0.position": "Categorical diagnoses make communication, research, insurance and clinical decisions easier, and they have greatly improved reliability.",
+    "sides.1.position": "Categories produce a great deal of comorbidity and heterogeneity. Mental health problems should be organized along continuous dimensions and in terms of functioning."
+  },
+  "d-replication": {
+    "title": "The Replication Crisis",
+    "summary": "The Open Science Collaboration's 2015 replication project escalated the discussion. Most researchers now agree that preregistration and larger samples are needed. The disagreement is over how many published findings are false.",
+    "sides.0.position": "Many published findings cannot be replicated because of small samples, flexibility in analysis and publication bias. Reform is necessary.",
+    "sides.1.position": "Experimental effects are sensitive to context, so a failed replication does not necessarily mean the original effect does not exist. Social priming and related areas have become the focus of the debate."
+  },
+  "d-recovered-memory": {
+    "title": "The “Recovered Memory” Controversy",
+    "summary": "The “memory wars” in the United States in the 1990s broke up many families, and many cases were later overturned. The consensus is that cases of genuinely forgotten and later recalled experiences do exist, but suggestive techniques can also produce false memories.",
+    "sides.0.position": "Traumatic events can be repressed and later recovered in therapy, and the client's recollections should be believed.",
+    "sides.1.position": "Memory can be reshaped by suggestion. “Recovered” memories produced in therapy may be false memories that were implanted."
+  },
+  "d-g-multiple": {
+    "title": "One Intelligence or Many?",
+    "summary": "Gardner proposed multiple intelligences in 1983. Empirical studies have found that different abilities still correlate with each other, and that “multiple” lacks testable measures. Its influence on educational practice, however, has been large.",
+    "sides.0.position": "Scores on different cognitive tests are positively correlated, which points to a shared general ability that predicts academic and occupational success.",
+    "sides.1.position": "Intelligence consists of several relatively independent abilities. Focusing only on language and logic overlooks other talents."
+  },
+  "d-rules-vs-networks": {
+    "title": "Rules or Networks",
+    "summary": "Rumelhart and McClelland's 1986 network model of past-tense learning and Pinker and Prince's 1988 critique formed the core of this debate. Both sides had data, and the dispute pushed the field toward hybrid models.",
+    "sides.0.position": "Language and thought rely on abstract symbols and rules, such as “add -ed to form the past tense of a verb.”",
+    "sides.1.position": "Knowledge is distributed across the strengths of connections. Rule-like behavior emerges from network learning and does not require explicit rules."
+  },
+  "d-specific-vs-common": {
+    "title": "“Specific Techniques” or “Common Factors”",
+    "summary": "Luborsky's 1975 “Dodo bird verdict” and Wampold's 2001 contextual model framed the debate. The current, more balanced view is that both matter: specific techniques are especially important for conditions such as phobias and obsessive-compulsive disorder.",
+    "sides.0.position": "For specific disorders, tested techniques such as exposure and behavioral activation should be used, since their effects differ, and evidence-based therapies should be promoted.",
+    "sides.1.position": "The average effects of different therapies are similar, and the relationship, expectations and individual qualities of the therapist explain most of the outcome."
+  }
+}

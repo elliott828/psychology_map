@@ -1,0 +1,212 @@
+{
+  "barnum-effect": {
+    "summary": "People are willing to believe vague descriptions that seem “spot on” for them.",
+    "plain": "Vague, flattering descriptions that apply to almost anyone feel as if they were tailored to you personally.",
+    "example": "Horoscopes and quick personality quizzes say things like “you are sometimes outgoing, sometimes reserved,” and everyone finds it accurate.",
+    "misuse": "This does not mean all personality tests are the same. It is a reminder that feeling accurate is not evidence of validity."
+  },
+  "social-desirability": {
+    "summary": "When answering questionnaires, people tend to give answers that make them look good.",
+    "plain": "On self-report items, people tend to choose answers that present themselves favorably, whether consciously or not.",
+    "example": "Asked “Would you cheat to win?” most people answer “No.”",
+    "misuse": "This does not mean “everyone is lying.” It shows that purely self-reported measures need other evidence to back them up."
+  },
+  "learning-styles": {
+    "summary": "Claims like “I am a visual learner” lack supporting evidence.",
+    "plain": "The idea that each person has a preferred way of receiving information, and that matching teaching to that preference leads to better learning, has not been supported in controlled experiments.",
+    "example": "Students labeled “visual learners” who were shown only diagrams, and “auditory learners” who were only lectured to, did not perform better as a result.",
+    "misuse": "This is one of the most widely believed education myths. Preferences are real, but there is no evidence that teaching to a preference makes learning more effective."
+  },
+  "effect-size": {
+    "summary": "How large an effect is, not just whether it exists.",
+    "plain": "Statistical significance only says that a difference is unlikely to be pure chance. Effect size tells you how large the difference is.",
+    "example": "A method that raises average scores by only 0.1 points can be “significant” with a large enough sample, yet have almost no practical meaning.",
+    "misuse": "Often overlooked. Many news reports say a result is “significant” without saying how large the effect is."
+  },
+  "preregistration": {
+    "summary": "Writing down hypotheses and the analysis plan before doing the study.",
+    "plain": "Publicly registering a research plan before collecting data makes it hard to “manufacture significance” afterward by changing the hypothesis or switching analyses.",
+    "example": "A researcher states in advance, “I will compare groups A and B on outcome 2.” Afterward, only that result is reported, and the other analyses are labeled as exploratory.",
+    "misuse": "This does not mean exploratory research has no value. It simply asks researchers to separate exploration from testing."
+  },
+  "trait-state": {
+    "summary": "Stable tendencies must be distinguished from momentary states.",
+    "plain": "A trait is a long-lasting tendency that holds across situations. A state is how you feel and act at a given moment. The two are different.",
+    "example": "A usually calm person feels anxious before an exam today. This is state anxiety and does not necessarily mean high trait anxiety.",
+    "misuse": "A common mistake is treating the result of a single measurement as proof that “this is simply who you are.”"
+  },
+  "assimilation-accommodation": {
+    "summary": "Understanding something new through an existing framework, or changing the framework to fit it.",
+    "plain": "When new information fits into existing ideas, this is assimilation. When it does not fit, the ideas must be revised, and that is accommodation.",
+    "example": "A child who first sees a cat calls it a “dog” (assimilation). After being corrected, the child creates a new category for “cat” (accommodation).",
+    "misuse": "Often memorized as a pair of terms, while the key point is overlooked: the drive to learn comes from the imbalance between the two."
+  },
+  "conservation": {
+    "summary": "Understanding that the amount stays the same even when the shape changes.",
+    "plain": "Grasping that an object's quantity, volume and similar properties do not change just because its appearance does.",
+    "example": "When the same amount of water is poured into a tall, thin glass, young children say there is “more.” Around age seven, most children understand that the amount is the same.",
+    "misuse": "This is not a sign that “earlier is smarter.” It is a milestone in cognitive development, and the age at which children reach it varies quite a bit across cultures."
+  },
+  "object-permanence": {
+    "summary": "Knowing that a hidden object still exists.",
+    "plain": "Understanding that objects continue to exist even when we cannot see them. Piaget thought this emerged around eight months, while later experiments suggest it appears earlier.",
+    "example": "In peekaboo, a very young baby seems to think Mom has “vanished.” An older child will look for her.",
+    "misuse": "The claim that “babies only get this at a few months old” depends on how it is measured. It is not a fixed age."
+  },
+  "secure-base": {
+    "summary": "A child uses the caregiver as a starting point for exploring.",
+    "plain": "The child knows they can return to the caregiver when something is difficult, and that knowledge gives them the confidence to venture out and explore.",
+    "example": "A one-year-old playing in a park glances back at Mom now and then, then runs off to play again.",
+    "misuse": "Often misunderstood as “clinging all the time.” Children with secure attachment are actually more willing to be independent."
+  },
+  "attachment-styles": {
+    "summary": "Several common ways of relating intimately, from infancy into adult relationships.",
+    "plain": "Stable tendencies in what people expect from close relationships, such as secure, anxious and avoidant. They are best seen as dimensions along a continuum, and they can change.",
+    "example": "An anxiously attached person constantly worries that a partner has not replied to a message. An avoidantly attached person pulls away as a relationship grows closer.",
+    "misuse": "The most common misuse is treating it as a lifelong label, slapping a type onto yourself or others and treating that as settled."
+  },
+  "identity-crisis": {
+    "summary": "A period when the question “Who am I?” becomes especially pressing.",
+    "plain": "Adolescents and young adults often explore and wrestle with their values, roles and future direction.",
+    "example": "After graduating from university, someone is unsure what they want to do and dissatisfied with the status quo, so they keep trying new things and questioning their choices.",
+    "misuse": "Often treated as an illness. Erikson saw it as a normal developmental task, and handled well, it leads to a clearer sense of self."
+  },
+  "false-belief": {
+    "summary": "Understanding that what others believe may differ from the facts.",
+    "plain": "Recognizing that someone else's belief may be wrong, and that they will act on that wrong belief.",
+    "example": "You tell a friend the party is at restaurant A, then it is moved to B. You understand that your friend will go to A first.",
+    "misuse": "This is not the same as empathy. It is a cognitive ability to understand what others think, and it does not involve whether you care about them."
+  },
+  "egocentrism": {
+    "summary": "Difficulty seeing things from another person's point of view.",
+    "plain": "Piaget described young children as finding it hard to imagine that others see things differently from themselves. Later research found that children do better in familiar situations.",
+    "example": "A young child nods in response to a phone call, because they assume the other person can see them.",
+    "misuse": "This is not the same as selfishness. It means that cognitively, a child cannot temporarily step outside their own point of view."
+  },
+  "temperament": {
+    "summary": "Innate styles of reacting, such as being easily aroused or easily calmed.",
+    "plain": "Differences present from birth in the intensity of reactions, the speed of adapting and the basic emotional tone. They have some genetic basis and are also shaped by the environment.",
+    "example": "Some babies cry and fuss in a new environment, while others eat and sleep as usual.",
+    "misuse": "The claim that “children are simply born that way” is an oversimplification. Temperament and parenting interact."
+  },
+  "diffusion-of-responsibility": {
+    "summary": "The more people present, the less responsible each person feels.",
+    "plain": "When many people are around, each one assumes that someone else will take care of it, and as a result, no one acts.",
+    "example": "Someone collapses in an elevator, and the people there look at each other, each waiting for someone else to speak up first.",
+    "misuse": "This does not prove that “human nature is cold.” Clearly asking one specific person for help usually breaks the pattern."
+  },
+  "groupthink": {
+    "summary": "In the pursuit of unity, a group stops rigorously testing its decisions.",
+    "plain": "Highly cohesive groups that crave agreement may suppress dissent and make very risky decisions.",
+    "example": "Everyone nods in a meeting, no one raises objections, and only later does it become clear that the plan had obvious flaws.",
+    "misuse": "As an explanatory model, it draws mostly on case analyses after the fact, and experimental support is limited. It should not be treated as a law that always applies."
+  },
+  "in-group-bias": {
+    "summary": "A preference for members of the group you belong to.",
+    "plain": "When judging, allocating resources and evaluating, people tend to favor members of their own group.",
+    "example": "People from the same hometown, school or sports team more easily win trust and help.",
+    "misuse": "This is not the same as hostility toward outsiders. Often it simply means being better to one's own group, not worse to others."
+  },
+  "social-proof": {
+    "summary": "Looking at what others do to decide what you should do.",
+    "plain": "When uncertain, people treat others' behavior as a clue to what is correct.",
+    "example": "If a restaurant has a line at the door, you assume the food must be good.",
+    "misuse": "Do not confuse it with the “identity” in social identity theory. Here it means using others' behavior as a reference, not a sense of belonging."
+  },
+  "foot-in-the-door": {
+    "summary": "Agreeing to a small request makes it easier to agree to a larger one.",
+    "plain": "Once someone agrees to a small request, they are more likely to agree to a bigger one later, because they want to stay consistent with their earlier behavior.",
+    "example": "You are first asked to sign a petition, and later asked to donate. The success rate is higher than asking for the donation directly.",
+    "misuse": "The size of the effect varies with the situation. It is not a magic formula that makes any sales pitch work."
+  },
+  "self-serving-bias": {
+    "summary": "Credit success to yourself, blame failure on circumstances.",
+    "plain": "People tend to attribute success to their own ability and failure to external factors.",
+    "example": "“I did well on the exam because I'm smart. I did badly because the questions were unfair.”",
+    "misuse": "The effect is weaker in some East Asian contexts, and it is not universal. In people with depression, it can even be reversed."
+  },
+  "stereotype": {
+    "summary": "A simplified generalization about a category of people.",
+    "plain": "Summarizing features believed to belong to a group, and then applying them to infer things about each individual in it.",
+    "example": "Believing that “science students are all bad at socializing,” and forming an opinion of a particular science student before you even meet them.",
+    "misuse": "Stereotypes do not require prejudice to exist. They are a by-product of the mind's effort-saving shortcuts, but they can lead to unfair judgments."
+  },
+  "individualism-collectivism": {
+    "summary": "Whether a society emphasizes the individual or the group.",
+    "plain": "One cultural dimension: individualist cultures value personal goals and autonomy, while collectivist cultures value group harmony and responsibility.",
+    "example": "“Be yourself” is often encouraged in the United States, while in many East Asian families one is expected to consider what family members think.",
+    "misuse": "It is wrong to use it to label every individual. There is great variation within any culture, and behavior changes with the situation."
+  },
+  "self-fulfilling": {
+    "summary": "Because you believe something will happen, you make it happen.",
+    "plain": "An expectation that was not necessarily correct to begin with guides a person's behavior, and in the end makes the expectation come true.",
+    "example": "You believe you will fail the job interview, so you get nervous and perform poorly, and you do indeed fail.",
+    "misuse": "This is not “thinking something makes it so.” The expectation only works through behavior."
+  },
+  "unconditional-positive-regard": {
+    "summary": "Acceptance that does not depend on how you perform.",
+    "plain": "Accepting a person as they are, without the condition that they must meet your demands. This does not mean approving of every behavior.",
+    "example": "A child does poorly on a test, and a parent first says, “I can see you're really upset,” rather than, “Why didn't you study harder?”",
+    "misuse": "Often misunderstood as “unconditional agreement” or “never setting limits.” Rogers meant accepting the person, not endorsing every behavior."
+  },
+  "intrinsic-motivation": {
+    "summary": "Doing something because the activity itself is interesting.",
+    "plain": "Doing something out of interest, curiosity and a sense of accomplishment, rather than for a reward or to avoid punishment.",
+    "example": "Doing puzzles or writing code not for money, but simply because it is fun.",
+    "misuse": "“Intrinsic” does not mean “no outside support is needed.” An environment that supports autonomy, competence and connection greatly influences it."
+  },
+  "meaning-in-life": {
+    "summary": "Feeling that life has purpose, matters and makes sense.",
+    "plain": "It has three parts: life feels coherent, it has direction and goals, and one's own life matters.",
+    "example": "Caring for children, committing to work, faith and creative work can all give a sense of meaning.",
+    "misuse": "Meaning should not become a single answer one must find, and it is not something to demand from someone in the middle of suffering."
+  },
+  "existential-givens": {
+    "summary": "Death, freedom, isolation and meaninglessness: four things no one can avoid.",
+    "plain": "Yalom's list of life conditions: we will die, we must make choices and take responsibility for them, we are fundamentally alone, and the world does not supply meaning on its own.",
+    "example": "The death of a loved one, a major choice, or facing the quiet of a solitary night can each bring these facts into focus.",
+    "misuse": "This does not mean pessimism. Existential therapy holds that facing these facts can help people live more authentically."
+  },
+  "peak-experience": {
+    "summary": "A brief, intense moment of meaningful experience.",
+    "plain": "Moments in which a person feels especially whole, joyful and connected to the world, such as while climbing a mountain, listening to music or in moments of love.",
+    "example": "The awe and stillness of watching the sunrise from a mountaintop.",
+    "misuse": "Often treated as a goal that can be achieved by pursuing it. In fact, it usually arrives by chance, as a by-product."
+  },
+  "hedonic-eudaimonic": {
+    "summary": "Well-being comes in two kinds: feeling good and living meaningfully.",
+    "plain": "Hedonic well-being emphasizes pleasure and satisfaction. Eudaimonic well-being emphasizes growth, meaning and realizing one's potential.",
+    "example": "Enjoying a fine meal is the first kind. Working toward something important over many years is the second.",
+    "misuse": "The two are not opposites, and neither should be treated as “higher” than the other."
+  },
+  "autotelic": {
+    "summary": "The activity is its own reward.",
+    "plain": "Doing something is satisfying in itself, without needing an external reason.",
+    "example": "Some people will spend hours playing chess, playing the piano or climbing mountains simply because the activity absorbs them.",
+    "misuse": "Not everything that is fun is autotelic. The activity needs to match one's abilities with a suitable challenge."
+  },
+  "empty-chair": {
+    "summary": "Speaking to an empty chair as if a person were sitting in it, to say what was left unsaid.",
+    "plain": "A therapy technique: you imagine the other person in the chair and say the feelings you never expressed, or switch roles and answer as that person.",
+    "example": "A person who lost their mother speaks to an empty chair: “I miss you so much,” and “I was really angry with you back then.”",
+    "misuse": "It is not a performance. Its purpose is to let suppressed emotions come out, and it should be used with a trained therapist present."
+  },
+  "unconscious": {
+    "summary": "Mental processes that are outside awareness but still shape behavior.",
+    "plain": "Much of our perception, motivation and judgment happens without our noticing. Modern cognitive science has amply confirmed this, though its content differs from Freud's account.",
+    "example": "You feel an unexplained dislike toward someone and cannot say why. In fact, they may remind you of someone from your past.",
+    "misuse": "Often mythologized as a place “full of secrets.” In reality, most unconscious processing is automatic and ordinary."
+  },
+  "defense-mechanism": {
+    "summary": "Mental strategies people use, often without awareness, to reduce anxiety.",
+    "plain": "Ways of coping that people use without realizing it when faced with thoughts or feelings they cannot easily bear, such as denial, rationalization and displacement.",
+    "example": "After being criticized, you immediately say, “He was just out to get me” (projection), or you make a joke to deflect the pain (humor).",
+    "misuse": "The most common misuse is using it to “diagnose” other people. If someone rejects your view, they are called “defensive,” and that makes them impossible to argue with."
+  },
+  "projection": {
+    "summary": "Attributing your own emotions or traits to other people.",
+    "plain": "Seeing in others the emotions or traits you do not want to admit in yourself.",
+    "example": "You envy a colleague but keep feeling that the colleague envies you.",
+    "misuse": "Often misused as a debate tactic: “You say I am like this, but really you are the one who is like this.”"
+  }
+}

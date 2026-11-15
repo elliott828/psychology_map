@@ -1,0 +1,29 @@
+{
+ "bio": {
+  "question": "How does the mind arise from the body and from evolution?"
+ },
+ "behavior": {
+  "question": "How does experience shape behavior?"
+ },
+ "cognition": {
+  "question": "How does the mind process the world?"
+ },
+ "difference": {
+  "question": "Why are people different, and how can we measure it?"
+ },
+ "development": {
+  "question": "How does a person become who they are?"
+ },
+ "social": {
+  "question": "How do other people and culture enter the inner life?"
+ },
+ "humanistic": {
+  "question": "How do people live out meaning?"
+ },
+ "depth": {
+  "question": "How does the mind beyond consciousness operate?"
+ },
+ "clinical": {
+  "question": "How is suffering understood and healed?"
+ }
+}

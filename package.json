@@ -1,0 +1,12 @@
+{
+  "name": "psychology_map",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Interactive bilingual map of psychology: lineages, schools, people, theories and reading paths",
+  "scripts": {
+    "build": "node build.js",
+    "test": "node data/validate.js && node tools/selftest.mjs && node test/smoke.js",
+    "validate": "node data/validate.js"
+  }
+}

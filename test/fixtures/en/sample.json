@@ -1,0 +1,9 @@
+{
+  "localization": { "summary": "Different mental functions depend on different parts of the brain.", "landmark": "Broca reports an aphasia case.", "title.enShort": "Localization" },
+  "wernicke-geschwind": { "nope.field": "unknown path, must only produce a warning" },
+  "broca": { "role": "French surgeon who linked the left frontal lobe to speech production." },
+  "bio": { "question": "How does the mind arise from the body and evolution?" },
+  "localization->neuropsychology:develops": { "note": "From mapping functions to brain areas to studying brain-damage cases systematically." },
+  "m-mbti": { "verdict": "Mostly false", "claim": "MBTI can sort people accurately into 16 fixed types." },
+  "no-such-id": { "summary": "This key matches nothing and must only produce a warning." }
+}

@@ -1,0 +1,947 @@
+{
+ "broca": {
+  "role": "French surgeon who, through the case of the patient known as \"Tan,\" linked speech production to the left frontal lobe"
+ },
+ "wernicke": {
+  "role": "German neuropsychiatrist who described temporal lobe damage affecting speech comprehension"
+ },
+ "geschwind": {
+  "role": "American neurologist who revived and systematized behavioral neurology and disconnection syndromes"
+ },
+ "penfield": {
+  "role": "Canadian neurosurgeon who used electrical stimulation to map functional areas of the human cortex"
+ },
+ "cajal": {
+  "role": "Spanish histologist who used silver staining to show that neurons are independent cells"
+ },
+ "waldeyer": {
+  "role": "German anatomist who formally introduced the term \"neuron\" in 1891"
+ },
+ "lorenz": {
+  "role": "Austrian ethologist who shared the Nobel Prize with Tinbergen and others for his work on imprinting"
+ },
+ "tinbergen": {
+  "role": "Dutch ethologist who proposed four questions for the study of behavior"
+ },
+ "selye": {
+  "role": "Canadian endocrinologist who brought the word \"stress\" into medicine and everyday language"
+ },
+ "cannon": {
+  "role": "American physiologist who proposed the \"fight or flight\" response and the concept of homeostasis"
+ },
+ "mcewen": {
+  "role": "American neuroendocrinologist who proposed the concept of allostatic load"
+ },
+ "shelley-taylor": {
+  "role": "American social psychologist who proposed the \"tend and befriend\" response to stress, and co-wrote \"Social Cognition\" with Fiske"
+ },
+ "hebb": {
+  "role": "Canadian psychologist who proposed the learning rule that synapses strengthen with repeated co-activation"
+ },
+ "bliss": {
+  "role": "British neuroscientist who, with Lomo, discovered long-term potentiation"
+ },
+ "lomo": {
+  "role": "Norwegian neurophysiologist who, with Bliss, discovered long-term potentiation"
+ },
+ "delay": {
+  "role": "French psychiatrist who, with Deniker, reported the effects of chlorpromazine on psychosis"
+ },
+ "deniker": {
+  "role": "French psychiatrist who, with Delay, helped found psychopharmacology"
+ },
+ "carlsson": {
+  "role": "Swedish pharmacologist who showed that dopamine is a neurotransmitter and proposed the dopamine hypothesis of psychosis"
+ },
+ "schildkraut": {
+  "role": "American psychiatrist who proposed the catecholamine hypothesis of depression"
+ },
+ "scoville": {
+  "role": "American neurosurgeon who removed the medial temporal lobes of patient H.M."
+ },
+ "milner": {
+  "role": "British-born Canadian neuropsychologist who studied patient H.M. in depth and helped establish a multi-system view of memory"
+ },
+ "squire": {
+  "role": "American neuroscientist who distinguished declarative from procedural memory"
+ },
+ "luria": {
+  "role": "Soviet neuropsychologist who systematized the case study of brain injury and methods of assessment"
+ },
+ "plomin": {
+  "role": "British behavioral geneticist who has long studied the genetic basis of intelligence and personality"
+ },
+ "bouchard": {
+  "role": "American psychologist who directed the Minnesota Study of Twins Reared Apart"
+ },
+ "sperry": {
+  "role": "American neuroscientist who received the 1981 Nobel Prize for his split-brain research"
+ },
+ "gazzaniga": {
+  "role": "American neuroscientist who studied split-brain patients and is one of the founders of cognitive neuroscience"
+ },
+ "bogen": {
+  "role": "American neurosurgeon who performed early corpus callosotomy operations and worked with Sperry"
+ },
+ "kandel": {
+  "role": "American neuroscientist who studied the molecular mechanisms of learning in sea slugs and won the 2000 Nobel Prize"
+ },
+ "crick": {
+  "role": "British molecular biologist who in later life turned to studying consciousness through vision"
+ },
+ "koch": {
+  "role": "German-American neuroscientist who worked with Crick on the neural correlates of consciousness"
+ },
+ "charles-darwin": {
+  "role": "British naturalist who proposed the theory of natural selection and also wrote \"The Expression of the Emotions in Man and Animals\""
+ },
+ "hamilton": {
+  "role": "British evolutionary biologist who proposed kin selection theory"
+ },
+ "trivers": {
+  "role": "American evolutionary biologist who proposed theories of reciprocal altruism and parental investment"
+ },
+ "cosmides": {
+  "role": "American psychologist and one of the main founders of evolutionary psychology"
+ },
+ "tooby": {
+  "role": "American anthropologist who co-founded evolutionary psychology with Cosmides"
+ },
+ "buss": {
+  "role": "American psychologist who studies mate preferences and sex differences through an evolutionary lens"
+ },
+ "damasio": {
+  "role": "Portuguese-born American neurologist who proposed the somatic marker hypothesis"
+ },
+ "ledoux": {
+  "role": "American neuroscientist who studies fear and the amygdala circuits that underlie it"
+ },
+ "panksepp": {
+  "role": "Estonian-born American neuroscientist who proposed a set of basic emotional systems"
+ },
+ "ekman": {
+  "role": "American psychologist who studied facial expressions and the cross-cultural universality of emotion"
+ },
+ "barrett": {
+  "role": "American psychologist who proposed the theory of constructed emotion"
+ },
+ "sapolsky": {
+  "role": "American neuroendocrinologist who studies the biology of stress and behavior and is known for popular science writing"
+ },
+ "thorndike": {
+  "role": "American psychologist who proposed the law of effect based on puzzle-box experiments, and a founder of educational psychology"
+ },
+ "pavlov": {
+  "role": "Russian physiologist who won the Nobel Prize for his research on digestion, and is known for his work on conditioned reflexes"
+ },
+ "watson": {
+  "role": "American psychologist who proclaimed behaviorism and later moved into the advertising industry"
+ },
+ "rayner": {
+  "role": "American psychologist who collaborated with Watson on the \"Little Albert\" study"
+ },
+ "rescorla": {
+  "role": "American psychologist who proposed that conditioning depends on how well a signal predicts the outcome"
+ },
+ "wagner": {
+  "role": "American psychologist who worked with Rescorla to develop an associative learning model"
+ },
+ "garcia": {
+  "role": "American psychologist who discovered taste aversion learning and the biological preparedness of learning"
+ },
+ "tolman": {
+  "role": "American psychologist who proposed cognitive maps and latent learning"
+ },
+ "hull": {
+  "role": "American psychologist whose mathematical drive-reduction theory dominated learning research in the 1940s"
+ },
+ "skinner": {
+  "role": "American psychologist who founded operant conditioning and radical behaviorism"
+ },
+ "ferster": {
+  "role": "American psychologist who co-authored \"Schedules of Reinforcement\" with Skinner"
+ },
+ "herrnstein": {
+  "role": "American psychologist who proposed the matching law and later became known for \"The Bell Curve\""
+ },
+ "wolpe": {
+  "role": "South African-born American psychiatrist who developed systematic desensitization"
+ },
+ "bandura": {
+  "role": "Canadian-born American psychologist who proposed observational learning and self-efficacy, linking behaviorist and cognitive traditions"
+ },
+ "seligman": {
+  "role": "American psychologist who moved from research on learned helplessness to positive psychology"
+ },
+ "baer": {
+  "role": "American psychologist and one of the founders of applied behavior analysis"
+ },
+ "wolf": {
+  "role": "American psychologist and one of the founders of applied behavior analysis, who developed the \"Teaching-Family\" model"
+ },
+ "risley": {
+  "role": "American psychologist who, with Baer and Wolf, defined applied behavior analysis and later studied children's language environments"
+ },
+ "lovaas": {
+  "role": "Norwegian-born American psychologist and early advocate of intensive behavioral intervention for autism"
+ },
+ "fechner": {
+  "role": "German physicist and philosopher who founded psychophysics"
+ },
+ "e-h-weber": {
+  "role": "German physiologist who found that the just noticeable difference in sensation is proportional to stimulus intensity"
+ },
+ "wundt": {
+  "role": "German psychologist who founded the first psychology laboratory in Leipzig"
+ },
+ "titchener": {
+  "role": "English-born American student of Wundt who advocated structuralism and introspection"
+ },
+ "donders": {
+  "role": "Dutch physiologist who devised the subtraction method for analyzing mental processes through reaction times"
+ },
+ "ebbinghaus": {
+  "role": "German psychologist who was the first to study memory experimentally"
+ },
+ "james": {
+  "role": "American philosopher and psychologist, author of \"The Principles of Psychology\" and a leading figure of pragmatism"
+ },
+ "wertheimer": {
+  "role": "German psychologist and founder of Gestalt psychology"
+ },
+ "koffka": {
+  "role": "German psychologist and one of the three founders of Gestalt psychology"
+ },
+ "kohler": {
+  "role": "German psychologist known for his experiments on insight in chimpanzees"
+ },
+ "bartlett": {
+  "role": "British psychologist who proposed schemas and reconstructive memory"
+ },
+ "miller": {
+  "role": "American psychologist, a central figure in the cognitive revolution and author of \"The Magical Number Seven, Plus or Minus Two\""
+ },
+ "broadbent": {
+  "role": "British psychologist who studied attention using the metaphor of an information channel"
+ },
+ "chomsky": {
+  "role": "American linguist who used linguistic arguments to refute the behaviorist account of language"
+ },
+ "neisser": {
+  "role": "American psychologist, author of \"Cognitive Psychology,\" who later criticized laboratory cognitive research for lacking ecological validity"
+ },
+ "atkinson": {
+  "role": "American psychologist and co-proposer of the multi-store model of memory"
+ },
+ "shiffrin": {
+  "role": "American psychologist and co-proposer of the multi-store model of memory"
+ },
+ "baddeley": {
+  "role": "British psychologist who proposed the model of working memory"
+ },
+ "kahneman": {
+  "role": "Israeli-American psychologist who received the 2002 Nobel Prize in Economic Sciences for prospect theory"
+ },
+ "tversky": {
+  "role": "Israeli-American psychologist who, with Kahneman, founded the study of judgment and decision-making"
+ },
+ "gigerenzer": {
+  "role": "German psychologist who criticized explanations of human irrationality and advocated ecological rationality"
+ },
+ "loftus": {
+  "role": "American psychologist who studies eyewitness testimony and false memories"
+ },
+ "schacter": {
+  "role": "American psychologist who studies memory errors and implicit memory"
+ },
+ "rumelhart": {
+  "role": "American psychologist, a founder of connectionism and a co-developer of the backpropagation algorithm"
+ },
+ "mcclelland": {
+  "role": "American psychologist who worked with Rumelhart to develop the parallel distributed processing model"
+ },
+ "pinker": {
+  "role": "Canadian-born American cognitive scientist and popular science writer who criticized connectionist models of language"
+ },
+ "lakoff": {
+  "role": "American cognitive linguist who proposed the theory of conceptual metaphor"
+ },
+ "varela": {
+  "role": "Chilean biologist and neuroscientist, a proponent of embodied mind and enactive cognition"
+ },
+ "rosch": {
+  "role": "American cognitive psychologist who proposed prototype theory of categories and contributed to \"The Embodied Mind\""
+ },
+ "gibson": {
+  "role": "American perceptual psychologist who proposed ecological perception and affordances"
+ },
+ "friston": {
+  "role": "British neuroscientist who proposed the free energy principle"
+ },
+ "dayan": {
+  "role": "British computational neuroscientist who studies reinforcement learning and computational psychiatry"
+ },
+ "dolan": {
+  "role": "British psychiatrist and neuroscientist who studies the brain mechanisms of decision-making and emotion"
+ },
+ "bransford": {
+  "role": "American cognitive scientist and a leading advocate of the learning sciences, and co-editor of \"How People Learn\""
+ },
+ "ann-brown": {
+  "role": "American developmental and educational psychologist who studied metacognition and reciprocal teaching"
+ },
+ "galton": {
+  "role": "British polymath and cousin of Darwin who pioneered the study of individual differences and proposed eugenics"
+ },
+ "pearson": {
+  "role": "British statistician who gave the mathematical form of the correlation coefficient and was also an advocate of eugenics"
+ },
+ "spearman": {
+  "role": "British psychologist who proposed the general intelligence factor g and developed factor analysis"
+ },
+ "thurstone": {
+  "role": "American psychologist who developed multiple factor analysis and the concept of \"primary mental abilities\""
+ },
+ "cattell": {
+  "role": "British-born American psychologist who proposed fluid and crystallized intelligence and the 16 personality factors"
+ },
+ "carroll": {
+  "role": "American psychologist who built a three-stratum model of intelligence through a large-scale reanalysis of data"
+ },
+ "binet": {
+  "role": "French psychologist who designed the first practical intelligence scale"
+ },
+ "simon": {
+  "role": "French physician who collaborated with Binet on the Binet-Simon scale"
+ },
+ "stern": {
+  "role": "German psychologist who introduced the concept of the intelligence quotient (IQ)"
+ },
+ "terman": {
+  "role": "American psychologist who revised the Binet scale as the Stanford-Binet and launched a long-term study of gifted children"
+ },
+ "wechsler": {
+  "role": "Romanian-born American psychologist who developed the Wechsler intelligence scales"
+ },
+ "flynn": {
+  "role": "New Zealand political scientist who documented the generational rise in IQ scores"
+ },
+ "allport": {
+  "role": "American psychologist who founded trait theory of personality and pioneered the study of prejudice"
+ },
+ "eysenck": {
+  "role": "German-born British psychologist who proposed the PEN model of personality and promoted behavior therapy; later criticized over data issues"
+ },
+ "cronbach": {
+  "role": "American educational psychologist who proposed the alpha coefficient and the concept of construct validity"
+ },
+ "meehl": {
+  "role": "American psychologist who compared clinical judgment with statistical prediction and, with Cronbach, proposed construct validity"
+ },
+ "rasch": {
+  "role": "Danish mathematician who proposed the Rasch model"
+ },
+ "mischel": {
+  "role": "Austrian-born American psychologist who led the person-situation debate and conducted the marshmallow study of delayed gratification"
+ },
+ "gardner": {
+  "role": "American developmental psychologist who proposed the theory of multiple intelligences"
+ },
+ "sternberg": {
+  "role": "American psychologist who proposed the triarchic theory of intelligence"
+ },
+ "costa": {
+  "role": "American psychologist who developed the NEO personality inventory with McCrae"
+ },
+ "mccrae": {
+  "role": "American psychologist and a leading proponent of the Big Five model of personality"
+ },
+ "goldberg": {
+  "role": "American psychologist who popularized the term \"Big Five\" and tested the lexical hypothesis"
+ },
+ "roberts": {
+  "role": "American psychologist who studies how personality changes with age"
+ },
+ "simmons": {
+  "role": "American behavioral scientist and first author of \"False-Positive Psychology\""
+ },
+ "nelson": {
+  "role": "American behavioral scientist and co-author of \"False-Positive Psychology\""
+ },
+ "simonsohn": {
+  "role": "Behavioral scientist who co-authored \"False-Positive Psychology\" and later exposed several cases of data fabrication"
+ },
+ "nosek": {
+  "role": "American psychologist who led the Reproducibility Project in psychology and founded the Center for Open Science"
+ },
+ "ioannidis": {
+  "role": "Greek-American epidemiologist who published \"Why Most Published Research Findings Are False\" in 2005"
+ },
+ "bem": {
+  "role": "American psychologist who proposed self-perception theory; his 2011 precognition experiments unexpectedly became a trigger for the replication crisis"
+ },
+ "hall": {
+  "role": "American psychologist who launched the child study movement and founded the American Psychological Association"
+ },
+ "piaget": {
+  "role": "Swiss psychologist who founded the theory of cognitive development in children"
+ },
+ "vygotsky": {
+  "role": "Soviet psychologist who founded sociocultural theory and died young at age 37"
+ },
+ "bruner": {
+  "role": "American psychologist who took part in the cognitive revolution, introduced the idea of \"scaffolding,\" and promoted cognitive approaches to education"
+ },
+ "erikson": {
+  "role": "German-born American psychoanalyst who proposed eight stages of psychosocial development and the concept of \"identity crisis\""
+ },
+ "marcia": {
+  "role": "Canadian psychologist who developed an interview method for identity statuses"
+ },
+ "bowlby": {
+  "role": "British psychoanalyst who founded attachment theory, linking psychoanalysis, ethology and developmental research"
+ },
+ "ainsworth": {
+  "role": "Canadian-born American psychologist who designed the Strange Situation procedure and identified attachment styles"
+ },
+ "harlow": {
+  "role": "American psychologist whose rhesus monkey experiments challenged the behaviorist account of maternal love"
+ },
+ "hazan": {
+  "role": "American psychologist who proposed adult attachment with Shaver"
+ },
+ "shaver": {
+  "role": "American psychologist and one of the founders of adult attachment research"
+ },
+ "kohlberg": {
+  "role": "American psychologist who proposed the stages of moral development"
+ },
+ "gilligan": {
+  "role": "American psychologist who proposed the ethics of care and criticized Kohlberg's male bias"
+ },
+ "bronfenbrenner": {
+  "role": "American developmental psychologist who proposed ecological systems theory and helped establish the Head Start program"
+ },
+ "baumrind": {
+  "role": "American developmental psychologist who proposed authoritative, authoritarian and permissive parenting styles"
+ },
+ "baltes": {
+  "role": "German developmental psychologist and a leading founder of lifespan developmental psychology"
+ },
+ "premack": {
+  "role": "American psychologist who asked in 1978 whether chimpanzees have a theory of mind"
+ },
+ "wimmer": {
+  "role": "Austrian developmental psychologist who designed the false-belief task with Perner"
+ },
+ "perner": {
+  "role": "Austrian developmental psychologist who studies the development of children's theory of mind"
+ },
+ "baron-cohen": {
+  "role": "British psychologist who studies autism and theory of mind"
+ },
+ "baillargeon": {
+  "role": "Canadian-born American psychologist who used infant experiments to study object permanence"
+ },
+ "spelke": {
+  "role": "American psychologist who proposed the theory of \"core knowledge\""
+ },
+ "saffran": {
+  "role": "American psychologist who studies statistical learning in infants"
+ },
+ "gopnik": {
+  "role": "American developmental psychologist who studies infant learning and causal reasoning"
+ },
+ "meltzoff": {
+  "role": "American psychologist who studies imitation in infants"
+ },
+ "kuhl": {
+  "role": "American language development researcher who studies speech sound learning in infants"
+ },
+ "le-bon": {
+  "role": "French social psychologist and author of \"The Crowd\""
+ },
+ "lewin": {
+  "role": "German-born American psychologist, a pioneer of social psychology and organizational development, who came out of the Berlin Gestalt school"
+ },
+ "schein": {
+  "role": "American organizational psychologist who proposed three levels of organizational culture and was strongly influenced by Lewin"
+ },
+ "vroom": {
+  "role": "Canadian-born American organizational psychologist who proposed expectancy theory of work motivation"
+ },
+ "asch": {
+  "role": "Polish-born American psychologist who designed the line-judgment experiments on conformity"
+ },
+ "milgram": {
+  "role": "American psychologist who designed the obedience experiments and the \"small world\" study of six degrees of separation"
+ },
+ "cialdini": {
+  "role": "American psychologist who studies persuasion and compliance, and author of \"Influence\""
+ },
+ "zimbardo": {
+  "role": "American psychologist who designed the Stanford prison experiment"
+ },
+ "darley": {
+  "role": "American psychologist who researched the bystander effect"
+ },
+ "latane": {
+  "role": "American social psychologist who, with Darley, proposed the bystander effect"
+ },
+ "adorno": {
+  "role": "German philosopher and sociologist who led research on the authoritarian personality"
+ },
+ "steele": {
+  "role": "American social psychologist who proposed stereotype threat"
+ },
+ "aronson": {
+  "role": "American social psychologist who studied cognitive dissonance and invented the \"jigsaw classroom\" to reduce prejudice"
+ },
+ "greenwald": {
+  "role": "American psychologist and a leading developer of the Implicit Association Test"
+ },
+ "festinger": {
+  "role": "American social psychologist who proposed cognitive dissonance and social comparison theories, and was a student of Lewin"
+ },
+ "heider": {
+  "role": "Austrian-born American psychologist, a founder of attribution theory, influenced by Gestalt psychology"
+ },
+ "ross": {
+  "role": "American social psychologist who coined the term \"fundamental attribution error\""
+ },
+ "doi": {
+  "role": "Japanese psychiatrist who proposed the concept of \"amae\""
+ },
+ "hwang": {
+  "role": "Taiwanese psychologist who proposed a model of renqing and face, and advocated the indigenization of the social sciences"
+ },
+ "yang-kuo-shu": {
+  "role": "Taiwanese psychologist who promoted the indigenous Chinese psychology movement from the 1980s"
+ },
+ "tajfel": {
+  "role": "Polish-born British psychologist who founded social identity theory"
+ },
+ "turner": {
+  "role": "British social psychologist who worked with Tajfel and proposed self-categorization theory"
+ },
+ "fiske": {
+  "role": "American social psychologist who co-authored \"Social Cognition\" with Taylor and studies stereotypes"
+ },
+ "bargh": {
+  "role": "American psychologist who studies automatic social processing and social priming"
+ },
+ "rosenthal": {
+  "role": "American psychologist who studied expectancy effects"
+ },
+ "markus": {
+  "role": "American psychologist and a leading founder of cultural psychology"
+ },
+ "kitayama": {
+  "role": "Japanese-born American psychologist who studies how culture shapes the self and cognition"
+ },
+ "shweder": {
+  "role": "American cultural anthropologist and psychologist who advocated cultural psychology"
+ },
+ "hofstede": {
+  "role": "Dutch social psychologist who proposed the theory of cultural dimensions"
+ },
+ "nisbett": {
+  "role": "American psychologist who compared Eastern and Western ways of thinking"
+ },
+ "henrich": {
+  "role": "American anthropologist who raised the problem of WEIRD samples in psychology"
+ },
+ "haidt": {
+  "role": "American social psychologist who studies moral intuitions and political division"
+ },
+ "maslow": {
+  "role": "American psychologist and a founder of humanistic psychology, known for the hierarchy of needs and self-actualization"
+ },
+ "frankl": {
+  "role": "Austrian psychiatrist, a concentration camp survivor, and founder of logotherapy"
+ },
+ "rogers": {
+  "role": "American psychologist who founded client-centered therapy and was the first to extensively record and study the counseling process"
+ },
+ "perls": {
+  "role": "German-born American psychiatrist who founded Gestalt therapy"
+ },
+ "goodman": {
+  "role": "American writer and social critic who co-authored \"Gestalt Therapy\" with Perls"
+ },
+ "may": {
+  "role": "American existential psychologist who brought European existentialism to the United States"
+ },
+ "yalom": {
+  "role": "American psychiatrist and a leading figure in existential psychotherapy and group therapy"
+ },
+ "becker": {
+  "role": "American cultural anthropologist, author of \"The Denial of Death,\" whose ideas inspired terror management theory"
+ },
+ "csikszentmihalyi": {
+  "role": "Hungarian-born American psychologist who proposed the concept of \"flow\""
+ },
+ "deci": {
+  "role": "American psychologist and co-founder of self-determination theory"
+ },
+ "ryan": {
+  "role": "American psychologist and co-founder of self-determination theory"
+ },
+ "lepper": {
+  "role": "American psychologist who studied how rewards can undermine intrinsic interest"
+ },
+ "greenberg-leslie": {
+  "role": "Canadian psychologist and founder of emotion-focused therapy"
+ },
+ "johnson-sue": {
+  "role": "Canadian psychologist and founder of emotionally focused couple therapy, which brought attachment theory into couples therapy"
+ },
+ "fredrickson": {
+  "role": "American psychologist who proposed the broaden-and-build theory"
+ },
+ "duckworth": {
+  "role": "American psychologist who proposed and popularized \"grit\""
+ },
+ "dweck": {
+  "role": "American psychologist who proposed the growth mindset"
+ },
+ "brickman": {
+  "role": "American psychologist who proposed the hedonic treadmill concept"
+ },
+ "janet": {
+  "role": "French psychologist and physician who proposed the concept of dissociation, overshadowed for many years by Freud"
+ },
+ "charcot": {
+  "role": "French neurologist who studied hysteria using hypnosis; Freud studied under him"
+ },
+ "breuer": {
+  "role": "Austrian physician who co-authored \"Studies on Hysteria\" with Freud and was a pioneer of the \"talking cure\""
+ },
+ "freud": {
+  "role": "Austrian neurologist and founder of psychoanalysis"
+ },
+ "anna-freud": {
+  "role": "Daughter of Sigmund Freud and a leading figure in child psychoanalysis and ego psychology"
+ },
+ "hartmann": {
+  "role": "Austrian-born American psychoanalyst who proposed the \"conflict-free ego sphere\""
+ },
+ "vaillant": {
+  "role": "American psychiatrist who directed the Harvard Study of Adult Development and studied defense mechanisms and adaptation"
+ },
+ "adler": {
+  "role": "Austrian physician who founded individual psychology and was once an important member of Freud's circle"
+ },
+ "jung": {
+  "role": "Swiss psychiatrist who founded analytical psychology; early in his career he worked at the Burghölzli hospital"
+ },
+ "von-franz": {
+  "role": "Swiss Jungian analyst who studied fairy tales and alchemy"
+ },
+ "hillman": {
+  "role": "American Jungian analyst who founded archetypal psychology"
+ },
+ "samuels": {
+  "role": "British Jungian analyst who focuses on analytical psychology in politics and culture"
+ },
+ "neumann": {
+  "role": "Israeli Jungian analyst who studied the origins and history of consciousness"
+ },
+ "fordham": {
+  "role": "British Jungian analyst who brought infant observation and object relations into analytical psychology"
+ },
+ "kalff": {
+  "role": "Swiss Jungian analyst who developed sandplay therapy"
+ },
+ "kawai": {
+  "role": "Japanese clinical psychologist who introduced Jungian psychology and sandplay to Japan"
+ },
+ "pauli": {
+  "role": "Austrian physicist and Nobel laureate who worked with Jung on synchronicity"
+ },
+ "klein": {
+  "role": "Austrian-born British psychoanalyst and a pioneer of child analysis and object relations"
+ },
+ "winnicott": {
+  "role": "British pediatrician and psychoanalyst who proposed the holding environment, transitional objects, and the true and false self"
+ },
+ "horney": {
+  "role": "German-born American psychoanalyst who criticized Freud's views of women and emphasized culture and interpersonal relations"
+ },
+ "sullivan": {
+  "role": "American psychiatrist and founder of interpersonal psychiatry"
+ },
+ "fromm": {
+  "role": "German-born American psychoanalyst and social psychologist who combined psychoanalysis with social criticism"
+ },
+ "lacan": {
+  "role": "French psychoanalyst who brought structural linguistics into psychoanalysis"
+ },
+ "kohut": {
+  "role": "Austrian-born American psychoanalyst and founder of self psychology"
+ },
+ "mitchell": {
+  "role": "American psychoanalyst and a leading founder of relational psychoanalysis"
+ },
+ "benjamin": {
+  "role": "American psychoanalyst who proposed the theory of mutual recognition"
+ },
+ "fonagy": {
+  "role": "Hungarian-born British psychoanalyst and a leading proponent of mentalization theory"
+ },
+ "bateman": {
+  "role": "British psychiatrist who developed mentalization-based treatment with Fonagy"
+ },
+ "witmer": {
+  "role": "American psychologist who opened the first psychological clinic in 1896 and coined the term \"clinical psychology\""
+ },
+ "kraepelin": {
+  "role": "German psychiatrist and founder of the modern classification of psychiatric disorders"
+ },
+ "bleuler": {
+  "role": "Swiss psychiatrist who introduced the term \"schizophrenia\" and was Jung's superior"
+ },
+ "shoma-morita": {
+  "role": "Japanese psychiatrist and founder of Morita therapy"
+ },
+ "spitzer": {
+  "role": "American psychiatrist who led the revision of DSM-III"
+ },
+ "rosenhan": {
+  "role": "American psychologist who published the study \"On Being Sane in Insane Places\""
+ },
+ "frances": {
+  "role": "American psychiatrist who led DSM-IV and later criticized DSM-5 for widening the boundaries of mental disorders"
+ },
+ "ellis": {
+  "role": "American psychologist and founder of rational emotive behavior therapy, who had trained in psychoanalysis"
+ },
+ "beck": {
+  "role": "American psychiatrist and founder of cognitive therapy, who had trained in psychoanalysis"
+ },
+ "bateson": {
+  "role": "English-born American anthropologist who proposed the double bind theory and influenced family systems thinking"
+ },
+ "bowen": {
+  "role": "American psychiatrist and founder of family systems theory"
+ },
+ "minuchin": {
+  "role": "Argentine-born American psychiatrist and founder of structural family therapy"
+ },
+ "frank": {
+  "role": "American psychiatrist, author of \"Persuasion and Healing,\" and a pioneer of common factors research"
+ },
+ "wampold": {
+  "role": "American psychologist who proposed a contextual model of psychotherapy"
+ },
+ "rosenzweig": {
+  "role": "American psychologist who in 1936 first proposed the \"Dodo bird verdict\" metaphor"
+ },
+ "luborsky": {
+  "role": "American psychologist who studied psychotherapy outcomes and the therapeutic alliance"
+ },
+ "bordin": {
+  "role": "American psychologist who proposed the concept of the working alliance"
+ },
+ "engel": {
+  "role": "American physician who proposed the biopsychosocial model"
+ },
+ "zubin": {
+  "role": "American psychologist who proposed the vulnerability model of schizophrenia"
+ },
+ "meichenbaum": {
+  "role": "American psychologist and founder of cognitive behavior modification and stress inoculation training"
+ },
+ "jacobson": {
+  "role": "American psychologist who researched behavioral activation"
+ },
+ "meyer": {
+  "role": "British clinical psychologist who first reported exposure and response prevention for obsessive-compulsive disorder"
+ },
+ "clark": {
+  "role": "British psychologist who proposed cognitive models of panic and social anxiety"
+ },
+ "kabat-zinn": {
+  "role": "American medical professor who founded the Mindfulness-Based Stress Reduction program"
+ },
+ "herman": {
+  "role": "American psychiatrist, author of \"Trauma and Recovery,\" who proposed complex trauma"
+ },
+ "foa": {
+  "role": "Israeli-born American psychologist and founder of prolonged exposure therapy"
+ },
+ "resick": {
+  "role": "American psychologist and founder of cognitive processing therapy"
+ },
+ "shapiro": {
+  "role": "American psychologist and founder of EMDR"
+ },
+ "van-der-kolk": {
+  "role": "Dutch-born American psychiatrist, author of \"The Body Keeps the Score,\" who promoted the concept of developmental trauma disorder"
+ },
+ "levine": {
+  "role": "American psychologist and founder of Somatic Experiencing"
+ },
+ "tedeschi": {
+  "role": "American psychologist who proposed posttraumatic growth with Calhoun"
+ },
+ "hayes": {
+  "role": "American psychologist and founder of acceptance and commitment therapy"
+ },
+ "linehan": {
+  "role": "American psychologist and founder of dialectical behavior therapy"
+ },
+ "segal": {
+  "role": "Canadian psychologist and co-developer of mindfulness-based cognitive therapy"
+ },
+ "williams-mark": {
+  "role": "British psychologist and co-developer of mindfulness-based cognitive therapy"
+ },
+ "teasdale": {
+  "role": "British psychologist and co-developer of mindfulness-based cognitive therapy"
+ },
+ "gilbert": {
+  "role": "British psychologist and founder of compassion-focused therapy"
+ },
+ "neff": {
+  "role": "American psychologist who studies self-compassion"
+ },
+ "insel": {
+  "role": "American psychiatrist who directed the National Institute of Mental Health and promoted RDoC"
+ },
+ "cuthbert": {
+  "role": "American psychologist and one of the main designers of RDoC"
+ },
+ "kotov": {
+  "role": "American psychologist and one of the lead authors of the HiTOP consortium"
+ },
+ "krueger": {
+  "role": "American psychologist who studies the dimensional structure of psychopathology and HiTOP"
+ },
+ "caspi": {
+  "role": "Israeli-born American psychologist who proposed the p factor and leads the Dunedin longitudinal study"
+ },
+ "lazarus": {
+  "role": "American psychologist who proposed the cognitive appraisal theory of stress"
+ },
+ "folkman": {
+  "role": "American psychologist who studied stress and coping with Lazarus"
+ },
+ "rotter": {
+  "role": "American psychologist who proposed the concept of locus of control and social learning theory"
+ },
+ "sporns": {
+  "role": "American neuroscientist at Indiana University who coined the term \"human connectome\" with colleagues in 2005 and developed methods for brain network analysis"
+ },
+ "sullivan-patrick": {
+  "role": "Psychiatric geneticist and lead investigator of the Psychiatric Genomics Consortium (PGC), founded in 2007"
+ },
+ "schultz": {
+  "role": "Neuroscientist who recorded dopamine neurons in monkeys and found that their activity matches a \"reward prediction error\""
+ },
+ "sutton": {
+  "role": "One of the founders of reinforcement learning, who proposed temporal-difference learning and co-wrote \"Reinforcement Learning\" with Barto"
+ },
+ "hinton": {
+  "role": "English-born Canadian computer scientist, trained early in psychology, who has long championed neural networks and deep learning"
+ },
+ "kosinski": {
+  "role": "Computational social scientist who studies how digital footprints reveal personality and who has recently tested the \"mind\" abilities of large language models"
+ },
+ "borsboom": {
+  "role": "Dutch psychologist who proposed viewing mental disorders as networks of interacting symptoms"
+ },
+ "steinberg": {
+  "role": "American developmental psychologist who studies adolescent risk-taking and proposed a dual-systems model of adolescent brain development"
+ },
+ "turkheimer": {
+  "role": "American behavioral geneticist who proposed the three laws of behavioral genetics in 2000"
+ },
+ "darcy": {
+  "role": "Psychology researcher and one of the developers of Woebot, a conversational mental health program, and first author of a 2017 trial paper"
+ },
+ "twenge": {
+  "role": "American psychologist who studies generational differences and argues that the spread of smartphones is linked to declining adolescent mental health"
+ },
+ "mcguire": {
+  "role": "American social psychologist who proposed attitude inoculation theory: exposure to weakened counterarguments can build resistance"
+ },
+ "lomas": {
+  "role": "British psychologist who, with Ivtzan, proposed \"second-wave positive psychology\" and studies the dialectic between positive and negative aspects of well-being"
+ },
+ "solms": {
+  "role": "South African neuropsychologist and psychoanalyst and one of the founders of neuropsychoanalysis"
+ },
+ "shedler": {
+  "role": "American clinical psychologist who published a 2010 review of the evidence for psychodynamic therapy"
+ },
+ "barlow": {
+  "role": "American clinical psychologist who studies anxiety disorders and led the development of a unified transdiagnostic protocol"
+ },
+ "hofmann": {
+  "role": "German-born American clinical psychologist who studies cognitive behavioral therapy and social anxiety, and with Hayes advocates process-based therapy"
+ },
+ "griffiths": {
+  "role": "American psychopharmacologist at Johns Hopkins University and one of the first researchers to study psilocybin with modern controlled methods"
+ },
+ "chambless": {
+  "role": "American clinical psychologist who studies anxiety disorders and was the first author of \"The Update of Empirically Validated Therapies\" (1998)"
+ },
+ "hippocrates-of-cos": {
+  "role": "Ancient Greek physician whose school explained temperament and disease through the four humors"
+ },
+ "ibn-sina": {
+  "role": "Persian scholar and physician, author of \"The Canon of Medicine\""
+ },
+ "epictetus": {
+  "role": "Stoic philosopher who held that it is our judgments about things, not the things themselves, that disturb us"
+ },
+ "john-locke": {
+  "role": "English philosopher and leading empiricist who proposed the mind as a blank slate and that ideas are linked through experience"
+ },
+ "jean-jacques-rousseau": {
+  "role": "Geneva-born thinker and author of \"Emile,\" who argued that childhood has its own stages and value"
+ },
+ "franz-mesmer": {
+  "role": "German physician who proposed \"animal magnetism\" and is a forerunner of hypnosis research"
+ },
+ "immanuel-kant": {
+  "role": "German philosopher who argued that the mind organizes experience using innate categories"
+ },
+ "philippe-pinel": {
+  "role": "French physician who advocated \"moral treatment\" for people with mental illness"
+ },
+ "franz-gall": {
+  "role": "German neuroanatomist and founder of phrenology, who held that mental faculties correspond to different brain regions"
+ },
+ "arthur-schopenhauer": {
+  "role": "German philosopher who held that people are driven by an unconscious will"
+ },
+ "adolphe-quetelet": {
+  "role": "Belgian statistician who applied the normal distribution to human characteristics and proposed the \"average man\""
+ },
+ "soren-kierkegaard": {
+  "role": "Danish philosopher who understood anxiety as the experience of facing freedom and possibility"
+ },
+ "hermann-helmholtz": {
+  "role": "German physicist and physiologist who measured the speed of nerve conduction and was Wundt's teacher"
+ },
+ "moritz-lazarus": {
+  "role": "German psychologist who co-founded the journal of folk psychology with Steinthal"
+ },
+ "isabel-briggs-myers": {
+  "role": "American writer who, together with her mother, developed the MBTI based on Jung's typology"
+ },
+ "katharine-briggs": {
+  "role": "American writer who began developing the MBTI with her daughter after reading Jung's \"Psychological Types\""
+ },
+ "vosoughi": {
+  "role": "Computer scientist and first author of the 2018 Science study on the spread of true and false news"
+ },
+ "casey": {
+  "role": "Developmental cognitive neuroscientist and first author of the imaging acquisition paper for the ABCD study"
+ },
+ "jennifer-mitchell": {
+  "role": "Neuroscientist and first author of the phase 3 trial paper on MDMA-assisted therapy for PTSD"
+ }
+}

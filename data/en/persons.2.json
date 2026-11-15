@@ -1,0 +1,317 @@
+{
+ "stern": {
+  "summary": "German psychologist who introduced the concept of the intelligence quotient (IQ)"
+ },
+ "terman": {
+  "summary": "American psychologist who revised the Binet scale as the Stanford-Binet and launched a long-term study of gifted children"
+ },
+ "wechsler": {
+  "summary": "Romanian-born American psychologist who developed the Wechsler intelligence scales"
+ },
+ "flynn": {
+  "summary": "New Zealand political scientist who documented the generational rise in IQ scores"
+ },
+ "allport": {
+  "summary": "American psychologist who founded trait theory of personality and pioneered the study of prejudice"
+ },
+ "eysenck": {
+  "summary": "German-born British psychologist who proposed the PEN model of personality and promoted behavior therapy; later criticized over data issues"
+ },
+ "cronbach": {
+  "summary": "American educational psychologist who proposed the alpha coefficient and the concept of construct validity"
+ },
+ "meehl": {
+  "summary": "American psychologist who compared clinical judgment with statistical prediction and, with Cronbach, proposed construct validity"
+ },
+ "rasch": {
+  "summary": "Danish mathematician who proposed the Rasch model"
+ },
+ "mischel": {
+  "summary": "Austrian-born American psychologist who led the person-situation debate and conducted the marshmallow study of delayed gratification"
+ },
+ "gardner": {
+  "summary": "American developmental psychologist who proposed the theory of multiple intelligences"
+ },
+ "sternberg": {
+  "summary": "American psychologist who proposed the triarchic theory of intelligence"
+ },
+ "costa": {
+  "summary": "American psychologist who developed the NEO personality inventory with McCrae"
+ },
+ "mccrae": {
+  "summary": "American psychologist and a leading proponent of the Big Five model of personality"
+ },
+ "goldberg": {
+  "summary": "American psychologist who popularized the term \"Big Five\" and tested the lexical hypothesis"
+ },
+ "roberts": {
+  "summary": "American psychologist who studies how personality changes with age"
+ },
+ "simmons": {
+  "summary": "American behavioral scientist and first author of \"False-Positive Psychology\""
+ },
+ "nelson": {
+  "summary": "American behavioral scientist and co-author of \"False-Positive Psychology\""
+ },
+ "simonsohn": {
+  "summary": "Behavioral scientist who co-authored \"False-Positive Psychology\" and later exposed several cases of data fabrication"
+ },
+ "nosek": {
+  "summary": "American psychologist who led the Reproducibility Project in psychology and founded the Center for Open Science"
+ },
+ "ioannidis": {
+  "summary": "Greek-American epidemiologist who published \"Why Most Published Research Findings Are False\" in 2005"
+ },
+ "bem": {
+  "summary": "American psychologist who proposed self-perception theory; his 2011 precognition experiments unexpectedly became a trigger for the replication crisis"
+ },
+ "hall": {
+  "summary": "American psychologist who launched the child study movement and founded the American Psychological Association"
+ },
+ "piaget": {
+  "summary": "Swiss psychologist who founded the theory of cognitive development in children"
+ },
+ "vygotsky": {
+  "summary": "Soviet psychologist who founded sociocultural theory and died young at age 37"
+ },
+ "bruner": {
+  "summary": "American psychologist who took part in the cognitive revolution, introduced the idea of \"scaffolding,\" and promoted cognitive approaches to education"
+ },
+ "erikson": {
+  "summary": "German-born American psychoanalyst who proposed eight stages of psychosocial development and the concept of \"identity crisis\""
+ },
+ "marcia": {
+  "summary": "Canadian psychologist who developed an interview method for identity statuses"
+ },
+ "bowlby": {
+  "summary": "British psychoanalyst who founded attachment theory, linking psychoanalysis, ethology and developmental research"
+ },
+ "ainsworth": {
+  "summary": "Canadian-born American psychologist who designed the Strange Situation procedure and identified attachment styles"
+ },
+ "harlow": {
+  "summary": "American psychologist whose rhesus monkey experiments challenged the behaviorist account of maternal love"
+ },
+ "hazan": {
+  "summary": "American psychologist who proposed adult attachment with Shaver"
+ },
+ "shaver": {
+  "summary": "American psychologist and one of the founders of adult attachment research"
+ },
+ "kohlberg": {
+  "summary": "American psychologist who proposed the stages of moral development"
+ },
+ "gilligan": {
+  "summary": "American psychologist who proposed the ethics of care and criticized Kohlberg's male bias"
+ },
+ "bronfenbrenner": {
+  "summary": "American developmental psychologist who proposed ecological systems theory and helped establish the Head Start program"
+ },
+ "baumrind": {
+  "summary": "American developmental psychologist who proposed authoritative, authoritarian and permissive parenting styles"
+ },
+ "baltes": {
+  "summary": "German developmental psychologist and a leading founder of lifespan developmental psychology"
+ },
+ "premack": {
+  "summary": "American psychologist who asked in 1978 whether chimpanzees have a theory of mind"
+ },
+ "wimmer": {
+  "summary": "Austrian developmental psychologist who designed the false-belief task with Perner"
+ },
+ "perner": {
+  "summary": "Austrian developmental psychologist who studies the development of children's theory of mind"
+ },
+ "baron-cohen": {
+  "summary": "British psychologist who studies autism and theory of mind"
+ },
+ "baillargeon": {
+  "summary": "Canadian-born American psychologist who used infant experiments to study object permanence"
+ },
+ "spelke": {
+  "summary": "American psychologist who proposed the theory of \"core knowledge\""
+ },
+ "saffran": {
+  "summary": "American psychologist who studies statistical learning in infants"
+ },
+ "gopnik": {
+  "summary": "American developmental psychologist who studies infant learning and causal reasoning"
+ },
+ "meltzoff": {
+  "summary": "American psychologist who studies imitation in infants"
+ },
+ "kuhl": {
+  "summary": "American language development researcher who studies speech sound learning in infants"
+ },
+ "le-bon": {
+  "summary": "French social psychologist and author of \"The Crowd\""
+ },
+ "lewin": {
+  "summary": "German-born American psychologist, a pioneer of social psychology and organizational development, who came out of the Berlin Gestalt school"
+ },
+ "schein": {
+  "summary": "American organizational psychologist who proposed three levels of organizational culture and was strongly influenced by Lewin"
+ },
+ "vroom": {
+  "summary": "Canadian-born American organizational psychologist who proposed expectancy theory of work motivation"
+ },
+ "asch": {
+  "summary": "Polish-born American psychologist who designed the line-judgment experiments on conformity"
+ },
+ "milgram": {
+  "summary": "American psychologist who designed the obedience experiments and the \"small world\" study of six degrees of separation"
+ },
+ "cialdini": {
+  "summary": "American psychologist who studies persuasion and compliance, and author of \"Influence\""
+ },
+ "zimbardo": {
+  "summary": "American psychologist who designed the Stanford prison experiment"
+ },
+ "darley": {
+  "summary": "American psychologist who researched the bystander effect"
+ },
+ "latane": {
+  "summary": "American social psychologist who, with Darley, proposed the bystander effect"
+ },
+ "adorno": {
+  "summary": "German philosopher and sociologist who led research on the authoritarian personality"
+ },
+ "steele": {
+  "summary": "American social psychologist who proposed stereotype threat"
+ },
+ "aronson": {
+  "summary": "American social psychologist who studied cognitive dissonance and invented the \"jigsaw classroom\" to reduce prejudice"
+ },
+ "greenwald": {
+  "summary": "American psychologist and a leading developer of the Implicit Association Test"
+ },
+ "festinger": {
+  "summary": "American social psychologist who proposed cognitive dissonance and social comparison theories, and was a student of Lewin"
+ },
+ "heider": {
+  "summary": "Austrian-born American psychologist, a founder of attribution theory, influenced by Gestalt psychology"
+ },
+ "ross": {
+  "summary": "American social psychologist who coined the term \"fundamental attribution error\""
+ },
+ "doi": {
+  "summary": "Japanese psychiatrist who proposed the concept of \"amae\""
+ },
+ "hwang": {
+  "summary": "Taiwanese psychologist who proposed a model of renqing and face, and advocated the indigenization of the social sciences"
+ },
+ "yang-kuo-shu": {
+  "summary": "Taiwanese psychologist who promoted the indigenous Chinese psychology movement from the 1980s"
+ },
+ "tajfel": {
+  "summary": "Polish-born British psychologist who founded social identity theory"
+ },
+ "turner": {
+  "summary": "British social psychologist who worked with Tajfel and proposed self-categorization theory"
+ },
+ "fiske": {
+  "summary": "American social psychologist who co-authored \"Social Cognition\" with Taylor and studies stereotypes"
+ },
+ "bargh": {
+  "summary": "American psychologist who studies automatic social processing and social priming"
+ },
+ "rosenthal": {
+  "summary": "American psychologist who studied expectancy effects"
+ },
+ "markus": {
+  "summary": "American psychologist and a leading founder of cultural psychology"
+ },
+ "kitayama": {
+  "summary": "Japanese-born American psychologist who studies how culture shapes the self and cognition"
+ },
+ "shweder": {
+  "summary": "American cultural anthropologist and psychologist who advocated cultural psychology"
+ },
+ "hofstede": {
+  "summary": "Dutch social psychologist who proposed the theory of cultural dimensions"
+ },
+ "nisbett": {
+  "summary": "American psychologist who compared Eastern and Western ways of thinking"
+ },
+ "henrich": {
+  "summary": "American anthropologist who raised the problem of WEIRD samples in psychology"
+ },
+ "haidt": {
+  "summary": "American social psychologist who studies moral intuitions and political division"
+ },
+ "maslow": {
+  "summary": "American psychologist and a founder of humanistic psychology, known for the hierarchy of needs and self-actualization"
+ },
+ "frankl": {
+  "summary": "Austrian psychiatrist, a concentration camp survivor, and founder of logotherapy"
+ },
+ "rogers": {
+  "summary": "American psychologist who founded client-centered therapy and was the first to extensively record and study the counseling process"
+ },
+ "perls": {
+  "summary": "German-born American psychiatrist who founded Gestalt therapy"
+ },
+ "goodman": {
+  "summary": "American writer and social critic who co-authored \"Gestalt Therapy\" with Perls"
+ },
+ "may": {
+  "summary": "American existential psychologist who brought European existentialism to the United States"
+ },
+ "yalom": {
+  "summary": "American psychiatrist and a leading figure in existential psychotherapy and group therapy"
+ },
+ "becker": {
+  "summary": "American cultural anthropologist, author of \"The Denial of Death,\" whose ideas inspired terror management theory"
+ },
+ "csikszentmihalyi": {
+  "summary": "Hungarian-born American psychologist who proposed the concept of \"flow\""
+ },
+ "deci": {
+  "summary": "American psychologist and co-founder of self-determination theory"
+ },
+ "ryan": {
+  "summary": "American psychologist and co-founder of self-determination theory"
+ },
+ "lepper": {
+  "summary": "American psychologist who studied how rewards can undermine intrinsic interest"
+ },
+ "greenberg-leslie": {
+  "summary": "Canadian psychologist and founder of emotion-focused therapy"
+ },
+ "johnson-sue": {
+  "summary": "Canadian psychologist and founder of emotionally focused couple therapy, which brought attachment theory into couples therapy"
+ },
+ "fredrickson": {
+  "summary": "American psychologist who proposed the broaden-and-build theory"
+ },
+ "duckworth": {
+  "summary": "American psychologist who proposed and popularized \"grit\""
+ },
+ "dweck": {
+  "summary": "American psychologist who proposed the growth mindset"
+ },
+ "brickman": {
+  "summary": "American psychologist who proposed the hedonic treadmill concept"
+ },
+ "janet": {
+  "summary": "French psychologist and physician who proposed the concept of dissociation, overshadowed for many years by Freud"
+ },
+ "charcot": {
+  "summary": "French neurologist who studied hysteria using hypnosis; Freud studied under him"
+ },
+ "breuer": {
+  "summary": "Austrian physician who co-authored \"Studies on Hysteria\" with Freud and was a pioneer of the \"talking cure\""
+ },
+ "freud": {
+  "summary": "Austrian neurologist and founder of psychoanalysis"
+ },
+ "anna-freud": {
+  "summary": "Daughter of Sigmund Freud and a leading figure in child psychoanalysis and ego psychology"
+ },
+ "hartmann": {
+  "summary": "Austrian-born American psychoanalyst who proposed the \"conflict-free ego sphere\""
+ },
+ "vaillant": {
+  "summary": "American psychiatrist who directed the Harvard Study of Adult Development and studied defense mechanisms and adaptation"
+ }
+}

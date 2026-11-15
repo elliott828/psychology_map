@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psychologymap v2 预览</title>
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#080b11; --surface:#0b0f16; --raise:#111722;
+  --ink:#e9eef6; --ink2:#a9b4c6; --mute:#6f7b90;
+  --line:rgba(170,196,255,.14); --line2:rgba(170,196,255,.26);
+  --accent:#7df0e2;
+  --sans:"Inter","SF Pro Text",-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:ui-monospace,"SF Mono","JetBrains Mono",Consolas,monospace;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.55;overflow:hidden;
+  display:grid;grid-template-rows:56px 46px minmax(0,1fr)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(1100px 520px at 72% -12%,rgba(57,135,229,.16),transparent 62%),
+    radial-gradient(900px 420px at 8% 112%,rgba(125,240,226,.07),transparent 60%);}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 50% 0%,#000 0%,transparent 68%);mask-image:radial-gradient(ellipse at 50% 0%,#000 0%,transparent 68%)}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0;padding:0}
+:is(button,input,[tabindex]):focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* top bar */
+.bar{position:relative;z-index:5;display:flex;align-items:center;gap:20px;padding:0 20px;border-bottom:1px solid var(--line);background:rgba(8,11,17,.72);backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:baseline;gap:10px;white-space:nowrap}
+.brand b{font-size:17px;font-weight:650;letter-spacing:.01em}
+.brand span{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--mute);text-transform:uppercase}
+.search{position:relative;flex:1;max-width:420px;margin-left:auto}
+.search input{width:100%;height:34px;padding:0 12px 0 32px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.03);outline:0}
+.search input:focus{border-color:var(--accent)}
+.search::before{content:"⌕";position:absolute;left:11px;top:5px;color:var(--mute)}
+.results{position:absolute;top:40px;left:0;right:0;max-height:320px;overflow:auto;border:1px solid var(--line2);border-radius:10px;background:var(--raise);display:none;z-index:20}
+.results.open{display:block}
+.results button{display:flex;gap:10px;align-items:center;width:100%;min-height:40px;padding:6px 12px;text-align:left}
+.results button:hover,.results button:focus-visible{background:rgba(255,255,255,.06)}
+.results small{margin-left:auto;color:var(--mute);font-family:var(--mono);font-size:11px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{min-height:32px;padding:0 13px;font-size:13px;color:var(--ink2)}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:rgba(125,240,226,.13);color:var(--accent)}
+.seg button:disabled{color:var(--mute);cursor:not-allowed;opacity:.55}
+
+/* sub bar */
+.sub{position:relative;z-index:4;display:flex;align-items:center;gap:18px;padding:0 20px;border-bottom:1px solid var(--line);font-size:12px;color:var(--ink2);white-space:nowrap;overflow-x:auto;scrollbar-width:none}
+.sub::-webkit-scrollbar{display:none}
+.sub label{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--mute);text-transform:uppercase;margin-right:-8px}
+.sub .seg button{min-height:28px;font-size:12px}
+.link{color:var(--accent);font-size:12px;text-decoration:underline;text-underline-offset:3px}
+.legend{display:flex;gap:14px;margin-left:auto;color:var(--mute)}
+.legend i{display:inline-block;width:22px;height:0;border-top:1.5px solid var(--ink2);vertical-align:middle;margin-right:5px}
+.legend i.b{border-top-style:dashed}.legend i.c{border-top-style:dotted;border-top-width:2px}
+
+/* stage */
+main{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) auto;min-height:0}
+#stage{position:relative;min-width:0;min-height:0;overflow:hidden auto}
+#ridge,#glass{position:absolute;inset:0;width:100%;height:100%;display:block}
+#glass{touch-action:pan-y;cursor:grab}
+#glass.drag{cursor:grabbing}
+body[data-view="ridge"] #glass,body[data-view="ridge"] #glassSide,body[data-view="glass"] #ridge{display:none}
+#cards{display:none}
+#glassSide{position:absolute;left:20px;top:18px;display:grid;gap:2px;z-index:2}
+#glassSide button{display:flex;align-items:center;gap:8px;min-height:28px;padding:0 10px 0 6px;border-radius:6px;font-size:13px;color:var(--ink2)}
+#glassSide button:hover,#glassSide button.on{background:rgba(255,255,255,.07);color:var(--ink)}
+#glassSide i,.chip{display:inline-block;width:9px;height:9px;border-radius:2px;background:var(--c);flex:none}
+#glassHint{position:absolute;left:20px;bottom:16px;font-size:12px;color:var(--mute);z-index:2;max-width:300px}
+body[data-view="ridge"] #glassHint{display:none}
+
+/* svg marks */
+.axis line{stroke:var(--line)}
+.axis text{fill:var(--mute);font:11px var(--mono)}
+.tname{fill:var(--ink);font-size:14px;font-weight:600}
+.tq{fill:var(--mute);font-size:11.5px}
+.row{transition:opacity .18s}
+.sch{cursor:pointer}
+.sch circle.d{fill:var(--bg);stroke:var(--ink);stroke-width:1.6;transition:r .15s}
+.sch:hover circle.d,.sch.on circle.d{r:5.5;stroke:var(--accent)}
+.lab{fill:var(--ink);font-size:12px;paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round;pointer-events:none;transition:opacity .18s}
+svg.focus .row:not(.rel){opacity:.28}
+svg.focus .sch:not(.rel),svg.focus .lab:not(.rel){opacity:.16}
+.edge{fill:none;stroke:var(--ink);stroke-width:1.5;opacity:.9}
+.edge.borrow{stroke-dasharray:6 5}.edge.oppose{stroke-dasharray:1.5 5;stroke-width:2;stroke-linecap:round}
+.etag{fill:var(--accent);font:11px var(--mono);paint-order:stroke;stroke:var(--bg);stroke-width:4px}
+.cross line{stroke:var(--line2)}.cross text{fill:var(--ink2);font:11px var(--mono)}
+
+/* tooltip */
+#tip{position:fixed;z-index:30;max-width:280px;padding:9px 12px;border:1px solid var(--line2);border-radius:8px;background:rgba(17,23,34,.96);pointer-events:none;display:none;font-size:12.5px}
+#tip b{display:block;font-size:13.5px}#tip span{color:var(--ink2)}#tip em{font-style:normal;font-family:var(--mono);color:var(--accent);margin-right:6px}
+
+/* panel */
+#panel{width:0;overflow:hidden;border-left:1px solid var(--line);background:rgba(11,15,22,.86);backdrop-filter:blur(14px);transition:width .2s}
+#panel.open{width:348px}
+.pin{width:348px;height:100%;overflow:auto;padding:20px 20px 28px}
+.pin h2{margin:6px 0 2px;font-size:22px;font-weight:650;line-height:1.25}
+.pin .meta{display:flex;align-items:center;gap:8px;color:var(--ink2);font-size:12.5px}
+.pin .x{position:sticky;float:right;top:0;width:32px;height:32px;border:1px solid var(--line);border-radius:8px;color:var(--ink2)}
+.pin .lm{margin:14px 0;padding:11px 13px;border-left:2px solid var(--c);background:rgba(255,255,255,.035);border-radius:0 8px 8px 0}
+.pin .lm em{font-style:normal;font-family:var(--mono);color:var(--accent);margin-right:8px}
+.pin h3{margin:22px 0 8px;font:10.5px var(--mono);letter-spacing:.16em;color:var(--mute);text-transform:uppercase}
+.score{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--ink2)}
+.score i{display:inline-block;width:14px;height:4px;margin-right:3px;border-radius:2px;background:var(--line2)}.score i.f{background:var(--ink)}
+.rel{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;width:100%;padding:9px 0;border-top:1px solid var(--line);text-align:left}
+.rel:hover b{color:var(--accent)}
+.rel u{grid-row:span 2;align-self:start;margin-top:2px;padding:1px 7px;border:1px solid var(--line2);border-radius:999px;font:11px var(--mono);text-decoration:none;color:var(--ink2);white-space:nowrap}
+.rel b{font-weight:600}.rel span{color:var(--ink2);font-size:12.5px}
+.note{margin-top:18px;font-size:12px;color:var(--mute)}
+
+/* popover */
+#how{position:absolute;z-index:25;left:20px;top:8px;width:min(430px,calc(100vw - 40px));padding:16px 18px;border:1px solid var(--line2);border-radius:12px;background:rgba(17,23,34,.97);display:none;font-size:13px;color:var(--ink2)}
+#how.open{display:block}#how b{color:var(--ink)}#how p{margin:0 0 9px}#how p:last-child{margin:0;color:var(--mute);font-size:12px}
+
+/* mobile */
+@media (max-width:760px){
+  body{grid-template-rows:auto auto minmax(0,1fr);overflow:hidden}
+  .bar{flex-wrap:wrap;gap:8px 12px;padding:10px 14px}.brand span{display:none}.search{order:3;flex:1 0 100%;max-width:none}
+  .bar .seg{margin-left:auto}.bar .seg button{min-height:34px;padding:0 10px}
+  .sub{padding:8px 14px;gap:12px}.legend{display:none}
+  main{grid-template-columns:1fr}
+  #stage{overflow:auto}
+  body[data-view="ridge"] #ridge{display:none}
+  body[data-view="ridge"] #cards{display:block;padding:6px 14px 90px}
+  #glassHint{display:none}
+  #glassSide{left:10px;top:8px}#glassSide button{font-size:12px;min-height:26px}#glassSide button span{display:none}
+  .card{border-bottom:1px solid var(--line)}
+  .card>button{display:grid;grid-template-columns:auto 1fr auto;gap:2px 10px;align-items:center;width:100%;min-height:76px;padding:12px 0 0;text-align:left}
+  .card>button b{font-size:15px;font-weight:600}.card>button small{grid-column:2/4;color:var(--mute);font-size:12px}
+  .card>button em{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--mute)}
+  .card svg{grid-column:1/4;width:100%;height:34px;display:block;margin-top:4px}
+  .stops{display:none;margin:4px 0 14px 4px;border-left:2px solid var(--c)}.card.open .stops{display:block}
+  .stop{display:grid;grid-template-columns:44px 1fr;gap:0 8px;width:100%;min-height:48px;padding:8px 0 8px 12px;text-align:left}
+  .stop em{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--accent);padding-top:2px}
+  .stop b{font-weight:600}.stop span{grid-column:2;color:var(--ink2);font-size:12.5px}
+  .stop u{grid-column:2;justify-self:start;margin-top:4px;padding:1px 8px;border:1px solid var(--line2);border-radius:999px;font-size:11.5px;color:var(--ink2);text-decoration:none}
+  #panel{position:fixed;left:0;right:0;bottom:0;width:auto;height:0;border-left:0;border-top:1px solid var(--line2);border-radius:16px 16px 0 0;z-index:40;transition:height .22s}
+  #panel.open{width:auto;height:72vh}.pin{width:auto}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body data-view="ridge">
+<header class="bar">
+  <div class="brand"><b>Psychologymap</b><span>v2 preview</span></div>
+  <div class="search"><input id="q" type="search" placeholder="搜索学派，例如 依恋、行为主义、DSM" autocomplete="off" aria-label="搜索学派"><div id="results" class="results"></div></div>
+  <div class="seg" role="group" aria-label="读法">
+    <button aria-pressed="true">脉络</button><button disabled title="等正式数据完成后制作">结构</button><button disabled title="等正式数据完成后制作">人物</button>
+  </div>
+</header>
+<div class="sub">
+  <label>视图</label>
+  <div class="seg" role="group" aria-label="视图"><button data-view="ridge" aria-pressed="true">群山</button><button data-view="glass" aria-pressed="false">时间沙漏</button></div>
+  <label>高度</label>
+  <div class="seg" role="group" aria-label="高度算法"><button data-h="births" aria-pressed="true">新学派涌现</button><button data-h="living" aria-pressed="false">累计分量</button></div>
+  <button class="link" id="howBtn" aria-expanded="false">高度怎么算？</button>
+  <div class="legend"><span><i></i>发展 · 分支 · 汇流</span><span><i class="b"></i>桥接 · 应用</span><span><i class="c"></i>反动 · 批评</span></div>
+</div>
+<main>
+  <section id="stage" aria-label="心理学思想脉络图">
+    <svg id="ridge" role="img" aria-label="九条脉络随时间的活跃度"></svg>
+    <canvas id="glass" aria-label="时间沙漏：九条脉络环绕时间轴"></canvas>
+    <div id="glassSide"></div>
+    <div id="glassHint">左右拖动旋转。上半是心理学成为科学之前的源头，在 1879 年收束为瓶颈，之后向下分化为九条脉络。</div>
+    <div id="cards"></div>
+    <div id="how"></div>
+  </section>
+  <aside id="panel" aria-live="polite"><div class="pin" id="pin"></div></aside>
+</main>
+<div id="tip"></div>
+
+<script id="skeleton">/* inlined from data/psychologymap-skeleton.js so the page also works in sandboxed previews */
+window.PSYMAP_SKELETON={"meta":{"provisional":true,"source":"psychologymap-v2-framework.md §2.4–2.5"},"threads":[{"id":"bio","order":0,"title":{"zh":"脑与生物","en":"Brain & biology"},"question":{"zh":"心智如何从身体与演化中产生"},"color":"#3987e5"},{"id":"behavior","order":1,"title":{"zh":"学习与行为","en":"Learning & behavior"},"question":{"zh":"经验如何塑造行为"},"color":"#d95926"},{"id":"cognition","order":2,"title":{"zh":"意识与认知","en":"Mind & cognition"},"question":{"zh":"心智如何加工世界"},"color":"#199e70"},{"id":"difference","order":3,"title":{"zh":"个体差异与测量","en":"Differences & measurement"},"question":{"zh":"人为何不同、如何度量"},"color":"#c98500"},{"id":"development","order":4,"title":{"zh":"毕生发展","en":"Lifespan development"},"question":{"zh":"人如何成为自己"},"color":"#d55181"},{"id":"social","order":5,"title":{"zh":"社会与文化","en":"Society & culture"},"question":{"zh":"他人与文化如何进入内心"},"color":"#0ca30c"},{"id":"humanistic","order":6,"title":{"zh":"人本与意义","en":"Humanistic & meaning"},"question":{"zh":"人如何活出意义"},"color":"#9085e9"},{"id":"depth","order":7,"title":{"zh":"无意识与深度","en":"Depth & the unconscious"},"question":{"zh":"意识之外的心灵如何运作"},"color":"#e66767"},{"id":"clinical","order":8,"title":{"zh":"临床与心理健康","en":"Clinical & mental health"},"question":{"zh":"痛苦如何被理解与疗愈"},"color":"#12a4b8"}],"roots":[{"id":"root-0","title":{"zh":"经验论与理性论"},"when":"17—18 世纪"},{"id":"root-1","title":{"zh":"感官生理学"},"when":"赫尔姆霍兹，1850 年代"},{"id":"root-2","title":{"zh":"进化论"},"when":"达尔文，1859"},{"id":"root-3","title":{"zh":"精神病院改革"},"when":"皮内尔，1793"},{"id":"root-4","title":{"zh":"催眠术"},"when":"梅斯梅尔、布雷德"},{"id":"root-5","title":{"zh":"东方心性与禅修传统"},"when":"两千余年"}],"nodes":[{"id":"localization","type":"school","thread":"bio","title":{"zh":"脑功能定位"},"year":1861,"landmark":{"zh":"布洛卡报告失语症病例"},"influence":4,"confidence":"high","tier":1},{"id":"neuron-doctrine","type":"school","thread":"bio","title":{"zh":"神经元学说"},"year":1891,"landmark":{"zh":"瓦尔代尔提出\"神经元\"一词，总结卡哈尔的工作"},"influence":4,"confidence":"high","tier":1},{"id":"ethology","type":"school","thread":"bio","title":{"zh":"动物行为学"},"year":1935,"landmark":{"zh":"洛伦茨发表印刻研究"},"influence":3,"confidence":"high","tier":1},{"id":"stress-physiology","type":"school","thread":"bio","title":{"zh":"压力生理"},"year":1936,"landmark":{"zh":"塞里提出一般适应综合征"},"influence":3,"confidence":"high","tier":1},{"id":"hebbian","type":"school","thread":"bio","title":{"zh":"赫布学习与神经可塑性"},"year":1949,"landmark":{"zh":"赫布《行为的组织》"},"influence":4,"confidence":"high","tier":1},{"id":"psychopharmacology","type":"school","thread":"bio","title":{"zh":"精神药理学"},"year":1952,"landmark":{"zh":"氯丙嗪首次用于精神科"},"influence":5,"confidence":"high","tier":1},{"id":"neuropsychology","type":"school","thread":"bio","title":{"zh":"神经心理学"},"year":1957,"landmark":{"zh":"斯科维尔与米尔纳报告病人 H.M."},"influence":3,"confidence":"high","tier":2},{"id":"behavior-genetics","type":"school","thread":"bio","title":{"zh":"行为遗传学"},"year":1960,"landmark":{"zh":"富勒与汤普森《行为遗传学》"},"influence":3,"confidence":"high","tier":2},{"id":"split-brain","type":"school","thread":"bio","title":{"zh":"裂脑研究"},"year":1962,"landmark":{"zh":"加扎尼加、博根、斯佩里的首批报告"},"influence":2,"confidence":"high","tier":2},{"id":"molecular-memory","type":"school","thread":"bio","title":{"zh":"记忆的分子机制"},"year":1970,"landmark":{"zh":"坎德尔的海兔研究"},"influence":2,"confidence":"medium","tier":2},{"id":"cognitive-neuroscience","type":"school","thread":"bio","title":{"zh":"认知神经科学"},"year":1979,"landmark":{"zh":"学科名称在 1970 年代末形成（加扎尼加与乔治·米勒）"},"influence":4,"confidence":"medium","tier":1},{"id":"evolutionary","type":"school","thread":"bio","title":{"zh":"进化心理学"},"year":1992,"landmark":{"zh":"《适应的心智》"},"influence":3,"confidence":"high","tier":2},{"id":"affective-neuroscience","type":"school","thread":"bio","title":{"zh":"情感神经科学"},"year":1994,"landmark":{"zh":"达马西奥《笛卡尔的错误》"},"influence":3,"confidence":"high","tier":2},{"id":"law-of-effect","type":"school","thread":"behavior","title":{"zh":"效果律"},"year":1898,"landmark":{"zh":"桑代克迷箱实验"},"influence":4,"confidence":"high","tier":1},{"id":"classical-conditioning","type":"school","thread":"behavior","title":{"zh":"经典条件作用"},"year":1903,"landmark":{"zh":"巴甫洛夫马德里报告"},"influence":5,"confidence":"high","tier":1},{"id":"behaviorism","type":"school","thread":"behavior","title":{"zh":"行为主义"},"year":1913,"landmark":{"zh":"华生《行为主义者眼中的心理学》"},"influence":5,"confidence":"high","tier":1},{"id":"neo-behaviorism","type":"school","thread":"behavior","title":{"zh":"新行为主义"},"year":1932,"landmark":{"zh":"托尔曼《动物和人的目的性行为》"},"influence":3,"confidence":"high","tier":1},{"id":"operant","type":"school","thread":"behavior","title":{"zh":"操作性条件作用"},"year":1938,"landmark":{"zh":"斯金纳《有机体的行为》"},"influence":5,"confidence":"high","tier":1},{"id":"behavior-therapy","type":"school","thread":"behavior","title":{"zh":"行为治疗"},"year":1958,"landmark":{"zh":"沃尔普《交互抑制心理治疗》"},"influence":3,"confidence":"high","tier":1},{"id":"social-learning","type":"school","thread":"behavior","title":{"zh":"社会学习理论"},"year":1961,"landmark":{"zh":"班杜拉波波玩偶实验"},"influence":4,"confidence":"high","tier":1},{"id":"learned-helplessness","type":"school","thread":"behavior","title":{"zh":"习得性无助"},"year":1967,"landmark":{"zh":"塞利格曼与迈尔的实验"},"influence":3,"confidence":"high","tier":2},{"id":"aba","type":"school","thread":"behavior","title":{"zh":"应用行为分析"},"year":1968,"landmark":{"zh":"《应用行为分析杂志》创刊"},"influence":3,"confidence":"high","tier":2},{"id":"psychophysics","type":"school","thread":"cognition","title":{"zh":"心理物理学"},"year":1860,"landmark":{"zh":"费希纳《心理物理学纲要》"},"influence":2,"confidence":"high","tier":2},{"id":"experimental","type":"school","thread":"cognition","title":{"zh":"实验心理学"},"year":1879,"landmark":{"zh":"冯特在莱比锡建立实验室"},"influence":5,"confidence":"high","tier":1},{"id":"memory-experiment","type":"school","thread":"cognition","title":{"zh":"记忆的实验研究"},"year":1885,"landmark":{"zh":"艾宾浩斯《论记忆》"},"influence":3,"confidence":"high","tier":1},{"id":"functionalism","type":"school","thread":"cognition","title":{"zh":"机能主义"},"year":1890,"landmark":{"zh":"詹姆斯《心理学原理》"},"influence":4,"confidence":"high","tier":1},{"id":"gestalt","type":"school","thread":"cognition","title":{"zh":"格式塔心理学"},"year":1912,"landmark":{"zh":"韦特海默似动现象论文"},"influence":4,"confidence":"high","tier":1},{"id":"schema","type":"school","thread":"cognition","title":{"zh":"图式与记忆重构"},"year":1932,"landmark":{"zh":"巴特利特《记忆》"},"influence":3,"confidence":"high","tier":2},{"id":"cognitive-revolution","type":"school","thread":"cognition","title":{"zh":"认知革命"},"year":1956,"landmark":{"zh":"MIT 信息论研讨会；米勒\"神奇的数字 7±2\""},"influence":5,"confidence":"high","tier":1},{"id":"cognitive-psychology","type":"school","thread":"cognition","title":{"zh":"认知心理学"},"year":1967,"landmark":{"zh":"奈瑟《认知心理学》"},"influence":4,"confidence":"high","tier":1},{"id":"heuristics-biases","type":"school","thread":"cognition","title":{"zh":"启发式与偏差"},"year":1974,"landmark":{"zh":"特沃斯基与卡尼曼《科学》论文"},"influence":5,"confidence":"high","tier":1},{"id":"connectionism","type":"school","thread":"cognition","title":{"zh":"联结主义"},"year":1986,"landmark":{"zh":"鲁梅尔哈特与麦克莱兰《并行分布加工》"},"influence":3,"confidence":"high","tier":2},{"id":"embodied","type":"school","thread":"cognition","title":{"zh":"具身认知"},"year":1991,"landmark":{"zh":"瓦雷拉等《具身心智》"},"influence":2,"confidence":"high","tier":2},{"id":"predictive-processing","type":"school","thread":"cognition","title":{"zh":"预测加工"},"year":2010,"landmark":{"zh":"弗里斯顿自由能原理综述"},"influence":3,"confidence":"high","tier":2},{"id":"individual-differences","type":"school","thread":"difference","title":{"zh":"个体差异研究"},"year":1869,"landmark":{"zh":"高尔顿《遗传的天才》"},"influence":3,"confidence":"high","tier":1},{"id":"g-factor","type":"school","thread":"difference","title":{"zh":"g 因素与因子分析"},"year":1904,"landmark":{"zh":"斯皮尔曼论文"},"influence":4,"confidence":"high","tier":1},{"id":"intelligence-testing","type":"school","thread":"difference","title":{"zh":"智力测验"},"year":1905,"landmark":{"zh":"比奈—西蒙量表"},"influence":5,"confidence":"high","tier":1},{"id":"trait","type":"school","thread":"difference","title":{"zh":"特质论"},"year":1937,"landmark":{"zh":"奥尔波特《人格：心理学的解释》"},"influence":4,"confidence":"high","tier":1},{"id":"factor-personality","type":"school","thread":"difference","title":{"zh":"因素人格模型"},"year":1947,"landmark":{"zh":"艾森克《人格的维度》"},"influence":3,"confidence":"high","tier":1},{"id":"test-theory","type":"school","thread":"difference","title":{"zh":"测验理论（信度与效度）"},"year":1955,"landmark":{"zh":"克隆巴赫与米尔提出构念效度"},"influence":3,"confidence":"high","tier":1},{"id":"person-situation","type":"school","thread":"difference","title":{"zh":"人—情境之争"},"year":1968,"landmark":{"zh":"米歇尔《人格与评估》"},"influence":3,"confidence":"high","tier":2},{"id":"multiple-intelligences","type":"school","thread":"difference","title":{"zh":"多元智力"},"year":1983,"landmark":{"zh":"加德纳《智能的结构》"},"influence":2,"confidence":"high","tier":2},{"id":"big-five","type":"school","thread":"difference","title":{"zh":"大五人格"},"year":1985,"landmark":{"zh":"科斯塔与麦克雷 NEO 人格量表"},"influence":4,"confidence":"high","tier":1},{"id":"open-science","type":"school","thread":"difference","title":{"zh":"可重复性危机与开放科学"},"year":2011,"landmark":{"zh":"《假阳性心理学》论文"},"influence":3,"confidence":"high","tier":2},{"id":"child-study","type":"school","thread":"development","title":{"zh":"儿童研究运动"},"year":1883,"landmark":{"zh":"霍尔《儿童心理的内容》"},"influence":2,"confidence":"high","tier":2},{"id":"sociocultural","type":"school","thread":"development","title":{"zh":"社会文化理论"},"year":1934,"landmark":{"zh":"维果茨基《思维与语言》"},"influence":4,"confidence":"high","tier":1},{"id":"cognitive-development","type":"school","thread":"development","title":{"zh":"认知发展理论"},"year":1936,"landmark":{"zh":"皮亚杰《儿童智力的起源》"},"influence":5,"confidence":"high","tier":1},{"id":"psychosocial","type":"school","thread":"development","title":{"zh":"心理社会发展阶段"},"year":1950,"landmark":{"zh":"埃里克森《童年与社会》"},"influence":4,"confidence":"high","tier":1},{"id":"attachment","type":"school","thread":"development","title":{"zh":"依恋理论"},"year":1958,"landmark":{"zh":"鲍尔比《孩子与母亲联结的性质》"},"influence":5,"confidence":"high","tier":1},{"id":"moral-development","type":"school","thread":"development","title":{"zh":"道德发展"},"year":1958,"landmark":{"zh":"科尔伯格博士论文"},"influence":2,"confidence":"high","tier":2},{"id":"ecological","type":"school","thread":"development","title":{"zh":"生态系统理论"},"year":1979,"landmark":{"zh":"布朗芬布伦纳《人类发展生态学》"},"influence":3,"confidence":"high","tier":1},{"id":"lifespan","type":"school","thread":"development","title":{"zh":"毕生发展心理学"},"year":1980,"landmark":{"zh":"巴尔特斯等的《年度综述》文章"},"influence":3,"confidence":"high","tier":1},{"id":"theory-of-mind","type":"school","thread":"development","title":{"zh":"心理理论"},"year":1983,"landmark":{"zh":"威默与佩尔纳错误信念任务"},"influence":3,"confidence":"high","tier":1},{"id":"infant-cognition","type":"school","thread":"development","title":{"zh":"婴儿认知研究"},"year":1985,"landmark":{"zh":"巴亚尔容等对 5 个月婴儿客体永存的实验"},"influence":3,"confidence":"high","tier":2},{"id":"crowd","type":"school","thread":"social","title":{"zh":"群体心理学"},"year":1895,"landmark":{"zh":"勒庞《乌合之众》"},"influence":2,"confidence":"high","tier":2},{"id":"field-theory","type":"school","thread":"social","title":{"zh":"场论与群体动力"},"year":1936,"landmark":{"zh":"勒温《拓扑心理学原理》"},"influence":4,"confidence":"high","tier":1},{"id":"conformity-obedience","type":"school","thread":"social","title":{"zh":"从众与服从"},"year":1951,"landmark":{"zh":"阿希线段实验（米尔格拉姆 1963）"},"influence":4,"confidence":"high","tier":1},{"id":"prejudice","type":"school","thread":"social","title":{"zh":"偏见研究"},"year":1954,"landmark":{"zh":"奥尔波特《偏见的本质》"},"influence":3,"confidence":"high","tier":1},{"id":"dissonance","type":"school","thread":"social","title":{"zh":"认知失调"},"year":1957,"landmark":{"zh":"费斯廷格《认知失调理论》"},"influence":4,"confidence":"high","tier":1},{"id":"attribution","type":"school","thread":"social","title":{"zh":"归因理论"},"year":1958,"landmark":{"zh":"海德《人际关系心理学》"},"influence":3,"confidence":"high","tier":1},{"id":"indigenous","type":"school","thread":"social","title":{"zh":"本土心理学"},"year":1971,"landmark":{"zh":"土居健郎《\"甘え\"的构造》（华人本土心理学：杨国枢，1980 年代）"},"influence":3,"confidence":"high","tier":1},{"id":"social-identity","type":"school","thread":"social","title":{"zh":"社会认同理论"},"year":1979,"landmark":{"zh":"塔菲尔与特纳"},"influence":4,"confidence":"high","tier":1},{"id":"social-cognition","type":"school","thread":"social","title":{"zh":"社会认知"},"year":1984,"landmark":{"zh":"菲斯克与泰勒《社会认知》"},"influence":3,"confidence":"high","tier":2},{"id":"cultural","type":"school","thread":"social","title":{"zh":"文化心理学"},"year":1991,"landmark":{"zh":"马库斯与北山忍《文化与自我》"},"influence":3,"confidence":"high","tier":2},{"id":"needs","type":"school","thread":"humanistic","title":{"zh":"需求层次与自我实现"},"year":1943,"landmark":{"zh":"马斯洛《人类动机理论》"},"influence":4,"confidence":"high","tier":1},{"id":"logotherapy","type":"school","thread":"humanistic","title":{"zh":"意义治疗"},"year":1946,"landmark":{"zh":"弗兰克尔《活出生命的意义》"},"influence":3,"confidence":"high","tier":1},{"id":"person-centered","type":"school","thread":"humanistic","title":{"zh":"来访者中心疗法"},"year":1951,"landmark":{"zh":"罗杰斯《来访者中心治疗》"},"influence":5,"confidence":"high","tier":1},{"id":"gestalt-therapy","type":"school","thread":"humanistic","title":{"zh":"格式塔治疗"},"year":1951,"landmark":{"zh":"皮尔斯等《格式塔治疗》"},"influence":3,"confidence":"high","tier":1},{"id":"existential","type":"school","thread":"humanistic","title":{"zh":"存在主义心理治疗"},"year":1958,"landmark":{"zh":"罗洛·梅等编《存在》"},"influence":3,"confidence":"high","tier":1},{"id":"flow","type":"school","thread":"humanistic","title":{"zh":"心流"},"year":1975,"landmark":{"zh":"契克森米哈赖《超越无聊与焦虑》"},"influence":3,"confidence":"high","tier":1},{"id":"sdt","type":"school","thread":"humanistic","title":{"zh":"自我决定理论"},"year":1985,"landmark":{"zh":"德西与瑞安《内在动机与自我决定》"},"influence":3,"confidence":"high","tier":2},{"id":"eft","type":"school","thread":"humanistic","title":{"zh":"情绪聚焦治疗"},"year":1988,"landmark":{"zh":"格林伯格与约翰逊《伴侣情绪聚焦治疗》"},"influence":2,"confidence":"high","tier":2},{"id":"positive","type":"school","thread":"humanistic","title":{"zh":"积极心理学"},"year":1998,"landmark":{"zh":"塞利格曼任 APA 主席时倡议"},"influence":4,"confidence":"high","tier":1},{"id":"dissociation","type":"school","thread":"depth","title":{"zh":"催眠、癔症与解离"},"year":1889,"landmark":{"zh":"让内《心理自动症》（沙可，1880 年代）"},"influence":3,"confidence":"high","tier":1},{"id":"psychoanalysis","type":"school","thread":"depth","title":{"zh":"经典精神分析"},"year":1895,"landmark":{"zh":"布洛伊尔与弗洛伊德《癔症研究》"},"influence":5,"confidence":"high","tier":1},{"id":"individual-psychology","type":"school","thread":"depth","title":{"zh":"个体心理学"},"year":1912,"landmark":{"zh":"阿德勒成立个体心理学会"},"influence":3,"confidence":"high","tier":1},{"id":"analytical-psychology","type":"school","thread":"depth","title":{"zh":"分析心理学"},"year":1913,"landmark":{"zh":"荣格与弗洛伊德决裂并采用此名称"},"influence":4,"confidence":"high","tier":1},{"id":"object-relations","type":"school","thread":"depth","title":{"zh":"客体关系"},"year":1932,"landmark":{"zh":"克莱因《儿童精神分析》"},"influence":4,"confidence":"high","tier":1},{"id":"ego-psychology","type":"school","thread":"depth","title":{"zh":"自我心理学"},"year":1936,"landmark":{"zh":"安娜·弗洛伊德《自我与防御机制》"},"influence":3,"confidence":"high","tier":1},{"id":"neo-freudian","type":"school","thread":"depth","title":{"zh":"新弗洛伊德学派"},"year":1937,"landmark":{"zh":"霍妮《我们时代的神经症人格》"},"influence":3,"confidence":"high","tier":1},{"id":"post-jungian","type":"school","thread":"depth","title":{"zh":"后荣格与原型心理学"},"year":1949,"landmark":{"zh":"诺伊曼《意识的起源与历史》"},"influence":2,"confidence":"high","tier":2},{"id":"lacanian","type":"school","thread":"depth","title":{"zh":"拉康派"},"year":1953,"landmark":{"zh":"罗马报告"},"influence":3,"confidence":"high","tier":2},{"id":"self-psychology","type":"school","thread":"depth","title":{"zh":"自体心理学"},"year":1971,"landmark":{"zh":"科胡特《自体的分析》"},"influence":3,"confidence":"high","tier":2},{"id":"relational","type":"school","thread":"depth","title":{"zh":"关系精神分析"},"year":1983,"landmark":{"zh":"格林伯格与米切尔《精神分析理论中的客体关系》"},"influence":3,"confidence":"high","tier":2},{"id":"mentalization","type":"school","thread":"depth","title":{"zh":"心智化"},"year":1991,"landmark":{"zh":"福纳吉等关于反思功能的论文"},"influence":2,"confidence":"medium","tier":2},{"id":"clinical-psychology","type":"school","thread":"clinical","title":{"zh":"临床心理学诞生"},"year":1896,"landmark":{"zh":"威特默在宾大开设心理诊所"},"influence":3,"confidence":"high","tier":1},{"id":"nosology","type":"school","thread":"clinical","title":{"zh":"现代精神病学分类"},"year":1899,"landmark":{"zh":"克雷佩林教科书第六版"},"influence":4,"confidence":"high","tier":1},{"id":"morita","type":"school","thread":"clinical","title":{"zh":"森田疗法"},"year":1919,"landmark":{"zh":"森田正马创立"},"influence":2,"confidence":"high","tier":2},{"id":"dsm","type":"school","thread":"clinical","title":{"zh":"DSM／ICD 诊断体系"},"year":1952,"landmark":{"zh":"DSM 第一版（转折点：1980 年 DSM-III）"},"influence":5,"confidence":"high","tier":1},{"id":"cognitive-therapies","type":"school","thread":"clinical","title":{"zh":"认知取向治疗"},"year":1955,"landmark":{"zh":"艾利斯开始理性治疗（贝克《抑郁症》1967）"},"influence":3,"confidence":"high","tier":1},{"id":"family-systems","type":"school","thread":"clinical","title":{"zh":"家庭系统治疗"},"year":1956,"landmark":{"zh":"贝特森等提出双重束缚"},"influence":3,"confidence":"high","tier":2},{"id":"common-factors","type":"school","thread":"clinical","title":{"zh":"共同因素"},"year":1961,"landmark":{"zh":"弗兰克《说服与治疗》"},"influence":3,"confidence":"high","tier":2},{"id":"biopsychosocial","type":"school","thread":"clinical","title":{"zh":"生物—心理—社会模型"},"year":1977,"landmark":{"zh":"恩格尔《科学》论文"},"influence":3,"confidence":"high","tier":2},{"id":"cbt","type":"school","thread":"clinical","title":{"zh":"认知行为治疗的整合"},"year":1977,"landmark":{"zh":"梅钦鲍姆《认知行为矫正》"},"influence":5,"confidence":"high","tier":1},{"id":"mbsr","type":"school","thread":"clinical","title":{"zh":"正念减压"},"year":1979,"landmark":{"zh":"卡巴金在麻省大学医学中心开设门诊"},"influence":3,"confidence":"high","tier":2},{"id":"trauma","type":"school","thread":"clinical","title":{"zh":"创伤研究与 PTSD"},"year":1980,"landmark":{"zh":"DSM-III 纳入 PTSD"},"influence":4,"confidence":"high","tier":1},{"id":"third-wave","type":"school","thread":"clinical","title":{"zh":"第三浪潮"},"year":1991,"landmark":{"zh":"莱恩汉 DBT 首个随机对照试验（ACT 1999，MBCT 2002）"},"influence":4,"confidence":"high","tier":1},{"id":"ebp","type":"school","thread":"clinical","title":{"zh":"循证心理实践"},"year":1995,"landmark":{"zh":"APA 第 12 分会工作组报告"},"influence":3,"confidence":"high","tier":2},{"id":"dimensional","type":"school","thread":"clinical","title":{"zh":"维度化模型（RDoC／HiTOP）"},"year":2010,"landmark":{"zh":"NIMH 发布 RDoC"},"influence":3,"confidence":"high","tier":2}],"edges":[{"from":"experimental","to":"behaviorism","type":"reacts","note":{"zh":"反对内省法，只研究可观察的行为"},"confidence":"high"},{"from":"functionalism","to":"behaviorism","type":"develops","note":{"zh":"关注适应与功能，为行为研究铺路"},"confidence":"high"},{"from":"behaviorism","to":"cognitive-revolution","type":"reacts","note":{"zh":"乔姆斯基等指出刺激—反应无法解释语言与思维"},"confidence":"high"},{"from":"neo-behaviorism","to":"cognitive-revolution","type":"bridges","note":{"zh":"托尔曼的\"认知地图\"在行为主义内部引入内部表征"},"confidence":"high"},{"from":"gestalt","to":"field-theory","type":"develops","note":{"zh":"勒温出身柏林格式塔学派，把\"场\"用于社会行为"},"confidence":"high"},{"from":"gestalt","to":"cognitive-psychology","type":"bridges","note":{"zh":"整体知觉与问题解决研究被认知心理学吸收"},"confidence":"high"},{"from":"cognitive-development","to":"cognitive-revolution","type":"bridges","note":{"zh":"皮亚杰对心理结构的研究是认知转向的欧洲来源"},"confidence":"high"},{"from":"social-learning","to":"cognitive-psychology","type":"bridges","note":{"zh":"观察学习引入注意、记忆等认知过程"},"confidence":"high"},{"from":"psychoanalysis","to":"cognitive-therapies","type":"reacts","note":{"zh":"艾利斯与贝克都受精神分析训练，后因其难以检验而另立"},"confidence":"high"},{"from":"cognitive-revolution","to":"cognitive-therapies","type":"bridges","note":{"zh":"提供\"信念与信息加工影响情绪\"的理论语言"},"confidence":"high"},{"from":"behavior-therapy","to":"cbt","type":"merges","note":{"zh":"暴露、行为激活等技术并入"},"confidence":"high"},{"from":"cognitive-therapies","to":"cbt","type":"merges","note":{"zh":"认知重评并入"},"confidence":"high"},{"from":"dissociation","to":"psychoanalysis","type":"develops","note":{"zh":"弗洛伊德 1885 年随沙可学习"},"confidence":"high"},{"from":"dissociation","to":"trauma","type":"bridges","note":{"zh":"让内的解离理论在 1980 年代创伤研究中被重新发现"},"confidence":"high"},{"from":"psychoanalysis","to":"person-centered","type":"reacts","note":{"zh":"反对把人看作被驱力决定"},"confidence":"high"},{"from":"behaviorism","to":"needs","type":"reacts","note":{"zh":"人本主义自称\"第三势力\"，同时反对行为主义与精神分析"},"confidence":"high"},{"from":"analytical-psychology","to":"needs","type":"bridges","note":{"zh":"个体化与自我实现的观念相通"},"confidence":"high"},{"from":"object-relations","to":"attachment","type":"merges","note":{"zh":"鲍尔比出身客体关系训练"},"confidence":"high"},{"from":"ethology","to":"attachment","type":"merges","note":{"zh":"印刻与亲子联结的动物研究"},"confidence":"high"},{"from":"attachment","to":"mentalization","type":"develops","note":{"zh":"以依恋研究解释理解他人心理的能力"},"confidence":"high"},{"from":"psychoanalysis","to":"psychosocial","type":"develops","note":{"zh":"埃里克森把性心理阶段扩展为终生的心理社会阶段"},"confidence":"high"},{"from":"sociocultural","to":"cultural","type":"bridges","note":{"zh":"\"心理过程以文化工具为中介\"的思想来源"},"confidence":"high"},{"from":"individual-differences","to":"behavior-genetics","type":"develops","note":{"zh":"高尔顿的双生子法"},"confidence":"high"},{"from":"individual-differences","to":"intelligence-testing","type":"develops","note":{"zh":"脉络内，列出以示完整"},"confidence":"high"},{"from":"g-factor","to":"big-five","type":"develops","note":{"zh":"因子分析方法"},"confidence":"high"},{"from":"person-situation","to":"trait","type":"critiques","note":{"zh":"行为的跨情境一致性低于特质论的假设"},"confidence":"high"},{"from":"cognitive-revolution","to":"cognitive-neuroscience","type":"merges","note":{"zh":"认知模型"},"confidence":"high"},{"from":"neuropsychology","to":"cognitive-neuroscience","type":"merges","note":{"zh":"脑损伤病例与成像方法"},"confidence":"high"},{"from":"hebbian","to":"connectionism","type":"develops","note":{"zh":"\"一起放电的神经元连在一起\"成为网络学习规则"},"confidence":"high"},{"from":"stress-physiology","to":"biopsychosocial","type":"bridges","note":{"zh":"压力把社会处境与身体疾病连起来"},"confidence":"high"},{"from":"nosology","to":"dsm","type":"develops","note":{"zh":"描述性分类传统"},"confidence":"high"},{"from":"psychopharmacology","to":"dsm","type":"bridges","note":{"zh":"药物试验需要可靠的诊断标准，推动 DSM-III"},"confidence":"medium"},{"from":"dimensional","to":"dsm","type":"critiques","note":{"zh":"类别诊断的共病与异质性问题"},"confidence":"high"},{"from":"cognitive-neuroscience","to":"dimensional","type":"merges","note":{"zh":"RDoC 以神经环路组织研究"},"confidence":"high"},{"from":"big-five","to":"dimensional","type":"bridges","note":{"zh":"HiTOP 沿用人格的维度与层级结构"},"confidence":"high"},{"from":"mbsr","to":"third-wave","type":"merges","note":{"zh":"正念练习"},"confidence":"high"},{"from":"cbt","to":"third-wave","type":"develops","note":{"zh":"从改变想法的内容转向改变人与想法的关系"},"confidence":"high"},{"from":"morita","to":"third-wave","type":"bridges","note":{"zh":"\"顺其自然、为所当为\"与接纳取向相近，但无直接师承"},"confidence":"medium"},{"from":"learned-helplessness","to":"positive","type":"develops","note":{"zh":"塞利格曼从无助转向乐观与福祉"},"confidence":"high"},{"from":"needs","to":"positive","type":"develops","note":{"zh":"继承对成长与潜能的关注"},"confidence":"high"},{"from":"positive","to":"needs","type":"critiques","note":{"zh":"批评人本主义缺少实证方法"},"confidence":"high"},{"from":"cultural","to":"cognitive-psychology","type":"critiques","note":{"zh":"许多\"普遍\"结论只在西方样本上成立"},"confidence":"high"},{"from":"open-science","to":"social-cognition","type":"critiques","note":{"zh":"若干启动效应未能重复"},"confidence":"high"},{"from":"affective-neuroscience","to":"trauma","type":"bridges","note":{"zh":"恐惧与威胁环路的研究"},"confidence":"high"}]};</script>
+<script>
+(function(){
+const D=window.PSYMAP_SKELETON, threads=D.threads, schools=D.nodes, edges=D.edges, roots=D.roots;
+const byId=new Map(schools.map(s=>[s.id,s])), tById=new Map(threads.map(t=>[t.id,t]));
+const byThread={}; threads.forEach(t=>byThread[t.id]=schools.filter(s=>s.thread===t.id).sort((a,b)=>a.year-b.year));
+const TYPE={develops:['发展','inherit'],branches:['分支','inherit'],merges:['汇流','inherit'],bridges:['桥接','borrow'],applies:['应用','borrow'],reacts:['反动','oppose'],critiques:['批评','oppose']};
+const Y0=1855,Y1=2026,BIRTH=1879,W=[0,.45,.7,1,1.5,2.2];
+const st={view:'ridge',h:'births',hover:null,lock:null,thread:null,rot:-.35,auto:true};
+const $=id=>document.getElementById(id), esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const mobile=()=>matchMedia('(max-width:760px)').matches;
+const tw=(s,z=12)=>[...s].reduce((a,c)=>a+(c.charCodeAt(0)>255?z:z*.58),0);
+const relOf=id=>edges.filter(e=>e.from===id||e.to===id);
+
+/* ---------- height model ---------- */
+let series={},gmax=1;
+function act(tid,y){let h=0;for(const s of byThread[tid]){const w=W[s.influence],d=y-s.year;
+  if(st.h==='births')h+=w*Math.exp(-(d*d)/72); else if(d>=0)h+=w*(1-Math.exp(-d/5))*Math.pow(.5,d/45);}return h}
+function compute(){gmax=0;threads.forEach(t=>{const a=[];for(let y=Y0;y<=Y1;y++){const v=act(t.id,y);a.push(v);if(v>gmax)gmax=v}series[t.id]=a})}
+const val=(tid,y)=>{const a=series[tid],f=Math.max(0,Math.min(a.length-1.001,y-Y0)),i=Math.floor(f);return a[i]+(a[i+1]-a[i])*(f-i)};
+
+/* ---------- ridge (flat) view ---------- */
+let pos={},geo={};
+function drawRidge(){
+  const svg=$('ridge'),r=$('stage').getBoundingClientRect(),Wd=$('stage').clientWidth,Hd=Math.max(r.height,560);if(Wd<50||mobile())return;svg.style.height=Hd+'px';
+  const gut=Wd<1000?168:214,right=30,top=64,bottom=20,pitch=(Hd-top-bottom)/9,amp=pitch*1.45/gmax;
+  const x=y=>gut+(y-Y0)/(Y1-Y0)*(Wd-gut-right), base=i=>top+pitch*(i+1)-8;
+  geo={x,base,amp,gut,right,top,Wd,Hd};pos={};
+  let s=`<defs><marker id="arr" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#e9eef6"/></marker>${threads.map(t=>`<linearGradient id="g-${t.id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${t.color}" stop-opacity=".5"/><stop offset="1" stop-color="${t.color}" stop-opacity=".03"/></linearGradient>`).join('')}</defs>`;
+  s+='<g class="axis">';for(let y=1860;y<=2020;y+=20)s+=`<line x1="${x(y)}" y1="${top-8}" x2="${x(y)}" y2="${Hd-bottom+6}"/><text x="${x(y)}" y="${top-16}" text-anchor="middle">${y}</text>`;
+  s+=`<line x1="${x(BIRTH)}" y1="${top-8}" x2="${x(BIRTH)}" y2="${Hd-bottom+6}" stroke-dasharray="2 4" style="stroke:var(--accent);opacity:.5"/><text x="${x(BIRTH)+6}" y="${Hd-bottom+4}" style="fill:var(--accent)">1879 实验室</text></g>`;
+  const placed=[];let labels='',marks='';
+  threads.forEach((t,i)=>{
+    const b=base(i);let d='';for(let y=Y0;y<=Y1;y+=.5)d+=`${d?'L':'M'}${x(y).toFixed(1)} ${(b-val(t.id,y)*amp).toFixed(1)}`;
+    const area=`${d}L${x(Y1)} ${b}L${x(Y0)} ${b}Z`;
+    s+=`<g class="row" data-t="${t.id}"><path d="${area}" fill="var(--bg)" opacity=".93"/><path d="${area}" fill="url(#g-${t.id})"/><path d="${d}" fill="none" stroke="${t.color}" stroke-width="1.8" stroke-linejoin="round"/><line x1="${gut-14}" y1="${b}" x2="${Wd-right}" y2="${b}" stroke="${t.color}" stroke-opacity=".28"/>
+      <g class="tlabel" data-t="${t.id}" tabindex="0" role="button" aria-label="${t.title.zh}"><rect x="8" y="${b-34}" width="${gut-30}" height="40" fill="transparent"/><rect x="18" y="${b-27}" width="9" height="9" rx="2" fill="${t.color}"/><text class="tname" x="34" y="${b-18}">${t.title.zh}</text><text class="tq" x="18" y="${b-2}">${t.question.zh}</text></g></g>`;
+    [...byThread[t.id]].sort((a,c)=>c.influence-a.influence||a.year-c.year).forEach(n=>{
+      const px=x(n.year),py=b-val(t.id,n.year)*amp;pos[n.id]={x:px,y:py};
+      marks+=`<g class="sch" data-id="${n.id}" tabindex="0" role="button" aria-label="${esc(n.title.zh)}，${n.year}"><circle r="12" cx="${px}" cy="${py}" fill="transparent"/><circle class="d" r="${n.tier===1?3.6:2.6}" cx="${px}" cy="${py}"/></g>`;
+      if(n.tier!==1)return;const w=tw(n.title.zh)+8,rc=[px-w/2,py-23,px+w/2,py-7];
+      if(rc[0]<gut-6||rc[2]>Wd-4||placed.some(p=>rc[0]<p[2]&&rc[2]>p[0]&&rc[1]<p[3]&&rc[3]>p[1]))return;
+      placed.push(rc);labels+=`<text class="lab" data-id="${n.id}" x="${px}" y="${py-10}" text-anchor="middle">${esc(n.title.zh)}</text>`;
+    });
+  });
+  svg.setAttribute('viewBox',`0 0 ${Wd} ${Hd}`);
+  svg.innerHTML=s+`<g id="marks">${marks}</g><g id="labels">${labels}</g><g id="edges"></g><g class="cross" id="cross" style="display:none"><line y1="${top-8}" y2="${Hd-bottom}"/><text y="${top-30}" text-anchor="middle"></text></g>`;
+  svg.querySelectorAll('.sch').forEach(g=>{const id=g.dataset.id;
+    g.addEventListener('mouseenter',e=>{st.hover=id;focusRidge();showTip(id,e)});g.addEventListener('mousemove',e=>moveTip(e));
+    g.addEventListener('mouseleave',()=>{st.hover=null;focusRidge();hideTip()});g.addEventListener('focus',()=>{st.hover=id;focusRidge()});g.addEventListener('blur',()=>{st.hover=null;focusRidge()});
+    g.addEventListener('click',e=>{e.stopPropagation();lock(id)});g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();lock(id)}})});
+  svg.querySelectorAll('.tlabel').forEach(g=>{const id=g.dataset.t;const on=()=>{st.thread=id;focusRidge()},off=()=>{st.thread=null;focusRidge()};
+    g.addEventListener('mouseenter',on);g.addEventListener('mouseleave',off);g.addEventListener('focus',on);g.addEventListener('blur',off)});
+  focusRidge();
+}
+function focusRidge(){
+  const svg=$('ridge'),id=st.hover||st.lock,eg=svg.querySelector('#edges');if(!eg)return;
+  let list=[],relN=new Set(),relT=new Set();
+  if(id){list=relOf(id);relN.add(id);list.forEach(e=>{relN.add(e.from);relN.add(e.to)});relN.forEach(n=>relT.add(byId.get(n).thread))}
+  else if(st.thread){relT.add(st.thread);list=edges.filter(e=>(byId.get(e.from).thread===st.thread)!==(byId.get(e.to).thread===st.thread));list.forEach(e=>{relN.add(e.from);relN.add(e.to)});byThread[st.thread].forEach(n=>relN.add(n.id));relN.forEach(n=>relT.add(byId.get(n).thread))}
+  const on=relN.size>0;svg.classList.toggle('focus',on);
+  svg.querySelectorAll('.row').forEach(g=>g.classList.toggle('rel',relT.has(g.dataset.t)));
+  svg.querySelectorAll('.sch').forEach(g=>{g.classList.toggle('rel',relN.has(g.dataset.id));g.classList.toggle('on',g.dataset.id===id)});
+  svg.querySelectorAll('#labels .lab').forEach(g=>g.classList.toggle('rel',relN.has(g.dataset.id)));
+  let h='';const shown=new Set([...svg.querySelectorAll('#labels .lab')].map(l=>l.dataset.id));
+  list.forEach(e=>{const a=pos[e.from],b=pos[e.to];if(!a||!b)return;const dx=(b.x-a.x)*.5,mx=(a.x+b.x)/2,my=(a.y+b.y)/2;
+    h+=`<path class="edge ${TYPE[e.type][1]}" marker-end="url(#arr)" d="M${a.x} ${a.y}C${a.x+dx} ${a.y},${b.x-dx} ${b.y},${b.x} ${b.y}"/>`;
+    if(id)h+=`<text class="etag" x="${mx}" y="${my-5}" text-anchor="middle">${TYPE[e.type][0]}</text>`});
+  if(id)relN.forEach(n=>{if(shown.has(n))return;const p=pos[n];h+=`<text class="lab rel" x="${p.x}" y="${p.y-10}" text-anchor="middle">${esc(byId.get(n).title.zh)}</text>`});
+  eg.innerHTML=h;
+}
+$('ridge').addEventListener('mousemove',e=>{const c=$('ridge').querySelector('#cross');if(!c||!geo.x)return;const r=$('ridge').getBoundingClientRect(),px=e.clientX-r.left;
+  if(px<geo.gut||px>geo.Wd-geo.right){c.style.display='none';return}const yr=Math.round(Y0+(px-geo.gut)/(geo.Wd-geo.gut-geo.right)*(Y1-Y0));
+  c.style.display='';c.querySelector('line').setAttribute('x1',px);c.querySelector('line').setAttribute('x2',px);const t=c.querySelector('text');t.setAttribute('x',px);t.textContent=yr});
+$('ridge').addEventListener('mouseleave',()=>{const c=$('ridge').querySelector('#cross');if(c)c.style.display='none'});
+$('ridge').addEventListener('click',()=>lock(null));
+
+/* ---------- tooltip ---------- */
+function showTip(id,e){const n=byId.get(id),t=tById.get(n.thread),k=relOf(id).length;$('tip').innerHTML=`<b>${esc(n.title.zh)}</b><span><em>${n.year}</em>${esc(n.landmark.zh)}</span><br><span><i class="chip" style="--c:${t.color}"></i> ${t.title.zh}${k?` · ${k} 条关系`:''}</span>`;$('tip').style.display='block';moveTip(e)}
+function moveTip(e){const t=$('tip'),w=t.offsetWidth,h=t.offsetHeight;let x=e.clientX+14,y=e.clientY+14;if(x+w>innerWidth-8)x=e.clientX-w-14;if(y+h>innerHeight-8)y=e.clientY-h-14;t.style.left=x+'px';t.style.top=y+'px'}
+function hideTip(){$('tip').style.display='none'}
+
+/* ---------- detail panel ---------- */
+function lock(id){st.lock=id;const p=$('panel');
+  if(!id){p.classList.remove('open');after();return}
+  const n=byId.get(id),t=tById.get(n.thread),rs=relOf(id);
+  $('pin').innerHTML=`<button class="x" id="px" aria-label="关闭">×</button><div class="meta"><i class="chip" style="--c:${t.color}"></i>${t.title.zh}</div><h2>${esc(n.title.zh)}</h2>
+   <div class="lm" style="--c:${t.color}"><em>${n.year}</em>${esc(n.landmark.zh)}</div>
+   <div class="score">历史影响 <span>${[1,2,3,4,5].map(i=>`<i class="${i<=n.influence?'f':''}"></i>`).join('')}</span><span class="mono">${n.influence}/5 暂定</span></div>
+   <h3>关系 · ${rs.length}</h3>${rs.length?rs.map(e=>{const out=e.from===id,o=byId.get(out?e.to:e.from),ot=tById.get(o.thread);return`<button class="rel" data-go="${o.id}"><u>${out?'→ ':'← '}${TYPE[e.type][0]}</u><b><i class="chip" style="--c:${ot.color}"></i> ${esc(o.title.zh)} <span class="mono">${o.year}</span></b><span>${esc(e.note.zh)}</span></button>`}).join(''):'<p class="note">骨架里暂时没有它的跨脉络关系；正式数据会补上脉络内部的关系。</p>'}
+   <p class="note">这是骨架数据：只有学派、标志事件和关键的跨脉络关系。理论、人物、概念卡片和阅读阶梯在正式数据完成后出现在这里。${n.confidence!=='high'?'<br>⚠ 这一条的年份把握较低，待核对。':''}</p>`;
+  p.classList.add('open');$('px').onclick=()=>lock(null);$('pin').querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>lock(b.dataset.go));
+  st.rotTarget=-threads.findIndex(x=>x.id===n.thread)*Math.PI*2/9;st.auto=false;after();
+}
+function after(){setTimeout(()=>{if(st.view==='ridge')drawRidge();else{sizeGlass();drawGlass()}},mobile()?0:230);focusRidge()}
+
+/* ---------- hourglass (3D) view ---------- */
+const cv=$('glass'),cx2=cv.getContext('2d');let gw=0,gh=0,hits=[];
+function sizeGlass(){const r=$('stage').getBoundingClientRect(),d=Math.min(2,devicePixelRatio||1);gw=$('stage').clientWidth;gh=Math.max(r.height,mobile()?480:560);cv.style.height=gh+'px';cv.width=gw*d;cv.height=gh*d;cx2.setTransform(d,0,0,d,0,0)}
+function drawGlass(){
+  if(st.view!=='glass'||gw<50)return;const c=cx2;c.clearRect(0,0,gw,gh);
+  const top=44,tilt=.3,cx=gw/2+(gw>900?40:0),Rm=Math.min(gw*.38,420,(gh-top-50)*.5),bot=gh-50-Rm*tilt,neck=top+(bot-top)*.27,Rn=Rm*.09,Rt=Rm*.6;
+  const yOf=y=>neck+(y-BIRTH)/(Y1-BIRTH)*(bot-neck);
+  const R=y=>y>=neck?Rn+(Rm-Rn)*Math.pow(Math.sin(Math.min(1,(y-neck)/(bot-neck))*Math.PI/2),.85):Rn+(Rt-Rn)*Math.pow(Math.sin(Math.min(1,(neck-y)/(neck-top))*Math.PI/2),1.1);
+  const P=(th,y,r)=>({x:cx+r*Math.sin(th),y:y+r*Math.cos(th)*tilt,z:Math.cos(th)});
+  const ink='233,238,246',step=Math.PI*2/9,arcMax=step*.86;
+  const ring=(y,front,a)=>{c.beginPath();c.ellipse(cx,y,R(y),R(y)*tilt,0,front?0:Math.PI,front?Math.PI:Math.PI*2);c.strokeStyle=`rgba(${ink},${a})`;c.lineWidth=1;c.stroke()};
+  const years=[1880,1900,1920,1940,1960,1980,2000,2020];
+  years.forEach(y=>ring(yOf(y),false,.07));ring(top,false,.12);
+  // glass silhouette
+  c.beginPath();for(let y=top;y<=bot;y+=3)c.lineTo(cx-R(y),y);for(let y=bot;y>=top;y-=3)c.lineTo(cx+R(y),y);c.closePath();
+  const gf=c.createLinearGradient(0,top,0,bot);gf.addColorStop(0,'rgba(125,240,226,.05)');gf.addColorStop(.25,'rgba(125,240,226,.015)');gf.addColorStop(1,'rgba(57,135,229,.06)');c.fillStyle=gf;c.fill();c.strokeStyle=`rgba(${ink},.2)`;c.lineWidth=1;c.stroke();
+  // roots on the upper bulb
+  roots.forEach((rt,i)=>{const th=st.rot*.6+i*Math.PI*2/roots.length+.5,y0=top+8+(i%3)*((neck-top)*.2);c.beginPath();for(let y=y0;y<=neck;y+=3){const p=P(th,y,R(y));y===y0?c.moveTo(p.x,p.y):c.lineTo(p.x,p.y)}const z=Math.cos(th);c.strokeStyle=`rgba(125,240,226,${z>0?.42:.1})`;c.lineWidth=1;c.stroke();
+    if(z>.1){const p=P(th,y0,R(y0));c.fillStyle=`rgba(125,240,226,${.5+z*.5})`;c.fillRect(p.x-2.5,p.y-2.5,5,5);c.font='12px '+getComputedStyle(document.body).fontFamily;c.fillStyle=`rgba(${ink},${.45+z*.5})`;c.textAlign=p.x<cx?'right':'left';c.fillText(rt.title.zh,p.x+(p.x<cx?-9:9),p.y+4)}});
+  // threads, back to front
+  hits=[];const names=[];const order=threads.map((t,k)=>({t,k,th:st.rot+k*step})).sort((a,b)=>Math.cos(a.th)-Math.cos(b.th)),labels=[];
+  order.forEach(({t,th})=>{const z=Math.cos(th),a=.16+.84*Math.pow((z+1)/2,1.6),first=byThread[t.id][0].year;
+    const basePts=[],ridgePts=[];for(let yr=BIRTH;yr<=Y1;yr+=1){const y=yOf(yr),r=R(y),d=Math.min(arcMax,val(t.id,yr)/gmax*Rm*.5/r);basePts.push(P(th,y,r));ridgePts.push(P(th+d,y,r))}
+    c.beginPath();basePts.forEach((p,i)=>i?c.lineTo(p.x,p.y):c.moveTo(p.x,p.y));for(let i=ridgePts.length-1;i>=0;i--)c.lineTo(ridgePts[i].x,ridgePts[i].y);c.closePath();
+    c.globalAlpha=a*.3;c.fillStyle=t.color;c.fill();c.globalAlpha=a;
+    c.beginPath();ridgePts.forEach((p,i)=>i?c.lineTo(p.x,p.y):c.moveTo(p.x,p.y));c.strokeStyle=t.color;c.lineWidth=st.thread===t.id?2.6:1.7;c.stroke();
+    c.beginPath();basePts.forEach((p,i)=>i?c.lineTo(p.x,p.y):c.moveTo(p.x,p.y));c.globalAlpha=a*.4;c.lineWidth=1;c.stroke();c.globalAlpha=1;
+    byThread[t.id].forEach(n=>{if(n.year<BIRTH)return;const y=yOf(n.year),r=R(y),d=Math.min(arcMax,val(t.id,n.year)/gmax*Rm*.5/r),p=P(th+d,y,r);
+      if(z>-.1){c.beginPath();c.arc(p.x,p.y,n.tier===1?3.2:2,0,7);c.fillStyle='#080b11';c.globalAlpha=a;c.fill();c.strokeStyle=n.id===(st.hover||st.lock)?'#7df0e2':`rgb(${ink})`;c.lineWidth=1.4;c.stroke();c.globalAlpha=1;hits.push({id:n.id,x:p.x,y:p.y})}
+      if(n.tier===1&&z>.25)labels.push({n,p,z,inf:n.influence})});
+    names.push({t,e:P(th,bot,R(bot)),z,a});
+  });
+  {const np=[];c.font='600 13px '+getComputedStyle(document.body).fontFamily;c.textAlign='center';names.sort((p,q)=>q.z-p.z).forEach(({t,e,z,a})=>{if(z<-.2)return;c.fillStyle=t.color;c.globalAlpha=a;c.fillRect(e.x-4,e.y+6,8,8);c.globalAlpha=1;const w=tw(t.title.zh,13)+10,rc=[e.x-w/2,e.y+12,e.x+w/2,e.y+32];if(rc[0]<2||rc[2]>gw-2||np.some(q=>rc[0]<q[2]&&rc[2]>q[0]&&rc[1]<q[3]&&rc[3]>q[1]))return;np.push(rc);c.fillStyle=`rgba(${ink},${Math.max(.3,a)})`;c.fillText(t.title.zh,e.x,e.y+27)})}
+  years.forEach(y=>{ring(yOf(y),true,.17);c.font='11px ui-monospace,Consolas,monospace';c.textAlign='right';c.fillStyle=`rgba(${ink},.45)`;c.fillText(y,cx-R(yOf(y))-10,yOf(y)+4)});ring(bot,true,.3);ring(neck,true,.5);ring(top,true,.22);
+  // neck callout
+  c.strokeStyle='rgba(125,240,226,.6)';c.beginPath();c.moveTo(cx+Rn+6,neck);c.lineTo(cx+Rn+54,neck);c.stroke();c.textAlign='left';c.fillStyle='#7df0e2';c.font='11px ui-monospace,Consolas,monospace';c.fillText('1879',cx+Rn+60,neck-3);c.fillStyle=`rgba(${ink},.8)`;c.font='12px '+getComputedStyle(document.body).fontFamily;c.fillText('心理学成为实验科学',cx+Rn+60,neck+13);
+  c.textAlign='center';c.fillStyle=`rgba(${ink},.5)`;c.font='11px ui-monospace,Consolas,monospace';c.fillText('源头 · 1860 以前',cx,top-12);
+  // school labels: front first, then by influence
+  const put=[[cx+Rn+50,neck-18,cx+Rn+66+tw('心理学成为实验科学'),neck+20]];c.font='12px '+getComputedStyle(document.body).fontFamily;
+  labels.sort((a,b)=>(b.z>.75)-(a.z>.75)||b.inf-a.inf||b.z-a.z).forEach(({n,p,z})=>{const w=tw(n.title.zh)+6,left=p.x<cx,rc=[left?p.x-8-w:p.x+8,p.y-8,left?p.x-8:p.x+8+w,p.y+8];
+    if(rc[0]<4||rc[2]>gw-4||put.some(q=>rc[0]<q[2]&&rc[2]>q[0]&&rc[1]<q[3]&&rc[3]>q[1]))return;put.push(rc);
+    c.textAlign=left?'right':'left';c.lineWidth=4;c.strokeStyle=`rgba(8,11,17,${.5+z*.4})`;c.strokeText(n.title.zh,left?p.x-8:p.x+8,p.y+4);c.fillStyle=`rgba(${ink},${.35+.65*z})`;c.fillText(n.title.zh,left?p.x-8:p.x+8,p.y+4)});
+}
+function loop(){if(st.view==='glass'){if(st.rotTarget!=null){let d=st.rotTarget-st.rot;d=Math.atan2(Math.sin(d),Math.cos(d));if(Math.abs(d)<.004){st.rot=st.rotTarget;st.rotTarget=null}else st.rot+=d*.12;drawGlass()}else if(st.auto&&!matchMedia('(prefers-reduced-motion:reduce)').matches){st.rot+=.0016;drawGlass()}}requestAnimationFrame(loop)}
+let drag=null;
+cv.addEventListener('pointerdown',e=>{drag={x:e.clientX,rot:st.rot,moved:false};st.auto=false;st.rotTarget=null;cv.classList.add('drag');cv.setPointerCapture(e.pointerId)});
+cv.addEventListener('pointermove',e=>{if(drag){const dx=e.clientX-drag.x;if(Math.abs(dx)>3)drag.moved=true;st.rot=drag.rot+dx*.008;drawGlass();hideTip();return}
+  const r=cv.getBoundingClientRect(),h=nearest(e.clientX-r.left,e.clientY-r.top);if((h&&h.id)!==st.hover){st.hover=h?h.id:null;drawGlass()}if(h){showTip(h.id,e);cv.style.cursor='pointer'}else{hideTip();cv.style.cursor=''}});
+cv.addEventListener('pointerup',e=>{cv.classList.remove('drag');if(drag&&!drag.moved){const r=cv.getBoundingClientRect(),h=nearest(e.clientX-r.left,e.clientY-r.top);lock(h?h.id:null)}drag=null});
+cv.addEventListener('pointerleave',()=>{hideTip();if(st.hover){st.hover=null;drawGlass()}});
+function nearest(x,y){let best=null,bd=mobile()?22:13;for(let i=hits.length-1;i>=0;i--){const h=hits[i],d=Math.hypot(h.x-x,h.y-y);if(d<bd){bd=d;best=h}}return best}
+$('glassSide').innerHTML=threads.map((t,k)=>`<button data-k="${k}" style="--c:${t.color}"><i></i><span>${t.title.zh}</span></button>`).join('');
+$('glassSide').querySelectorAll('button').forEach(b=>b.onclick=()=>{const k=+b.dataset.k;st.thread=threads[k].id;st.rotTarget=-k*Math.PI*2/9;st.auto=false;$('glassSide').querySelectorAll('button').forEach(o=>o.classList.toggle('on',o===b))});
+
+/* ---------- mobile cards ---------- */
+function drawCards(){
+  $('cards').innerHTML=threads.map(t=>{let d='';for(let y=Y0;y<=Y1;y+=2)d+=`${d?'L':'M'}${((y-Y0)/(Y1-Y0)*300).toFixed(1)} ${(34-val(t.id,y)/gmax*31).toFixed(1)}`;
+    const list=byThread[t.id];return`<div class="card" style="--c:${t.color}"><button aria-expanded="false"><i class="chip"></i><b>${t.title.zh}</b><em>${list.length} 个 · ${list[0].year}—</em><small>${t.question.zh}</small><svg viewBox="0 0 300 34" preserveAspectRatio="none"><path d="${d}L300 34L0 34Z" fill="${t.color}" fill-opacity=".22"/><path d="${d}" fill="none" stroke="${t.color}" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg></button>
+    <div class="stops">${list.map(n=>{const x=relOf(n.id).filter(e=>byId.get(e.from).thread!==byId.get(e.to).thread)[0];let tag='';if(x){const out=x.from===n.id,o=byId.get(out?x.to:x.from);tag=`<u>${out?'→':'←'} ${TYPE[x.type][0]} · ${tById.get(o.thread).title.zh} · ${esc(o.title.zh)}</u>`}
+      return`<button class="stop" data-id="${n.id}"><em>${n.year}</em><b>${esc(n.title.zh)}</b><span>${esc(n.landmark.zh)}</span>${tag}</button>`}).join('')}</div></div>`}).join('');
+  $('cards').querySelectorAll('.card>button').forEach(b=>b.onclick=()=>{const o=b.parentNode.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  $('cards').querySelectorAll('.stop').forEach(b=>b.onclick=()=>lock(b.dataset.id));
+}
+
+/* ---------- controls ---------- */
+function render(){compute();if(mobile())drawCards();if(st.view==='ridge')drawRidge();else{sizeGlass();drawGlass()}}
+document.querySelectorAll('[data-view]').forEach(b=>b.tagName==='BUTTON'&&(b.onclick=()=>{st.view=b.dataset.view;document.body.dataset.view=st.view;document.querySelectorAll('button[data-view]').forEach(o=>o.setAttribute('aria-pressed',o===b));render()}));
+document.querySelectorAll('[data-h]').forEach(b=>b.onclick=()=>{st.h=b.dataset.h;document.querySelectorAll('[data-h]').forEach(o=>o.setAttribute('aria-pressed',o===b));render()});
+$('how').innerHTML=`<p><b>山峰高度 = 那一年前后，这条脉络里有多少"分量"的学派。</b>每个学派按历史影响评分（1–5）折算成权重，影响越大的学派把山顶得越高。</p><p><b>新学派涌现</b>：一个学派只在它登场前后约十来年里计入。看的是"什么时候热闹"，比如行为主义的 1910—1960。</p><p><b>累计分量</b>：学派登场后持续计入，每 45 年衰减一半。看的是"到那时已经积累了多少"。</p><p>九条脉络用同一把尺，可以互相比较高低。高度来自本图自己的编辑评分，不是论文数或引用数的统计；现在的评分是暂定的。</p>`;
+$('howBtn').onclick=e=>{e.stopPropagation();const o=$('how').classList.toggle('open');$('howBtn').setAttribute('aria-expanded',o)};
+document.addEventListener('click',e=>{if(!e.target.closest('#how'))$('how').classList.remove('open');if(!e.target.closest('.search'))$('results').classList.remove('open')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){lock(null);$('how').classList.remove('open');$('results').classList.remove('open')}});
+$('q').addEventListener('input',()=>{const q=$('q').value.trim().toLowerCase(),box=$('results');if(!q){box.classList.remove('open');return}
+  const m=schools.filter(n=>(n.title.zh+n.landmark.zh+n.id).toLowerCase().includes(q)).slice(0,8);
+  box.innerHTML=m.length?m.map(n=>`<button data-id="${n.id}"><i class="chip" style="--c:${tById.get(n.thread).color}"></i>${esc(n.title.zh)}<small>${n.year} · ${tById.get(n.thread).title.zh}</small></button>`).join(''):'<button disabled>骨架里没有匹配的学派</button>';
+  box.classList.add('open');box.querySelectorAll('[data-id]').forEach(b=>b.onclick=()=>{box.classList.remove('open');lock(b.dataset.id)})});
+let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(render,80)});
+render();requestAnimationFrame(loop);
+window.__pm={st,render,lock,drawGlass,sizeGlass};
+})();
+</script>
+</body>
+</html>

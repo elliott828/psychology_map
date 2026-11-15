@@ -1,0 +1,217 @@
+{
+ "iat-implicit-bias": {
+  "summary": "The Implicit Association Test measures people's automatic associations between social groups and good or bad words, using differences in response speed. These results are used to estimate 'implicit bias'.",
+  "landmark": "Greenwald, McGhee, and Schwartz published the Implicit Association Test.",
+  "evidenceNote": "The test's test-retest reliability is low, and its prediction of individual behavior is weak. It is more suitable for group-level research."
+ },
+ "cognitive-dissonance-theory": {
+  "summary": "When two ideas conflict, the mismatch is uncomfortable. To reduce this discomfort, people are more likely to adjust their ideas than to change their behavior.",
+  "landmark": "Festinger, 'A Theory of Cognitive Dissonance'.",
+  "evidenceNote": "Many studies using induced-compliance and free-choice paradigms have been replicated. Whether dissonance must come from threat to the self is still debated."
+ },
+ "forced-compliance": {
+  "summary": "Participants did a boring task and told the next person it was interesting. Those paid one dollar rated the task as more enjoyable than those paid twenty dollars, because a dollar gave them too little outside justification.",
+  "landmark": "Festinger and Carlsmith: people who lied for one dollar came to believe their own lie more.",
+  "evidenceNote": "Replicated many times. But the explanation based on reward and motivation has been challenged by alternatives such as self-perception theory."
+ },
+ "self-perception-theory": {
+  "summary": "People do not always know what they think. Like observers, they infer from their own behavior that they probably like something.",
+  "landmark": "Bem proposed that people infer their own attitudes by observing their own behavior.",
+  "evidenceNote": "It explains well situations where attitudes are weak or unclear. It is more limited for strong attitudes, and it coexists with dissonance theory."
+ },
+ "fundamental-attribution-error": {
+  "summary": "When others are late, it is because they are irresponsible. When we are late, it is because of traffic. People tend to explain others by their personality, but explain themselves by the situation.",
+  "landmark": "Ross proposed that people underestimate the role of situations when explaining others' behavior.",
+  "evidenceNote": "It is robust in Western samples and weaker in East Asia and India. It is also strongly affected by the task and the cues given."
+ },
+ "amae": {
+  "summary": "The wish to be indulged by others and to depend on their goodwill. It is common in Japanese families and workplaces. Doi argued it is the key to understanding the Japanese mind.",
+  "landmark": "Doi, 'The Anatomy of Dependence' (Amae no kozo).",
+  "evidenceNote": "This is a cultural interpretive concept, used to explain Japanese interpersonal relations. It lacks systematic empirical research, and it is closer to psychoanalysis."
+ },
+ "face-and-favor": {
+  "summary": "In Chinese social exchange, favor (renqing) is a resource and face (mianzi) reflects social standing. Together they form a 'power game' of mutual exchange.",
+  "landmark": "Hwang Kwang-kuo, 'Face and Favor: The Chinese Power Game'.",
+  "evidenceNote": "The model provides a theoretical framework and has been used in research in some Chinese societies. Confirmatory evidence is limited."
+ },
+ "social-identity-theory": {
+  "summary": "Once a person places themselves in a group, they protect their self-esteem by favoring their own group. This produces preference for the in-group and prejudice against outsiders.",
+  "landmark": "Tajfel and Turner.",
+  "evidenceNote": "People tend to favor their own group. This appears under almost any grouping condition and has been replicated extensively."
+ },
+ "minimal-group-paradigm": {
+  "summary": "Simply being randomly assigned to a 'red group' or a 'blue group' leads people to give more resources to members of their own group.",
+  "landmark": "Tajfel and colleagues found that random group assignment alone is enough to produce in-group favoritism.",
+  "evidenceNote": "Replicated in many countries. But the strength of the favoritism and the explanations for its motivation vary."
+ },
+ "social-priming": {
+  "summary": "Being unconsciously exposed to words related to 'the elderly' makes people walk more slowly. The finding was highly influential, but it has largely failed to replicate.",
+  "landmark": "Bargh, Chen, and Burrows: exposure to words about old age led people to walk more slowly.",
+  "evidenceNote": "Several independent replications failed to reproduce the original result. It has become a leading example of the replicability crisis."
+ },
+ "self-fulfilling-prophecy": {
+  "summary": "When teachers believe certain students have potential, those students may later perform better. This is linked to the attention and feedback teachers give without intending to.",
+  "landmark": "Rosenthal and Jacobson, 'Pygmalion in the Classroom'.",
+  "evidenceNote": "Teacher expectations do have an effect. But the original finding of large IQ gains was criticized on methodological grounds, and later meta-analyses show a smaller effect."
+ },
+ "independent-interdependent-self": {
+  "summary": "Western cultures tend to see the self as an independent individual with stable traits. East Asian cultures tend to see the self as part of a web of relationships.",
+  "landmark": "Markus and Kitayama, 'Culture and the Self'.",
+  "evidenceNote": "There is considerable support for cross-cultural differences in self-construal. But the differences among individuals, and within East Asia, are substantial."
+ },
+ "weird-samples": {
+  "summary": "Most psychology participants come from Western, educated, wealthy, industrialized, democratic societies, yet their results are treated as representative of all humanity.",
+  "landmark": "Henrich, Heine, and Norenzayan, 'The Weirdest People in the World?'",
+  "evidenceNote": "A systematic review of published cross-cultural research found that samples from these Western, educated, industrialized, rich, and democratic societies are outliers on many tasks."
+ },
+ "hierarchy-of-needs": {
+  "summary": "Physiological, safety, love and belonging, esteem, and self-actualization. These are the need categories Maslow arranged. He did not think they were strictly 'unlocked' one level at a time.",
+  "landmark": "Maslow, 'A Theory of Human Motivation'.",
+  "evidenceNote": "Need satisfaction is linked to well-being. But the 'level-by-level' order has not been confirmed in cross-cultural research. The pyramid diagram did not come from Maslow himself."
+ },
+ "self-actualization-theory": {
+  "summary": "A small number of people fully develop their potential. They accept reality, are creative, care for others, and often have 'peak experiences'.",
+  "landmark": "Maslow, 'Motivation and Personality'.",
+  "evidenceNote": "The traits of 'self-actualizers' came from subjective selection of a few famous people. They have not been rigorously tested empirically."
+ },
+ "will-to-meaning": {
+  "summary": "A person's most basic drive is not pleasure or power, but the search for life's meaning. A person can choose their attitude in any situation.",
+  "landmark": "Frankl's experience in Nazi concentration camps, and 'The Doctor and the Soul' (1946).",
+  "evidenceNote": "A sense of meaning is linked to lower depression and better health. But 'the will to meaning is the most basic drive' is a philosophical claim."
+ },
+ "paradoxical-intention": {
+  "summary": "The things we most try to avoid are the most likely to happen. So deliberately wishing for them to happen can break the cycle of anxiety.",
+  "landmark": "Frankl applied the technique to anxiety and insomnia.",
+  "evidenceNote": "Some controlled studies support it for insomnia and anticipatory anxiety. Its effectiveness varies by condition."
+ },
+ "core-conditions": {
+  "summary": "When the therapist provides empathy, congruence (genuineness), and unconditional positive regard, the client changes in constructive ways.",
+  "landmark": "Rogers published 'The Necessary and Sufficient Conditions of Therapeutic Personality Change'.",
+  "evidenceNote": "Empathy, genuineness, and unconditional positive regard are linked to therapy outcomes, with a moderate effect. But they are not 'sufficient' on their own."
+ },
+ "two-chair-technique": {
+  "summary": "The client sits in two chairs and takes turns speaking for each side of an inner conflict. Or the client speaks to a person imagined in an empty chair and says what was left unsaid.",
+  "landmark": "Greenberg published 'Resolving Splits: Use of the Two-Chair Technique'.",
+  "evidenceNote": "Controlled studies support it for inner conflict and unfinished business. It is one of the best-supported techniques in emotion-focused therapy."
+ },
+ "ultimate-concerns": {
+  "summary": "People must face four unavoidable matters: death, freedom (and responsibility), isolation, and meaninglessness.",
+  "landmark": "Yalom, 'Existential Psychotherapy'.",
+  "evidenceNote": "It is a clinical framework. The evidence linking each theme to anxiety and depression is limited."
+ },
+ "terror-management": {
+  "summary": "Knowing we will die, people are driven by this fear to defend their cultural worldview and self-esteem. When reminded of death, people become more hostile toward different views.",
+  "landmark": "Greenberg, Pyszczynski, and Solomon proposed terror management theory.",
+  "evidenceNote": "The mortality-salience effect has appeared in several experiments. But some large recent replications have failed, and the theoretical explanation is also questioned."
+ },
+ "flow-model": {
+  "summary": "To enter flow you need clear goals, immediate feedback, and a challenge matched to your skill. Too easy and you become bored; too hard and you become anxious.",
+  "landmark": "Csikszentmihalyi, 'Flow: The Psychology of Optimal Experience'.",
+  "evidenceNote": "The challenge-skill balance predictions have partial support. But the neural and measurement basis of flow is still not unified."
+ },
+ "basic-psychological-needs": {
+  "summary": "When the three needs of autonomy, competence, and relatedness are met, people are more engaged and happier. When they are controlled, motivation actually declines.",
+  "landmark": "Ryan and Deci, 'Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being'.",
+  "evidenceNote": "Large cross-cultural and experimental studies show that need satisfaction is linked to well-being and engagement. Whether every one of these needs is truly 'basic' is still debated."
+ },
+ "overjustification": {
+  "summary": "An activity done out of interest can lose that interest once external rewards 'buy' it. The intrinsic motivation may decline.",
+  "landmark": "Lepper, Greene, and Nisbett: children who liked drawing and were given rewards later drew less.",
+  "evidenceNote": "Replicated many times in education and work settings. But not all rewards undermine interest, and the effect has limits."
+ },
+ "eft-couples": {
+  "summary": "Repeated conflict between partners is seen as a cycle in which attachment needs cannot be expressed. Through helping each partner voice hidden emotions, safety in the relationship is rebuilt.",
+  "landmark": "Greenberg and Johnson, 'Emotionally Focused Couple Therapy'.",
+  "evidenceNote": "Several controlled trials and follow-up studies support it. Most of the research comes from the developers' own teams."
+ },
+ "perma": {
+  "summary": "Well-being has five parts: positive emotion, engagement, relationships, meaning, and accomplishment.",
+  "landmark": "Seligman, 'Flourish'.",
+  "evidenceNote": "Each of the five elements is linked to well-being. But that these are exactly the right five has not been tested."
+ },
+ "broaden-and-build": {
+  "summary": "Positive emotions widen a person's attention and thinking, helping them build long-term resources such as skills, friendships, and resilience.",
+  "landmark": "Fredrickson published work on the role of positive emotion.",
+  "evidenceNote": "Experiments showing positive emotions widen attention provide support. Her '3:1 positivity ratio' was overturned by later mathematical criticism and withdrawn."
+ },
+ "hedonic-adaptation": {
+  "summary": "Whether someone wins a lottery or is injured, their emotional reaction to the change usually gradually returns to their earlier level.",
+  "landmark": "Brickman and Campbell proposed the 'hedonic treadmill'.",
+  "evidenceNote": "People adapt to many positive and negative events. But events such as unemployment and widowhood have lasting effects, and the idea of a fixed 'set point' of happiness has been revised."
+ },
+ "grit": {
+  "summary": "Perseverance and passion for long-term goals are thought to predict achievement better than talent does.",
+  "landmark": "Duckworth and colleagues, 'Grit: Perseverance and Passion for Long-Term Goals'.",
+  "evidenceNote": "Its predictive power comes mainly from the perseverance part. It overlaps heavily with conscientiousness, and interventions have produced smaller effects."
+ },
+ "growth-mindset": {
+  "summary": "People who believe ability can be changed through effort are more willing to take on challenges. People who believe ability is fixed tend to avoid failure.",
+  "landmark": "Dweck, 'Mindset'.",
+  "evidenceNote": "The belief is only weakly linked to academic performance. Large-scale trials of academic interventions show a very small average effect, though it helps some students."
+ },
+ "janet-automatism": {
+  "summary": "Some experiences are 'split off' from the main consciousness and operate like a separate small system. This causes forgetfulness, paralysis, or states that feel like being 'another person'.",
+  "landmark": "Janet, 'Psychological Automatism'.",
+  "evidenceNote": "Later research supports the idea that severe trauma narrows consciousness and produces dissociation. But Janet's specific model has been revised."
+ },
+ "charcot-hysteria": {
+  "summary": "Hysteria was not 'faking illness'. It was a real disorder that could be reproduced through hypnosis. Its symptoms came from psychological causes rather than bodily injury.",
+  "landmark": "Charcot's 'Tuesday lectures' at the Salpetriere Hospital.",
+  "evidenceNote": "He treated hysteria as a real neurosis and brought it into modern medicine. But his demonstrations clearly involved suggestion, and the theory has been abandoned."
+ },
+ "did-model": {
+  "summary": "Whether a person really splits into several 'personalities', or whether this is a performance shaped by suggestion and role expectations, is still debated.",
+  "landmark": "Putnam, 'Diagnosis and Treatment of Multiple Personality Disorder'.",
+  "evidenceNote": "Trauma models and sociocognitive models each have evidence. The diagnosis was widely overdiagnosed in the 1980s and 1990s."
+ },
+ "dream-theory": {
+  "summary": "A dream is a disguised fulfillment of an unconscious wish. Interpreting a dream means tracing from its manifest content back to its latent content.",
+  "landmark": "Freud, 'The Interpretation of Dreams' (published late in 1899, dated 1900 on the title page).",
+  "evidenceNote": "Neuroscience research on dreams does not support the core claim that dreams are disguised wishes. But dreams are linked to emotional processing."
+ },
+ "drive-theory": {
+  "summary": "People are driven by instincts for sex and aggression, which conflict with the demands of reality and morality. The conflict is pushed into the unconscious and then appears as symptoms, dreams, and slips of the tongue.",
+  "landmark": "Freud, 'Three Essays on the Theory of Sexuality'.",
+  "evidenceNote": "The claims that sex and aggression are basic drives, and that early stages determine personality, lack evidentiary support and have been replaced by later models. The 'unconscious conflict' perspective remains influential."
+ },
+ "structural-model": {
+  "summary": "The mind is divided into the id, which seeks gratification; the ego, which takes reality into account; and the superego, which internalizes norms. Symptoms arise from conflict among the three.",
+  "landmark": "Freud, 'The Ego and the Id'.",
+  "evidenceNote": "This is an explanatory framework for describing inner conflict. It makes no falsifiable predictions."
+ },
+ "transference": {
+  "summary": "Patients bring feelings and expectations formed toward important people in early life into their relationship with the therapist. The therapist can use this to see the patient's patterns.",
+  "landmark": "Freud, 'The Dynamics of Transference'.",
+  "evidenceNote": "Seeing present people through patterns from past relationships has some support in social cognition experiments."
+ },
+ "repression": {
+  "summary": "Painful material is pushed out of consciousness and stored in the unconscious. It may later return under suitable conditions.",
+  "landmark": "Freud, 'Repression'.",
+  "evidenceNote": "Much memory research does not support the idea that trauma is unconsciously repressed and later recovered intact. Deliberate suppression and forgetting do exist."
+ },
+ "oedipus-complex": {
+  "summary": "Children around three to four are attracted to the opposite-sex parent and hostile toward the same-sex parent. How these conflicts are resolved determines later personality.",
+  "landmark": "Freud used the term in 'On the Psychology of Love'.",
+  "evidenceNote": "There is no reliable evidence that children universally have sexual desire for the opposite-sex parent and hostility toward the same-sex parent."
+ },
+ "psyche-model": {
+  "summary": "The psyche includes the conscious ego, the personal unconscious (which contains complexes), and the collective unconscious (which contains archetypes). The task of life is individuation.",
+  "landmark": "Jung, 'Symbols of Transformation'.",
+  "evidenceNote": "This is an explanatory framework, and its core concepts are hard to test directly. Some elements, such as complexes and introversion-extraversion, were later taken up in empirical research."
+ },
+ "collective-unconscious": {
+  "summary": "Humans share an innate psychological structure, which appears as recurring images such as the mother, the hero, the wise old man, and the shadow.",
+  "landmark": "Jung introduced the word 'archetype' (1919) and developed the collective unconscious systematically in the 1930s.",
+  "evidenceNote": "Myths and dreams across cultures share similar motifs. But whether this needs 'inherited archetypes' to explain it has not been tested empirically, and cultural transmission offers other explanations."
+ },
+ "psychological-types": {
+  "summary": "People have two attitudes, introversion and extraversion, and four functions: thinking, feeling, sensation, and intuition. Each person leans toward one or two of them. The MBTI was built on this framework.",
+  "landmark": "Jung, 'Psychological Types'.",
+  "evidenceNote": "Introversion and extraversion have been confirmed by research. The four-function division and the paired types have not been supported. Personality measures usually show continuous distributions."
+ },
+ "word-association-complex": {
+  "summary": "When certain words touch emotional issues, people respond more slowly or cannot answer. Jung called these clusters of emotionally charged memories 'complexes'. Around 1907, Jung also used a galvanometer to record changes in skin conductance when subjects heard stimulus words, measuring emotional reactions this way.",
+  "landmark": "Jung measured emotional reactions with word association tests at the Burghölzli clinic.",
+  "evidenceNote": "Later research supports the link between response delay and emotional reaction. The broad explanatory use of 'complexes' has not been tested."
+ }
+}

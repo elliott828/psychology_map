@@ -1,0 +1,232 @@
+{
+ "localization": {
+  "summary": "Different mental functions depend on different parts of the brain. The starting point was a patient who could only say the syllable 'Tan.' After his death, an autopsy showed damage to the left frontal lobe.",
+  "landmark": "Broca reports aphasia cases: patients with left frontal damage understood speech but could not speak",
+  "evidenceNote": "Language, motor and visual functions do rely on relatively fixed brain areas, but the strict 'one area, one function' idea has been revised by network views.",
+  "title.enShort": "Brain Localization"
+ },
+ "neuron-doctrine": {
+  "summary": "The nervous system is not a continuous net, but is made of separate nerve cells (neurons) that pass signals to one another at points of contact.",
+  "landmark": "Waldeyer coins the term 'neuron,' summarizing the observations of Cajal and others",
+  "evidenceNote": "The nervous system is made of separate nerve cells that signal across synapses; this is now a basic fact of neuroscience."
+ },
+ "ethology": {
+  "summary": "Studies animal behavior in natural settings, treating instincts and imprinting as innate tendencies shaped by evolution, and asks what they are for and where they come from.",
+  "landmark": "Lorenz publishes his research on imprinting in young birds",
+  "evidenceNote": "Evidence for imprinting and instinctive behavior patterns in birds and other animals is strong; extending it to humans requires caution."
+ },
+ "stress-physiology": {
+  "summary": "When the body faces a threat, it triggers a hormonal response. If the response stays on for a long time, it damages the immune system, the cardiovascular system and the brain.",
+  "landmark": "Selye proposes the 'general adaptation syndrome'",
+  "evidenceNote": "Evidence that the hypothalamic-pituitary-adrenal axis and chronic stress harm the body is solid; Selye's three-stage model itself has since been refined."
+ },
+ "hebbian": {
+  "summary": "Learning means changes in the connections between neurons: cells that often fire together become more strongly connected. This became a basic rule for later neural network models.",
+  "landmark": "Hebb's The Organization of Behavior proposes that neurons active at the same time strengthen their connection",
+  "evidenceNote": "Synaptic plasticity phenomena such as long-term potentiation provide much experimental support for this idea.",
+  "title.enShort": "Hebbian Learning"
+ },
+ "psychopharmacology": {
+  "summary": "Uses drugs to change neurotransmitter systems and relieve psychiatric symptoms. It allowed many patients to leave long-term hospital care, but it also left behind the oversimplified claim that mental illness is a chemical imbalance in the brain.",
+  "landmark": "Chlorpromazine is first used in psychiatry; in France, Delay and Deniker report its effect on psychotic symptoms",
+  "evidenceNote": "Several drug classes reliably relieve symptoms, but 'chemical imbalance' explanations of cause lack evidence."
+ },
+ "neuropsychology": {
+  "summary": "By studying what brain-damaged patients lose, it infers which brain regions normal mental functions depend on, and it also develops clinical tools for assessing brain injury.",
+  "landmark": "Scoville and Milner report patient H.M.: after removal of the medial temporal lobes, he could not form new long-term memories",
+  "evidenceNote": "Double dissociation and case and group study methods are mature, and they form one of the evidence bases of cognitive neuroscience."
+ },
+ "behavior-genetics": {
+  "summary": "Uses twins, adoptive families and genetic data to estimate how much of the difference in a trait comes from genes and how much from the environment.",
+  "landmark": "Fuller and Thompson publish Behavior Genetics",
+  "evidenceNote": "Twin and adoption studies repeatedly find that most psychological traits have a moderate genetic component; this is one of the most robust conclusions in psychology."
+ },
+ "split-brain": {
+  "summary": "When the corpus callosum is cut, the two hemispheres can barely exchange information, and the patient's left and right hands can 'do their own thing.' This was the first direct view of the division of labor between the hemispheres.",
+  "landmark": "Gazzaniga, Bogen and Sperry publish the first reports on patients with severed corpus callosums",
+  "evidenceNote": "Experimental results from split-brain patients are reliable; extending them into a 'left brain rational, right brain emotional' personality type has no evidence.",
+  "title.enShort": "Split-Brain"
+ },
+ "molecular-memory": {
+  "summary": "Breaks 'learning' down to the level of cells: simple learning changes chemical signals at synapses and protein synthesis, and long-term memory requires new proteins.",
+  "landmark": "Kandel and colleagues study habituation and sensitization using the gill-withdrawal reflex of the sea slug Aplysia",
+  "evidenceNote": "Cellular mechanisms, from protein synthesis in single neurons to memory consolidation, have been confirmed across several species.",
+  "title.enShort": "Molecular Memory"
+ },
+ "cognitive-neuroscience": {
+  "summary": "Combines the task designs of cognitive psychology with lesion studies, brain imaging and electrophysiology, asking how thinking, memory and attention are carried out in the brain.",
+  "landmark": "Gazzaniga and cognitive psychologist George Miller collaborate in the late 1970s to name this field",
+  "evidenceNote": "Brain imaging has found stable functional networks, but small samples, statistical thresholds and the 'reverse inference' problem make many individual findings hard to replicate.",
+  "title.enShort": "Cognitive Neuro"
+ },
+ "evolutionary": {
+  "summary": "Treats psychological mechanisms as products of natural selection in the ancestral environment, and starts from the question 'what adaptive problem does it solve?' to propose testable hypotheses.",
+  "landmark": "Barkow, Cosmides and Tooby edit The Adapted Mind",
+  "evidenceNote": "Some specific predictions, such as vigilance toward cheaters, have support, but many have failed to replicate; the overall framework of 'massive modularity' is highly controversial.",
+  "title.enShort": "Evolutionary Psych"
+ },
+ "affective-neuroscience": {
+  "summary": "Studies how emotion, threat responses, bodily states and decision-making work in the brain. One of its core findings is that emotion is not the enemy of reason.",
+  "landmark": "Damasio's Descartes' Error argues that emotion and bodily signals take part in rational decision-making",
+  "evidenceNote": "Evidence for brain regions linked to emotion and decision-making is reliable; the claims that 'the amygdala is the fear center' and that fixed basic-emotion circuits exist have been revised.",
+  "title.enShort": "Affective Neuro"
+ },
+ "law-of-effect": {
+  "summary": "The consequences of a behavior determine how likely it is to occur again: actions that satisfy an animal are kept, and those that cause discomfort are eliminated.",
+  "landmark": "Thorndike's puzzle box experiment: cats learn by trial and error to open the door, and actions that produce good results are kept",
+  "evidenceNote": "'Behavior with good outcomes is more likely to be repeated' is a basic regularity that has been confirmed many times; only Thorndike's 'connection' explanation is no longer mainstream."
+ },
+ "classical-conditioning": {
+  "summary": "A neutral signal (a bell), when repeatedly paired with an important event (food), can come to elicit the same response (salivation).",
+  "landmark": "Pavlov reports his research on conditioned reflexes at the International Medical Congress in Madrid",
+  "evidenceNote": "Basic regularities of associative learning have been repeated across many species; modern theories emphasize 'prediction' rather than simple co-occurrence.",
+  "title.enShort": "Pavlovian Learning"
+ },
+ "behaviorism": {
+  "summary": "Psychology should study observable, measurable behavior the way physics studies its subject matter. It should exclude introspection and 'consciousness' from science, and explain behavior as the result of environmental stimuli.",
+  "landmark": "Watson publishes 'Psychology as the Behaviorist Views It,' arguing that psychology should study only observable behavior",
+  "evidenceNote": "Learning regularities have stood up to testing, but the program of 'studying behavior only, not the mind' has been replaced by cognitive research."
+ },
+ "neo-behaviorism": {
+  "summary": "Keeps the method of objective experiment but admits 'intervening variables' behind behavior: purpose, expectation and drive. Tolman and Hull are the two major figures.",
+  "landmark": "Tolman's Purposive Behavior in Animals and Men introduces purpose and expectation into behavioral research as internal variables",
+  "evidenceNote": "Hull's drive-reduction theory has been abandoned; Tolman's cognitive maps and latent learning were later confirmed by further research."
+ },
+ "operant": {
+  "summary": "Behavior is shaped by its consequences: reinforced behavior increases, and behavior that is not reinforced or is punished decreases. Animal training, classroom management and game design all use this.",
+  "landmark": "Skinner's The Behavior of Organisms introduces operant behavior and reinforcement",
+  "evidenceNote": "Regularities such as reinforcement, extinction and reinforcement schedules have much replicable evidence, but they are not enough to explain language and complex human thought.",
+  "title.enShort": "Operant Learning"
+ },
+ "behavior-therapy": {
+  "summary": "Sees symptoms as learned responses and uses learning principles to change them: gradually facing the feared object in a safe setting until the fear fades.",
+  "landmark": "Wolpe publishes Psychotherapy by Reciprocal Inhibition, which describes systematic desensitization for phobias",
+  "evidenceNote": "Behavioral techniques such as exposure have reliable efficacy for phobias, OCD and PTSD, and are a cornerstone of evidence-based treatment."
+ },
+ "social-learning": {
+  "summary": "People can learn without being rewarded or punished themselves: they learn by observing a model's behavior and its consequences. Beliefs about whether one can succeed also shape action.",
+  "landmark": "Bandura's Bobo doll experiment: children imitate adults' aggression toward the doll",
+  "evidenceNote": "There is much evidence for observational learning and self-efficacy; the long-term effects of 'media violence causing aggression' are more controversial.",
+  "title.enShort": "Social Learning"
+ },
+ "learned-helplessness": {
+  "summary": "After long exposure to negative events that cannot be controlled, people or animals stop trying, even when the environment later becomes controllable. It was once used to explain depression.",
+  "landmark": "Seligman and Maier's experiment: dogs that could not escape electric shocks later stopped trying to escape",
+  "evidenceNote": "The phenomenon is reliable in animal and some human experiments, but later neuroscience suggests that passivity is the default response, and what has to be learned is 'controllability.'",
+  "title.enShort": "Helplessness"
+ },
+ "aba": {
+  "summary": "Uses functional analysis to identify the antecedents and consequences of behavior, then uses reinforcement, prompting and other means to change specific, measurable behaviors.",
+  "landmark": "The Journal of Applied Behavior Analysis begins publication; Baer, Wolf and Risley propose seven characteristics of the field",
+  "evidenceNote": "Much single-subject research has accumulated in special education, developmental disabilities and animal training; findings on intensive intervention for autism are mixed and raise ethical debates.",
+  "title.enShort": "Behavior Analysis"
+ },
+ "psychophysics": {
+  "summary": "Studies the quantitative relationship between physical stimuli (light, sound, weight) and subjective sensation, for example how much extra weight you need before you notice that something feels 'a bit heavier.'",
+  "landmark": "Fechner's Elements of Psychophysics turns the relationship between stimulus intensity and sensation into a measurable law",
+  "evidenceNote": "Threshold measurement and the stimulus-sensation function are repeatable basic methods, still used today in perception, medicine and engineering."
+ },
+ "experimental": {
+  "summary": "Studies mental processes through experiments with controlled conditions and repeated measurement, and trains observers to report their own sensations (introspection).",
+  "landmark": "Wundt establishes the first psychology laboratory at the University of Leipzig",
+  "evidenceNote": "The practice of making psychology an experimental discipline continues to this day; the introspective analyses of Wundt and Titchener have themselves been abandoned.",
+  "title.enShort": "Experimental Psych"
+ },
+ "memory-experiment": {
+  "summary": "Brings even higher mental processes into the lab: using himself as the subject, Ebbinghaus measured how fast he forgot after learning a list of nonsense syllables.",
+  "landmark": "Ebbinghaus's On Memory uses nonsense syllables to measure the forgetting curve",
+  "evidenceNote": "The forgetting curve and the spacing effect still hold up in replications a century later.",
+  "title.enShort": "Memory Experiments"
+ },
+ "functionalism": {
+  "summary": "Rather than asking what the mind is made of, it asks what the mind does and how it helps survival. It also urges psychology to respond to practical problems such as education and work.",
+  "landmark": "James's Principles of Psychology: consciousness is a flowing stream, and we should ask what it is for in adaptation",
+  "evidenceNote": "It is more a research orientation than a testable theory; its sense of problems was inherited by later cognitive and applied psychology."
+ },
+ "gestalt": {
+  "summary": "What we see is a whole, not a sum of parts: some dots automatically form a figure based on proximity and similarity, and the moment of solving a problem can be a reorganization of the whole.",
+  "landmark": "Wertheimer publishes his paper on apparent motion: two light points flashed in succession are seen as one moving point",
+  "evidenceNote": "The principles of perceptual organization are firmly established as descriptions; the physiological assumption of 'brain fields' has been abandoned."
+ },
+ "schema": {
+  "summary": "Memory is not a matter of playing back a recording of the past. Instead, existing knowledge frameworks (schemas) rebuild it at recall, which is why memories become distorted.",
+  "landmark": "Bartlett's Remembering: when people recall an unfamiliar story, they rewrite it according to their own cultural schemas",
+  "evidenceNote": "The broad point that memory is shaped by prior knowledge is well established; his original experiments were messier than textbooks describe.",
+  "title.enShort": "Schema Memory"
+ },
+ "cognitive-revolution": {
+  "summary": "Using the computer as an analogy, it sees the mind as a system that takes in, stores and transforms information, making 'internal processes' a legitimate object of scientific study again.",
+  "landmark": "An MIT symposium on information theory; Miller publishes 'The Magical Number Seven, Plus or Minus Two'",
+  "evidenceNote": "Using the language of information processing to study attention, memory and language has produced many replicable findings.",
+  "title.enShort": "Cognitive Rev."
+ },
+ "cognitive-psychology": {
+  "summary": "An experimental discipline that studies how perception, attention, memory, language and thinking work. It has become the backbone of modern psychology.",
+  "landmark": "Neisser's Cognitive Psychology summarizes this new field and names it",
+  "evidenceNote": "Core findings on attention, working memory and language comprehension are mostly replicable; some models, such as overly strict serial processing, have been revised.",
+  "title.enShort": "Cognitive Psych."
+ },
+ "heuristics-biases": {
+  "summary": "When making judgments, people use labor-saving shortcuts. These usually work well, but in specific situations they systematically go wrong, for example by anchoring on an irrelevant number.",
+  "landmark": "Tversky and Kahneman publish 'Judgment under Uncertainty: Heuristics and Biases' in Science",
+  "evidenceNote": "Most bias phenomena replicate. The explanation that 'people are irrational' has been criticized, and some later effects, such as certain priming effects, have not held up.",
+  "title.enShort": "Heuristics & Bias"
+ },
+ "connectionism": {
+  "summary": "Uses networks of many simple connected units to model the mind. Knowledge is not stored in one place but distributed across the strengths of connections, adjusted through learning.",
+  "landmark": "Rumelhart and McClelland's Parallel Distributed Processing",
+  "evidenceNote": "Neural network models can reproduce many learning and perception phenomena, but whether they reflect the brain's real mechanisms is still debated."
+ },
+ "embodied": {
+  "summary": "The mind is not only in the brain. It is formed by the brain, the body and the environment together, and thinking often relies on bodily movement and space.",
+  "landmark": "Varela, Thompson and Rosch's The Embodied Mind",
+  "evidenceNote": "The broad view that perception and action are closely linked has support; some single experiments claiming that 'body posture affects judgment' have failed to replicate."
+ },
+ "predictive-processing": {
+  "summary": "The brain does not passively receive signals. It continually predicts what it will feel next, and adjusts only when prediction and input differ.",
+  "landmark": "Friston publishes a review of the free-energy principle",
+  "evidenceNote": "As a framework it unifies many findings, but it is so flexible that it is unclear which results would overturn it.",
+  "title.enShort": "Predictive Proc."
+ },
+ "individual-differences": {
+  "summary": "Studies not only general laws of human beings but also the differences between people, and invents statistical methods for measuring those differences.",
+  "landmark": "Galton's Hereditary Genius uses family-tree statistics to study the inheritance of ability",
+  "evidenceNote": "Statistical methods such as correlation and regression are still in use; his claims that 'genius is determined by heredity' and his eugenics views have been rejected.",
+  "title.enShort": "Individual Diffs."
+ },
+ "g-factor": {
+  "summary": "Scores on different intelligence tests are positively correlated, which suggests a common 'general ability' may lie behind them. Factor analysis is the statistical method used to find it.",
+  "landmark": "Spearman publishes a paper using factor analysis to propose a 'general intelligence,' g",
+  "evidenceNote": "The general positive correlation among cognitive tests (positive manifold) is one of the most solid findings in psychology; what g actually represents remains debated.",
+  "title.enShort": "Spearman's g"
+ },
+ "intelligence-testing": {
+  "summary": "Uses standardized tasks to measure cognitive ability and converts the results into comparable scores (IQ). The original purpose was to help schools identify children who needed extra support.",
+  "landmark": "Binet and Simon publish the first intelligence scale, used to identify children who needed special help",
+  "evidenceNote": "IQ scores have a moderate power to predict academic and occupational performance; the cultural fairness of tests and their history of misuse need critical examination.",
+  "title.enShort": "Intelligence Tests"
+ },
+ "trait": {
+  "summary": "Sees personality as a set of relatively stable tendencies: some people are always extraverted, anxious or conscientious, and these can be measured and compared.",
+  "landmark": "Allport's Personality: A Psychological Interpretation argues that personality is a set of stable, individual tendencies",
+  "evidenceNote": "Personality traits show stability over time and have predictive power, but they predict behavior in specific situations less well."
+ },
+ "factor-personality": {
+  "summary": "Uses factor analysis to distill a few basic dimensions from large numbers of personality descriptions. Eysenck proposed two or three, and Cattell sixteen.",
+  "landmark": "Eysenck's Dimensions of Personality uses factor analysis to propose extraversion and neuroticism",
+  "evidenceNote": "Extraversion and neuroticism have been widely replicated; Eysenck's third dimension (psychoticism) and Cattell's 16 factors have not been stably replicated.",
+  "title.enShort": "Factor Models"
+ },
+ "test-theory": {
+  "summary": "Whether a test is usable depends on answering two questions: is it consistent (reliability), and does it measure what it is meant to measure (validity)?",
+  "landmark": "Cronbach and Meehl propose construct validity",
+  "evidenceNote": "Reliability, validity and item response theory form the consensus of modern measurement; the specific methods used are still being improved.",
+  "title.enShort": "Test Theory"
+ },
+ "person-situation": {
+  "summary": "How consistent is a person's behavior across different situations? Mischel argued that traits predict individual behaviors very weakly, which set off a debate lasting more than a decade.",
+  "landmark": "Mischel's Personality and Assessment argues that correlations between personality tests and specific behaviors rarely exceed 0.3",
+  "evidenceNote": "Later research (behavioral aggregation, 'if...then...' patterns) shows that both the person and the situation matter, and the debate mostly ended in compromise.",
+  "title.enShort": "Person-Situation"
+ }
+}

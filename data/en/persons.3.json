@@ -1,0 +1,317 @@
+{
+ "adler": {
+  "summary": "Austrian physician who founded individual psychology and was once an important member of Freud's circle"
+ },
+ "jung": {
+  "summary": "Swiss psychiatrist who founded analytical psychology; early in his career he worked at the Burghölzli hospital"
+ },
+ "von-franz": {
+  "summary": "Swiss Jungian analyst who studied fairy tales and alchemy"
+ },
+ "hillman": {
+  "summary": "American Jungian analyst who founded archetypal psychology"
+ },
+ "samuels": {
+  "summary": "British Jungian analyst who focuses on analytical psychology in politics and culture"
+ },
+ "neumann": {
+  "summary": "Israeli Jungian analyst who studied the origins and history of consciousness"
+ },
+ "fordham": {
+  "summary": "British Jungian analyst who brought infant observation and object relations into analytical psychology"
+ },
+ "kalff": {
+  "summary": "Swiss Jungian analyst who developed sandplay therapy"
+ },
+ "kawai": {
+  "summary": "Japanese clinical psychologist who introduced Jungian psychology and sandplay to Japan"
+ },
+ "pauli": {
+  "summary": "Austrian physicist and Nobel laureate who worked with Jung on synchronicity"
+ },
+ "klein": {
+  "summary": "Austrian-born British psychoanalyst and a pioneer of child analysis and object relations"
+ },
+ "winnicott": {
+  "summary": "British pediatrician and psychoanalyst who proposed the holding environment, transitional objects, and the true and false self"
+ },
+ "horney": {
+  "summary": "German-born American psychoanalyst who criticized Freud's views of women and emphasized culture and interpersonal relations"
+ },
+ "sullivan": {
+  "summary": "American psychiatrist and founder of interpersonal psychiatry"
+ },
+ "fromm": {
+  "summary": "German-born American psychoanalyst and social psychologist who combined psychoanalysis with social criticism"
+ },
+ "lacan": {
+  "summary": "French psychoanalyst who brought structural linguistics into psychoanalysis"
+ },
+ "kohut": {
+  "summary": "Austrian-born American psychoanalyst and founder of self psychology"
+ },
+ "mitchell": {
+  "summary": "American psychoanalyst and a leading founder of relational psychoanalysis"
+ },
+ "benjamin": {
+  "summary": "American psychoanalyst who proposed the theory of mutual recognition"
+ },
+ "fonagy": {
+  "summary": "Hungarian-born British psychoanalyst and a leading proponent of mentalization theory"
+ },
+ "bateman": {
+  "summary": "British psychiatrist who developed mentalization-based treatment with Fonagy"
+ },
+ "witmer": {
+  "summary": "American psychologist who opened the first psychological clinic in 1896 and coined the term \"clinical psychology\""
+ },
+ "kraepelin": {
+  "summary": "German psychiatrist and founder of the modern classification of psychiatric disorders"
+ },
+ "bleuler": {
+  "summary": "Swiss psychiatrist who introduced the term \"schizophrenia\" and was Jung's superior"
+ },
+ "shoma-morita": {
+  "summary": "Japanese psychiatrist and founder of Morita therapy"
+ },
+ "spitzer": {
+  "summary": "American psychiatrist who led the revision of DSM-III"
+ },
+ "rosenhan": {
+  "summary": "American psychologist who published the study \"On Being Sane in Insane Places\""
+ },
+ "frances": {
+  "summary": "American psychiatrist who led DSM-IV and later criticized DSM-5 for widening the boundaries of mental disorders"
+ },
+ "ellis": {
+  "summary": "American psychologist and founder of rational emotive behavior therapy, who had trained in psychoanalysis"
+ },
+ "beck": {
+  "summary": "American psychiatrist and founder of cognitive therapy, who had trained in psychoanalysis"
+ },
+ "bateson": {
+  "summary": "English-born American anthropologist who proposed the double bind theory and influenced family systems thinking"
+ },
+ "bowen": {
+  "summary": "American psychiatrist and founder of family systems theory"
+ },
+ "minuchin": {
+  "summary": "Argentine-born American psychiatrist and founder of structural family therapy"
+ },
+ "frank": {
+  "summary": "American psychiatrist, author of \"Persuasion and Healing,\" and a pioneer of common factors research"
+ },
+ "wampold": {
+  "summary": "American psychologist who proposed a contextual model of psychotherapy"
+ },
+ "rosenzweig": {
+  "summary": "American psychologist who in 1936 first proposed the \"Dodo bird verdict\" metaphor"
+ },
+ "luborsky": {
+  "summary": "American psychologist who studied psychotherapy outcomes and the therapeutic alliance"
+ },
+ "bordin": {
+  "summary": "American psychologist who proposed the concept of the working alliance"
+ },
+ "engel": {
+  "summary": "American physician who proposed the biopsychosocial model"
+ },
+ "zubin": {
+  "summary": "American psychologist who proposed the vulnerability model of schizophrenia"
+ },
+ "meichenbaum": {
+  "summary": "American psychologist and founder of cognitive behavior modification and stress inoculation training"
+ },
+ "jacobson": {
+  "summary": "American psychologist who researched behavioral activation"
+ },
+ "meyer": {
+  "summary": "British clinical psychologist who first reported exposure and response prevention for obsessive-compulsive disorder"
+ },
+ "clark": {
+  "summary": "British psychologist who proposed cognitive models of panic and social anxiety"
+ },
+ "kabat-zinn": {
+  "summary": "American medical professor who founded the Mindfulness-Based Stress Reduction program"
+ },
+ "herman": {
+  "summary": "American psychiatrist, author of \"Trauma and Recovery,\" who proposed complex trauma"
+ },
+ "foa": {
+  "summary": "Israeli-born American psychologist and founder of prolonged exposure therapy"
+ },
+ "resick": {
+  "summary": "American psychologist and founder of cognitive processing therapy"
+ },
+ "shapiro": {
+  "summary": "American psychologist and founder of EMDR"
+ },
+ "van-der-kolk": {
+  "summary": "Dutch-born American psychiatrist, author of \"The Body Keeps the Score,\" who promoted the concept of developmental trauma disorder"
+ },
+ "levine": {
+  "summary": "American psychologist and founder of Somatic Experiencing"
+ },
+ "tedeschi": {
+  "summary": "American psychologist who proposed posttraumatic growth with Calhoun"
+ },
+ "hayes": {
+  "summary": "American psychologist and founder of acceptance and commitment therapy"
+ },
+ "linehan": {
+  "summary": "American psychologist and founder of dialectical behavior therapy"
+ },
+ "segal": {
+  "summary": "Canadian psychologist and co-developer of mindfulness-based cognitive therapy"
+ },
+ "williams-mark": {
+  "summary": "British psychologist and co-developer of mindfulness-based cognitive therapy"
+ },
+ "teasdale": {
+  "summary": "British psychologist and co-developer of mindfulness-based cognitive therapy"
+ },
+ "gilbert": {
+  "summary": "British psychologist and founder of compassion-focused therapy"
+ },
+ "neff": {
+  "summary": "American psychologist who studies self-compassion"
+ },
+ "insel": {
+  "summary": "American psychiatrist who directed the National Institute of Mental Health and promoted RDoC"
+ },
+ "cuthbert": {
+  "summary": "American psychologist and one of the main designers of RDoC"
+ },
+ "kotov": {
+  "summary": "American psychologist and one of the lead authors of the HiTOP consortium"
+ },
+ "krueger": {
+  "summary": "American psychologist who studies the dimensional structure of psychopathology and HiTOP"
+ },
+ "caspi": {
+  "summary": "Israeli-born American psychologist who proposed the p factor and leads the Dunedin longitudinal study"
+ },
+ "lazarus": {
+  "summary": "American psychologist who proposed the cognitive appraisal theory of stress"
+ },
+ "folkman": {
+  "summary": "American psychologist who studied stress and coping with Lazarus"
+ },
+ "rotter": {
+  "summary": "American psychologist who proposed the concept of locus of control and social learning theory"
+ },
+ "sporns": {
+  "summary": "American neuroscientist at Indiana University who coined the term \"human connectome\" with colleagues in 2005 and developed methods for brain network analysis"
+ },
+ "sullivan-patrick": {
+  "summary": "Psychiatric geneticist and lead investigator of the Psychiatric Genomics Consortium (PGC), founded in 2007"
+ },
+ "schultz": {
+  "summary": "Neuroscientist who recorded dopamine neurons in monkeys and found that their activity matches a \"reward prediction error\""
+ },
+ "sutton": {
+  "summary": "One of the founders of reinforcement learning, who proposed temporal-difference learning and co-wrote \"Reinforcement Learning\" with Barto"
+ },
+ "hinton": {
+  "summary": "English-born Canadian computer scientist, trained early in psychology, who has long championed neural networks and deep learning"
+ },
+ "kosinski": {
+  "summary": "Computational social scientist who studies how digital footprints reveal personality and who has recently tested the \"mind\" abilities of large language models"
+ },
+ "borsboom": {
+  "summary": "Dutch psychologist who proposed viewing mental disorders as networks of interacting symptoms"
+ },
+ "steinberg": {
+  "summary": "American developmental psychologist who studies adolescent risk-taking and proposed a dual-systems model of adolescent brain development"
+ },
+ "turkheimer": {
+  "summary": "American behavioral geneticist who proposed the three laws of behavioral genetics in 2000"
+ },
+ "darcy": {
+  "summary": "Psychology researcher and one of the developers of Woebot, a conversational mental health program, and first author of a 2017 trial paper"
+ },
+ "twenge": {
+  "summary": "American psychologist who studies generational differences and argues that the spread of smartphones is linked to declining adolescent mental health"
+ },
+ "mcguire": {
+  "summary": "American social psychologist who proposed attitude inoculation theory: exposure to weakened counterarguments can build resistance"
+ },
+ "lomas": {
+  "summary": "British psychologist who, with Ivtzan, proposed \"second-wave positive psychology\" and studies the dialectic between positive and negative aspects of well-being"
+ },
+ "solms": {
+  "summary": "South African neuropsychologist and psychoanalyst and one of the founders of neuropsychoanalysis"
+ },
+ "shedler": {
+  "summary": "American clinical psychologist who published a 2010 review of the evidence for psychodynamic therapy"
+ },
+ "barlow": {
+  "summary": "American clinical psychologist who studies anxiety disorders and led the development of a unified transdiagnostic protocol"
+ },
+ "hofmann": {
+  "summary": "German-born American clinical psychologist who studies cognitive behavioral therapy and social anxiety, and with Hayes advocates process-based therapy"
+ },
+ "griffiths": {
+  "summary": "American psychopharmacologist at Johns Hopkins University and one of the first researchers to study psilocybin with modern controlled methods"
+ },
+ "chambless": {
+  "summary": "American clinical psychologist who studies anxiety disorders and was the first author of \"The Update of Empirically Validated Therapies\" (1998)"
+ },
+ "hippocrates-of-cos": {
+  "summary": "Ancient Greek physician whose school explained temperament and disease through the four humors"
+ },
+ "ibn-sina": {
+  "summary": "Persian scholar and physician, author of \"The Canon of Medicine\""
+ },
+ "epictetus": {
+  "summary": "Stoic philosopher who held that it is our judgments about things, not the things themselves, that disturb us"
+ },
+ "john-locke": {
+  "summary": "English philosopher and leading empiricist who proposed the mind as a blank slate and that ideas are linked through experience"
+ },
+ "jean-jacques-rousseau": {
+  "summary": "Geneva-born thinker and author of \"Emile,\" who argued that childhood has its own stages and value"
+ },
+ "franz-mesmer": {
+  "summary": "German physician who proposed \"animal magnetism\" and is a forerunner of hypnosis research"
+ },
+ "immanuel-kant": {
+  "summary": "German philosopher who argued that the mind organizes experience using innate categories"
+ },
+ "philippe-pinel": {
+  "summary": "French physician who advocated \"moral treatment\" for people with mental illness"
+ },
+ "franz-gall": {
+  "summary": "German neuroanatomist and founder of phrenology, who held that mental faculties correspond to different brain regions"
+ },
+ "arthur-schopenhauer": {
+  "summary": "German philosopher who held that people are driven by an unconscious will"
+ },
+ "adolphe-quetelet": {
+  "summary": "Belgian statistician who applied the normal distribution to human characteristics and proposed the \"average man\""
+ },
+ "soren-kierkegaard": {
+  "summary": "Danish philosopher who understood anxiety as the experience of facing freedom and possibility"
+ },
+ "hermann-helmholtz": {
+  "summary": "German physicist and physiologist who measured the speed of nerve conduction and was Wundt's teacher"
+ },
+ "moritz-lazarus": {
+  "summary": "German psychologist who co-founded the journal of folk psychology with Steinthal"
+ },
+ "isabel-briggs-myers": {
+  "summary": "American writer who, together with her mother, developed the MBTI based on Jung's typology"
+ },
+ "katharine-briggs": {
+  "summary": "American writer who began developing the MBTI with her daughter after reading Jung's \"Psychological Types\""
+ },
+ "vosoughi": {
+  "summary": "Computer scientist and first author of the 2018 Science study on the spread of true and false news"
+ },
+ "casey": {
+  "summary": "Developmental cognitive neuroscientist and first author of the imaging acquisition paper for the ABCD study"
+ },
+ "jennifer-mitchell": {
+  "summary": "Neuroscientist and first author of the phase 3 trial paper on MDMA-assisted therapy for PTSD"
+ }
+}
