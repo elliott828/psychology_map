@@ -1,0 +1,6 @@
+{
+  "bio-w-behave": { "zh": "covers/bio-w-behave.zh.jpg", "en": "covers/bio-w-behave.en.jpg" },
+  "bio-w-why-zebras": { "zh": "https://evil.example/x.jpg", "en": "../x.jpg" },
+  "bio-w-in-search-memory": { "en": "covers/bio-w-in-search-memory.en.jpg" },
+  "no-such-work": { "zh": "covers/no-such-work.zh.jpg" }
+}

@@ -1,0 +1,207 @@
+{
+ "prolonged-exposure": {
+  "summary": "In a safe therapy setting, the client repeatedly recounts the trauma and faces the memories and the situations they have been avoiding. This continues until fear decreases and the memory is reintegrated.",
+  "landmark": "Foa and Kozak, 'Emotional Processing of Fear'.",
+  "evidenceNote": "It is one of the best-supported treatments for PTSD, backed by several randomized controlled trials."
+ },
+ "cognitive-processing-therapy": {
+  "summary": "After trauma, people often hold thoughts such as 'it was my fault' or 'the world is not safe'. The therapy helps the patient identify these thoughts and revise them.",
+  "landmark": "Resick and Schnicke published cognitive processing therapy for survivors of sexual assault.",
+  "evidenceNote": "Its effects are close to those of prolonged exposure, and several randomized trials support it."
+ },
+ "emdr-model": {
+  "summary": "While recalling the trauma, the client follows the therapist's finger with side-to-side eye movements. This gradually 'desensitizes' the traumatic memory.",
+  "landmark": "Shapiro published a paper on using eye movements to treat traumatic memories.",
+  "evidenceNote": "Many controlled trials support its effectiveness for PTSD. But whether the eye movements are necessary is disputed, and the effect may come mainly from the exposure component."
+ },
+ "body-keeps-score": {
+  "summary": "Trauma is not only a matter of thoughts. It also stays in the body, showing up as hypervigilance, numbness, and physical symptoms. So treatment needs to attend to bodily sensations.",
+  "landmark": "van der Kolk, 'The Body Keeps the Score'.",
+  "evidenceNote": "There is considerable evidence linking trauma to bodily reactions and autonomic dysregulation. But the evidence for specific methods such as yoga and somatic experiencing is uneven, and some claims go beyond the evidence."
+ },
+ "act-model": {
+  "summary": "Six processes: acceptance, cognitive defusion, being present, self as context, values, and committed action. The goal is to keep doing valued things even when pain is present.",
+  "landmark": "Hayes, Strosahl, and Wilson, 'Acceptance and Commitment Therapy'.",
+  "evidenceNote": "Hundreds of trials support it. The methodological quality of some studies varies, and the claim of a unique mechanism is disputed."
+ },
+ "dbt-model": {
+  "summary": "Holds a dialectic between accepting the current situation and changing it. Clients are taught four skill sets: mindfulness, distress tolerance, emotion regulation, and interpersonal effectiveness.",
+  "landmark": "Linehan, 'Cognitive-Behavioral Treatment of Borderline Personality Disorder'.",
+  "evidenceNote": "Several randomized controlled trials support it for borderline personality disorder, self-harm, and suicidal behavior."
+ },
+ "mbct-model": {
+  "summary": "Teaches people who have been depressed several times to see thoughts as 'just thoughts' rather than facts when their mood begins to sink, so they avoid slipping back into relapse.",
+  "landmark": "Segal, Williams, and Teasdale, 'Mindfulness-Based Cognitive Therapy for Depression'.",
+  "evidenceNote": "There is strong evidence for preventing relapse in people with depression who have had three or more episodes."
+ },
+ "compassion-focused": {
+  "summary": "Emotion regulation is divided into three systems: threat, drive, and soothing. Self-compassion is cultivated to soothe people who have long lived in a threat state.",
+  "landmark": "Gilbert, 'The Compassionate Mind'.",
+  "evidenceNote": "It improves shame and self-criticism in those who have them. But the evidence comes mostly from small studies, and larger controlled trials are still few."
+ },
+ "empirically-supported-treatments": {
+  "summary": "Lists treatments judged 'effective' for different conditions, based on evidence from randomized controlled trials.",
+  "landmark": "Chambless and colleagues, 'Update on Empirically Validated Therapies, II'.",
+  "evidenceNote": "The lists drew attention to outcome research. But they have been criticized for neglecting common factors and individual differences."
+ },
+ "ebpp-three-component": {
+  "summary": "Three components are required together: the best available research evidence, clinical expertise, and the characteristics of the patient, including culture and preferences.",
+  "landmark": "The American Psychological Association Presidential Task Force on Evidence-Based Practice statement.",
+  "evidenceNote": "Integrating the three components is a consensus norm. How to weigh them in specific cases is still debated."
+ },
+ "rdoc-matrix": {
+  "summary": "Studies psychiatric problems across genes, circuits, and behavior, using functional dimensions such as negative valence, positive valence, cognition, social processes, and arousal, rather than diagnostic categories.",
+  "landmark": "Insel and colleagues, 'Research Domain Criteria (RDoC): Toward a New Classification Framework'.",
+  "evidenceNote": "It is a research framework for organizing studies of neural circuits and functional dimensions. It has not yet become a clinical tool."
+ },
+ "hitop": {
+  "summary": "Based on how symptoms co-occur, arranged in layers from bottom to top: specific symptoms, syndromes, subfactors, spectra, and at the top a general 'p factor'.",
+  "landmark": "Kotov and colleagues, 'The Hierarchical Taxonomy of Psychopathology (HiTOP)'.",
+  "evidenceNote": "It is based on the structure of symptom covariation, and there is a substantial amount of data. Its clinical application is still being explored."
+ },
+ "p-factor": {
+  "summary": "Psychiatric problems are correlated with one another. This suggests there may be a common 'general psychopathology factor' behind them, similar to g in intelligence testing.",
+  "landmark": "Caspi and colleagues, 'The p Factor'.",
+  "evidenceNote": "Several longitudinal studies support a shared vulnerability factor. But what it actually represents is still debated."
+ },
+ "transactional-stress-model": {
+  "summary": "Stress depends not only on the event itself, but on how you appraise it (as a threat or a challenge) and how many resources you believe you have.",
+  "landmark": "Lazarus and Folkman, 'Stress, Appraisal, and Coping'.",
+  "evidenceNote": "Many studies support the claim that appraisal shapes the stress response. The model is largely descriptive, and its specific predictions are limited."
+ },
+ "post-traumatic-growth": {
+  "summary": "Some people who have gone through serious trauma report positive changes in their relationships, their values, and the meaning of their lives.",
+  "landmark": "Tedeschi and Calhoun published the Posttraumatic Growth Inventory.",
+  "evidenceNote": "Many people report growth. But the relationship between this self-report and actual change is unclear, and trauma survivors should not be expected or required to 'grow'."
+ },
+ "discrete-neuron-theory": {
+  "summary": "The nervous system is not one continuous network. It is made of countless separate nerve cells that pass signals through contact with one another. This doctrine replaced the 'reticular theory' and laid the groundwork for today's talk of neural circuits.",
+  "landmark": "Cajal showed with Golgi staining that nerve cells are separate (1888). Waldeyer named the 'neuron' in 1891.",
+  "evidenceNote": "After electron microscopy, the synaptic gaps between neurons could be seen directly. Electrical synapses between some cells slightly modify the claim that they are completely separate."
+ },
+ "connectome-concept": {
+  "summary": "Treats the whole brain as a graph of regions and connections, and studies its structural and functional connectivity, rather than studying one region at a time.",
+  "landmark": "Sporns, Tononi, and Kotter coined the term 'human connectome' (2005).",
+  "evidenceNote": "Methods for measuring connectomes, such as diffusion imaging, are now well developed. But the expectation that knowing all the wiring would explain the mind has not been realized."
+ },
+ "polygenic-risk": {
+  "summary": "Schizophrenia, depression, and similar disorders are not determined by a single 'causal gene'. They arise from many gene variants with tiny effects, which add up, together with environmental factors, to create risk.",
+  "landmark": "The International Schizophrenia Consortium found many common variants with small effects that together raise risk (2009). In 2014 the number of loci was expanded to 108.",
+  "evidenceNote": "Large genomic studies repeatedly support the picture of 'thousands of loci with very small effects'. The predictive power of any single gene is small, and individual prediction remains limited."
+ },
+ "dopamine-prediction-error": {
+  "summary": "Dopamine neurons do not simply fire to a reward itself. They fire to outcomes that are better or worse than expected: an unexpected reward increases firing, an expected one leaves it unchanged, and a disappointment decreases it.",
+  "landmark": "Schultz, Dayan, and Montague, 'A Neural Substrate of Prediction and Reward', in Science (1997).",
+  "evidenceNote": "Several labs have replicated the signal in monkeys, rats, and humans. Dopamine also contributes to motivation and movement, so it cannot be reduced to 'prediction error' alone."
+ },
+ "temporal-difference-learning": {
+  "summary": "An algorithm in which an agent learns while acting. It corrects its estimate of each state's value using the difference between its current estimate and a later estimate.",
+  "landmark": "Sutton, 'Learning to Predict by the Methods of Temporal Differences' (1988).",
+  "evidenceNote": "The algorithm has been validated extensively in artificial intelligence. Schultz's neural data showed a form of dopamine activity that matches it."
+ },
+ "deep-cnn-vision-model": {
+  "summary": "Argues that deep networks trained on large numbers of images can serve as computational models of the visual system. Higher layers correspond to more abstract features, and the architecture resembles aspects of the brain's visual pathways.",
+  "landmark": "Krizhevsky, Sutskever, and Hinton's deep convolutional network won the ImageNet recognition competition by a wide margin (2012).",
+  "evidenceNote": "The internal representations of trained networks show some similarity to activity in monkey visual cortex. But learning methods, data volume, and the brain differ greatly, and whether they can serve as mechanistic models of the brain is still debated."
+ },
+ "llm-theory-of-mind-test": {
+  "summary": "Gives large language models human theory-of-mind tasks to see whether they understand that others can have thoughts different from their own. The results were surprising, but there is no consensus on how to interpret them.",
+  "landmark": "Kosinski tested large language models with false-belief tasks (2023 preprint; published in PNAS in 2024).",
+  "evidenceNote": "Changing the wording or making small modifications noticeably lowers the models' performance. Researchers disagree on whether this means they understand other people's minds."
+ },
+ "likes-predict-traits": {
+  "summary": "The posts a person likes on social media can predict their gender, political leanings, and Big Five personality scores fairly accurately. This shows that digital footprints carry private information.",
+  "landmark": "Kosinski, Stillwell, and Graepel, 'Private Traits and Attributes Are Predictable from Digital Records of Human Behavior' (2013).",
+  "evidenceNote": "Prediction reaches moderate accuracy in large samples, but individual-level error is still substantial. The work also raises ethical and privacy concerns."
+ },
+ "symptom-network-theory": {
+  "summary": "Argues that disorders such as depression are not sets of symptoms caused by a single underlying 'disease'. They are networks of symptoms, such as insomnia, fatigue, and hopelessness, that trigger and reinforce one another.",
+  "landmark": "Cramer, Waldorp, van der Maas, and Borsboom, 'Comorbidity: A Network Perspective' (2010).",
+  "evidenceNote": "It provides new statistical and conceptual tools. But the stability of the networks and their causal interpretation have been questioned, and the empirical conclusions are still being tested."
+ },
+ "many-labs": {
+  "summary": "Dozens of labs run the same protocol and each repeat the same set of classic experiments. The results are then pooled. Some effects reappear reliably, while others nearly vanish.",
+  "landmark": "Klein, Nosek, and colleagues in a multi-lab collaboration replicated 13 classic effects (2014).",
+  "evidenceNote": "Measuring replicability through large samples, many sites, and preregistration is itself methodological evidence. The main conclusion is that replicability varies widely across effects."
+ },
+ "dual-systems-model": {
+  "summary": "The drive for novelty and reward strengthens early in adolescence, while the systems responsible for planning and self-control mature later. In this period of 'gas before brakes', risk-taking becomes more likely.",
+  "landmark": "Steinberg, Casey, and colleagues proposed that the reward system matures before the control system, and that this mismatch increases risk-taking (2008).",
+  "evidenceNote": "Behavioral data support increased risk-taking in adolescence. But brain evidence for the mismatch in maturation is inconsistent, and several revisions and critiques have appeared in recent years."
+ },
+ "conversational-agent-cbt": {
+  "summary": "Breaks structured cognitive behavioral exercises, such as identifying thoughts and reappraising them, into everyday chat conversations. This gives people who have little access to therapists some of the help.",
+  "landmark": "Fitzpatrick, Darcy, and Vierhile published a randomized controlled trial of Woebot (2017).",
+  "evidenceNote": "Early trials had small samples and short durations, and the control conditions were weak. Evidence on long-term effects and on serious problems is lacking."
+ },
+ "smartphone-mental-health-link": {
+  "summary": "Argues that since the early 2010s, the spread of smartphones and social media has left teenagers lonelier, more anxious, and sleeping less. Critics argue the effect is very small and that other factors cannot be ruled out.",
+  "landmark": "Twenge and colleagues published analyses of rising depression and suicide-related outcomes in adolescents alongside smartphone adoption (2017–2018).",
+  "evidenceNote": "The timing of the trends fits, but at the individual level the correlation between screen time and mental health is small. Researchers strongly disagree about the direction of causation and the size of the effect."
+ },
+ "moral-foundations-theory": {
+  "summary": "Argues that human moral judgment rests on several intuitions, such as care, fairness, loyalty, authority, and purity. People with different political views weight these differently.",
+  "landmark": "Haidt and Joseph, 'Intuitive Ethics' (2004), proposed several innate moral intuitions.",
+  "evidenceNote": "Questionnaires can distinguish political positions across several cultures. But the number of 'foundations', and whether they are truly innate, remain under criticism and revision."
+ },
+ "psychological-inoculation": {
+  "summary": "Like a vaccine, people are first exposed to a small dose of a false argument along with a refutation. Afterward they are harder to persuade by the full disinformation.",
+  "landmark": "McGuire published experiments on resistance to persuasion (1961).",
+  "evidenceNote": "Lab and some online studies show that giving a weakened false argument followed by refutation increases resistance. Long-term effects and effectiveness in real-world settings are still being studied."
+ },
+ "self-compassion-model": {
+  "summary": "Self-compassion has three parts: being kind to yourself rather than harsh when you fail, recognizing that suffering is a shared human experience, and being aware of pain without being overwhelmed by it.",
+  "landmark": "Neff, 'Self-Compassion: An Alternative Conceptualization of a Healthy Attitude Toward Oneself', and the scale she developed (2003).",
+  "evidenceNote": "The Self-Compassion Scale is consistently correlated with lower depression and anxiety, and intervention studies show some effects. The factor structure and the division into components are still debated."
+ },
+ "second-wave-positive-psychology": {
+  "summary": "Argues that a good life is not only about pursuing positive experiences. Anxiety and sadness also have value, and joy and suffering are often intertwined, so well-being research should study both together.",
+  "landmark": "Lomas and Ivtzan, 'Second Wave Positive Psychology' (2016).",
+  "evidenceNote": "It is mainly a conceptual reframing that emphasizes the dialectic between positive and negative experience. Empirical tests of its specific claims are still few."
+ },
+ "dreaming-forebrain-mechanism": {
+  "summary": "Studies of patients with brain damage show that REM sleep and dreaming do not always coincide. Damage to certain forebrain regions linked to motivation and reward can stop dreaming.",
+  "landmark": "Solms published a paper in Behavioral and Brain Sciences arguing that dreaming and REM sleep are controlled by different brain mechanisms (2000).",
+  "evidenceNote": "Lesion studies support the view that dreams and REM sleep do not always occur together. But his motivational account of dreams has not been widely accepted."
+ },
+ "psychodynamic-efficacy": {
+  "summary": "A meta-analysis of randomized controlled trials shows that psychodynamic therapy is roughly as effective as established therapies such as cognitive behavioral therapy, and its effects continue after treatment ends.",
+  "landmark": "Shedler, 'The Efficacy of Psychodynamic Psychotherapy', in American Psychologist (2010).",
+  "evidenceNote": "Several meta-analyses show psychodynamic therapy has moderate to large effects on common disorders, close to other therapies. The studies vary widely in quality and in control conditions."
+ },
+ "unified-protocol-model": {
+  "summary": "Common emotional disorders such as anxiety and depression share a common process: intense negative emotion and avoidance of it. So one protocol teaches people to face and regulate emotion.",
+  "landmark": "Barlow and colleagues published the 'Unified Protocol for Transdiagnostic Treatment of Emotional Disorders' (2011).",
+  "evidenceNote": "Controlled trials show it is as effective as standard protocols for single disorders, and it improves comorbidity. Samples are mainly adults, and long-term follow-up is still accumulating."
+ },
+ "process-based-therapy": {
+  "summary": "Instead of asking 'which therapy works for which diagnosis', it asks 'which processes maintain this person's problem, and what methods can change those processes'.",
+  "landmark": "Hayes and Hofmann, 'Process-Based Cognitive Behavioral Therapy' (2018).",
+  "evidenceNote": "This is still an emerging framework. It proposes shifting the unit of evaluation from 'therapy-diagnosis' to 'process-individual'. Large-scale testing has only just begun."
+ },
+ "complex-ptsd": {
+  "summary": "The effects of long-term, repeated trauma, such as childhood abuse or prolonged domestic violence, go beyond flashbacks and avoidance. They include difficulties with emotion regulation, a negative sense of self, and relationship problems.",
+  "landmark": "Herman, 'Complex Posttraumatic Stress Disorder' (1992). The ICD-11 formally included this diagnosis in 2019.",
+  "evidenceNote": "The ICD-11 criteria have been validated in research across several countries and distinguished from ordinary PTSD. Its relationship to borderline personality disorder and other conditions is still discussed."
+ },
+ "psilocybin-mystical-experience": {
+  "summary": "Taking psilocybin in a controlled setting with support can produce intense 'mystical-type' experiences in some people. These people report improvements in meaning and mood months later.",
+  "landmark": "Griffiths and colleagues, 'Psilocybin Can Occasion Mystical-Type Experiences Having Substantial and Sustained Personal and Spiritual Significance' (2006).",
+  "evidenceNote": "Small controlled trials and follow-up studies suggest benefits. But most trials have small samples and cannot be fully blinded, and long-term safety and effects are still being examined."
+ },
+ "mbti": {
+  "summary": "Turns Jung's typology into a self-report questionnaire. People are placed at one pole on each of four pairs (extraversion-introversion, sensing-intuition, thinking-feeling, judging-perceiving), which combine into 16 types.",
+  "landmark": "The Educational Testing Service (ETS) published the first MBTI manual (1962). The mother-daughter authors had been developing the instrument since the 1940s.",
+  "evidenceNote": "On retest, a substantial share of people receive a different type. Dimension scores are continuous rather than bipolar, and predictive power for job performance is weak. The Big Five model is more reliable. See the entry on popular misreadings."
+ },
+ "life-stages": {
+  "summary": "The first half of life is spent building a career and adapting to the outer world. After midlife, the task turns inward, toward finding life's meaning and moving toward individuation.",
+  "landmark": "Jung, 'The Stages of Life' (German 'Die Lebenswende'), written around 1930 and included in 'Modern Man in Search of a Soul' (1931).",
+  "evidenceNote": "It is one of the early sources of adult development research. Later longitudinal studies do not support the idea that a 'midlife crisis' is universal. Most people do not go through dramatic upheaval in midlife."
+ },
+ "active-imagination": {
+  "summary": "While awake, the person lets inner images arise on their own, then engages with them through painting, writing, or dialogue. This brings unconscious content into awareness.",
+  "landmark": "Jung, 'The Transcendent Function' (written in 1916 but published decades later), the earliest account of this method.",
+  "evidenceNote": "It is a clinical method, based mainly on case studies and experiential reports. Controlled experiments are lacking."
+ }
+}

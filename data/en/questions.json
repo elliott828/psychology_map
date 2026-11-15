@@ -1,0 +1,97 @@
+{
+  "q-procrastination": {
+    "title": "Procrastination",
+    "lenses.0.take": "The moment you put a task off, your anxiety drops for a while, and that relief reinforces the procrastination. The longer you put it off, the scarier starting becomes.",
+    "lenses.1.take": "People tend to overestimate their future selves and underestimate how long a task will take. The ease of the present always seems more appealing than the benefits later on.",
+    "lenses.2.take": "Thoughts like “If I do this badly, it means I'm no good” make starting feel dangerous, so you avoid it first.",
+    "lenses.3.take": "When a task is imposed by others and has little to do with you, your sense of autonomy is low and so is your motivation. Finding your own reason for it is often more useful than forcing yourself."
+  },
+  "q-anxiety": {
+    "title": "Anxiety",
+    "lenses.0.take": "Threat signals can trigger bodily reactions without going through thought, so knowing “there's nothing to fear” does not control a racing heartbeat.",
+    "lenses.1.take": "Fear is learned, and it can be unlearned through repeated experiences of safety. But avoidance keeps it alive.",
+    "lenses.2.take": "Interpreting a faster heartbeat as “something bad is about to happen” intensifies anxiety and creates a cycle.",
+    "lenses.3.take": "Some anxiety does not come from anything specific. It comes from a vague sense of the big questions: death, freedom and meaninglessness.",
+    "lenses.4.take": "Anxiety is also a signal that a conflict has been pushed away. Defenses can ease it, but the cost is that you cannot see the real cause clearly."
+  },
+  "q-intimacy-patterns": {
+    "title": "Repeating Patterns in Close Relationships",
+    "lenses.0.take": "People carry a set of expectations about whether it is safe to get close to others. Anxious people pursue, avoidant people withdraw, and the cycle repeats itself.",
+    "lenses.1.take": "We bring the way we related to important people in the past into the person in front of us, and so our partner ends up playing a role that is not really theirs.",
+    "lenses.2.take": "Behind arguments there is often an unspoken need for attachment. Getting both sides to say the hidden feelings out loud can break the cycle.",
+    "lenses.3.take": "Watching how our parents got along teaches us what a close relationship “should be,” and we unconsciously reenact it.",
+    "lenses.4.take": "When a couple is tense, they bring in a third person, such as a child, to ease things. The relationship becomes more stable, but the problem is put aside."
+  },
+  "q-family-of-origin": {
+    "title": "Family of Origin",
+    "lenses.0.take": "The way early caregivers respond shapes a child's expectations about relationships, but it is not a lifelong fate.",
+    "lenses.1.take": "Children raised in the same family are far less alike than people assume, and part of the reason is that they share genes rather than only a home environment.",
+    "lenses.2.take": "Warm and consistent parenting is linked to better outcomes for children, but a correlation cannot be stated as parents “causing” those outcomes.",
+    "lenses.3.take": "Emotional patterns are passed down through families across generations, and children often end up carrying anxiety the family never dealt with.",
+    "lenses.4.take": "Parents also live within work, money and community. Problems in a family often come from pressures further out."
+  },
+  "q-inferiority": {
+    "title": "Inferiority",
+    "lenses.0.take": "Everyone has a sense of falling short. Turning it into effort is compensation. Turning it into avoidance or showing off is what becomes a “complex.”",
+    "lenses.1.take": "The belief “I can do this” comes from personal success, role models and encouragement, not from self-talk alone.",
+    "lenses.2.take": "A group's standing affects individuals' self-esteem. Members of devalued groups are more likely to internalize negative judgments.",
+    "lenses.3.take": "When a core negative belief about yourself is treated as fact, you selectively remember only the evidence that supports it, and the inferiority is maintained.",
+    "lenses.4.take": "Feeling competent is one of the basic human needs. Going a long time without being recognized wears away at self-worth."
+  },
+  "q-meaning": {
+    "title": "Meaning in Life",
+    "lenses.0.take": "Even in the most difficult circumstances, people can choose their attitude and find meaning in responsibility, love and creativity.",
+    "lenses.1.take": "Awareness of death makes people rely more on cultural values and self-esteem to find meaning. The experimental evidence for this theory is quite contested.",
+    "lenses.2.take": "You do not need to find the answer first. Clarify what you value and act on it in the present, and a sense of meaning often comes from the action itself.",
+    "lenses.3.take": "Sources of meaning differ across cultures. Some place more weight on personal achievement, others on family and relationships.",
+    "lenses.4.take": "Happiness adapts quickly, so constantly raising the level of pleasure cannot produce lasting meaning."
+  },
+  "q-habit": {
+    "title": "Habits",
+    "lenses.0.take": "A habit is the repetition of a cue, an action and a reward. Changing the cue or the reward works better than relying on willpower alone.",
+    "lenses.1.take": "Unpredictable rewards, such as lottery draws or refreshing a feed, keep people returning again and again, and they are the hardest habits to quit.",
+    "lenses.2.take": "Habits run automatically in “System 1.” Changing one requires consciously interrupting it and repeating a new way of doing things.",
+    "lenses.3.take": "Acting first and waiting for the feeling to follow is an effective way to change habits of depression and avoidance.",
+    "lenses.4.take": "Repetition strengthens the relevant synapses. This is the biological basis that makes habits hard to change, and also why they can be relearned."
+  },
+  "q-conformity": {
+    "title": "Conformity",
+    "lenses.0.take": "Even when the majority is plainly wrong, about a third of people can be pulled into agreeing with it, because people do not want to stand against the group.",
+    "lenses.1.take": "We follow the norms of groups we identify with, and pay little attention to the views of outside groups.",
+    "lenses.2.take": "“Everyone is doing it” is one of the most commonly used shortcuts for persuasion, and it is especially effective when people are uncertain.",
+    "lenses.3.take": "When we see others do something and get good results, we tend to do it too, without needing to be told.",
+    "lenses.4.take": "Some suggest that following the group had survival value in ancestral environments, but explanations of this kind are hard to test."
+  },
+  "q-memory-reliable": {
+    "title": "Can Memory Be Trusted?",
+    "lenses.0.take": "Recalling is a reconstruction, not playing back a videotape, so every act of remembering may rewrite the memory.",
+    "lenses.1.take": "Suggestive information received after the fact can quietly change a memory, and people are just as confident in the altered memory.",
+    "lenses.2.take": "Facts, skills and emotional memories rely on different systems. Amnesic patients can still learn new skills.",
+    "lenses.3.take": "The idea that “repressed memories can be recovered exactly as they were” lacks evidence, but people can certainly choose to avoid remembering consciously.",
+    "lenses.4.take": "In trauma therapy, retelling a memory changes its emotional weight rather than replacing the facts."
+  },
+  "q-personality-change": {
+    "title": "Can Personality Change?",
+    "lenses.0.take": "A person's rank within a group is quite stable, but on average people become more responsible and even-tempered as they age.",
+    "lenses.1.take": "Personality differences are moderately heritable. That does not mean they cannot change, only that change does not happen overnight.",
+    "lenses.2.take": "Behavior is not consistent everywhere. The “if-then” patterns within particular kinds of situations are more stable, and changing the situation is also a way of changing behavior.",
+    "lenses.3.take": "Specific thoughts and behavior patterns can be changed through practice, which is more achievable than changing “the whole personality.”",
+    "lenses.4.take": "Believing change is possible helps, but large-scale trials show that simply “changing your thoughts” produces very small changes."
+  },
+  "q-trauma": {
+    "title": "Trauma",
+    "lenses.0.take": "The vigilance and avoidance after trauma involve learning: cues become linked with danger, and this can be weakened through extinction.",
+    "lenses.1.take": "Loops linking threatening memories and bodily reactions can trigger a person even when they are actually safe.",
+    "lenses.2.take": "Janet first described this: a sudden, intense fright can split part of the experience off from consciousness, leaving intrusive fragments.",
+    "lenses.3.take": "The treatments with good evidence work by facing memories and avoided situations again under safe conditions, rather than continuing to escape.",
+    "lenses.4.take": "Frankl held that suffering itself has no meaning, but people can find meaning in what they do with it. This is not a demand placed on victims."
+  },
+  "q-attention": {
+    "title": "Focus",
+    "lenses.0.take": "Working memory has limited capacity, and handling several things at once means they crowd each other out. So-called “multitasking” is really rapid switching.",
+    "lenses.1.take": "When attention is locked onto one thing, you can miss other obvious things in plain view.",
+    "lenses.2.take": "People are most absorbed when the challenge matches their ability, the goal is clear and feedback comes promptly.",
+    "lenses.3.take": "Mindfulness training practices the skill of bringing attention back, and it helps with distraction to some degree, but its effects should not be overstated.",
+    "lenses.4.take": "Notifications and refreshing are unpredictable rewards, which make it hard to put the phone down. That is not a personal failure of willpower."
+  }
+}

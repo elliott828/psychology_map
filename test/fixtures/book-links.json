@@ -1,0 +1,10 @@
+{
+  "bio-w-behave": {
+    "zh": { "title": "行为", "author": "罗伯特·萨波尔斯基", "translator": "某某", "publisher": "某出版社", "year": 2020, "doubanId": "1", "url": "https://book.douban.com/subject/1/", "rating": 8.4, "votes": 1200,
+            "alt": [ { "title": "行为（另一版）", "publisher": "另一家", "year": 2022, "url": "https://book.douban.com/subject/2/", "rating": 8.0, "votes": 40 } ] },
+    "en": { "title": "Behave", "author": "Robert M. Sapolsky", "openLibrary": "https://openlibrary.org/works/OL1W", "firstPublished": 2017 },
+    "matchedBy": "fixture", "matchNote": "", "fetchedAt": "2026-11-15"
+  },
+  "bio-w-why-zebras": { "zh": null, "en": { "title": "x", "author": "y", "openLibrary": "https://evil.example.com/steal", "firstPublished": 2000 }, "matchedBy": "fixture" },
+  "no-such-work": { "zh": null, "en": null }
+}

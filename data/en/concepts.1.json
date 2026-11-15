@@ -1,0 +1,212 @@
+{
+  "engram": {
+    "summary": "The physical trace a specific memory leaves in the brain.",
+    "plain": "A specific group of neurons and their connections hold a memory. Reactivating them brings the memory back to mind.",
+    "example": "When you recall your mother's kitchen, a cluster of related neurons lights up together. That cluster is roughly the memory's trace.",
+    "misuse": "“Memories are stored like a videotape in one particular spot” is wrong. A memory is spread across the brain, and it gets rewritten each time it is retrieved."
+  },
+  "critical-period": {
+    "summary": "Some abilities form most easily during specific stages of development.",
+    "plain": "There is a window when the brain is especially sensitive to certain kinds of experience. After it closes, the same learning becomes harder, though not always impossible.",
+    "example": "Young children pick up an accent far more easily than adults do. A child with amblyopia (lazy eye) recovers better vision the earlier it is corrected.",
+    "misuse": "Often misused as “your fate is sealed by age three.” Most sensitive periods fade gradually, and there is still room for catch-up learning later."
+  },
+  "allostasis": {
+    "summary": "The body copes with change by shifting its “set point.”",
+    "plain": "Rather than holding its internal state fixed at one value, the body anticipates needs and adjusts actively. Under stress, for example, it raises blood pressure and blood sugar.",
+    "example": "Heart rate and blood pressure stay high all day during a deadline crunch. This is an adjustment made to meet the task, not a sign of things “going out of control.”",
+    "misuse": "Mistakenly treated as a synonym for “stress is harmful.” Short-term adaptation is normal. The problem comes when recovery never happens over the long term."
+  },
+  "neuroplasticity": {
+    "summary": "The brain changes its connections and structure in response to experience.",
+    "plain": "Connections between neurons strengthen with use and weaken with disuse. The changes continue into adulthood, but they are smaller than in childhood.",
+    "example": "Taxi drivers have been found to have a larger back portion of the hippocampus. Blind people reading Braille also recruit the visual cortex to process touch.",
+    "misuse": "Often inflated into a catch-all slogan that you can change anything you want. Real change takes a great deal of repetition and time."
+  },
+  "double-dissociation": {
+    "summary": "Two opposite types of damage show that two functions are independent of each other.",
+    "plain": "Patient A loses function 1 but keeps function 2, and Patient B shows the reverse. That suggests the two functions depend on different brain mechanisms.",
+    "example": "Some patients can recognize objects but cannot recognize faces, while others show the reverse. This suggests that object recognition and face recognition are at least partly independent.",
+    "misuse": "Often read as “one brain area does one thing.” The finding only shows that the two abilities can come apart. It does not show that each maps onto a single brain area."
+  },
+  "heritability": {
+    "summary": "In a population, how much of the variation in a trait is linked to genetic differences.",
+    "plain": "It is a population statistic describing the source of differences. It is not a measure of how much of an individual's trait is “due to genes.”",
+    "example": "Height has a heritability of about 80 percent. This means that differences in height across a population mainly come from genetic differences. It does not mean that 80 percent of any one person's height is determined by genes.",
+    "misuse": "The most common misuse is treating heritability as meaning “unchangeable.” Better nutrition can make a whole generation taller, yet heritability stays almost the same."
+  },
+  "lateralization": {
+    "summary": "The two hemispheres each lean toward certain functions.",
+    "plain": "Language is mostly led by the left hemisphere, while spatial and face processing tends to lean right. In everyday life, though, both sides always work together.",
+    "example": "People with right-hemisphere damage may neglect the world on their left side. Damage to the left hemisphere more often causes language difficulties.",
+    "misuse": "Often spread as “left-brained people are logical, right-brained people are creative.” No research supports this personality classification."
+  },
+  "long-term-potentiation": {
+    "summary": "A cellular phenomenon in which connections grow stronger with use.",
+    "plain": "After a synapse is activated repeatedly, the receiving neuron responds more strongly to it, and this change can last a long time.",
+    "example": "When you memorize vocabulary, the same pathway is activated again and again. The corresponding connections become easier to call up.",
+    "misuse": "Not all learning relies on this process, and it does not follow that “more practice always means better retention.”"
+  },
+  "imprint": {
+    "summary": "Young animals quickly identify and follow the first object they encounter.",
+    "plain": "Within a short window after hatching, a young bird learns the moving object it sees and forms a stable attachment to it.",
+    "example": "Goslings took Lorenz to be their mother, and wherever he walked, they followed.",
+    "misuse": "Describing human infant attachment as “imprinting” is an overextended analogy. Human attachment develops over a much longer period and can be repaired."
+  },
+  "binding-problem": {
+    "summary": "Color, shape and motion are processed separately. Why do we see a unified object?",
+    "plain": "The brain processes an object's color, shape, location and motion in different regions, yet we experience it as one whole. How these pieces get joined together is still not fully understood.",
+    "example": "You see a red ball roll past. Red, round and moving are different patterns of neural activity, yet you do not mistakenly assign the red to the square next to it.",
+    "misuse": "Seeing does not require a tiny person inside the brain assembling the picture. That idea itself is a misunderstanding to avoid."
+  },
+  "mismatch": {
+    "summary": "Adaptations to ancestral environments can become problems in modern ones.",
+    "plain": "Bodily and psychological tendencies took shape long ago. When the environment changes dramatically, tendencies that once helped may no longer fit.",
+    "example": "People prefer high-sugar, high-fat foods. In the past, when food was scarce, that helped survival. In a supermarket, it makes overeating easy.",
+    "misuse": "Often used to find a “caveman explanation” for any modern problem. Most such claims have never been tested."
+  },
+  "interpreter-effect": {
+    "summary": "Making up a plausible-sounding reason for an action that has already happened.",
+    "plain": "When people do not know the real cause of their behavior, they automatically construct an explanation that sounds reasonable, and they sincerely believe it.",
+    "example": "In split-brain experiments, the right hemisphere saw the word “walk,” and the patient stood up and walked. The left hemisphere then said, “I wanted to go get a Coke.”",
+    "misuse": "This does not mean “people are always lying.” It describes how limited our understanding of our own motives is to begin with."
+  },
+  "negative-reinforcement": {
+    "summary": "Removing something unpleasant makes a behavior more frequent. It is not punishment.",
+    "plain": "Negative reinforcement is a way of increasing a behavior: something unpleasant is taken away after the behavior. Punishment, by contrast, reduces a behavior.",
+    "example": "You take a painkiller and the headache goes away, so next time you get a headache you are more likely to take one. You switch off a jarring alarm and are more likely to get up right away the next time.",
+    "misuse": "Here “negative” means “removal,” not “bad.” It is often mistaken for punishment."
+  },
+  "extinction": {
+    "summary": "Once the pairing stops, the response fades, but it can return on its own.",
+    "plain": "A conditioned response gradually weakens when it is no longer reinforced. This is called extinction. If it suddenly reappears after a rest, that is called spontaneous recovery.",
+    "example": "After quitting, the urge to smoke in a certain setting fades. A few months later, at a party, the urge suddenly comes back.",
+    "misuse": "Extinction does not erase the old association. A new inhibition is learned instead, so relapse is normal and not a sign of failure."
+  },
+  "variable-ratio": {
+    "summary": "Not knowing which attempt will pay off is what keeps people hooked.",
+    "plain": "Rewards depend on how many times you act, but the number needed changes each time. The behavior becomes persistent and frequent as a result.",
+    "example": "Slot machines, the next video in a short-video feed, and gacha card-draw games all work this way: the next try might be the winner.",
+    "misuse": "Often described as “people are designed to be addicted.” The schedule only describes a pattern of behavior. It does not mean everyone who experiences it becomes addicted."
+  },
+  "shaping": {
+    "summary": "Gradually rewarding small steps toward a goal.",
+    "plain": "First reward any behavior that moves toward the goal, then gradually raise the standard until the full new behavior is formed.",
+    "example": "Teaching a child to tie shoelaces: first reward picking up the laces, then crossing them, then tying the knot.",
+    "misuse": "Often misused as “just reward them and it will work,” overlooking the child's own motivation and interests."
+  },
+  "generalization": {
+    "summary": "A learned response spreads to similar stimuli.",
+    "plain": "A response formed to one stimulus also appears toward similar stimuli. The more similar they are, the stronger the response.",
+    "example": "A child bitten by a dog becomes afraid of all large dogs afterward.",
+    "misuse": "Generalization does not mean “overthinking.” It is a normal feature of learning, and it is also one of the mechanisms by which anxiety spreads."
+  },
+  "modeling": {
+    "summary": "People watch what others do and then copy it.",
+    "plain": "People observe and imitate others' behavior, especially people who are similar to them, respected, and seem to get good results.",
+    "example": "A child learns to swear not because anyone taught them to, but because they heard the adults talk that way.",
+    "misuse": "“Television makes children violent” is an oversimplification. Imitation does happen, but long-term effects also depend on the individual and the environment."
+  },
+  "prediction-error": {
+    "summary": "The gap between outcome and expectation is what drives learning.",
+    "plain": "The brain updates only when what happens differs from what was expected. Events that match expectations exactly bring no new learning.",
+    "example": "You suddenly find out the owner of a coffee shop remembers your name. You feel especially happy because you did not expect it.",
+    "misuse": "Often stretched into “whenever you are surprised, you are learning.” In fact, the error signal is just one mechanism of learning."
+  },
+  "habit-loop": {
+    "summary": "Cue, routine, reward: these three repeat until a habit forms.",
+    "plain": "A habit has three parts: the cue that triggers it, the action performed, and the reward received. As the reward recurs, the cue becomes more powerful.",
+    "example": "A phone notification sound (cue), then you pick up the phone and look (action), then the satisfaction of a new message (reward).",
+    "misuse": "Popular books present it as a universal formula. In reality, habit formation also depends on the environment, the number of repetitions and individual differences."
+  },
+  "behavioral-contract": {
+    "summary": "Goals and rewards are written down as an agreement in advance.",
+    "plain": "Both parties write down the behavior to be changed and the reward for achieving it, then follow the agreement.",
+    "example": "A child and parents agree: finish homework five days a week, and get an extra half hour of gaming on the weekend.",
+    "misuse": "Often dismissed as “buying off children with candy.” What matters is that the behavior is clearly defined, the reward is given promptly, and the reward can be gradually withdrawn."
+  },
+  "working-memory": {
+    "summary": "A limited capacity to hold and work with several things at once.",
+    "plain": "This is the brain's space for temporarily holding and working with information, such as keeping an intermediate result in mind during mental arithmetic. Its capacity is very small, varies from person to person, and is taken up by stress.",
+    "example": "Jotting down an address while on the phone, or doing 47 × 6 in your head by first computing 40 × 6 and holding it while adding 42.",
+    "misuse": "Often treated as a synonym for “memory.” In fact, it is a different system from long-term memory, and it cannot be noticeably improved with a few brain-training games."
+  },
+  "anchoring": {
+    "summary": "A number heard first pulls later estimates off course.",
+    "plain": "Before estimating an unknown quantity, seeing a number, even an irrelevant one, pulls the estimate toward it.",
+    "example": "A store prints a high original price, so the discounted price looks like a bargain.",
+    "misuse": "Often exaggerated into “you cannot resist it at all.” The size of the effect varies with the situation and the expertise of the person."
+  },
+  "availability-heuristic": {
+    "summary": "Things that come to mind easily seem more common.",
+    "plain": "When estimating how likely something is, people rely on how easily examples come to mind, not on the actual frequency.",
+    "example": "After a few days of news about plane crashes, flying feels especially dangerous, even though the statistics say the opposite.",
+    "misuse": "This is not evidence that “people are foolish.” In most cases, things that come to mind easily really are more common."
+  },
+  "loss-aversion": {
+    "summary": "The pain of losing is greater than the pleasure of gaining the same amount.",
+    "plain": "For the same sum, people usually react more strongly to a loss than to a gain. A common estimate is about twice as strongly.",
+    "example": "Losing 100 yuan hurts, and it takes a gain of 200 yuan to feel that the two balance out.",
+    "misuse": "Often used to explain every case of “hating to let go,” but the strength of the effect varies a great deal across people and situations."
+  },
+  "inattentional-blindness": {
+    "summary": "Focusing on one thing can make you miss other obvious things.",
+    "plain": "When attention is taken up by something, even objects in plain view may go unnoticed.",
+    "example": "In a study where viewers counted basketball passes, about half did not notice a gorilla walking through the frame.",
+    "misuse": "This shows that attention is limited. It does not mean that some people have poor eyesight, and it does not mean you will miss things at all times."
+  },
+  "false-memory": {
+    "summary": "People can vividly “remember” things that never happened.",
+    "plain": "Through suggestion, imagination and repeated retelling, people can form vivid memories of events that did not happen. Subjectively, these are indistinguishable from real memories.",
+    "example": "In one experiment, some participants were told that they had got lost in a shopping mall as children. Afterward, they went on to describe details of the event.",
+    "misuse": "Often misread as “all memories of trauma are unreliable.” The real finding is narrower: how vivid a memory feels is not the same as how accurate it is."
+  },
+  "confirmation-bias": {
+    "summary": "A tendency to look for evidence that supports what we already think.",
+    "plain": "When gathering, interpreting and remembering information, people tend to favor content that confirms their existing views.",
+    "example": "Once you decide someone is unreliable, you notice only the few times they were late.",
+    "misuse": "This is not the same as stubbornness. It also appears in intelligent people who want to be fair, and it has to be counteracted through deliberate checks against your own view."
+  },
+  "retrieval-practice": {
+    "summary": "Trying to recall something on your own helps you learn it better than rereading.",
+    "plain": "After studying, actively trying to recall the material is better for long-term retention than reading it again.",
+    "example": "Quizzing yourself with flashcards, or closing the book and retelling the passage you just studied.",
+    "misuse": "It should not be reduced to cramming for tests, since understanding the material is still needed. Nor does it mean “the more quizzes, the better.”"
+  },
+  "figure-ground": {
+    "summary": "Perception always treats some parts as the “figure” and the rest as the “ground.”",
+    "plain": "When looking at a picture, we automatically treat some parts as prominent objects and the rest as background. The two can swap places.",
+    "example": "The Rubin vase can be seen as a vase, or as two faces in profile looking at each other.",
+    "misuse": "Sometimes treated as a “personality test.” This is just a law of perception and has nothing to do with personality."
+  },
+  "priming": {
+    "summary": "Encountering one stimulus shapes how related content is processed afterward.",
+    "plain": "Seeing one word makes related words easier and faster to recognize. This is called semantic priming.",
+    "example": "After seeing “doctor,” you recognize “nurse” faster.",
+    "misuse": "The biggest misuse is stretching it into “glancing at a word changes your behavior.” Many social priming effects of this kind have failed to replicate."
+  },
+  "regression-to-mean": {
+    "summary": "After an extreme result, the next result is usually closer to average.",
+    "plain": "For any measure with a random component, an extremely high or low reading is usually followed by a reading closer to the average. This is simply a statistical pattern.",
+    "example": "People who did unusually well on an exam usually do less well the next time. This does not mean they have declined.",
+    "misuse": "The most common misuse is treating it as the effect of an intervention. “Grades fell after praise and improved after criticism” is often just regression to the mean."
+  },
+  "correlation-causation": {
+    "summary": "Two things changing together does not mean one causes the other.",
+    "plain": "Two correlated variables may be linked because A causes B, B causes A, or a third factor affects both.",
+    "example": "Ice cream sales and drowning deaths rise together because of summer weather, not because ice cream causes drowning.",
+    "misuse": "Sometimes misused to mean “correlation is meaningless.” Correlation is a clue, and further study design is needed to test causation."
+  },
+  "reliability": {
+    "summary": "How stable a measurement is.",
+    "plain": "If the same person is measured again under similar conditions and gets a similar score, the reliability is high.",
+    "example": "A bathroom scale that shows about the same number every time is reliable, but that does not mean it is accurate.",
+    "misuse": "High reliability is often mistaken for accuracy. In fact, a measure can be consistently wrong, measuring the wrong thing with stable results."
+  },
+  "validity": {
+    "summary": "Whether a test measures what it is meant to measure.",
+    "plain": "How much evidence supports the meaning of a test score: it relates to what it should relate to, is unrelated to what it should be unrelated to, and predicts the outcomes it should predict.",
+    "example": "Measuring someone's intelligence by their shoe size could have high reliability, but its validity would be close to zero.",
+    "misuse": "Often described as a property of the test itself. In fact, validity applies to the interpretation of scores for a particular purpose."
+  }
+}

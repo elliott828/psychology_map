@@ -1,0 +1,623 @@
+{
+  "cog-w-thinking-fast-slow": {
+    "en": "covers/cog-w-thinking-fast-slow.en.jpg"
+  },
+  "bio-w-behave": {
+    "en": "covers/bio-w-behave.en.jpg"
+  },
+  "bio-w-why-zebras": {
+    "en": "covers/bio-w-why-zebras.en.jpg"
+  },
+  "bio-w-in-search-memory": {
+    "en": "covers/bio-w-in-search-memory.en.jpg"
+  },
+  "bio-w-descartes-error": {
+    "en": "covers/bio-w-descartes-error.en.jpg"
+  },
+  "bio-w-determined": {
+    "en": "covers/bio-w-determined.en.jpg"
+  },
+  "bio-w-emotional-brain": {
+    "en": "covers/bio-w-emotional-brain.en.jpg"
+  },
+  "bio-w-how-emotions": {
+    "en": "covers/bio-w-how-emotions.en.jpg"
+  },
+  "bio-w-man-who-mistook": {
+    "en": "covers/bio-w-man-who-mistook.en.jpg"
+  },
+  "bio-w-blueprint": {
+    "en": "covers/bio-w-blueprint.en.jpg"
+  },
+  "bio-w-who-in-charge": {
+    "en": "covers/bio-w-who-in-charge.en.jpg"
+  },
+  "bio-w-origin-of-species": {
+    "en": "covers/bio-w-origin-of-species.en.jpg"
+  },
+  "bio-w-adapted-mind": {
+    "en": "covers/bio-w-adapted-mind.en.jpg"
+  },
+  "bio-w-brain-that-changes": {
+    "en": "covers/bio-w-brain-that-changes.en.jpg"
+  },
+  "bio-w-mind-of-a-mnemonist": {
+    "en": "covers/bio-w-mind-of-a-mnemonist.en.jpg"
+  },
+  "bio-w-the-selfish-gene": {
+    "en": "covers/bio-w-the-selfish-gene.en.jpg"
+  },
+  "bhv-w-dont-shoot-dog": {
+    "en": "covers/bhv-w-dont-shoot-dog.en.jpg"
+  },
+  "bhv-w-power-of-habit": {
+    "en": "covers/bhv-w-power-of-habit.en.jpg"
+  },
+  "bhv-w-social-learning-theory": {
+    "en": "covers/bhv-w-social-learning-theory.en.jpg"
+  },
+  "bhv-w-self-efficacy": {
+    "en": "covers/bhv-w-self-efficacy.en.jpg"
+  },
+  "bhv-w-conditioned-reflexes": {
+    "en": "covers/bhv-w-conditioned-reflexes.en.jpg"
+  },
+  "bhv-w-atomic-habits": {
+    "en": "covers/bhv-w-atomic-habits.en.jpg"
+  },
+  "bhv-w-learned-optimism": {
+    "en": "covers/bhv-w-learned-optimism.en.jpg"
+  },
+  "bhv-w-behaviorism-watson": {
+    "en": "covers/bhv-w-behaviorism-watson.en.jpg"
+  },
+  "cog-w-seven-sins": {
+    "en": "covers/cog-w-seven-sins.en.jpg"
+  },
+  "cog-w-minds-new-science": {
+    "en": "covers/cog-w-minds-new-science.en.jpg"
+  },
+  "cog-w-principles-psychology": {
+    "en": "covers/cog-w-principles-psychology.en.jpg"
+  },
+  "cog-w-remembering": {
+    "en": "covers/cog-w-remembering.en.jpg"
+  },
+  "cog-w-metaphors": {
+    "en": "covers/cog-w-metaphors.en.jpg"
+  },
+  "cog-w-make-it-stick": {
+    "en": "covers/cog-w-make-it-stick.en.jpg"
+  },
+  "cog-w-surfing-uncertainty": {
+    "en": "covers/cog-w-surfing-uncertainty.en.jpg"
+  },
+  "cog-w-gestalt-psychology": {
+    "en": "covers/cog-w-gestalt-psychology.en.jpg"
+  },
+  "cog-w-geb": {
+    "en": "covers/cog-w-geb.en.jpg"
+  },
+  "dif-w-mismeasure-of-man": {
+    "en": "covers/dif-w-mismeasure-of-man.en.jpg"
+  },
+  "dif-w-frames-of-mind": {
+    "en": "covers/dif-w-frames-of-mind.en.jpg"
+  },
+  "dif-w-marshmallow-test": {
+    "en": "covers/dif-w-marshmallow-test.en.jpg"
+  },
+  "dif-w-hereditary-genius": {
+    "en": "covers/dif-w-hereditary-genius.en.jpg"
+  },
+  "dif-w-intelligence-vsi": {
+    "en": "covers/dif-w-intelligence-vsi.en.jpg"
+  },
+  "dif-w-quiet": {
+    "en": "covers/dif-w-quiet.en.jpg"
+  },
+  "dif-w-science-fictions": {
+    "en": "covers/dif-w-science-fictions.en.jpg"
+  },
+  "dif-w-statistical-method": {
+    "en": "covers/dif-w-statistical-method.en.jpg"
+  },
+  "dev-w-scientist-crib": {
+    "en": "covers/dev-w-scientist-crib.en.jpg"
+  },
+  "dev-w-gardener-carpenter": {
+    "en": "covers/dev-w-gardener-carpenter.en.jpg"
+  },
+  "dev-w-attached": {
+    "en": "covers/dev-w-attached.en.jpg"
+  },
+  "dev-w-mind-in-society": {
+    "en": "covers/dev-w-mind-in-society.en.jpg"
+  },
+  "dev-w-childhood-society": {
+    "en": "covers/dev-w-childhood-society.en.jpg"
+  },
+  "dev-w-attachment-loss": {
+    "en": "covers/dev-w-attachment-loss.en.jpg"
+  },
+  "dev-w-secure-base": {
+    "en": "covers/dev-w-secure-base.en.jpg"
+  },
+  "dev-w-ecology-human-development": {
+    "en": "covers/dev-w-ecology-human-development.en.jpg"
+  },
+  "dev-w-different-voice": {
+    "en": "covers/dev-w-different-voice.en.jpg"
+  },
+  "dev-w-boy-raised-dog": {
+    "en": "covers/dev-w-boy-raised-dog.en.jpg"
+  },
+  "soc-w-social-animal": {
+    "en": "covers/soc-w-social-animal.en.jpg"
+  },
+  "soc-w-influence": {
+    "en": "covers/soc-w-influence.en.jpg"
+  },
+  "soc-w-righteous-mind": {
+    "en": "covers/soc-w-righteous-mind.en.jpg"
+  },
+  "soc-w-nature-of-prejudice": {
+    "en": "covers/soc-w-nature-of-prejudice.en.jpg"
+  },
+  "soc-w-happiness-hypothesis": {
+    "en": "covers/soc-w-happiness-hypothesis.en.jpg"
+  },
+  "soc-w-obedience-authority": {
+    "en": "covers/soc-w-obedience-authority.en.jpg"
+  },
+  "soc-w-geography-thought": {
+    "en": "covers/soc-w-geography-thought.en.jpg"
+  },
+  "soc-w-mistakes-were-made": {
+    "en": "covers/soc-w-mistakes-were-made.en.jpg"
+  },
+  "soc-w-org-culture": {
+    "en": "covers/soc-w-org-culture.en.jpg"
+  },
+  "soc-w-lucifer-effect": {
+    "en": "covers/soc-w-lucifer-effect.en.jpg"
+  },
+  "hum-w-mans-search": {
+    "en": "covers/hum-w-mans-search.en.jpg"
+  },
+  "hum-w-on-becoming-person": {
+    "en": "covers/hum-w-on-becoming-person.en.jpg"
+  },
+  "hum-w-loves-executioner": {
+    "en": "covers/hum-w-loves-executioner.en.jpg"
+  },
+  "hum-w-flow": {
+    "en": "covers/hum-w-flow.en.jpg"
+  },
+  "hum-w-flourish": {
+    "en": "covers/hum-w-flourish.en.jpg"
+  },
+  "hum-w-how-of-happiness": {
+    "en": "covers/hum-w-how-of-happiness.en.jpg"
+  },
+  "hum-w-zen-motorcycle": {
+    "en": "covers/hum-w-zen-motorcycle.en.jpg"
+  },
+  "hum-w-motivation-personality": {
+    "en": "covers/hum-w-motivation-personality.en.jpg"
+  },
+  "hum-w-existential-psychotherapy": {
+    "en": "covers/hum-w-existential-psychotherapy.en.jpg"
+  },
+  "hum-w-denial-of-death": {
+    "en": "covers/hum-w-denial-of-death.en.jpg"
+  },
+  "hum-w-mindset": {
+    "en": "covers/hum-w-mindset.en.jpg"
+  },
+  "hum-w-meaning-of-anxiety": {
+    "en": "covers/hum-w-meaning-of-anxiety.en.jpg"
+  },
+  "dep-w-man-symbols": {
+    "en": "covers/dep-w-man-symbols.en.jpg"
+  },
+  "dep-w-memories-dreams": {
+    "en": "covers/dep-w-memories-dreams.en.jpg"
+  },
+  "dep-w-jung-vsi": {
+    "en": "covers/dep-w-jung-vsi.en.jpg"
+  },
+  "dep-w-jung-bair": {
+    "en": "covers/dep-w-jung-bair.en.jpg"
+  },
+  "dep-w-freud-vsi": {
+    "en": "covers/dep-w-freud-vsi.en.jpg"
+  },
+  "dep-w-examined-life": {
+    "en": "covers/dep-w-examined-life.en.jpg"
+  },
+  "dep-w-interpretation-dreams": {
+    "en": "covers/dep-w-interpretation-dreams.en.jpg"
+  },
+  "dep-w-ego-unconscious": {
+    "en": "covers/dep-w-ego-unconscious.en.jpg"
+  },
+  "dep-w-courage-disliked": {
+    "en": "covers/dep-w-courage-disliked.en.jpg"
+  },
+  "dep-w-playing-reality": {
+    "en": "covers/dep-w-playing-reality.en.jpg"
+  },
+  "dep-w-understanding-human-nature": {
+    "en": "covers/dep-w-understanding-human-nature.en.jpg"
+  },
+  "dep-w-neurotic-personality": {
+    "en": "covers/dep-w-neurotic-personality.en.jpg"
+  },
+  "dep-w-analysis-self": {
+    "en": "covers/dep-w-analysis-self.en.jpg"
+  },
+  "dep-w-fairy-tales": {
+    "en": "covers/dep-w-fairy-tales.en.jpg"
+  },
+  "dep-w-soul-code": {
+    "en": "covers/dep-w-soul-code.en.jpg"
+  },
+  "cli-w-feeling-good": {
+    "en": "covers/cli-w-feeling-good.en.jpg"
+  },
+  "cli-w-unquiet-mind": {
+    "en": "covers/cli-w-unquiet-mind.en.jpg"
+  },
+  "cli-w-noonday-demon": {
+    "en": "covers/cli-w-noonday-demon.en.jpg"
+  },
+  "cli-w-center-cannot-hold": {
+    "en": "covers/cli-w-center-cannot-hold.en.jpg"
+  },
+  "cli-w-book-of-woe": {
+    "en": "covers/cli-w-book-of-woe.en.jpg"
+  },
+  "cli-w-mind-fixers": {
+    "en": "covers/cli-w-mind-fixers.en.jpg"
+  },
+  "cli-w-happiness-trap": {
+    "en": "covers/cli-w-happiness-trap.en.jpg"
+  },
+  "cli-w-building-life": {
+    "en": "covers/cli-w-building-life.en.jpg"
+  },
+  "cli-w-wherever-you-go": {
+    "en": "covers/cli-w-wherever-you-go.en.jpg"
+  },
+  "cli-w-full-catastrophe": {
+    "en": "covers/cli-w-full-catastrophe.en.jpg"
+  },
+  "cli-w-body-keeps-score": {
+    "en": "covers/cli-w-body-keeps-score.en.jpg"
+  },
+  "cli-w-trauma-recovery": {
+    "en": "covers/cli-w-trauma-recovery.en.jpg"
+  },
+  "cli-w-what-my-bones-know": {
+    "en": "covers/cli-w-what-my-bones-know.en.jpg"
+  },
+  "cli-w-family-crucible": {
+    "en": "covers/cli-w-family-crucible.en.jpg"
+  },
+  "cli-w-dance-of-anger": {
+    "en": "covers/cli-w-dance-of-anger.en.jpg"
+  },
+  "cli-w-go-home-again": {
+    "en": "covers/cli-w-go-home-again.en.jpg"
+  },
+  "cli-w-living-untethered": {
+    "en": "covers/cli-w-living-untethered.en.jpg"
+  },
+  "cli-w-dsm-5-tr": {
+    "en": "covers/cli-w-dsm-5-tr.en.jpg"
+  },
+  "cli-w-stress-prescription": {
+    "en": "covers/cli-w-stress-prescription.en.jpg"
+  },
+  "cli-w-family-therapy-practice": {
+    "en": "covers/cli-w-family-therapy-practice.en.jpg"
+  },
+  "cli-w-saving-normal": {
+    "en": "covers/cli-w-saving-normal.en.jpg"
+  },
+  "cli-w-cognitive-therapy-depression": {
+    "en": "covers/cli-w-cognitive-therapy-depression.en.jpg"
+  },
+  "cli-w-persuasion-healing": {
+    "en": "covers/cli-w-persuasion-healing.en.jpg"
+  },
+  "bio-w-cerebral-cortex-man": {
+    "en": "covers/bio-w-cerebral-cortex-man.en.jpg"
+  },
+  "bio-w-advice-young-investigator": {
+    "en": "covers/bio-w-advice-young-investigator.en.jpg"
+  },
+  "bhv-w-animal-intelligence": {
+    "en": "covers/bhv-w-animal-intelligence.en.jpg"
+  },
+  "bhv-w-purposive-behavior": {
+    "en": "covers/bhv-w-purposive-behavior.en.jpg"
+  },
+  "bhv-w-reciprocal-inhibition": {
+    "en": "covers/bhv-w-reciprocal-inhibition.en.jpg"
+  },
+  "bhv-w-aba-cooper": {
+    "en": "covers/bhv-w-aba-cooper.en.jpg"
+  },
+  "bhv-w-reinforcement-learning": {
+    "en": "covers/bhv-w-reinforcement-learning.en.jpg"
+  },
+  "cog-w-principles-physiological-psychology": {
+    "en": "covers/cog-w-principles-physiological-psychology.en.jpg"
+  },
+  "dif-w-dimensions-personality": {
+    "en": "covers/dif-w-dimensions-personality.en.jpg"
+  },
+  "dev-w-adolescence-hall": {
+    "en": "covers/dev-w-adolescence-hall.en.jpg"
+  },
+  "dev-w-mindblindness": {
+    "en": "covers/dev-w-mindblindness.en.jpg"
+  },
+  "dev-w-igen": {
+    "en": "covers/dev-w-igen.en.jpg"
+  },
+  "dev-w-anxious-generation": {
+    "en": "covers/dev-w-anxious-generation.en.jpg"
+  },
+  "soc-w-psychology-interpersonal-relations": {
+    "en": "covers/soc-w-psychology-interpersonal-relations.en.jpg"
+  },
+  "soc-w-anatomy-dependence": {
+    "en": "covers/soc-w-anatomy-dependence.en.jpg"
+  },
+  "hum-w-gestalt-therapy": {
+    "en": "covers/hum-w-gestalt-therapy.en.jpg"
+  },
+  "hum-w-intrinsic-motivation-self-determination": {
+    "en": "covers/hum-w-intrinsic-motivation-self-determination.en.jpg"
+  },
+  "hum-w-hold-me-tight": {
+    "en": "covers/hum-w-hold-me-tight.en.jpg"
+  },
+  "dep-w-ego-mechanisms-defence": {
+    "en": "covers/dep-w-ego-mechanisms-defence.en.jpg"
+  },
+  "dep-w-ecrits": {
+    "en": "covers/dep-w-ecrits.en.jpg"
+  },
+  "dep-w-object-relations-psychoanalytic-theory": {
+    "en": "covers/dep-w-object-relations-psychoanalytic-theory.en.jpg"
+  },
+  "dep-w-affect-regulation-mentalization": {
+    "en": "covers/dep-w-affect-regulation-mentalization.en.jpg"
+  },
+  "dep-w-brain-inner-world": {
+    "en": "covers/dep-w-brain-inner-world.en.jpg"
+  },
+  "cli-w-process-based-cbt": {
+    "en": "covers/cli-w-process-based-cbt.en.jpg"
+  },
+  "bio-w-king-solomons-ring": {
+    "en": "covers/bio-w-king-solomons-ring.en.jpg"
+  },
+  "bio-w-organization-of-behavior": {
+    "en": "covers/bio-w-organization-of-behavior.en.jpg"
+  },
+  "bio-w-memory-and-brain": {
+    "en": "covers/bio-w-memory-and-brain.en.jpg"
+  },
+  "bio-w-cognitive-neuroscience-textbook": {
+    "en": "covers/bio-w-cognitive-neuroscience-textbook.en.jpg"
+  },
+  "bio-w-quest-for-consciousness": {
+    "en": "covers/bio-w-quest-for-consciousness.en.jpg"
+  },
+  "bio-w-evolution-of-desire": {
+    "en": "covers/bio-w-evolution-of-desire.en.jpg"
+  },
+  "bio-w-emotions-revealed": {
+    "en": "covers/bio-w-emotions-revealed.en.jpg"
+  },
+  "bio-w-affective-neuroscience": {
+    "en": "covers/bio-w-affective-neuroscience.en.jpg"
+  },
+  "bio-w-stress-of-life": {
+    "en": "covers/bio-w-stress-of-life.en.jpg"
+  },
+  "bio-w-stress-appraisal-coping": {
+    "en": "covers/bio-w-stress-appraisal-coping.en.jpg"
+  },
+  "bhv-w-learning-and-behavior": {
+    "en": "covers/bhv-w-learning-and-behavior.en.jpg"
+  },
+  "bhv-w-theories-of-learning": {
+    "en": "covers/bhv-w-theories-of-learning.en.jpg"
+  },
+  "bhv-w-behavior-of-organisms": {
+    "en": "covers/bhv-w-behavior-of-organisms.en.jpg"
+  },
+  "bhv-w-helplessness": {
+    "en": "covers/bhv-w-helplessness.en.jpg"
+  },
+  "cog-w-memory-ebbinghaus": {
+    "en": "covers/cog-w-memory-ebbinghaus.en.jpg"
+  },
+  "cog-w-neisser-cognitive-psychology": {
+    "en": "covers/cog-w-neisser-cognitive-psychology.en.jpg"
+  },
+  "cog-w-memory-baddeley": {
+    "en": "covers/cog-w-memory-baddeley.en.jpg"
+  },
+  "cog-w-simple-heuristics": {
+    "en": "covers/cog-w-simple-heuristics.en.jpg"
+  },
+  "cog-w-pdp": {
+    "en": "covers/cog-w-pdp.en.jpg"
+  },
+  "cog-w-ecological-approach-perception": {
+    "en": "covers/cog-w-ecological-approach-perception.en.jpg"
+  },
+  "dif-w-personality-allport": {
+    "en": "covers/dif-w-personality-allport.en.jpg"
+  },
+  "dif-w-psychological-testing": {
+    "en": "covers/dif-w-psychological-testing.en.jpg"
+  },
+  "dif-w-irt-psychologists": {
+    "en": "covers/dif-w-irt-psychologists.en.jpg"
+  },
+  "dif-w-beyond-iq": {
+    "en": "covers/dif-w-beyond-iq.en.jpg"
+  },
+  "dev-w-origins-intelligence": {
+    "en": "covers/dev-w-origins-intelligence.en.jpg"
+  },
+  "dev-w-identity-youth-crisis": {
+    "en": "covers/dev-w-identity-youth-crisis.en.jpg"
+  },
+  "dev-w-patterns-attachment": {
+    "en": "covers/dev-w-patterns-attachment.en.jpg"
+  },
+  "dev-w-philosophy-moral-development": {
+    "en": "covers/dev-w-philosophy-moral-development.en.jpg"
+  },
+  "dev-w-successful-aging": {
+    "en": "covers/dev-w-successful-aging.en.jpg"
+  },
+  "soc-w-work-and-motivation": {
+    "en": "covers/soc-w-work-and-motivation.en.jpg"
+  },
+  "soc-w-unresponsive-bystander": {
+    "en": "covers/soc-w-unresponsive-bystander.en.jpg"
+  },
+  "soc-w-whistling-vivaldi": {
+    "en": "covers/soc-w-whistling-vivaldi.en.jpg"
+  },
+  "soc-w-blindspot": {
+    "en": "covers/soc-w-blindspot.en.jpg"
+  },
+  "soc-w-theory-cognitive-dissonance": {
+    "en": "covers/soc-w-theory-cognitive-dissonance.en.jpg"
+  },
+  "soc-w-strangers-to-ourselves": {
+    "en": "covers/soc-w-strangers-to-ourselves.en.jpg"
+  },
+  "soc-w-person-and-situation": {
+    "en": "covers/soc-w-person-and-situation.en.jpg"
+  },
+  "soc-w-social-cognition-fiske-taylor": {
+    "en": "covers/soc-w-social-cognition-fiske-taylor.en.jpg"
+  },
+  "soc-w-pygmalion-classroom": {
+    "en": "covers/soc-w-pygmalion-classroom.en.jpg"
+  },
+  "soc-w-foolproof": {
+    "en": "covers/soc-w-foolproof.en.jpg"
+  },
+  "hum-w-will-to-meaning": {
+    "en": "covers/hum-w-will-to-meaning.en.jpg"
+  },
+  "hum-w-positivity": {
+    "en": "covers/hum-w-positivity.en.jpg"
+  },
+  "hum-w-grit": {
+    "en": "covers/hum-w-grit.en.jpg"
+  },
+  "hum-w-client-centered-therapy": {
+    "en": "covers/hum-w-client-centered-therapy.en.jpg"
+  },
+  "hum-w-existence-may": {
+    "en": "covers/hum-w-existence-may.en.jpg"
+  },
+  "hum-w-eft-couples-book": {
+    "en": "covers/hum-w-eft-couples-book.en.jpg"
+  },
+  "dep-w-discovery-unconscious": {
+    "en": "covers/dep-w-discovery-unconscious.en.jpg"
+  },
+  "dep-w-rewriting-soul": {
+    "en": "covers/dep-w-rewriting-soul.en.jpg"
+  },
+  "dep-w-ego-and-id": {
+    "en": "covers/dep-w-ego-and-id.en.jpg"
+  },
+  "dep-w-what-life-should-mean": {
+    "en": "covers/dep-w-what-life-should-mean.en.jpg"
+  },
+  "dep-w-psychoanalysis-of-children": {
+    "en": "covers/dep-w-psychoanalysis-of-children.en.jpg"
+  },
+  "dep-w-envy-gratitude": {
+    "en": "covers/dep-w-envy-gratitude.en.jpg"
+  },
+  "dep-w-wisdom-of-ego": {
+    "en": "covers/dep-w-wisdom-of-ego.en.jpg"
+  },
+  "dep-w-interpersonal-theory-psychiatry": {
+    "en": "covers/dep-w-interpersonal-theory-psychiatry.en.jpg"
+  },
+  "dep-w-origins-history-consciousness": {
+    "en": "covers/dep-w-origins-history-consciousness.en.jpg"
+  },
+  "dep-w-symbols-transformation": {
+    "en": "covers/dep-w-symbols-transformation.en.jpg"
+  },
+  "dep-w-modern-man-soul": {
+    "en": "covers/dep-w-modern-man-soul.en.jpg"
+  },
+  "dep-w-gifts-differing": {
+    "en": "covers/dep-w-gifts-differing.en.jpg"
+  },
+  "dep-w-bonds-of-love": {
+    "en": "covers/dep-w-bonds-of-love.en.jpg"
+  },
+  "cli-w-reason-emotion-psychotherapy": {
+    "en": "covers/cli-w-reason-emotion-psychotherapy.en.jpg"
+  },
+  "cli-w-families-family-therapy": {
+    "en": "covers/cli-w-families-family-therapy.en.jpg"
+  },
+  "cli-w-great-psychotherapy-debate": {
+    "en": "covers/cli-w-great-psychotherapy-debate.en.jpg"
+  },
+  "cli-w-cognitive-behavior-modification": {
+    "en": "covers/cli-w-cognitive-behavior-modification.en.jpg"
+  },
+  "cli-w-behavioral-activation-guide": {
+    "en": "covers/cli-w-behavioral-activation-guide.en.jpg"
+  },
+  "cli-w-prolonged-exposure-guide": {
+    "en": "covers/cli-w-prolonged-exposure-guide.en.jpg"
+  },
+  "cli-w-cpt-manual": {
+    "en": "covers/cli-w-cpt-manual.en.jpg"
+  },
+  "cli-w-getting-past-your-past": {
+    "en": "covers/cli-w-getting-past-your-past.en.jpg"
+  },
+  "cli-w-mbct-depression": {
+    "en": "covers/cli-w-mbct-depression.en.jpg"
+  },
+  "cli-w-compassionate-mind": {
+    "en": "covers/cli-w-compassionate-mind.en.jpg"
+  },
+  "cli-w-linehan-bpd": {
+    "en": "covers/cli-w-linehan-bpd.en.jpg"
+  },
+  "cli-w-morita-nature-therapy": {
+    "en": "covers/cli-w-morita-nature-therapy.en.jpg"
+  },
+  "cli-w-unified-protocol-guide": {
+    "en": "covers/cli-w-unified-protocol-guide.en.jpg"
+  },
+  "cli-w-bleuler-dementia-praecox": {
+    "en": "covers/cli-w-bleuler-dementia-praecox.en.jpg"
+  }
+}

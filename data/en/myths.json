@@ -1,0 +1,52 @@
+{
+  "m-mbti": {
+    "claim": "The MBTI can accurately sort people into 16 fixed types.",
+    "verdict": "Largely unsupported",
+    "correction": "Personality differences are mostly distributed on continua, with no clear either-or categories. Many people get a different type when retested just a few weeks later, and its power to predict job performance is weak. The Big Five model is more reliable. The MBTI draws its ideas from Jung's psychological types, but Jung himself did not design this test."
+  },
+  "m-maslow-pyramid": {
+    "claim": "Maslow said human needs form a pyramid, and lower levels must be met before people pursue higher ones.",
+    "verdict": "Misleading",
+    "correction": "The pyramid diagram was not drawn by Maslow himself. It was produced later, mainly in management textbooks. Maslow described the order of needs as only a rough tendency, and the levels can overlap. A person can still pursue meaning while hungry. Cross-cultural research has also not confirmed a strict step-by-step order."
+  },
+  "m-left-right-brain": {
+    "claim": "Some people are “left-brained” (rational), and others are “right-brained” (emotional).",
+    "verdict": "False",
+    "correction": "The two hemispheres do have specialized roles, for example language is lateralized to the left. In healthy people, however, the two halves are constantly working together, and there is no evidence that some people rely mainly on one side. Brain imaging studies have not found “left-brained” or “right-brained” types in the population. Split-brain research has been overgeneralized."
+  },
+  "m-stanford-prison": {
+    "claim": "The Stanford Prison Experiment proved that when good people are placed in a bad situation, they become abusers.",
+    "verdict": "False",
+    "correction": "Recordings and archives released later show that the experimenters instructed guards to be “tough,” and that participants knew they were playing a role. The study had strong demand characteristics, and many guards did not abuse anyone. It cannot serve as reliable evidence that situations make people do evil."
+  },
+  "m-ten-percent": {
+    "claim": "People only use 10 percent of their brain.",
+    "verdict": "False",
+    "correction": "Brain imaging shows that nearly all brain regions are active over the course of a day, and damage to even a small area has visible consequences. The brain also consumes about one-fifth of the body's energy. If 90 percent were useless, evolution would not have kept it."
+  },
+  "m-learning-styles": {
+    "claim": "Everyone has a learning style (visual or auditory), and teaching that matches it works better.",
+    "verdict": "False",
+    "correction": "People do have preferences, but in controlled experiments, teaching matched to preferences has not produced better results. What works better is matching the content: learning a map is easier with diagrams, and learning pronunciation is easier with sound. Gardner's multiple intelligences are also not “learning styles.”"
+  },
+  "m-chemical-imbalance": {
+    "claim": "Depression is caused by too little serotonin in the brain, and medication replaces the missing chemical.",
+    "verdict": "Largely unsupported",
+    "correction": "Medications do act on these neurotransmitter systems, and they help many people. But there is no reliable evidence that people with depression generally have low serotonin levels. The “chemical imbalance” idea is largely a marketing and simplified-communication account. Depression has causes at several levels, including genes, stress, relationships and neural circuits."
+  },
+  "m-birth-order": {
+    "claim": "Firstborns are conscientious, second children are rebellious, and youngest children are spoiled. Birth order determines personality.",
+    "verdict": "Largely unsupported",
+    "correction": "Large-sample studies, such as a 2015 analysis of tens of thousands of people, have found that birth order has very little effect on personality. Firstborns have a slight edge in intelligence and academic performance, but the difference is very small. Adler's claims were useful clinical observations, not established conclusions."
+  },
+  "m-memory-video": {
+    "claim": "Memory is like a video recorder. If you think hard enough, you can retrieve it exactly as it was.",
+    "verdict": "False",
+    "correction": "Memory is rebuilt each time it is recalled, and it is influenced by existing knowledge, suggestion and current emotion. Vivid, confident memories can still be wrong. For example, people's “flashbulb memories” of where they were on 9/11 often change in details over time."
+  },
+  "m-attachment-destiny": {
+    "claim": "Your attachment style was set in childhood, and it determines your love life for the rest of your life.",
+    "verdict": "Misleading",
+    "correction": "Infant attachment has only a moderate correlation with adult attachment, and adult attachment also changes with relationships and experiences. Online tests often compress the continuous dimensions of anxiety and avoidance into “types,” and that can lock people into a “this is just how I am” mindset."
+  }
+}

@@ -1,0 +1,294 @@
+{
+ "dev-w-identity-youth-crisis": {
+  "summary": "In this book Erikson develops the concept of \"identity crisis.\" It is a starting point for understanding young people's self-exploration.",
+  "enRec.note": "First edition"
+ },
+ "dev-w-nature-of-love": {
+  "summary": "Rhesus monkeys preferred a soft cloth \"mother\" to a wire \"mother\" that provided milk, showing that attachment is not only about food.",
+  "enRec.note": "Journal article, easy to find online"
+ },
+ "dev-w-patterns-attachment": {
+  "summary": "Ainsworth and her colleagues report the Strange Situation experiments and propose three attachment patterns: secure, avoidant and ambivalent.",
+  "enRec.note": "First edition; later reprinted by Psychology Press"
+ },
+ "dev-w-philosophy-moral-development": {
+  "summary": "The first volume of Essays on Moral Development. In it Kohlberg systematically presents the three levels and six stages of moral development and the idea of justice.",
+  "enRec.note": "First edition"
+ },
+ "dev-w-baumrind-1966": {
+  "summary": "Baumrind distinguishes authoritative, authoritarian and permissive parenting. It is the starting point of research on parenting styles.",
+  "enRec.note": "Journal article"
+ },
+ "dev-w-successful-aging": {
+  "summary": "Includes the \"selection, optimization and compensation\" model proposed by Baltes and his wife, which explains how people maintain function despite decline.",
+  "enRec.note": "Collection of essays, first edition"
+ },
+ "dev-w-beliefs-about-beliefs": {
+  "summary": "Introduces the false-belief task: whether children can predict that another person will act on a mistaken belief.",
+  "enRec.note": "Journal article"
+ },
+ "dev-w-object-permanence-5-month": {
+  "summary": "Baillargeon and colleagues used experiments with \"possible and impossible events\" to show that five-month-old infants appear to \"know\" that a hidden object still exists.",
+  "enRec.note": "Journal article"
+ },
+ "dev-w-what-babies-know": {
+  "summary": "Spelke summarizes thirty years of infant experiments and argues that humans are born with a core knowledge of objects, number and space.",
+  "enRec.note": "First edition"
+ },
+ "dev-w-role-of-tutoring": {
+  "summary": "Bruner and colleagues propose \"scaffolding\": adults give appropriate support where a child cannot yet manage, and withdraw it as the child improves.",
+  "enRec.note": "Journal article"
+ },
+ "soc-w-principles-topological-psychology": {
+  "summary": "Lewin uses the \"life space\" to describe the relationship between people and their environment, and proposes that behavior is a function of person and environment.",
+  "enRec.note": "Dover reprint"
+ },
+ "soc-w-field-theory-social-science": {
+  "summary": "A collection of papers published after Lewin's death, including articles on group dynamics, leadership climate and action research.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-work-and-motivation": {
+  "summary": "Vroom proposes expectancy theory: motivation depends on a person's judgment about whether effort will lead to outcomes and whether those outcomes are valuable.",
+  "enRec.note": "1995 reprint"
+ },
+ "soc-w-asch-group-pressure": {
+  "summary": "Asch's original report of the line-judgment experiments, included in the collection Groups, Leadership and Men.",
+  "enRec.note": "A chapter in a collection; a standalone edition is hard to find"
+ },
+ "soc-w-unresponsive-bystander": {
+  "summary": "Through a series of experiments, Latané and Darley show that the more bystanders there are, the less likely each person is to step in and help.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-authoritarian-personality": {
+  "summary": "Exiled scholars working with American psychologists studied the personality roots of prejudice and authoritarian tendencies. Its methods and conclusions are much debated.",
+  "enRec.note": "First edition; later reprinted by Norton"
+ },
+ "soc-w-whistling-vivaldi": {
+  "summary": "Steele tells the story of how stereotype threat was discovered and how it affects performance on tests and at work.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-blindspot": {
+  "summary": "Two designers of the Implicit Association Test discuss research on implicit bias and openly acknowledge the test's limitations.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-theory-cognitive-dissonance": {
+  "summary": "Festinger proposes that when a person's beliefs and behavior contradict each other, they feel discomfort and look for ways to reduce it.",
+  "enRec.note": "Stanford University Press paperback, the standard version"
+ },
+ "soc-w-strangers-to-ourselves": {
+  "summary": "Wilson explains how people often infer their own attitudes by observing their own behavior, and how much less they understand their own minds than they assume.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-person-and-situation": {
+  "summary": "Ross and Nisbett explain that people consistently underestimate the power of situations and overestimate personal character, and discuss the consequences.",
+  "enRec.note": "2011 reprint"
+ },
+ "soc-w-face-and-favor": {
+  "summary": "Proposes Hwang Kwang-Kuo's model of renqing and face as a resource-exchange model. It is a representative theory of indigenous Chinese psychology.",
+  "enRec.note": "Journal article"
+ },
+ "soc-w-social-categorization-1971": {
+  "summary": "The minimal group experiments: people favor their own group even when the groups are assigned at random.",
+  "enRec.note": "Journal article"
+ },
+ "soc-w-automaticity-social-behavior": {
+  "summary": "Proposes experiments in which priming the stereotype of the elderly made people walk more slowly. Many priming effects of this kind later failed to replicate.",
+  "enRec.note": "Journal article"
+ },
+ "soc-w-social-cognition-fiske-taylor": {
+  "summary": "The first textbook in the field of social cognition. It describes people as \"cognitive misers\" and covers schemas, attribution and impression formation.",
+  "enRec.note": "First edition; later updated editions exist"
+ },
+ "soc-w-pygmalion-classroom": {
+  "summary": "Reports experiments showing that teacher expectations affect student performance. Its conclusions were later criticized on methodological grounds.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-foolproof": {
+  "summary": "Describes how misinformation spreads and introduces \"psychological inoculation\": showing people manipulation techniques in advance, much as a vaccine works.",
+  "enRec.note": "First edition"
+ },
+ "hum-w-will-to-meaning": {
+  "summary": "Frankl systematically presents the theory of logotherapy and describes the practice of paradoxical intention.",
+  "enRec.note": "Expanded edition with a new chapter"
+ },
+ "hum-w-positivity": {
+  "summary": "Fredrickson explains how positive emotions broaden attention and build resources, and acknowledges that more positivity is not always better.",
+  "enRec.note": "First edition"
+ },
+ "hum-w-grit": {
+  "summary": "Duckworth argues that long-term passion and perseverance predict achievement better than talent. The predictive power of this claim has been qualified by later research.",
+  "enRec.note": "First edition"
+ },
+ "hum-w-client-centered-therapy": {
+  "summary": "In this book Rogers systematically sets out the theory and practice of client-centered therapy.",
+  "enRec.note": "First edition; a reprint by Constable is available in the UK"
+ },
+ "hum-w-existence-may": {
+  "summary": "A collection of essays that introduced European existential analysis and phenomenological psychiatry to American readers.",
+  "enRec.note": "First edition"
+ },
+ "hum-w-eft-couples-book": {
+  "summary": "The two founders explain the theory and practice of emotionally focused couple therapy, combining attachment with emotional processes.",
+  "enRec.note": "First edition"
+ },
+ "dep-w-discovery-unconscious": {
+  "summary": "A general history of depth psychology, from hypnosis and Charcot through Janet to Freud and Jung.",
+  "enRec.note": "First edition; later reprinted by Fontana"
+ },
+ "dep-w-rewriting-soul": {
+  "summary": "The philosopher Hacking examines the rise of multiple personality and its relation to memory science, and discusses how this diagnosis was \"made\" in the first place.",
+  "enRec.note": "First edition"
+ },
+ "dep-w-studies-hysteria": {
+  "summary": "A collection of case studies by Breuer and Freud, the starting point of psychoanalysis. It discusses repression and the \"talking cure.\"",
+  "enRec.note": "A newer translation, easier to read"
+ },
+ "dep-w-ego-and-id": {
+  "summary": "Freud proposes the structural model of the id, ego and superego.",
+  "enRec.note": "Strachey's translation, Norton paperback"
+ },
+ "dep-w-what-life-should-mean": {
+  "summary": "Adler's late book for a general readership, discussing inferiority, lifestyle and birth order.",
+  "enRec.note": "First edition; later reprinted by several publishers"
+ },
+ "dep-w-psychoanalysis-of-children": {
+  "summary": "Klein analyzes children through play and proposes that young children already have a rich inner world of objects.",
+  "enRec.note": "English translation, published almost at the same time as the German edition"
+ },
+ "dep-w-envy-gratitude": {
+  "summary": "Collects Klein's papers after 1946, including her classic description of the paranoid-schizoid position.",
+  "enRec.note": "Volume 3 of her collected works, including \"On Some Schizoid Mechanisms\""
+ },
+ "dep-w-wisdom-of-ego": {
+  "summary": "Based on long-term follow-up, Vaillant arranges defense mechanisms in a hierarchy according to their maturity.",
+  "enRec.note": "First edition"
+ },
+ "dep-w-interpersonal-theory-psychiatry": {
+  "summary": "Sullivan's lectures, arguing that personality is formed through interaction within important relationships.",
+  "enRec.note": "First edition"
+ },
+ "dep-w-origins-history-consciousness": {
+  "summary": "Neumann uses myth to describe the process by which consciousness emerges from the unconscious. It is a founding work of the post-Jungian school.",
+  "enRec.note": "Standard English translation; there is also a Princeton Classics edition"
+ },
+ "dep-w-sandplay-kalff": {
+  "summary": "Kalff combined Lowenfeld's \"World Technique\" with Jungian psychology to form sandplay therapy.",
+  "enRec.note": "English translation, published by Sigo Press"
+ },
+ "dep-w-jung-active-imagination": {
+  "summary": "Chodorow's selection of Jung's writings on active imagination, including \"Transcendent Function,\" with an editor's introduction.",
+  "enRec.note": "A selection of Jung's writings on the subject"
+ },
+ "dep-w-symbols-transformation": {
+  "summary": "Jung's analysis of a woman's fantasies, which reinterprets libido through myth. It was a trigger for his break with Freud.",
+  "enRec.note": "Volume 5 of the Collected Works, translated from the 1952 revised edition"
+ },
+ "dep-w-experimental-researches": {
+  "summary": "Collects Jung's papers on association experiments from 1904 to 1910, including his 1907 study recording the skin galvanic response with a galvanometer.",
+  "enRec.note": "Volume 2 of the Collected Works, including papers on word association and the galvanic skin response"
+ },
+ "dep-w-modern-man-soul": {
+  "summary": "A collection of Jung's popular essays, including \"The Stages of Life,\" which discusses the midlife turning point and the tasks of the second half of life.",
+  "enRec.note": "Classic series reprint of the 1933 English translation"
+ },
+ "dep-w-gifts-differing": {
+  "summary": "Myers's own explanation of type theory and the MBTI. It is primary material for understanding the indicator.",
+  "enRec.note": "Standard reprint"
+ },
+ "dep-w-bonds-of-love": {
+  "summary": "Benjamin uses \"mutual recognition\" to describe intimate relationships. It is a representative account of intersubjectivity in relational psychoanalysis.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-training-clinical-psychology": {
+  "summary": "The report of the 1949 Boulder Conference, which established the model of training clinical psychologists as both scientists and practitioners.",
+  "enRec.note": "First edition; hard to find"
+ },
+ "cli-w-dementia-praecox-paraphrenia": {
+  "summary": "Kraepelin distinguished dementia praecox from manic-depressive illness according to the course of illness. The English version is based on his later editions.",
+  "enRec.note": "English version based on the relevant chapters of the eighth edition; later reprinted by Krieger"
+ },
+ "cli-w-bleuler-dementia-praecox": {
+  "summary": "Bleuler introduced the term \"schizophrenia\" and treated it as a group of disorders rather than a single form of dementia.",
+  "enRec.note": "The standard English translation"
+ },
+ "cli-w-on-being-sane": {
+  "summary": "A study in which pseudopatients got admitted to psychiatric hospitals. Its validity and methods were later questioned.",
+  "enRec.note": "Journal article"
+ },
+ "cli-w-reason-emotion-psychotherapy": {
+  "summary": "Ellis sets out rational emotive behavior therapy and the ABC model: distress comes from irrational beliefs about events.",
+  "enRec.note": "Revised and updated edition"
+ },
+ "cli-w-toward-theory-schizophrenia": {
+  "summary": "Proposes the \"double bind\": when a person receives contradictory messages over a long period and cannot respond, psychotic symptoms may appear. The hypothesis was largely abandoned later.",
+  "enRec.note": "Journal article"
+ },
+ "cli-w-families-family-therapy": {
+  "summary": "Minuchin proposes structural family therapy, which looks at family boundaries, alliances and hierarchies and changes symptoms through restructuring.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-expressed-emotion-families": {
+  "summary": "Summarizes how criticism, hostility and over-involvement from family members predict relapse in schizophrenia.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-great-psychotherapy-debate": {
+  "summary": "Uses meta-analysis to argue that different therapies are roughly equally effective, and that outcomes depend more on common factors and the therapeutic relationship.",
+  "enRec.note": "Second edition, co-written with Imel"
+ },
+ "cli-w-vulnerability-schizophrenia": {
+  "summary": "Proposes the stress-vulnerability model: a predisposition formed by genes or early experience becomes illness when enough stress is present.",
+  "enRec.note": "Journal article"
+ },
+ "cli-w-cognitive-behavior-modification": {
+  "summary": "Meichenbaum combines behavioral techniques with changes in self-talk. It marks the integration of cognitive behavioral therapy.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-behavioral-activation-guide": {
+  "summary": "A therapist's guide to behavioral activation: improving depression by scheduling valued activities.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-erp-ocd-therapist-guide": {
+  "summary": "A practical manual for exposure and response prevention for obsessive-compulsive disorder, describing the course of treatment session by session.",
+  "enRec.note": "Second edition"
+ },
+ "cli-w-cognitive-approach-panic": {
+  "summary": "Proposes that panic attacks arise from catastrophic interpretations of bodily sensations, and designs treatment on that basis.",
+  "enRec.note": "Journal article"
+ },
+ "cli-w-prolonged-exposure-guide": {
+  "summary": "A therapist's manual for prolonged exposure therapy, describing in concrete terms how imaginal and in vivo exposure are carried out.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-cpt-manual": {
+  "summary": "A complete manual for cognitive processing therapy, focusing on the beliefs that keep people \"stuck\" after trauma.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-getting-past-your-past": {
+  "summary": "A book for general readers by the founder of EMDR, introducing the approach and self-help exercises.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-mbct-depression": {
+  "summary": "A manual by the founders of mindfulness-based cognitive therapy, using an eight-week course to prevent relapse in depression.",
+  "enRec.note": "Second edition"
+ },
+ "cli-w-compassionate-mind": {
+  "summary": "Gilbert draws on evolution and attachment to explain compassion-focused therapy, and offers exercises for cultivating compassion.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-linehan-bpd": {
+  "summary": "Linehan systematically sets out the theory and techniques of dialectical behavior therapy.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-posttraumatic-growth-2004": {
+  "summary": "Summarizes the concept and evidence of posttraumatic growth, and cautions that growth and suffering can coexist.",
+  "enRec.note": "Journal article"
+ },
+ "cli-w-hitop-2017": {
+  "summary": "The manifesto paper of the consortium proposing that psychopathology be organized by dimensions and hierarchies rather than diagnostic categories.",
+  "enRec.note": "Journal article, open access"
+ },
+ "cli-w-p-factor-2014": {
+  "summary": "Uses long-term cohort data to suggest that a common \"p factor\" may underlie the various psychiatric disorders.",
+  "enRec.note": "Journal article, open access"
+ }
+}

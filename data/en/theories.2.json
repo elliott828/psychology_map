@@ -1,0 +1,217 @@
+{
+ "reciprocal-determinism": {
+  "summary": "A person's thoughts, behavior, and environment shape one another. None of the three one-way determines the others.",
+  "landmark": "Bandura published 'Reciprocal Determinism' and laid it out systematically in 1986.",
+  "evidenceNote": "This is a framework describing how person, behavior, and environment influence each other. It is more an explanatory stance than a falsifiable hypothesis."
+ },
+ "explanatory-style": {
+  "summary": "When something bad happens, people who habitually see the cause as 'my fault, lasting, and affecting everything' are more likely to fall into helplessness and depression.",
+  "landmark": "Abramson, Seligman, and Teasdale proposed the reformulation of attributions.",
+  "evidenceNote": "Many studies support a link between a pessimistic explanatory style and depression. The link is moderate in strength, and the causation runs in both directions."
+ },
+ "helplessness-revised": {
+  "summary": "Helplessness is not something 'learned'. It is the default reaction to stress. What actually has to be learned is 'I can control this'.",
+  "landmark": "Maier and Seligman published 'Learned Helplessness at Fifty'.",
+  "evidenceNote": "Neural circuit studies in rats show that uncontrollable experience activates the default passive response, while the experience of control has to be learned through the prefrontal cortex."
+ },
+ "seven-dimensions-aba": {
+  "summary": "A behavioral intervention should have seven features: it targets socially important behavior, it is measurable, it demonstrates cause, it is clearly described, it has a theoretical basis, it is effective, and its effects last.",
+  "landmark": "Baer, Wolf, and Risley published 'Some Current Dimensions of Applied Behavior Analysis'.",
+  "evidenceNote": "This defines the standards for the field's work: applied, behavioral, analytic, technological, conceptually systematic, effective, and general."
+ },
+ "eibi": {
+  "summary": "Young autistic children receive several dozen hours of behavioral training a week to improve language and social skills.",
+  "landmark": "Lovaas published an intervention study of autistic children, reporting that nearly half came close to typical functioning.",
+  "evidenceNote": "Several studies have found it helps some children. But the comparison-group design of the original data has been criticized, and debates about its effectiveness and ethics continue."
+ },
+ "weber-fechner-law": {
+  "summary": "A stimulus must increase by a fixed proportion before a person notices a change. In a noisy room, you have to raise your voice a lot before anyone hears you.",
+  "landmark": "Fechner extended Weber's findings into the claim that sensation is proportional to the logarithm of stimulus intensity.",
+  "evidenceNote": "It holds roughly across the middle range of intensities. Stevens' later power function is more accurate in many cases."
+ },
+ "structuralism": {
+  "summary": "Consciousness is broken down into its most basic sensations, images, and feelings. Observers are trained to report their own experiences.",
+  "landmark": "Titchener, 'The Postulates of a Structural Psychology'.",
+  "evidenceNote": "Introspective reports from different labs could not be made consistent, so the method was abandoned. But it pushed precise experiments on sensation forward."
+ },
+ "mental-chronometry": {
+  "summary": "To find out how long a mental step takes, compare reaction times on tasks with and without that step.",
+  "landmark": "Donders measured the time needed for mental processing using differences in reaction time.",
+  "evidenceNote": "The reaction-time method is still a core tool in cognitive experiments. Its assumption of 'pure insertion' has been revised."
+ },
+ "forgetting-curve": {
+  "summary": "Material learned is forgotten fastest in the first few hours to days, then more slowly. Spaced repetition flattens the curve.",
+  "landmark": "Ebbinghaus, 'Memory: A Contribution to Experimental Psychology'.",
+  "evidenceNote": "A 2015 replication again found a similar curve. The rate of forgetting varies with the material and the way it was learned."
+ },
+ "stream-of-consciousness": {
+  "summary": "Consciousness is not a string of isolated sensations. It is a continuous, shifting flow with fringes around it, and each person's consciousness is private.",
+  "landmark": "James, 'The Principles of Psychology'.",
+  "evidenceNote": "This is a descriptive account of experience rather than a testable hypothesis. It still shapes discussions of attention and the self."
+ },
+ "james-lange": {
+  "summary": "We do not cry because we are sad. We feel sad because we cry. The feeling of bodily changes is the emotion itself.",
+  "landmark": "James published 'What Is an Emotion?'",
+  "evidenceNote": "There is some support for the idea that bodily feedback shapes emotional experience. But 'bodily reaction first, emotion second' is not the only route."
+ },
+ "gestalt-principles": {
+  "summary": "Perception automatically groups elements that are close together, look similar, or form a closed shape. The whole is more than the sum of its parts.",
+  "landmark": "Wertheimer, 'Untersuchungen zur Lehre von der Gestalt', which laid out principles of proximity, similarity, and closure.",
+  "evidenceNote": "As descriptions, these principles are solid and are widely used in design. Their proposed physiological explanations have been abandoned."
+ },
+ "insight-problem-solving": {
+  "summary": "Solving a problem is often not a matter of step-by-step trial and error. It can come suddenly as an 'aha' after the problem is reinterpreted.",
+  "landmark": "Köhler, 'The Mentality of Apes', described a chimpanzee suddenly thinking to stack boxes to reach a banana.",
+  "evidenceNote": "Experiments support the insight phenomenon in humans. Whether it is fundamentally different from gradual problem solving is still disputed."
+ },
+ "reconstructive-memory": {
+  "summary": "When recalling, people fill in fragmentary pieces with existing knowledge. They often also reshape the memory, naturally, to fit their expectations.",
+  "landmark": "Bartlett, 'Remembering', and the 'War of the Ghosts' experiment.",
+  "evidenceNote": "The reconstruction view has been confirmed by many later studies. But the original results of the 'War of the Ghosts' experiment varied when repeated."
+ },
+ "misinformation-effect": {
+  "summary": "Suggestive information received after an event quietly changes a person's memory of the original event, and people can feel very sure of the altered memory.",
+  "landmark": "Loftus and Palmer: asking about a car crash with different verbs produced different speed estimates.",
+  "evidenceNote": "Replicated in hundreds of experiments, and especially important for legal testimony. How closely implanted memories resemble real ones is still debated."
+ },
+ "seven-sins": {
+  "summary": "Seven kinds of memory error: transience, absent-mindedness, blocking, misattribution, suggestibility, bias, and persistence. Many of them are side effects of normal memory.",
+  "landmark": "Schacter proposed the seven memory errors in 'The Seven Sins of Memory' in American Psychologist.",
+  "evidenceNote": "As a classification scheme it is clear and useful. Each 'sin' has solid research behind it, but it is unclear whether they form a unified theory."
+ },
+ "information-processing-view": {
+  "summary": "People are treated as information channels with limited capacity, and information must pass through stages such as selection, encoding, and storage. This vocabulary became the common model in cognitive research.",
+  "landmark": "Broadbent, 'Perception and Communication', proposed the filter model of attention.",
+  "evidenceNote": "The view that systems have capacity limits and process information in stages holds up. Strictly serial models have been revised."
+ },
+ "magical-number": {
+  "summary": "The number of units a person can hold in short-term memory is limited, about seven. But this can be expanded through chunking, which combines several items into one.",
+  "landmark": "Miller, 'The Magical Number Seven, Plus or Minus Two', in Psychological Review.",
+  "evidenceNote": "The concept of chunking holds up. The capacity figure was later revised to about four chunks."
+ },
+ "chomsky-review": {
+  "summary": "Language creativity, the ability to produce sentences never heard before, cannot be explained by stimulus and reinforcement. It requires an internal system of rules.",
+  "landmark": "Chomsky published a long review of Skinner's 'Verbal Behavior'.",
+  "evidenceNote": "It exposed the shortcomings of a stimulus-response account of language. The field often treats it as a turning point. But some researchers later argued that it misreads Skinner."
+ },
+ "universal-grammar": {
+  "summary": "Humans are born with innate knowledge about the structure of language, which is why children learn grammar quickly from limited input.",
+  "landmark": "Chomsky, 'Syntactic Structures'.",
+  "evidenceNote": "Some evidence supports the claim that language has an innate basis. But the specific content of universal grammar is hard to test, and it has been debated for a long time against usage-based theories."
+ },
+ "modal-model-memory": {
+  "summary": "Information first enters a very brief sensory memory. Attention moves some of it into a limited short-term memory, and rehearsal moves it into long-term memory.",
+  "landmark": "Atkinson and Shiffrin proposed the sensory memory, short-term memory, and long-term memory model.",
+  "evidenceNote": "It has been highly influential as a teaching framework. But its strictly sequential storage structure has been replaced by more flexible models."
+ },
+ "working-memory-model": {
+  "summary": "Short-term memory is not a box. It is a workbench where information is stored and processed at the same time. Verbal and visuospatial information are handled separately, and a central executive coordinates them.",
+  "landmark": "Baddeley and Hitch proposed the central executive and the phonological loop, among other components.",
+  "evidenceNote": "The separation of the phonological loop and the visuospatial sketchpad is supported by double-dissociation and brain imaging evidence. The details of each component are still being revised."
+ },
+ "prospect-theory": {
+  "summary": "People judge gains and losses not by final absolute amounts, but by change relative to a reference point. An equal-sized loss hurts more than a gain feels good.",
+  "landmark": "Kahneman and Tversky, 'Prospect Theory: An Analysis of Decision under Risk'.",
+  "evidenceNote": "Loss aversion and reference dependence are broadly robust. But the weight given to losses varies a great deal across situations."
+ },
+ "dual-process-theory": {
+  "summary": "Thinking has a fast, automatic mode (System 1) and a slow, effortful mode (System 2). Many errors come from System 1 going unchecked by System 2.",
+  "landmark": "Kahneman, 'Thinking, Fast and Slow', turned the fast-intuition and slow-analysis distinction into a popular account.",
+  "evidenceNote": "The distinction between fast and slow processing has a lot of evidence. But whether these are truly two independent 'systems' is questioned, and some priming studies cited in the book have failed to replicate."
+ },
+ "ecological-rationality": {
+  "summary": "Heuristics are not flaws. When a rule matches the structure of the environment, a simple shortcut is often more accurate than a complex calculation.",
+  "landmark": "Gigerenzer and colleagues, 'Simple Heuristics That Make Us Smart'.",
+  "evidenceNote": "Under uncertainty, there is empirical support for the claim that simple rules often do as well as complex models. Its range of application is still discussed."
+ },
+ "past-tense-debate": {
+  "summary": "When children learn past tenses such as 'walked' and 'went', are they memorizing each word, or learning a rule? Connectionist and rule-based accounts each offer an explanation.",
+  "landmark": "Rumelhart and McClelland's past-tense network, and the 1988 critique by Pinker and Prince.",
+  "evidenceNote": "The debate is unresolved. Network models reproduce some of the phenomena, while critics point out they cannot handle the abstractness of rules. Both sides have data."
+ },
+ "conceptual-metaphor": {
+  "summary": "We understand abstract concepts through concrete bodily experience. Phrases like 'argument is war' and 'time is money' reflect how we think.",
+  "landmark": "Lakoff and Johnson, 'Metaphors We Live By'.",
+  "evidenceNote": "Metaphors in language are systematic. But the stronger claim that metaphors actually shape thought is poorly supported."
+ },
+ "affordances": {
+  "summary": "What we directly perceive is not just shape and color, but what the environment lets us do. A chair is 'sit-on-able' and a door handle is 'pull-able'.",
+  "landmark": "Gibson, 'The Ecological Approach to Visual Perception'.",
+  "evidenceNote": "The idea of affordances has proven useful in human-computer interaction and robotics. As a theory of perception, it is still debated in terms of representation."
+ },
+ "free-energy-principle": {
+  "summary": "All living systems try to reduce their 'surprise' about the states they are in. Perception and action are both ways of reducing surprise.",
+  "landmark": "Friston, 'The Free-Energy Principle: A Unified Brain Theory?'",
+  "evidenceNote": "It is mathematically self-consistent, but it can explain almost any result. Many researchers argue it has not yet made falsifiable predictions."
+ },
+ "computational-psychiatry": {
+  "summary": "Symptoms such as hallucinations, delusions, and addiction are understood as biased learning and inference in the brain. Mathematical models describe these biases.",
+  "landmark": "Montague, Dolan, Friston, and Dayan published 'Computational Psychiatry'.",
+  "evidenceNote": "Research describing symptoms with learning models is just beginning. It has produced several findings, but there are no clinical tools ready for use yet."
+ },
+ "how-people-learn": {
+  "summary": "Learners enter the classroom with existing ideas. To understand, they need to build conceptual frameworks on top of facts and learn to monitor their own learning.",
+  "landmark": "Bransford, Brown, and Cocking, eds., 'How People Learn'.",
+  "evidenceNote": "It summarizes research on expert-novice differences, prior knowledge, and metacognition. These conclusions are broadly solid, but their application in classrooms has been uneven."
+ },
+ "correlation-regression": {
+  "summary": "The degree to which two variables change together can be quantified. Extreme values tend to be closer to the average on the next measurement. This is 'regression'.",
+  "landmark": "Galton introduced the concept of correlation, and Pearson later gave the formula for the correlation coefficient.",
+  "evidenceNote": "These are the foundations of modern statistics and are not in dispute. Their use and misuse, such as treating correlation as causation, is a separate matter."
+ },
+ "hereditary-genius": {
+  "summary": "Outstanding people often come from the same families. From this, Galton concluded that talent is mainly inherited. He advocated improving humanity through selective breeding, a claim later used to justify discrimination and forced sterilization.",
+  "landmark": "Galton, 'Hereditary Genius'. He coined the term 'eugenics' in 1883.",
+  "evidenceNote": "Family resemblance can also come from shared environments, so his conclusions have been overturned. The historical harm caused by eugenics must be remembered."
+ },
+ "two-factor-theory": {
+  "summary": "Each test score is determined by two parts: a general ability shared by all tests, called g, and a specific ability unique to that test, called s.",
+  "landmark": "Spearman, 'General Intelligence, Objectively Determined and Measured'.",
+  "evidenceNote": "The existence of a general factor is supported by evidence. The addition of specific factors was later revised by multi-factor models."
+ },
+ "fluid-crystallized": {
+  "summary": "Fluid intelligence is the ability to handle new problems, and it declines gradually after middle age. Crystallized intelligence is accumulated knowledge and skill, which can be maintained into old age.",
+  "landmark": "Cattell published the theory of fluid and crystallized intelligence.",
+  "evidenceNote": "Fluid abilities decline earlier with age, while crystallized abilities last longer. This has been supported by lifespan research."
+ },
+ "chc-model": {
+  "summary": "Abilities can be arranged in three layers. At the top is general intelligence, g. In the middle are about ten broad abilities. At the bottom are many specific skills.",
+  "landmark": "Carroll, 'Human Cognitive Abilities', reanalyzed hundreds of datasets using factor analysis.",
+  "evidenceNote": "There is strong consensus on the three-layer structure, and it has been adopted by mainstream intelligence tests."
+ },
+ "iq-concept": {
+  "summary": "The 'intelligence quotient' was originally mental age divided by chronological age. It was later changed to a standard score comparing a person with peers, with 100 as the average.",
+  "landmark": "Terman revised the Binet scale into the Stanford-Binet scale, adopting Stern's concept of the IQ.",
+  "evidenceNote": "IQ scores are stable and predict academic performance. But they measure a limited set of cognitive skills."
+ },
+ "flynn-effect": {
+  "summary": "Each generation scores higher on IQ tests than the one before. This shows test scores are not determined entirely by genes. Nutrition, education, and environment also play a role.",
+  "landmark": "Flynn published data showing that American IQ test scores kept rising through the twentieth century.",
+  "evidenceNote": "Several countries have found test scores rising generation by generation through the 20th century. In recent years, reversals have appeared in places such as Nordic countries, and the causes are still being discussed."
+ },
+ "lexical-hypothesis": {
+  "summary": "In human language, every important individual difference gradually acquires a word to describe it. So the basic dimensions of personality can be found by analyzing the dictionary.",
+  "landmark": "Allport and Odbert extracted 17,953 personality-describing words from the dictionary.",
+  "evidenceNote": "The hypothesis is broadly supported across several languages. But some personality traits have no matching word in some languages."
+ },
+ "pen-model": {
+  "summary": "The core of personality is a small number of dimensions, each with a biological basis. For example, extraverts have lower cortical arousal, so they seek more stimulation.",
+  "landmark": "Eysenck, 'The Biological Basis of Personality': extraversion, neuroticism, psychoticism, and their physiological bases.",
+  "evidenceNote": "Extraversion and neuroticism have been replicated many times. Psychoticism has a weaker structure. The physiological explanation (arousal level) is partly supported."
+ },
+ "sixteen-pf": {
+  "summary": "Factor analysis was used to extract 16 'source traits', and a questionnaire was built to measure them.",
+  "landmark": "Cattell published the 16PF questionnaire.",
+  "evidenceNote": "Later studies could not consistently reproduce 16 factors. The five higher-order factors are closer to the Big Five."
+ },
+ "reliability-validity": {
+  "summary": "Reliability means getting similar results on repeated measurement. Validity means the test really measures what it is meant to measure. High reliability does not guarantee high validity.",
+  "landmark": "Cronbach published the coefficient alpha.",
+  "evidenceNote": "The concepts of reliability and validity are established consensus in measurement. The use and misuse of coefficient alpha continues to draw criticism."
+ },
+ "construct-validity": {
+  "summary": "For invisible constructs such as 'intelligence' or 'depression', a whole body of evidence is needed to show a test really measures them. It should correlate with related measures, not correlate with unrelated ones, and predict what it should predict.",
+  "landmark": "Cronbach and Meehl, 'Construct Validity in Psychological Tests'.",
+  "evidenceNote": "Treating validity as an overall process of testing theory is now the standard view."
+ }
+}

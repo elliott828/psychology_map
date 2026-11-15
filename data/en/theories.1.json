@@ -1,0 +1,217 @@
+{
+ "wernicke-geschwind": {
+  "summary": "The motor part of speech lies in the front of the frontal lobe, and the comprehension part lies in the back of the temporal lobe. The two are linked by nerve fibers. Modern research holds that language involves a wider network.",
+  "landmark": "Wernicke described sensory aphasia (1874). Geschwind organized it into the classic model in 1965.",
+  "evidenceNote": "The broad picture (a left-hemisphere language network) holds up. The classic 'two centers plus one pathway' view is too simple."
+ },
+ "motor-homunculus": {
+  "summary": "During surgery, stimulating different points on the cortex makes patients feel or move different parts of the body. The hand and mouth take up a large share of the cortex.",
+  "landmark": "Penfield and Boldrey published a map of the human cortex from electrical stimulation.",
+  "evidenceNote": "The body map laid out across the sensory and motor cortex has been verified many times. Its borders are blurrier than the drawings suggest."
+ },
+ "imprinting": {
+  "summary": "A newly hatched gosling takes the first moving object it sees as its 'mother' and follows it for a long time. This is seen as an example of early experience shaping behavior in a way that cannot be undone.",
+  "landmark": "Lorenz described goslings following the first moving object they saw after hatching.",
+  "evidenceNote": "Imprinting in birds is well established. The 'critical period' was later renamed the more flexible 'sensitive period'."
+ },
+ "tinbergen-four-questions": {
+  "summary": "Explaining a behavior means answering four different questions: what mechanism produces it, how it develops, what adaptive function it serves, and what its evolutionary history is.",
+  "landmark": "Tinbergen, 'On Aims and Methods of Ethology'.",
+  "evidenceNote": "This is an explanatory framework, not a falsifiable hypothesis. The same behavior can be answered separately from the four angles of mechanism, development, function, and evolution."
+ },
+ "behavioral-biology-synthesis": {
+  "summary": "The same behavior can be explained layer by layer across time scales: the nerve firing of the previous second, hormones of a few hours earlier, childhood experience, prenatal development, and culture and genetic evolution.",
+  "landmark": "Sapolsky's 'Behave' traces behavior back from the previous second to millions of years ago.",
+  "evidenceNote": "This is a review-style integrative framework. The evidence for each layer varies in strength, and the direction of causation is still debated."
+ },
+ "general-adaptation": {
+  "summary": "Whatever the stimulus, the body passes through three stages: alarm, resistance, and exhaustion. Staying in the resistance stage for a long time wears the body down.",
+  "landmark": "Selye published a short note in Nature proposing the three stages of alarm, resistance, and exhaustion.",
+  "evidenceNote": "The broad claim that long-term stress causes illness holds up. The three-stage model and the idea that stress is a nonspecific response have been revised."
+ },
+ "fight-or-flight": {
+  "summary": "When faced with a threat, the sympathetic nervous system and adrenaline speed up the heart and send blood to the muscles, preparing the body to fight or run.",
+  "landmark": "Cannon, 'Bodily Changes in Pain, Hunger, Fear and Rage'.",
+  "evidenceNote": "The evidence for the acute sympathetic and adrenaline response is solid. The idea that there are only two options, fight or flight, was later expanded to include freezing, appeasement, and others."
+ },
+ "allostatic-load": {
+  "summary": "The body adjusts constantly to cope with stress. The cost of repeated adjustment over time builds up as 'load', showing up as an overall worsening of blood pressure, blood sugar, inflammation, and other markers.",
+  "landmark": "McEwen and Stellar published 'Stress and the Individual'.",
+  "evidenceNote": "Several population and animal studies have found that cumulative stress markers predict disease and death. The exact ways of measuring load are still not standardized."
+ },
+ "glucocorticoid-cascade": {
+  "summary": "Stress hormones that stay high for a long time damage neurons in the hippocampus. The hippocampus helps apply the brakes on the stress response, which creates a cycle in which stress makes it harder to stop stress.",
+  "landmark": "Sapolsky, Krey, and McEwen proposed that long-term stress hormones damage the hippocampus and weaken the brake on the stress axis.",
+  "evidenceNote": "Animal experiments give more support. Whether stress causes hippocampal shrinkage in humans, or the reverse, is still debated."
+ },
+ "cell-assembly": {
+  "summary": "A group of neurons that are repeatedly activated together forms an 'assembly'. This assembly is the physical form of a concept or memory in the brain.",
+  "landmark": "Hebb proposed cell assemblies and phase sequences in 'The Organization of Behavior'.",
+  "evidenceNote": "Direct experimental evidence now exists for memory traces (engrams). But Hebb's specific idea is only one of the possible mechanisms."
+ },
+ "ltp": {
+  "summary": "Giving a neural pathway a few strong stimuli makes its signal transmission stronger for hours to weeks, as if it has 'remembered' the stimulation.",
+  "landmark": "Bliss and Lomo found that high-frequency stimulation produced lasting strengthening of synapses in the rabbit hippocampus.",
+  "evidenceNote": "It is currently the most widely accepted cellular model of learning and memory. How it maps onto memory at the level of behavior is still being studied."
+ },
+ "monoamine-hypothesis": {
+  "summary": "Depression comes from a shortage of certain brain neurotransmitters, namely norepinephrine and serotonin. The idea inspired antidepressant drugs, but it is often misreported as a simple 'lack of happy chemicals'.",
+  "landmark": "Schildkraut published 'The Catecholamine Hypothesis of Affective Disorders'.",
+  "evidenceNote": "Drugs do act on the monoamine system. But direct evidence that depression is caused by low serotonin is weak, and a 2022 review found no support for it."
+ },
+ "dopamine-hypothesis": {
+  "summary": "The hallucinations and delusions of schizophrenia are linked to a dysregulated dopamine signal in the brain. All effective antipsychotic drugs block dopamine receptors.",
+  "landmark": "Carlsson and Lindqvist found that antipsychotic drugs affect dopamine metabolism.",
+  "evidenceNote": "There is a lot of evidence linking the dopamine system to psychotic symptoms. But the original 'too much dopamine' claim has been revised into a version specific to brain regions and pathways."
+ },
+ "luria-functional-systems": {
+  "summary": "Complex mental activity depends on several brain areas working together. Damage to one area can affect many functions. Systematic case analysis is needed to find which link has been damaged.",
+  "landmark": "Luria, 'Higher Cortical Functions in Man'.",
+  "evidenceNote": "The view that functions are carried out by systems made of several brain areas is now broadly accepted. The specific factor-analysis framework has been replaced in part by modern network research."
+ },
+ "multiple-memory-systems": {
+  "summary": "There is more than one kind of memory. Facts and events that can be stated depend on the hippocampus, while skill memories such as riding a bike or typing depend on other brain areas. This is why people with amnesia can still learn new skills.",
+  "landmark": "Cohen and Squire published the distinction between declarative and procedural memory.",
+  "evidenceNote": "Amnesic patients who keep the ability to learn skills while losing event memory provide rich evidence of this dissociation. The exact division of the systems is still under discussion."
+ },
+ "three-laws-behavior-genetics": {
+  "summary": "First, all human traits are influenced by genes. Second, growing up in the same family has less effect than genes do. Third, a considerable part of the variation cannot be explained by genes or family.",
+  "landmark": "Turkheimer proposed the three empirical laws.",
+  "evidenceNote": "The three laws hold up across many twin and adoption studies. They describe differences across populations and do not predict the fate of any one person."
+ },
+ "hemisphere-specialization": {
+  "summary": "For most people, language is handled mainly by the left hemisphere, while spatial processing and face processing rely more on the right. This is a tendency, not a division of 'thinking styles'.",
+  "landmark": "Sperry and Gazzaniga described differences between the two hemispheres in handling language and spatial tasks.",
+  "evidenceNote": "The division of labor, with language leaning left and spatial attention leaning right, holds up. But in healthy people the two hemispheres are always cooperating. There are no 'left-brained' or 'right-brained' people."
+ },
+ "left-brain-interpreter": {
+  "summary": "In split-brain patients, the left hemisphere makes up a plausible-sounding reason for behavior that the right hemisphere initiated. People may often be giving themselves reasons after the fact.",
+  "landmark": "Gazzaniga and LeDoux described the left hemisphere fabricating reasons for behavior in 'The Integrated Mind'.",
+  "evidenceNote": "The claim comes from a small number of split-brain patients. It is appealing, but there is little solid evidence from healthy people."
+ },
+ "aplysia-synaptic-memory": {
+  "summary": "After sea slugs (Aplysia) are repeatedly given electric shocks, their sensory neurons release more neurotransmitter. Long-term memory also requires the synthesis of new proteins to consolidate synaptic changes.",
+  "landmark": "Kandel and Schwartz summarized how cAMP signaling changes neurotransmitter release at synapses.",
+  "evidenceNote": "The core mechanisms (cAMP, CREB, and protein synthesis) have been confirmed in several species. The match to complex human memory is limited."
+ },
+ "neural-correlates-consciousness": {
+  "summary": "Rather than asking directly what consciousness is, this approach looks for differences in brain activity between trials where people report seeing something and trials where they do not.",
+  "landmark": "Crick and Koch proposed searching for neural correlates of consciousness, starting with visual awareness.",
+  "evidenceNote": "Activity linked to reports of consciousness has been found. But the question of why there is subjective experience remains unanswered, and the competing theories are hard to adjudicate."
+ },
+ "cheater-detection": {
+  "summary": "The same logic puzzle gets far more correct answers when framed as catching someone who breaks a rule. This suggests humans may have evolved a specialized reasoning mechanism for spotting cheaters in reciprocal exchange.",
+  "landmark": "Cosmides tested social contract reasoning with the Wason selection task.",
+  "evidenceNote": "People do perform better on the social contract version of the task. But whether this requires a specialized 'module' has been hotly debated in later research."
+ },
+ "sexual-strategies": {
+  "summary": "Men and women show statistical differences in their preferences for short-term and long-term mates. These differences are explained as the result of unequal parental investment.",
+  "landmark": "Buss and Schmitt proposed short-term and long-term mating strategies.",
+  "evidenceNote": "Cross-cultural surveys support the direction of the sex differences, but the effect size is moderate and varies with culture and the level of gender equality. Many of the explanations are post hoc."
+ },
+ "inclusive-fitness": {
+  "summary": "Helping relatives who share your genes can still pass your genes on. So altruistic behavior can be kept by natural selection.",
+  "landmark": "Hamilton published 'The Genetical Evolution of Social Behaviour'.",
+  "evidenceNote": "It has been tested extensively in insects, birds, and other organisms. Its application to humans depends more on analogy."
+ },
+ "somatic-marker": {
+  "summary": "When making decisions, emotional reactions in the body tag options as 'good' or 'bad'. Without these tags, even intelligent people make poor decisions.",
+  "landmark": "Damasio, 'Descartes' Error'.",
+  "evidenceNote": "Clinical observations that patients with damage to the prefrontal cortex have impaired decision-making are reliable. Whether body signals are necessary is questioned, and the interpretation of the Iowa Gambling Task has been challenged."
+ },
+ "amygdala-fear-circuit": {
+  "summary": "A threatening stimulus can bypass the cortex and trigger the amygdala directly through the thalamus. This means a person can feel afraid before they have fully thought it through.",
+  "landmark": "LeDoux, 'The Emotional Brain', summarized the fast threat pathway from thalamus to amygdala.",
+  "evidenceNote": "The evidence that the amygdala takes part in threat responses is reliable. LeDoux himself later argued that the subjective feeling of fear cannot be directly assigned to the amygdala."
+ },
+ "primary-emotion-systems": {
+  "summary": "Mammalian brains contain innate emotional circuits, such as 'seeking', 'fear', and 'care'. They come before thought and drive behavior.",
+  "landmark": "Panksepp, 'Affective Neuroscience', proposed seven subcortical systems including seeking, fear, and rage.",
+  "evidenceNote": "Animal experiments offer rich clues. But treating animal behavior as direct evidence of subjective feeling, and the seven-part classification itself, are both disputed."
+ },
+ "basic-emotions": {
+  "summary": "Six or seven emotions, such as happiness, anger, and fear, have facial expressions that are common across cultures. This view is widely used in popular science and continues to be questioned by researchers.",
+  "landmark": "Ekman and Friesen published 'Constants Across Cultures in the Face and Emotion'.",
+  "evidenceNote": "Recognition accuracy is high in several cultures. But the forced-choice design and the ability to predict natural expressions have been criticized in later research."
+ },
+ "constructed-emotion": {
+  "summary": "Emotions are not a ready-made 'anger circuit' in the brain that gets triggered. Instead, the brain uses body signals and past experience to sort a mass of feeling into 'anger' or 'anxiety'.",
+  "landmark": "Barrett, 'How Emotions Are Made'.",
+  "evidenceNote": "It offers a set of predictions that oppose the basic emotions view. Some evidence supports it, but the overall framework has not yet been fully tested."
+ },
+ "identical-elements": {
+  "summary": "How much learning one thing helps with another depends on how many components the two share. So studying Latin does not make people better at thinking in general.",
+  "landmark": "Thorndike and Woodworth published 'The Influence of Improvement in One Mental Function upon the Efficiency of Other Functions'.",
+  "evidenceNote": "The basic finding about transfer, that skills transfer less than people expect, holds up. But the 'identical elements' explanation is too narrow."
+ },
+ "conditioned-reflex": {
+  "summary": "After a conditioned stimulus is paired with an unconditioned stimulus, the conditioned stimulus alone can trigger the response. If the pairing stops for a long time, the response fades, but it may spontaneously recover after a while.",
+  "landmark": "The English translation of Pavlov's 'Conditioned Reflexes' was published, summarizing more than twenty years of experiments.",
+  "evidenceNote": "Acquisition, extinction, spontaneous recovery, generalization, and discrimination have been repeatedly observed in every species tested."
+ },
+ "conditioned-emotional-response": {
+  "summary": "A baby was startled by a loud noise when he saw a white rat. After a few pairings, he cried whenever he saw a rat. This is cited as proof that phobias can be learned, but the evidence behind it is much thinner than textbooks suggest.",
+  "landmark": "Watson and Rayner reported a baby who was taught to fear a white rat.",
+  "evidenceNote": "There was only one subject, the procedure records are inconsistent, and the study was never successfully replicated. Its significance lies mainly in inspiring models of how fear is learned."
+ },
+ "rescorla-wagner": {
+  "summary": "Learning happens only when the outcome is unexpected. If a signal already fully predicts food, adding a second signal teaches almost nothing new.",
+  "landmark": "Rescorla and Wagner proposed that learning depends on 'prediction error'.",
+  "evidenceNote": "The idea of prediction error has been further supported by neuroscience (the dopamine signal) and machine learning. Its description of complex situations is limited."
+ },
+ "taste-aversion": {
+  "summary": "If someone gets sick after eating a food, they can develop a lasting dislike for its taste, even when the illness comes hours later. Pairing light with nausea, by contrast, is hard to learn.",
+  "landmark": "Garcia and Koelling found that rats readily link nausea with taste, but not with light.",
+  "evidenceNote": "It has been replicated across several species. It is a hallmark example of learning being constrained by biology."
+ },
+ "radical-behaviorism": {
+  "summary": "Inner thoughts and feelings also count as behavior, only they are not visible. To explain behavior, you only need to find the antecedents and consequences in the environment, without assuming an inner 'entity' in the mind.",
+  "landmark": "Skinner, 'Operational Analysis of Psychological Terms'.",
+  "evidenceNote": "It is a philosophical position on how psychology should explain behavior. Its methodological claims were heavily revised by cognitive science."
+ },
+ "cognitive-map": {
+  "summary": "Rats in a maze do not just learn 'turn left, turn right' movements. They form an overall representation of space in the brain, so when a path is blocked, they can take a new route.",
+  "landmark": "Tolman published 'Cognitive Maps in Rats and Men'.",
+  "evidenceNote": "The discovery of place cells in the hippocampus and grid cells in the entorhinal cortex has provided direct neural evidence for cognitive maps."
+ },
+ "latent-learning": {
+  "summary": "Without food rewards, rats seem not to have learned the maze. Once rewards are introduced, they immediately follow the route they already knew. Learning happened, but it was not shown in behavior.",
+  "landmark": "Tolman and Honzik found that rats without rewards were still learning the maze.",
+  "evidenceNote": "The finding has been repeated many times. It shows that learning and the performance of learned behavior can be separated."
+ },
+ "drive-reduction": {
+  "summary": "Internal deficits such as hunger and thirst create drives. Behavior serves to reduce those drives, and responses that reduce them get reinforced.",
+  "landmark": "Hull, 'Principles of Behavior'.",
+  "evidenceNote": "'Reinforcement equals reduction of physiological drive' cannot explain exploration or curiosity, so the theory has been abandoned. But it dominated American learning psychology for about two decades."
+ },
+ "reinforcement-shaping": {
+  "summary": "A complex behavior is broken into small steps, and each step closer to the goal is reinforced. This gradually shapes a new behavior, such as training pigeons to play table tennis.",
+  "landmark": "Skinner, 'Science and Human Behavior'.",
+  "evidenceNote": "Reinforcement and gradual shaping have been shown to work in animal training, special education, and behavior modification."
+ },
+ "reinforcement-schedules": {
+  "summary": "Whether rewards come on a regular or random schedule produces different rhythms of behavior. Unpredictable rewards, as in slot machines, make it hardest for people to stop.",
+  "landmark": "Ferster and Skinner, 'Schedules of Reinforcement'.",
+  "evidenceNote": "The behavior patterns produced by each schedule are very stable and have been reproduced across species."
+ },
+ "matching-law": {
+  "summary": "When animals distribute their time or responses between two options, the proportion roughly matches the proportion of rewards each option gives.",
+  "landmark": "Herrnstein published research on pigeons' choice behavior.",
+  "evidenceNote": "It fits animal and some human choice data well, but deviates under some conditions."
+ },
+ "systematic-desensitization": {
+  "summary": "The person first learns to relax, then imagines or faces the feared situation step by step, from mild to severe. Anxiety is gradually reduced.",
+  "landmark": "Wolpe, 'Psychotherapy by Reciprocal Inhibition'.",
+  "evidenceNote": "It is effective for specific phobias. The explanation that relaxation inhibits anxiety has been replaced by exposure theory."
+ },
+ "observational-learning": {
+  "summary": "Seeing someone else do something and get a good result makes you more likely to do it yourself. Seeing a bad result makes you avoid it. No direct trial is needed.",
+  "landmark": "Bandura and Ross and Ross published the Bobo doll experiments.",
+  "evidenceNote": "Children imitating role models has been demonstrated many times. Its long-term effect on violent behavior is unclear."
+ },
+ "self-efficacy-theory": {
+  "summary": "How strongly a person believes 'I can do this' affects whether they try and how long they persist. Experiences of success, role models, and encouragement can all raise it.",
+  "landmark": "Bandura published 'Self-Efficacy: Toward a Unifying Theory of Behavioral Change'.",
+  "evidenceNote": "The link between self-efficacy and persistence keeps appearing in education, health, and workplace research. The direction of causation is not always clear."
+ }
+}

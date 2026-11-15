@@ -1,0 +1,217 @@
+{
+ "irt": {
+  "summary": "Each test item has its own difficulty, and each person has their own ability. The probability of answering correctly is determined by the difference between the two, so the same ability can be measured with items of different difficulty.",
+  "landmark": "Rasch proposed a probability model linking item difficulty and ability.",
+  "evidenceNote": "It is widely used in large-scale exams and adaptive testing. The model's assumptions have to be checked against data."
+ },
+ "cais": {
+  "summary": "Personality is not 'a person who is always extraverted'. It is 'extraverted in some situations and quiet in others'. The stable pattern is this if-then profile.",
+  "landmark": "Mischel and Shoda proposed the if-then behavioral signatures.",
+  "evidenceNote": "There is considerable evidence that behavior follows stable patterns in certain situations. But the measurement of an individual's 'behavioral signature' is still rough."
+ },
+ "mi-theory": {
+  "summary": "Linguistic, logical-mathematical, spatial, musical, bodily-kinesthetic, interpersonal, intrapersonal, and naturalist intelligences. Each person has different strengths, so education should be tailored to the learner.",
+  "landmark": "Gardner, 'Multiple Intelligences: New Horizons', added the naturalist intelligence.",
+  "evidenceNote": "No evidence has shown these intelligences are independent of each other. The measurement of each intelligence lacks validity evidence."
+ },
+ "triarchic-theory": {
+  "summary": "Intelligence includes analytical, creative, and practical abilities. Schools and IQ tests mainly measure only analytical ability.",
+  "landmark": "Sternberg, 'Beyond IQ'.",
+  "evidenceNote": "Evidence that analytical, creative, and practical abilities are distinct is limited. All three still correlate with g."
+ },
+ "five-factor-model": {
+  "summary": "Openness, conscientiousness, extraversion, agreeableness, and neuroticism. Each of the five dimensions can be divided into facets, and every person has a position on each dimension.",
+  "landmark": "Costa and McCrae, 'NEO-PI-R Professional Manual'.",
+  "evidenceNote": "The five-factor structure largely replicates in samples from many countries. It is not fully consistent in small-scale societies or at finer levels of detail."
+ },
+ "personality-continuity": {
+  "summary": "A person's position in the population on personality traits is quite stable from middle age onward. At the same time, most people become more conscientious, more settled, and less anxious as they age.",
+  "landmark": "Roberts and DelVecchio reviewed the stability of personality traits over time.",
+  "evidenceNote": "Several longitudinal studies find that the ranking of people on personality is quite stable. Average levels, however, shift with age toward greater conscientiousness and emotional stability."
+ },
+ "p-hacking": {
+  "summary": "If you try several analysis methods on the same data and look at many outcomes, you can nearly always find a 'significant' result. So published significant results may be false.",
+  "landmark": "Simmons, Nelson, and Simonsohn, 'False-Positive Psychology'.",
+  "evidenceNote": "Simulation and meta-science research both show that flexible analysis greatly raises the false-positive rate. Preregistration can effectively limit it."
+ },
+ "reproducibility-project": {
+  "summary": "A project tried to repeat 100 studies published in three leading journals. Fewer than half succeeded, which prompted a rethinking of practices across the field.",
+  "landmark": "The Open Science Collaboration reported the replication results of 100 experiments in Science.",
+  "evidenceNote": "About a third to four in ten replicated, and effect sizes shrank by half on average. Replication rates differ widely between subfields."
+ },
+ "adolescence-storm-stress": {
+  "summary": "Adolescence is a stage of intense emotion, conflict, and more risk-taking. It is a kind of 'rebirth'.",
+  "landmark": "Hall, 'Adolescence'.",
+  "evidenceNote": "Emotional swings and risk-taking do rise during adolescence. But most teenagers do not go through a 'storm'. Individual differences matter more."
+ },
+ "piaget-stages": {
+  "summary": "A child's thinking passes through four stages in order. First they learn about the world through action, then they use symbols, then they can carry out concrete logical operations, and finally they can reason abstractly.",
+  "landmark": "Piaget, 'The Psychology of Intelligence', laid out the sensorimotor, preoperational, concrete operational, and formal operational stages.",
+  "evidenceNote": "The idea that cognition undergoes qualitative change broadly holds. But the boundaries between stages are blurrier than he assumed, and children can accomplish some tasks at younger ages."
+ },
+ "zone-of-proximal-development": {
+  "summary": "Between what a child can do alone and what they can do with help, there is a zone that is best suited for learning. Teaching should target this zone.",
+  "landmark": "Vygotsky, 'Thought and Language', proposed the gap between what children do independently and what they do with help.",
+  "evidenceNote": "It is widely used in teaching research, but it is very hard to measure precisely."
+ },
+ "scaffolding": {
+  "summary": "Adults give just enough help when a child needs it, then gradually withdraw it as the child's ability grows, much like the scaffolding used in building.",
+  "landmark": "Wood, Bruner, and Ross described how adults gradually withdraw support.",
+  "evidenceNote": "Much educational research supports it as a teaching principle. But there is no standard for when to withdraw support."
+ },
+ "eight-stages": {
+  "summary": "Eight stages center on trust, autonomy, initiative, industry, identity, intimacy, generativity, and integrity. Failing to handle a stage's task leaves lasting difficulties.",
+  "landmark": "Erikson, 'Childhood and Society'.",
+  "evidenceNote": "Themes such as basic trust, identity, and intimacy have research support. The order of the stages and their universality have not been properly tested."
+ },
+ "identity-statuses": {
+  "summary": "Identity can be sorted into four statuses based on whether a person has explored options and whether they have made a commitment: achievement, moratorium, foreclosure, and diffusion.",
+  "landmark": "Marcia published interview studies of ego identity statuses.",
+  "evidenceNote": "Many studies use the four-way classification. But whether the statuses form developmental stages is still debated."
+ },
+ "attachment-behavioral-system": {
+  "summary": "Infants are born with a set of behaviors that seek closeness to a caregiver. They are activated by threat, in order to gain protection and comfort. The caregiver's responses shape the infant's internal expectations about relationships.",
+  "landmark": "Bowlby, 'Attachment and Loss', Vol. 1.",
+  "evidenceNote": "Infants seeking closeness and using the caregiver as a secure base has been observed repeatedly in studies across many countries."
+ },
+ "contact-comfort": {
+  "summary": "Infant monkeys preferred clinging to a soft 'cloth mother' over a wire 'mother' that provided food. This shows attachment is not only about feeding.",
+  "landmark": "Harlow, 'The Nature of Love': infant monkeys attached to a soft cloth mother rather than a wire mother that provided milk.",
+  "evidenceNote": "The results have been supported by later studies. But the experiments caused serious harm to the animals, and they would not be approved today."
+ },
+ "strange-situation": {
+  "summary": "One-year-olds are separated from their mothers and reunited in a laboratory. Their reactions are observed, and attachment is classified as secure, avoidant, or ambivalent. Disorganized attachment was added later.",
+  "landmark": "Ainsworth and Bell introduced the Strange Situation procedure, distinguishing secure, avoidant, and ambivalent attachment.",
+  "evidenceNote": "The categories have been replicated in several countries. But the cultural applicability and stability of the classification are limited."
+ },
+ "adult-attachment": {
+  "summary": "Adults also have attachment patterns in close relationships. Some people readily worry about being abandoned (anxiety), while others are reluctant to depend on others (avoidance).",
+  "landmark": "Hazan and Shaver, 'Romantic Love Conceptualized as an Attachment Process'.",
+  "evidenceNote": "The two dimensions of adult attachment, anxiety and avoidance, have strong research support. Their continuity with infant attachment is only moderate."
+ },
+ "six-stage-moral-reasoning": {
+  "summary": "Moral reasoning develops step by step from low to high: from 'avoid punishment' and 'obey the rules', to 'uphold the social contract' and 'follow universal ethical principles'.",
+  "landmark": "Kohlberg proposed three levels and six stages, measured with the 'Heinz dilemma'.",
+  "evidenceNote": "The order of the stages has some support across cultures. The higher stages are rare in many societies, and the link between reasoning and behavior is weak."
+ },
+ "ethic-of-care": {
+  "summary": "Morality is not only about fairness and rights. It is also about relationships and responsibility. Kohlberg's system emphasizes the former and so underrates the moral maturity of many women.",
+  "landmark": "Gilligan, 'In a Different Voice'.",
+  "evidenceNote": "Her critique led to revisions of Kohlberg's methods. But the empirical difference that 'women emphasize care and men emphasize justice' is very small."
+ },
+ "nested-systems": {
+  "summary": "The environment is arranged from near to far. Closest is what the child experiences directly, such as home and school. Next are the links between those settings, then indirect influences such as a parent's job, then culture and institutions, all over time.",
+  "landmark": "Bronfenbrenner distinguished the microsystem, mesosystem, exosystem, and macrosystem.",
+  "evidenceNote": "Many disciplines use it as an analytic framework. It does not make specific predictions about developmental outcomes."
+ },
+ "parenting-styles": {
+  "summary": "Parents can be divided into: warm and rule-setting (authoritative), demanding with little warmth (authoritarian), and warm with few rules (permissive).",
+  "landmark": "Baumrind published the distinction between authoritative, authoritarian, and permissive parenting.",
+  "evidenceNote": "Authoritative parenting, which is warm and demanding, is linked to better outcomes. But correlation cannot be read directly as causation, and the effects differ across cultures."
+ },
+ "lifespan-principles": {
+  "summary": "Development is lifelong, multidirectional, and involves both gains and losses. It is shaped by three kinds of influence: age, history, and individual life events.",
+  "landmark": "Baltes, 'Theoretical Propositions of Life-Span Developmental Psychology'.",
+  "evidenceNote": "The propositions of multidirectionality, multidimensionality, and plasticity have broad support from research on aging."
+ },
+ "soc-model": {
+  "summary": "As resources decline, older adults keep functioning by narrowing their goals (selection), concentrating practice on what matters (optimization), and finding alternative ways of doing things (compensation).",
+  "landmark": "Baltes and Baltes proposed the model of successful aging.",
+  "evidenceNote": "Many longitudinal and intervention studies support it, but the size of its effect varies across populations."
+ },
+ "false-belief-task": {
+  "summary": "A child sees a toy moved, then is asked where the person who left will look for it. Most children under four say 'the new place', showing they do not yet understand that others can hold mistaken ideas.",
+  "landmark": "Wimmer and Perner's Maxi task.",
+  "evidenceNote": "The developmental shift between ages three and four has been confirmed in many countries. Whether earlier results on implicit tests amount to 'understanding' is disputed."
+ },
+ "mindblindness": {
+  "summary": "Autistic children find it hard to understand other people's thoughts and feelings because they lack, or acquire late, a 'theory of mind'.",
+  "landmark": "Baron-Cohen, Leslie, and Frith, 'Does the Autistic Child Have a \"Theory of Mind\"?'",
+  "evidenceNote": "Many autistic children have difficulty on false-belief tasks, but not all, and the theory cannot explain every feature of autism."
+ },
+ "core-knowledge": {
+  "summary": "Infants are born with a small number of basic intuitions about objects, number, space, and other people. These serve as the starting point for later learning.",
+  "landmark": "Spelke, 'Principles of Object Perception', later with Kinzler, organized as 'core knowledge systems'.",
+  "evidenceNote": "There are many experiments on infants' early responses to objects, number, and space. Whether these amount to 'innate knowledge' is interpreted in different ways."
+ },
+ "infants-as-scientists": {
+  "summary": "Infants learn by observing, experimenting, picking up statistical regularities, and imitating. They act like little scientists, forming hypotheses and adjusting them based on evidence.",
+  "landmark": "Gopnik, Meltzoff, and Kuhl, 'The Scientist in the Crib'.",
+  "evidenceNote": "There are many experiments showing infants update their judgments based on evidence. But equating infant learning with a scientist's reasoning is still a metaphor."
+ },
+ "infant-statistical-learning": {
+  "summary": "After listening to a few minutes of continuous speech, infants can detect which syllables always go together. This helps them pick out words from a stream of sound.",
+  "landmark": "Saffran, Aslin, and Newport, 'Statistical Learning by 8-Month-Old Infants'.",
+  "evidenceNote": "Replicated many times, and extended to visual and social domains."
+ },
+ "neonatal-imitation": {
+  "summary": "Newborns a few days old stick out their tongues when they see an adult do it. This has been taken as evidence that humans are born with a tendency to imitate.",
+  "landmark": "Meltzoff and Moore: newborns imitate tongue protrusion.",
+  "evidenceNote": "A large longitudinal study in 2016 failed to replicate the finding. Some researchers still believe small-scale imitation exists."
+ },
+ "crowd-contagion": {
+  "summary": "In a crowd, individual responsibility is diluted, emotions spread quickly by contagion, and people are more easily swept along by simple slogans.",
+  "landmark": "Le Bon, 'The Crowd'.",
+  "evidenceNote": "This account influenced politics and advertising. But later research shows crowd behavior often follows clear norms and is not simply a loss of reason."
+ },
+ "bystander-effect": {
+  "summary": "The more people around, the less likely any one person is to step in to help. Responsibility is spread out, and people watch one another's reactions.",
+  "landmark": "Darley and Latané published 'Bystander Intervention in Emergencies'.",
+  "evidenceNote": "The effect is robust in laboratory settings. For real, dangerous emergencies, a 2011 meta-analysis found the effect of the number of bystanders was actually smaller."
+ },
+ "life-space-field": {
+  "summary": "A person's behavior is determined by their 'life space' at the moment: their own state plus the environment as they perceive it. Both are required.",
+  "landmark": "Lewin, 'Principles of Topological Psychology', proposed B = f(P, E).",
+  "evidenceNote": "This is a theoretical perspective used to organize research. It is not a hypothesis tested once and for all."
+ },
+ "leadership-climates": {
+  "summary": "The same group of boys, under authoritarian leadership, showed more dependence and aggression. Under democratic leadership they were more cooperative. Under laissez-faire leadership, they were less productive.",
+  "landmark": "Lewin, Lippitt, and White compared boys' groups under authoritarian, democratic, and laissez-faire leadership.",
+  "evidenceNote": "The study was very small and the controlled conditions were limited. But the conclusion that democratic leadership produces better cooperation has broadly been supported by later research."
+ },
+ "organizational-culture-levels": {
+  "summary": "Organizational culture has three levels: visible behaviors and artifacts, publicly stated values, and unconscious basic assumptions. The deepest layer is the hardest to change.",
+  "landmark": "Schein, 'Organizational Culture and Leadership'.",
+  "evidenceNote": "This is a descriptive framework. It is widely used in management consulting but has not been rigorously tested."
+ },
+ "expectancy-theory": {
+  "summary": "Whether a person puts in effort depends on three beliefs: that effort will lead to performance, that performance will lead to rewards, and that the rewards are valuable to them.",
+  "landmark": "Vroom, 'Work and Motivation'.",
+  "evidenceNote": "The expectancy-times-value-times-instrumentality framework for predicting effort has some support. But its parameters are hard to measure."
+ },
+ "asch-conformity": {
+  "summary": "A group of 'confederates' deliberately gave obviously wrong answers. About a third of the real participants' answers were pulled off course. People will go against their own eyes out of fear of standing out.",
+  "landmark": "Asch's line-judgment experiments.",
+  "evidenceNote": "Replicated in several countries, but conformity rates vary with time and culture. About three-quarters of people conformed at least once, but most answers overall were still independent."
+ },
+ "milgram-obedience": {
+  "summary": "When told to by the experimenter, most participants turned the 'shock' up to very high levels. This shows the power of authority, but they did not obey without any doubt.",
+  "landmark": "Milgram, 'Behavioral Study of Obedience'.",
+  "evidenceNote": "Obedience rates are strongly influenced by situational conditions, and this has been replicated many times. His explanation (the 'agentic state') and the realism of the experiment have been criticized."
+ },
+ "six-principles-of-influence": {
+  "summary": "Reciprocity, commitment and consistency, social proof, liking, authority, and scarcity. These six shortcuts make people more likely to say yes.",
+  "landmark": "Cialdini, 'Influence'.",
+  "evidenceNote": "Each principle has some experimental support. But the six-part classification is a summary rather than a tested theory, and the effects vary with the situation."
+ },
+ "stanford-prison": {
+  "summary": "Zimbardo claimed that randomly assigned college students quickly became cruel guards. But the archives show the experimenters suggested the behavior, so it is hard to prove the power of the roles themselves.",
+  "landmark": "Zimbardo had college students play guards and prisoners. It was stopped early, after six days.",
+  "evidenceNote": "Materials disclosed later show the guards were coached and there were clear demand characteristics. It cannot be used as evidence that situations make good people do evil."
+ },
+ "contact-hypothesis": {
+  "summary": "When people from different groups meet under conditions of equal status, shared goals, cooperation, and institutional support, prejudice decreases.",
+  "landmark": "Allport, 'The Nature of Prejudice'.",
+  "evidenceNote": "A 2006 meta-analysis covering more than 500 studies found that contact generally reduces prejudice. The effect is strongest under conditions of equality, cooperation, and institutional support."
+ },
+ "authoritarian-personality": {
+  "summary": "People who are submissive to authority and hostile to outsiders were thought to have experienced harsh discipline in childhood. The explanation sparked a great deal of research and drew many criticisms.",
+  "landmark": "Adorno and colleagues, 'The Authoritarian Personality'.",
+  "evidenceNote": "The methods were heavily criticized. The later 'right-wing authoritarianism' scale has better measurement properties, but the original psychoanalytic explanation has been abandoned."
+ },
+ "stereotype-threat": {
+  "summary": "When people worry that their performance will confirm negative views about their group, they actually perform worse.",
+  "landmark": "Steele and Aronson, 'Stereotype Threat and the Intellectual Test Performance of African Americans'.",
+  "evidenceNote": "The original effect shrank noticeably in later large-sample replications, and some studies found no effect at all. Publication bias appears to have played a significant role."
+ }
+}

@@ -1,0 +1,299 @@
+{
+ "localization->neuropsychology:develops": {
+  "note": "Moves from matching functions to brain areas to systematic study of brain-injury cases."
+ },
+ "localization->split-brain:develops": {
+  "note": "Applies the idea of functional localization to the two hemispheres."
+ },
+ "neuron-doctrine->hebbian:develops": {
+  "note": "Neurons must be separate units before changes in connection strength make sense."
+ },
+ "neuron-doctrine->molecular-memory:develops": {
+  "note": "Traces learning down to changes in individual neurons and synapses."
+ },
+ "hebbian->molecular-memory:develops": {
+  "note": "Cellular studies of synaptic plasticity test Hebb's idea."
+ },
+ "ethology->evolutionary:develops": {
+  "note": "Both treat behavior as shaped by evolution; the latter extends this to the human mind."
+ },
+ "split-brain->cognitive-neuroscience:merges": {
+  "note": "Gazzaniga brings the split-brain method into this new field."
+ },
+ "cognitive-neuroscience->affective-neuroscience:develops": {
+  "note": "Applies lesion and imaging methods to emotion and decision-making."
+ },
+ "evolutionary->affective-neuroscience:bridges": {
+  "note": "Evolutionary views supply the origins proposed for basic emotions."
+ },
+ "psychopharmacology->affective-neuroscience:develops": {
+  "note": "Drug targets led researchers to study emotional transmitters and circuits."
+ },
+ "neuropsychology->split-brain:develops": {
+  "note": "Split-brain patients form a special category of brain-injury case study."
+ },
+ "constructed-emotion->basic-emotions:critiques": {
+  "note": "Challenges fixed basic emotions with the view that the brain constructs emotions."
+ },
+ "monoamine-hypothesis->dopamine-hypothesis:develops": {
+  "note": "Both share the idea that a transmitter imbalance causes psychiatric symptoms."
+ },
+ "law-of-effect->behaviorism:develops": {
+  "note": "Thorndike's animal experiments foreshadowed behaviorism."
+ },
+ "law-of-effect->operant:develops": {
+  "note": "Skinner rewrote 'outcomes that please are kept' as measurable reinforcement."
+ },
+ "classical-conditioning->behaviorism:develops": {
+  "note": "Watson took the conditioned reflex as the basic unit explaining all learning."
+ },
+ "behaviorism->operant:develops": {
+  "note": "Skinner pushed behaviorism to its limit, analyzing only behavior and its consequences."
+ },
+ "behaviorism->neo-behaviorism:branches": {
+  "note": "Keeps objective methods but adds internal variables such as purpose and expectation."
+ },
+ "classical-conditioning->behavior-therapy:develops": {
+  "note": "Wolpe's desensitization builds directly on conditioning and extinction."
+ },
+ "operant->aba:develops": {
+  "note": "Applies reinforcement principles to real educational and behavioral problems."
+ },
+ "operant->social-learning:reacts": {
+  "note": "Bandura rejects the idea that learning requires being reinforced personally."
+ },
+ "neo-behaviorism->social-learning:develops": {
+  "note": "Tolman's expectancies and internal representations kept cognitive processes in Bandura's theory."
+ },
+ "classical-conditioning->learned-helplessness:develops": {
+  "note": "Learned helplessness research began from conditioning and avoidance-learning paradigms."
+ },
+ "conditioned-reflex->rescorla-wagner:develops": {
+  "note": "Explains association by prediction error instead of simple temporal contiguity."
+ },
+ "taste-aversion->behaviorism:critiques": {
+  "note": "Taste aversion shows that learning has biological biases, so stimuli are not interchangeable."
+ },
+ "behavior-therapy->aba:bridges": {
+  "note": "Behavior therapy and applied behavior analysis share learning principles but developed separately."
+ },
+ "psychophysics->experimental:develops": {
+  "note": "Fechner's measurement methods gave laboratory psychology its techniques."
+ },
+ "experimental->functionalism:reacts": {
+  "note": "James opposed breaking consciousness into elements and asked what the mind does."
+ },
+ "experimental->gestalt:reacts": {
+  "note": "Gestalt psychology opposed building perception up from sensory elements."
+ },
+ "experimental->memory-experiment:develops": {
+  "note": "Ebbinghaus was the first to apply the experimental method to higher mental processes."
+ },
+ "memory-experiment->schema:reacts": {
+  "note": "Bartlett criticized nonsense-syllable studies as detached from real memory."
+ },
+ "schema->cognitive-psychology:bridges": {
+  "note": "'Schema' became a basic term in cognitive psychology."
+ },
+ "functionalism->cognitive-psychology:bridges": {
+  "note": "Both ask what the mind does rather than what elements it is made of."
+ },
+ "cognitive-revolution->cognitive-psychology:develops": {
+  "note": "Neisser organized the new paradigm into a discipline and named it."
+ },
+ "cognitive-psychology->heuristics-biases:develops": {
+  "note": "Applies research on cognitive processing to judgment and decision-making."
+ },
+ "cognitive-psychology->connectionism:reacts": {
+  "note": "Connectionism disagrees that the mind is serial rule-based symbol manipulation."
+ },
+ "cognitive-psychology->embodied:reacts": {
+  "note": "Embodied views reject the mind as symbol processing detached from the body."
+ },
+ "connectionism->predictive-processing:develops": {
+  "note": "Multilayer networks and error-based learning are the foundation of predictive processing."
+ },
+ "embodied->predictive-processing:bridges": {
+  "note": "The idea of a perception-action loop enters predictive processing."
+ },
+ "ecological-rationality->heuristics-biases:critiques": {
+  "note": "Argues that heuristics are often smart in real environments rather than flawed."
+ },
+ "chomsky-review->radical-behaviorism:critiques": {
+  "note": "Argues that the stimulus-reinforcement framework cannot explain the creativity of language."
+ },
+ "individual-differences->g-factor:develops": {
+  "note": "Spearman continued Galton's measurement tradition with correlation and factor analysis."
+ },
+ "g-factor->intelligence-testing:bridges": {
+  "note": "The g factor gives a theoretical explanation for the common variance in test scores."
+ },
+ "g-factor->multiple-intelligences:reacts": {
+  "note": "Gardner rejects a single g and proposes multiple independent intelligences."
+ },
+ "intelligence-testing->test-theory:develops": {
+  "note": "Large-scale testing led to systematic requirements for reliability and validity."
+ },
+ "trait->factor-personality:develops": {
+  "note": "Factor analysis organizes trait words into a few dimensions."
+ },
+ "trait->big-five:develops": {
+  "note": "The lexical hypothesis and factor analysis converge on five basic dimensions."
+ },
+ "factor-personality->big-five:develops": {
+  "note": "The Eysenck and Cattell debate ultimately converged on five factors."
+ },
+ "person-situation->big-five:bridges": {
+  "note": "The debate settled on 'both person and situation matter,' which revived the Big Five."
+ },
+ "open-science->embodied:critiques": {
+  "note": "Several results showing that posture or expression affects judgment have failed to replicate."
+ },
+ "flynn-effect->intelligence-testing:critiques": {
+  "note": "Scores rising generation by generation show that IQ is not fixed by genes alone."
+ },
+ "lexical-hypothesis->five-factor-model:develops": {
+  "note": "Questionnaire samples validated the five factors that the lexical hypothesis suggested."
+ },
+ "child-study->cognitive-development:develops": {
+  "note": "Moves from describing children to a systematic account of the structure of thinking."
+ },
+ "cognitive-development->sociocultural:reacts": {
+  "note": "Vygotsky rejected development as an individual's solitary construction."
+ },
+ "cognitive-development->moral-development:develops": {
+  "note": "Kohlberg extended Piaget's study of moral judgment into a stage theory."
+ },
+ "cognitive-development->theory-of-mind:develops": {
+  "note": "Understanding others' perspectives grew out of Piaget's problem of egocentrism."
+ },
+ "cognitive-development->infant-cognition:reacts": {
+  "note": "Experiments show infants have knowledge much earlier than Piaget thought."
+ },
+ "psychosocial->lifespan:develops": {
+  "note": "Extends development from childhood to the whole life course."
+ },
+ "ecological->lifespan:bridges": {
+  "note": "The view of individuals interacting with historical environments is shared by both."
+ },
+ "infant-cognition->theory-of-mind:bridges": {
+  "note": "Implicit false-belief research tries to move the starting point of theory of mind earlier."
+ },
+ "ethic-of-care->six-stage-moral-reasoning:critiques": {
+  "note": "Argues that the stage model treated male reasoning as the standard."
+ },
+ "contact-comfort->behaviorism:critiques": {
+  "note": "Infant monkeys cling to a cloth mother without feeding, refuting the idea that attachment comes from feeding reinforcement."
+ },
+ "sociocultural->ecological:bridges": {
+  "note": "Understanding development within society and culture; the two share this idea."
+ },
+ "piaget-stages->zone-of-proximal-development:reacts": {
+  "note": "The latter stresses that instruction can drive development rather than waiting for maturation."
+ },
+ "social-identity->crowd:critiques": {
+  "note": "Shows that group behavior follows norms tied to group identity, not a loss of reason."
+ },
+ "field-theory->conformity-obedience:develops": {
+  "note": "The idea of the power of the situation passed from Lewin to Asch and Milgram."
+ },
+ "dissonance->social-cognition:develops": {
+  "note": "The idea that people seek inner consistency entered social cognition."
+ },
+ "attribution->social-cognition:develops": {
+  "note": "Attribution research is the forerunner of social cognition's study of how people explain others."
+ },
+ "prejudice->social-identity:develops": {
+  "note": "After contact research, people turned to asking how prejudice relates to group membership."
+ },
+ "indigenous->cultural:develops": {
+  "note": "Doubts about the applicability of Western psychology drove research on how culture shapes the mind."
+ },
+ "independent-interdependent-self->fundamental-attribution-error:critiques": {
+  "note": "The bias is weaker in East Asian samples, showing that it is not universal."
+ },
+ "weird-samples->social-cognition:critiques": {
+  "note": "Many 'universal' cognitive findings come only from Western university students."
+ },
+ "self-perception-theory->cognitive-dissonance-theory:critiques": {
+  "note": "Explains attitude change without needing discomfort."
+ },
+ "logotherapy->existential:bridges": {
+  "note": "The themes of meaning and choice become core issues in existential therapy."
+ },
+ "person-centered->eft:develops": {
+  "note": "Empathy and following the client's experience become the starting point of emotion-focused therapy."
+ },
+ "gestalt-therapy->eft:develops": {
+  "note": "Greenberg integrates techniques such as the two chairs and tests them empirically."
+ },
+ "needs->sdt:bridges": {
+  "note": "Values growth needs but replaces the fixed hierarchy with three basic needs."
+ },
+ "flow->positive:develops": {
+  "note": "Csikszentmihalyi is a shared advocate of positive psychology."
+ },
+ "sdt->positive:develops": {
+  "note": "Autonomy, competence and relatedness become central to well-being research."
+ },
+ "logotherapy->positive:develops": {
+  "note": "Meaning becomes one dimension of the model of happiness."
+ },
+ "five-factor-model->grit:critiques": {
+  "note": "Argues that grit overlaps heavily with conscientiousness, so whether it is a new construct is doubtful."
+ },
+ "overjustification->behaviorism:critiques": {
+  "note": "Rewards do not always strengthen behavior; they can weaken original interest."
+ },
+ "terror-management->psychoanalysis:bridges": {
+  "note": "Turns Becker's psychoanalytic ideas about the denial of death into testable experiments."
+ },
+ "psychoanalysis->individual-psychology:branches": {
+  "note": "Adler left Freud's circle because he rejected the sexual-centered account."
+ },
+ "psychoanalysis->analytical-psychology:branches": {
+  "note": "Jung rejected the purely sexual reading of libido and broke with Freud."
+ },
+ "psychoanalysis->ego-psychology:develops": {
+  "note": "Shifts from instinctual conflict to how the ego adapts and defends."
+ },
+ "psychoanalysis->object-relations:branches": {
+  "note": "Klein moved the focus to early relationships with objects, away from drive theory."
+ },
+ "psychoanalysis->neo-freudian:branches": {
+  "note": "Horney and Sullivan rejected libido theory and turned to culture and interpersonal relations."
+ },
+ "psychoanalysis->lacanian:develops": {
+  "note": "Lacan claimed to 'return to Freud' and reread him through structural linguistics."
+ },
+ "ego-psychology->self-psychology:branches": {
+  "note": "Kohut, starting from ego psychology, turned to the self and to empathy."
+ },
+ "object-relations->relational:merges": {
+  "note": "Object relations is one of the main sources of the relational school."
+ },
+ "neo-freudian->relational:merges": {
+  "note": "Sullivan's interpersonal psychoanalysis is one of the sources of the relational school."
+ },
+ "analytical-psychology->post-jungian:develops": {
+  "note": "Post-Jungian scholars carry on and revise Jung's theories."
+ },
+ "dissociation->analytical-psychology:bridges": {
+  "note": "Jung's concept of the complex drew on Janet's idea of dissociation."
+ },
+ "five-factor-model->psychological-types:critiques": {
+  "note": "Personality differences are mostly continuous, not either-or types."
+ },
+ "misinformation-effect->repression:critiques": {
+  "note": "Experiments show memories can be rewritten by suggestion, undermining the idea that repressed memories can be recovered intact."
+ },
+ "relational->mentalization:bridges": {
+  "note": "Both stress the role of understanding others' mental states within relationships."
+ },
+ "clinical-psychology->common-factors:bridges": {
+  "note": "Professional assessment and help for individuals leads to the question of what actually works."
+ },
+ "rosenhan-experiment->nosology:critiques": {
+  "note": "Accuses psychiatric diagnosis of being unreliable in practice."
+ }
+}

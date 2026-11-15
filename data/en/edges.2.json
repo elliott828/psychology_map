@@ -1,0 +1,299 @@
+{
+ "psychoanalysis->family-systems:reacts": {
+  "note": "Family therapists were dissatisfied with looking for causes only inside the individual mind."
+ },
+ "cbt->trauma:develops": {
+  "note": "Exposure and cognitive restructuring became the basis of trauma-focused treatment."
+ },
+ "mbsr-program->mbct-model:develops": {
+  "note": "Adapts the MBSR course into a version for preventing depressive relapse."
+ },
+ "common-factors->ebp:bridges": {
+  "note": "Common-factors research means that 'evidence' must include the relationship and patient characteristics."
+ },
+ "attachment->eft:bridges": {
+  "note": "Johnson applied attachment theory to couple therapy."
+ },
+ "diathesis-stress->dimensional:bridges": {
+  "note": "The diathesis-stress idea extends into cross-diagnostic dimensional research."
+ },
+ "transactional-stress-model->app-health-psychology:applies": {
+  "note": "The appraisal and coping model is used for chronic illness and stress management."
+ },
+ "biopsychosocial->app-health-psychology:applies": {
+  "note": "Health psychology uses this framework to integrate biological and psychosocial factors."
+ },
+ "mbsr->app-health-psychology:applies": {
+  "note": "Mindfulness courses are used in pain, stress and chronic illness care."
+ },
+ "forgetting-curve->app-education-learning:applies": {
+  "note": "The basis for spaced review and retrieval practice."
+ },
+ "how-people-learn->app-education-learning:applies": {
+  "note": "Turns cognitive and developmental research into teaching principles."
+ },
+ "sociocultural->app-education-learning:applies": {
+  "note": "The zone of proximal development and scaffolding become the basis of instructional design."
+ },
+ "aba->app-education-learning:applies": {
+  "note": "Uses behavior analysis to improve special education and classroom behavior."
+ },
+ "field-theory->app-industrial-organizational:applies": {
+  "note": "Group dynamics and action research became the starting point of organizational development."
+ },
+ "expectancy-theory->app-industrial-organizational:applies": {
+  "note": "Used to explain work motivation and performance management."
+ },
+ "big-five->app-industrial-organizational:applies": {
+  "note": "Personality assessment is used for selection and development."
+ },
+ "intelligence-testing->app-industrial-organizational:applies": {
+  "note": "Ability tests are used for selection, though with ongoing fairness disputes."
+ },
+ "misinformation-effect->app-forensic:applies": {
+  "note": "Changed practice on eyewitness testimony and questioning methods."
+ },
+ "affordances->app-human-factors:applies": {
+  "note": "'Affordance' became a core concept in product and interface design."
+ },
+ "working-memory-model->app-human-factors:applies": {
+  "note": "The limits of working memory shape the design of interfaces and workflows."
+ },
+ "prospect-theory->app-public-policy:applies": {
+  "note": "Loss aversion and reference points shape the design of defaults and incentives."
+ },
+ "cbt->app-self-help:applies": {
+  "note": "CBT methods were written into self-help books and exercises, some supported by controlled trials."
+ },
+ "habit-loop->app-self-help:applies": {
+  "note": "The cue-routine-reward loop is used to design personal habit change."
+ },
+ "experimental->behaviorism:reacts": {
+  "note": "Opposed introspection and argued for studying only observable behavior."
+ },
+ "functionalism->behaviorism:develops": {
+  "note": "The focus on adaptation and function paved the way for the objective study of behavior."
+ },
+ "behaviorism->cognitive-revolution:reacts": {
+  "note": "Language and thought cannot be explained by stimulus and response alone."
+ },
+ "neo-behaviorism->cognitive-revolution:bridges": {
+  "note": "Tolman's cognitive maps brought internal representations inside behaviorism."
+ },
+ "gestalt->field-theory:develops": {
+  "note": "Lewin, trained in the Berlin Gestalt school, applied the 'field' idea to social behavior."
+ },
+ "gestalt->cognitive-psychology:bridges": {
+  "note": "Research on holistic perception and problem solving was absorbed into cognitive psychology."
+ },
+ "cognitive-development->cognitive-revolution:bridges": {
+  "note": "Piaget's study of mental structures is one European source of the cognitive turn."
+ },
+ "social-learning->cognitive-psychology:bridges": {
+  "note": "Observational learning brings attention and memory into learning theory."
+ },
+ "psychoanalysis->cognitive-therapies:reacts": {
+  "note": "Ellis and Beck were trained in psychoanalysis but set out separately, finding it hard to test."
+ },
+ "cognitive-revolution->cognitive-therapies:bridges": {
+  "note": "Provided the theoretical language that beliefs and information processing shape emotion."
+ },
+ "behavior-therapy->cbt:merges": {
+  "note": "Techniques such as exposure and behavioral activation are folded into the integrated model."
+ },
+ "cognitive-therapies->cbt:merges": {
+  "note": "Cognitive reappraisal is folded into the integrated model."
+ },
+ "dissociation->psychoanalysis:develops": {
+  "note": "Freud studied with Charcot in 1885, beginning from research on hypnosis and hysteria."
+ },
+ "dissociation->trauma:bridges": {
+  "note": "Janet's dissociation theory was rediscovered in trauma research in the 1980s."
+ },
+ "psychoanalysis->person-centered:reacts": {
+  "note": "Rejects the view that people are driven by drives and believes in an inherent tendency to grow."
+ },
+ "behaviorism->needs:reacts": {
+  "note": "Humanistic psychology called itself the 'third force' and opposed behaviorism's mechanistic view."
+ },
+ "analytical-psychology->needs:bridges": {
+  "note": "The ideas of individuation and self-actualization are related, though with no direct teacher-student line."
+ },
+ "object-relations->attachment:merges": {
+  "note": "Bowlby's training in object relations brought in the idea of internal working models."
+ },
+ "ethology->attachment:merges": {
+  "note": "Animal studies of imprinting and parent-offspring bonds gave attachment an evolutionary perspective."
+ },
+ "attachment->mentalization:develops": {
+  "note": "Uses attachment research to explain how the ability to understand others' minds forms."
+ },
+ "psychoanalysis->psychosocial:develops": {
+  "note": "Erikson expanded psychosexual stages into lifelong psychosocial stages."
+ },
+ "sociocultural->cultural:bridges": {
+  "note": "The source of the idea that mental processes are mediated by cultural tools."
+ },
+ "individual-differences->behavior-genetics:develops": {
+  "note": "Galton's twin and family studies were its methodological precursors."
+ },
+ "individual-differences->intelligence-testing:develops": {
+  "note": "Galton's measurement and statistical tradition continues in intelligence testing."
+ },
+ "g-factor->big-five:develops": {
+  "note": "Applies factor analysis methods to personality dimensions."
+ },
+ "person-situation->trait:critiques": {
+  "note": "Cross-situational consistency of behavior is lower than trait theory assumes."
+ },
+ "cognitive-revolution->cognitive-neuroscience:merges": {
+  "note": "Provides cognitive models that can be tested in the brain."
+ },
+ "neuropsychology->cognitive-neuroscience:merges": {
+  "note": "Provides the methods of brain-injury cases and imaging."
+ },
+ "hebbian->connectionism:develops": {
+  "note": "'Neurons that fire together wire together' became the learning rule of networks."
+ },
+ "stress-physiology->biopsychosocial:bridges": {
+  "note": "Stress links social circumstances to physical disease."
+ },
+ "nosology->dsm:develops": {
+  "note": "Kraepelin's descriptive classification tradition was systematized in the DSM."
+ },
+ "psychopharmacology->dsm:bridges": {
+  "note": "Drug trials need reliable diagnostic criteria, which drove DSM-III."
+ },
+ "dimensional->dsm:critiques": {
+  "note": "Categorical diagnosis brings problems of comorbidity and heterogeneity."
+ },
+ "cognitive-neuroscience->dimensional:merges": {
+  "note": "RDoC organizes research by neural circuits, drawing on cognitive neuroscience."
+ },
+ "big-five->dimensional:bridges": {
+  "note": "HiTOP borrows the dimensional and hierarchical structure of personality."
+ },
+ "mbsr->third-wave:merges": {
+  "note": "Mindfulness practice became a component of several third-wave therapies."
+ },
+ "cbt->third-wave:develops": {
+  "note": "Shifts from changing the content of thoughts to changing one's relationship with thoughts."
+ },
+ "morita->third-wave:bridges": {
+  "note": "'Go with the flow, do what needs doing' is close to acceptance-based approaches, though with no direct lineage."
+ },
+ "learned-helplessness->positive:develops": {
+  "note": "Seligman moved from studying helplessness to studying optimism and well-being."
+ },
+ "needs->positive:develops": {
+  "note": "Inherits the focus on growth and potential."
+ },
+ "positive->needs:critiques": {
+  "note": "Criticizes humanistic psychology for lacking empirical method and calls for measurement and experiment."
+ },
+ "heuristics-biases->app-public-policy:applies": {
+  "note": "Behavioral economics and 'nudging' are built on this foundation."
+ },
+ "cultural->cognitive-psychology:critiques": {
+  "note": "Many 'universal' cognitive conclusions hold only in Western samples."
+ },
+ "open-science->social-cognition:critiques": {
+  "note": "Several social priming effects have failed to replicate."
+ },
+ "affective-neuroscience->trauma:bridges": {
+  "note": "Research on fear and threat circuits provides mechanisms for trauma responses."
+ },
+ "psychoanalysis->behavior-therapy:reacts": {
+  "note": "Eysenck and Wolpe criticized psychoanalysis for lacking evidence of efficacy and advocated treatment based on learning principles."
+ },
+ "person-centered->common-factors:develops": {
+  "note": "Rogers's empathy, genuineness and acceptance became a major source of common-factors research."
+ },
+ "gestalt->gestalt-therapy:bridges": {
+  "note": "The Perls drew on ideas of wholeness and figure-ground, but this is not an extension of Gestalt psychology."
+ },
+ "evolutionary->attachment:bridges": {
+  "note": "Explains attachment as an adaptation with survival value, a view that comes from evolutionary thinking."
+ },
+ "connectionism->deep-learning-models:develops": {
+  "note": "Multilayer networks plus big data and computing power."
+ },
+ "deep-learning-models->llm-cognition:develops": {
+  "note": "The same class of networks is used to process language."
+ },
+ "operant->reward-prediction:bridges": {
+  "note": "Reinforcement is written as a computable prediction-error signal."
+ },
+ "reward-prediction->computational-rl:develops": {
+  "note": "The same algorithms drive artificial agents."
+ },
+ "behavior-genetics->psychiatric-genomics:develops": {
+  "note": "Moves from estimating heritability with twins to finding loci in the genome."
+ },
+ "cognitive-neuroscience->connectome:develops": {
+  "note": "Moves from single brain areas to whole-brain connectivity."
+ },
+ "cognitive-neuroscience->abcd:develops": {
+  "note": "Puts brain imaging into large-scale longitudinal research."
+ },
+ "big-five->digital-footprints:develops": {
+  "note": "Uses online behavioral data to predict Big Five scores."
+ },
+ "network-psychometrics->dsm:critiques": {
+  "note": "Symptoms trigger one another, so there is no need to assume a single underlying disease."
+ },
+ "open-science->large-replications:develops": {
+  "note": "Turns 'can it be replicated?' into a question that can be answered statistically."
+ },
+ "cultural->weird:develops": {
+  "note": "Advances findings on cultural differences into a critique of sampling."
+ },
+ "moral-development->moral-foundations:reacts": {
+  "note": "Holds that moral judgment starts from intuition and that reasoning comes later."
+ },
+ "social-cognition->misinformation:develops": {
+  "note": "Applies research on belief formation to the online information environment."
+ },
+ "pp2->positive:critiques": {
+  "note": "Focuses only on the positive, ignoring the place of suffering in a good life."
+ },
+ "mbsr->self-compassion:bridges": {
+  "note": "Draws on Buddhist compassion and includes mindfulness as a component."
+ },
+ "cognitive-neuroscience->neuropsychoanalysis:bridges": {
+  "note": "Tests psychoanalytic concepts with brain-injury and imaging research."
+ },
+ "psychoanalysis->psychodynamic-evidence:develops": {
+  "note": "Tests dynamic therapy with randomized controlled trials and meta-analyses."
+ },
+ "cbt->unified-protocol:develops": {
+  "note": "One protocol addresses the shared mechanisms of several emotional disorders."
+ },
+ "third-wave->process-based:develops": {
+  "note": "Moves from 'which therapy' to 'which process of change.'"
+ },
+ "cbt->digital-mental-health:develops": {
+  "note": "Turns structured treatment into programs and apps."
+ },
+ "psychopharmacology->psychedelic-therapy:develops": {
+  "note": "Drugs and psychotherapy are combined in one treatment course."
+ },
+ "trauma->icd-11:develops": {
+  "note": "The consequences of long-term repeated trauma are listed separately as complex PTSD."
+ },
+ "psychological-types->factor-personality:bridges": {
+  "note": "Eysenck turned the terms introversion and extraversion into measurable dimensions."
+ },
+ "psychological-types->mbti:develops": {
+  "note": "Myers and her mother used this to build a forced-choice type questionnaire."
+ },
+ "life-stages->lifespan:bridges": {
+  "note": "Jung's account of midlife transition is one of the early sources of adult development research."
+ },
+ "active-imagination->sandplay:develops": {
+  "note": "Kalff developed sandplay on Jung's advice and treated it as a form of active imagination."
+ },
+ "analytical-psychology->app-self-help:applies": {
+  "note": "Jung's advice to Hazzard, relayed by Wilson, became one of the sources of the self-help fellowship."
+ }
+}

@@ -1,0 +1,234 @@
+{
+ "self-psychology": {
+  "summary": "Whether a person has a stable sense of self-worth depends on whether caregivers saw them and mirrored and idealized them in early life. The core of treatment is empathic understanding.",
+  "landmark": "Kohut's The Analysis of the Self",
+  "evidenceNote": "There is much support for the value of empathy in treatment, but the developmental theory of the self lacks rigorous testing."
+ },
+ "relational": {
+  "summary": "Analysis is not a doctor objectively observing a patient but an interaction between two people. The therapist's own feelings and reactions are part of the treatment.",
+  "landmark": "Greenberg and Mitchell's Object Relations in Psychoanalytic Theory",
+  "evidenceNote": "There is substantial evidence that the therapeutic relationship relates to outcomes. The specific claims about mutual construction come mainly from clinical reflection.",
+  "title.enShort": "Relational Theory"
+ },
+ "mentalization": {
+  "summary": "The ability to understand one's own and others' behavior in terms of thoughts, feelings and wishes. This ability grows out of early experiences of being understood; when it is lacking, emotional dysregulation and relationship difficulties tend to follow.",
+  "landmark": "Fonagy and colleagues' papers on 'reflective functioning': whether caregivers can treat an infant as a being with a mind",
+  "evidenceNote": "Mentalization-based treatment (MBT) has support from several controlled trials for borderline personality disorder. The concept itself still has measurement debates."
+ },
+ "clinical-psychology": {
+  "summary": "Psychology no longer studies only 'ordinary people' in the laboratory. It begins to assess and help specific individuals who are struggling.",
+  "landmark": "Witmer opens a psychological clinic at the University of Pennsylvania to use psychological research to help children with learning difficulties",
+  "evidenceNote": "This marks the starting point of a profession rather than a theory to be tested. The 'scientist-practitioner' training model later became the standard.",
+  "title.enShort": "Clinical Psych."
+ },
+ "nosology": {
+  "summary": "Mental disorders are not independent symptoms. They can be grouped into different 'disease units' according to onset, course and outcome.",
+  "landmark": "Kraepelin's sixth edition of his textbook distinguishes dementia praecox from manic-depressive illness by course",
+  "evidenceNote": "The method of grouping by course and symptoms is still in use. Kraepelin's dichotomy itself has been substantially revised.",
+  "title.enShort": "Disease Taxonomy"
+ },
+ "morita": {
+  "summary": "The more anxiety is pushed away, the worse it gets. The principle is 'go with the flow, do what needs to be done': accept that the symptoms exist while doing what needs doing.",
+  "landmark": "Shoma Morita founds this therapy for patients with neurotic tendencies",
+  "evidenceNote": "There are some clinical studies and case reports in Japan, China and elsewhere, but large-scale controlled trials are lacking."
+ },
+ "dsm": {
+  "summary": "A diagnostic manual that specifies 'what counts as a particular mental disorder,' used for clinical work, research, insurance and communication. It is also criticized for 'putting labels on suffering.'",
+  "landmark": "The first edition of the DSM is published; the turning point is DSM-III in 1980, which introduces operational diagnostic criteria",
+  "evidenceNote": "Inter-rater reliability of diagnosis rose markedly after DSM-III. Whether these categories correspond to distinct causes remains debated, and comorbidity is common.",
+  "title.enShort": "DSM / ICD"
+ },
+ "cognitive-therapies": {
+  "summary": "Emotions are not caused directly by events but by our interpretation of events. Therapy helps people identify and test these automatic thoughts.",
+  "landmark": "Ellis begins to propose rational therapy (Beck's Depression, 1967)",
+  "evidenceNote": "There is much controlled-trial support for depression and anxiety disorders. The mechanism by which cognitive change produces benefit is considered to need more testing.",
+  "title.enShort": "Cognitive Therapy"
+ },
+ "family-systems": {
+  "summary": "A person's symptoms are often an expression of the family as a whole. Changing the interaction patterns is more effective than treating the identified patient alone.",
+  "landmark": "Bateson and colleagues publish the 'double bind' theory, which understands symptoms within family communication patterns",
+  "evidenceNote": "Family interventions for adolescent problems (substance use, conduct problems, eating disorders) have strong evidence. The theories of the individual schools have had little testing.",
+  "title.enShort": "Family Systems"
+ },
+ "common-factors": {
+  "summary": "Different therapies are all effective because they share: a good relationship, hope and expectation, a credible explanation, and opportunities for action.",
+  "landmark": "Frank's Persuasion and Healing: the factors shared by all therapies explain most of the outcome",
+  "evidenceNote": "Hundreds of studies support the relationship between the therapeutic alliance and outcome. 'All therapies are equally effective' is considered too absolute."
+ },
+ "biopsychosocial": {
+  "summary": "Illness and health cannot be explained by the body alone. They must be viewed at three levels, biological, psychological and social, and in terms of their interaction.",
+  "landmark": "Engel publishes 'The Need for a New Medical Model' in Science",
+  "evidenceNote": "It is a widely used integrative framework, not a theory that makes specific predictions.",
+  "title.enShort": "Biopsychosocial"
+ },
+ "cbt": {
+  "summary": "Integrates behavioral techniques (exposure, behavioral activation) with cognitive techniques (testing thoughts) in a structured, time-limited, goal-oriented format.",
+  "landmark": "Meichenbaum's Cognitive-Behavior Modification",
+  "evidenceNote": "In hundreds of controlled trials it has reliable efficacy for depression, anxiety, OCD and insomnia. The long-term maintenance of its effects and its mechanisms are still being studied.",
+  "title.enShort": "CBT"
+ },
+ "mbsr": {
+  "summary": "An eight-week group course that teaches people to deliberately and nonjudgmentally direct attention to the present breath, body and thoughts, in order to cope with stress and pain.",
+  "landmark": "Kabat-Zinn opens a stress reduction clinic at the University of Massachusetts Medical Center",
+  "evidenceNote": "There is evidence of moderate effects for stress, chronic pain and recurrent depression. Study quality varies, and effects have sometimes been overstated in promotion.",
+  "title.enShort": "MBSR"
+ },
+ "trauma": {
+  "summary": "Extreme threatening experiences can leave lasting symptoms: intrusive memories, avoidance, hypervigilance and emotional numbing. Recognizing this as a real disorder changed the situation of victims of war and violence.",
+  "landmark": "DSM-III includes post-traumatic stress disorder (PTSD)",
+  "evidenceNote": "Trauma-focused cognitive behavioral therapy and similar treatments have much evidence. Some popular trauma narratives, such as 'the body remembers everything,' go beyond the evidence.",
+  "title.enShort": "Trauma and PTSD"
+ },
+ "third-wave": {
+  "summary": "Rather than mainly changing the content of thoughts, these therapies change a person's relationship to thoughts and emotions: acceptance, mindfulness, defusion, and acting toward valued goals.",
+  "landmark": "Linehan publishes the first randomized controlled trial of dialectical behavior therapy (ACT followed in 1999 and MBCT in 2002)",
+  "evidenceNote": "There is support for borderline personality disorder and recurrent depression. On many problems its effects are similar to traditional CBT, and some studies have substantial bias.",
+  "title.enShort": "Third-Wave Therapy"
+ },
+ "ebp": {
+  "summary": "Clinical decisions should combine three things: the best available research evidence, the therapist's professional experience, and the patient's characteristics and preferences.",
+  "landmark": "A working group of American Psychological Association Division 12 publishes its report on 'empirically supported treatments'",
+  "evidenceNote": "It is a methodological framework rather than a therapy. How to balance 'evidence' against 'individual differences' is still debated.",
+  "title.enShort": "Evidence-Based"
+ },
+ "dimensional": {
+  "summary": "Mental problems are not categories of 'present or absent' but continuous dimensions (such as depression, fear and thought disorder). Research should classify by function and brain circuits rather than by diagnostic labels.",
+  "landmark": "The NIMH releases the RDoC (Research Domain Criteria) framework",
+  "evidenceNote": "The HiTOP dimensional structure has substantial data support. RDoC, as a research framework, has not yet produced clear clinical tools.",
+  "title.enShort": "RDoC / HiTOP"
+ },
+ "connectome": {
+  "summary": "Rather than looking at brain regions one at a time, maps the connections across the whole brain as a graph and studies how patterns of connection relate to individual differences and disease.",
+  "landmark": "The US National Institutes of Health launches the Human Connectome Project",
+  "evidenceNote": "Large-scale imaging data are public and widely used. The relationships between connectivity patterns and specific behaviors and symptoms are still weak."
+ },
+ "psychiatric-genomics": {
+  "summary": "Uses genome data from hundreds of thousands of people to find sites associated with mental disorders. The conclusion is that these disorders are caused by hundreds or thousands of variants, each with a tiny effect.",
+  "landmark": "The Psychiatric Genomics Consortium reports 108 associated genetic loci for schizophrenia in Nature",
+  "evidenceNote": "Several loci have been replicated in independent samples. Each locus has a very small effect, and together they explain only part of the genetic risk.",
+  "title.enShort": "Psych Genomics"
+ },
+ "reward-prediction": {
+  "summary": "Dopamine neurons fire when a reward is unexpected and do not fire when a reward is fully predicted. This is exactly the 'prediction error' used in reinforcement learning algorithms.",
+  "landmark": "Schultz, Dayan and Montague's 'A Neural Substrate of Prediction and Reward'",
+  "evidenceNote": "Dopamine neurons encode the difference between actual reward and expectation, a finding repeatedly confirmed in monkeys, rats and humans. How far it explains motivation and addiction is still debated.",
+  "title.enShort": "Reward Pred. Error"
+ },
+ "computational-rl": {
+  "summary": "Describes learning as an algorithm in which an agent tries things in an environment and maximizes cumulative reward, so that psychological learning theory and artificial intelligence share the same mathematics.",
+  "landmark": "Deep reinforcement learning is published in Nature, using one algorithm to learn to play Atari games",
+  "evidenceNote": "As a method in artificial intelligence it has been very successful. As a theory of human learning, its fit with behavioral data is still being tested.",
+  "title.enShort": "Computational RL"
+ },
+ "deep-learning-models": {
+  "summary": "Treats deep neural networks as candidate models of abilities such as vision and language, and compares them with brain activity and behavioral data.",
+  "landmark": "AlexNet takes a large lead in an image recognition competition",
+  "evidenceNote": "The internal representations of deep networks partly match the primate visual cortex. Whether they explain human cognition, especially generalization and few-shot learning, is still highly debated.",
+  "title.enShort": "Deep Net Models"
+ },
+ "llm-cognition": {
+  "summary": "On one hand, uses psychological tasks to test whether language models have abilities such as reasoning and theory of mind. On the other hand, uses them to generate materials, simulate participants and analyze text.",
+  "landmark": "ChatGPT is released, and language models become both objects and tools of psychological research",
+  "evidenceNote": "Models perform close to humans on some psychological tests, but there is no consensus on whether they 'understand,' or on how their processing resembles human processing.",
+  "title.enShort": "LLMs and Cognition"
+ },
+ "digital-footprints": {
+  "summary": "Likes, text and location that people leave online can be used to estimate traits such as the Big Five, which takes personality measurement beyond questionnaires.",
+  "landmark": "Kosinski and colleagues predict personality traits from social media likes",
+  "evidenceNote": "The accuracy is slightly higher than predictions from acquaintances' ratings, but predictions for individuals still carry substantial error. It also raises controversies over privacy and manipulation.",
+  "title.enShort": "Digital Footprints"
+ },
+ "network-psychometrics": {
+  "summary": "Does not treat symptoms as expressions of a single underlying 'disease' but as a network in which they trigger one another: insomnia causes fatigue, fatigue causes low mood, and low mood causes insomnia.",
+  "landmark": "Borsboom and Cramer publish the review 'The Network Approach to Psychopathology'",
+  "evidenceNote": "Network models offer a new way of describing disorders. Whether network structures are stable and replicable, and whether they can guide intervention, is still questioned.",
+  "title.enShort": "Network Models"
+ },
+ "large-replications": {
+  "summary": "Many labs use the same protocol and large samples to each replicate the same famous result, turning 'can it be replicated?' into a question that can be answered statistically.",
+  "landmark": "The Open Science Collaboration replicates 100 psychology studies",
+  "evidenceNote": "A series of multi-lab collaborations shows that replication success rates and effect sizes are generally lower than in the original studies. These conclusions have themselves been repeatedly confirmed.",
+  "title.enShort": "Large Replications"
+ },
+ "abcd": {
+  "summary": "Follows more than 10,000 nine- and ten-year-old children for ten years, repeatedly collecting brain imaging, cognitive tests and life surveys to see how the brain changes with experience.",
+  "landmark": "The Adolescent Brain Cognitive Development study launches in the United States, following more than 10,000 children",
+  "evidenceNote": "It provides an unprecedented scale of data. Its findings also show that brain-behavior associations are often very small and require thousands of people to detect reliably."
+ },
+ "digital-childhood": {
+  "summary": "Depression and anxiety among adolescents have risen over the past decade. Is this related to smartphones and social media? One side points to time trends; the other notes that associations at the individual level are very small.",
+  "landmark": "Twenge's iGen proposes that smartphones are linked to the rise in adolescent depression",
+  "evidenceNote": "Large-sample studies find only a very small negative correlation between screen use and well-being. The direction of causation and the role of specific social media use are still debated.",
+  "title.enShort": "Screens and Teens"
+ },
+ "weird": {
+  "summary": "Most psychology participants come from Western, educated, industrialized, rich and democratic societies. On many tasks, these people are not 'representative of humanity.'",
+  "landmark": "Henrich, Heine and Norenzayan's 'The Weirdest People in the World?'",
+  "evidenceNote": "Analyses of the sources of samples in published research, and cross-cultural comparisons, provide strong support for this critique.",
+  "title.enShort": "WEIRD Samples"
+ },
+ "moral-foundations": {
+  "summary": "Human moral judgments come from several intuitions: care, fairness, loyalty, authority, sanctity and liberty. Conservatives and liberals weight them differently.",
+  "landmark": "Haidt's The Righteous Mind: moral intuitions have several foundations, and political differences lie in which ones are valued",
+  "evidenceNote": "The number of foundations and how they are divided is disputed, and the scales have poor measurement invariance across cultures. The view that moral intuition comes before reasoning has more support.",
+  "title.enShort": "Moral Foundations"
+ },
+ "misinformation": {
+  "summary": "Studies why people believe and share false information, how groups move toward polarization, and which corrections work.",
+  "landmark": "A large-scale analysis of how true and false news spread on Twitter is published in Science",
+  "evidenceNote": "Research finds that false news spreads faster and farther. The actual role of 'echo chambers' in polarization, and the effect of platform interventions, are still debated.",
+  "title.enShort": "Misinformation"
+ },
+ "self-compassion": {
+  "summary": "When facing failure or suffering, treat yourself the way you would treat a friend: kindly rather than harshly, recognizing that suffering is shared by all people, and not being overwhelmed by emotion.",
+  "landmark": "Neff proposes the concept of self-compassion and publishes a self-compassion scale",
+  "evidenceNote": "Self-compassion is related to lower depression and anxiety, and training courses have small to moderate effects. The factor structure of the scale is still debated."
+ },
+ "pp2": {
+  "summary": "Well-being is not only about positive emotion. Suffering, failure and conflicts over meaning are also part of a good life and should be studied within positive psychology.",
+  "landmark": "Lomas and Ivtzan publish 'Second Wave Positive Psychology'",
+  "evidenceNote": "It is mainly a redefinition of theory and still lacks its own empirical testing.",
+  "title.enShort": "Positive Psych 2.0"
+ },
+ "neuropsychoanalysis": {
+  "summary": "Uses case studies of brain damage and imaging research to test and revise psychoanalytic concepts such as dreams, the ego and emotion.",
+  "landmark": "The International Neuropsychoanalysis Society is founded",
+  "evidenceNote": "It proposes some testable connections (such as between dreams and the dopamine system), but overall the evidence is still limited. Critics argue that it tends to fit brain activity into existing psychoanalytic concepts.",
+  "title.enShort": "Neuro-Psychoanal."
+ },
+ "psychodynamic-evidence": {
+  "summary": "Uses randomized controlled trials and meta-analyses to test long-term and short-term psychodynamic therapy. It finds effects similar to other therapies, and gains that continue to grow after treatment ends.",
+  "landmark": "Shedler's The Efficacy of Psychodynamic Psychotherapy",
+  "evidenceNote": "Meta-analyses find psychodynamic therapy roughly comparable to other therapies, but questions of methodological quality and researcher allegiance remain.",
+  "title.enShort": "Psychodynamic Data"
+ },
+ "unified-protocol": {
+  "summary": "Different anxiety and depressive disorders share mechanisms such as emotional avoidance and rumination, so the same set of skills training is used to address many problems.",
+  "landmark": "Barlow and colleagues publish a unified treatment protocol for emotional disorders",
+  "evidenceNote": "Randomized controlled trials show effects similar to protocols aimed at a single disorder, but the number of studies and the long-term follow-up remain limited."
+ },
+ "digital-mental-health": {
+  "summary": "Provides assessment and treatment through programs, phone apps or online courses, so that regions with few resources can also get support, while raising issues of data privacy and quality.",
+  "landmark": "The US FDA approves the first prescription digital therapeutic",
+  "evidenceNote": "Internet-delivered CBT and apps have many randomized trials, but in the real world users' adherence is low and effects are smaller than in face-to-face treatment.",
+  "title.enShort": "Digital Therapy"
+ },
+ "process-based": {
+  "summary": "Stops arguing about which therapy is better and asks: for this person, which processes of change (such as flexibility and motivation) need to change? Then it selects the matching methods.",
+  "landmark": "Hayes and Hofmann's Process-Based Cognitive Behavioral Therapy",
+  "evidenceNote": "It has proposed directions and preliminary network-analysis studies, but large-scale comparisons are still lacking.",
+  "title.enShort": "Process-Based"
+ },
+ "icd-11": {
+  "summary": "The World Health Organization's new diagnostic system lists the consequences of long-term repeated trauma separately as 'complex PTSD,' and restructures many diagnoses.",
+  "landmark": "The World Health Assembly adopts ICD-11",
+  "evidenceNote": "Complex PTSD can be distinguished from PTSD in samples from several countries, but its overlap with borderline personality disorder is still debated.",
+  "title.enShort": "Complex PTSD"
+ },
+ "psychedelic-therapy": {
+  "summary": "Under the supervision of trained therapists, patients take drugs such as MDMA or psilocybin, combined with psychotherapy before and after, for trauma and depression.",
+  "landmark": "Results of phase 3 trials of MDMA-assisted therapy for PTSD are published",
+  "evidenceNote": "Early trials show large effects, but most participants can guess whether they received the drug, which breaks blinding. In 2024 the US FDA did not approve the MDMA therapy; the evidence is still under evaluation.",
+  "title.enShort": "Psychedelic Aid"
+ }
+}

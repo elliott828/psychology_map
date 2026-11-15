@@ -1,0 +1,305 @@
+{
+ "dev-w-mindblindness": {
+  "summary": "Baron-Cohen argues that one of the core difficulties in autism is trouble \"reading minds,\" and presents his model of theory-of-mind modules.",
+  "enRec.note": "First edition"
+ },
+ "dev-w-abcd-imaging-acquisition": {
+  "summary": "Describes the brain imaging protocol of this national longitudinal study in the United States: magnetic resonance data were collected in a standardized way at 21 sites from over 10,000 children aged 9 to 10.",
+  "enRec.note": "Journal article, open access"
+ },
+ "dev-w-igen": {
+  "summary": "Drawing on decades of national surveys, Twenge describes the generation born after 1995: they date later, sleep less and feel more lonely. She links the change to smartphones.",
+  "enRec.note": "First edition"
+ },
+ "dev-w-anxious-generation": {
+  "summary": "Haidt argues that smartphones have shifted childhood from play-based to screen-based, and that this is a major cause of worsening adolescent mental health. He proposes limits on phones. Many researchers have questioned his causal claims.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-psychology-interpersonal-relations": {
+  "summary": "In this book Heider proposes that people, like \"naive psychologists,\" look for causes of other people's behavior. He distinguishes causes that lie in the person from causes that lie in the situation. Attribution theory begins here.",
+  "enRec.note": "First edition"
+ },
+ "soc-w-anatomy-dependence": {
+  "summary": "Takeo Doi uses the Japanese word \"amae\" (the wish to be indulged and to depend on another's goodwill) to analyze Japanese interpersonal relations and psychology. The original appeared in 1971; the English translation in 1973.",
+  "enRec.note": "The only English translation"
+ },
+ "soc-w-integrative-theory-intergroup-conflict": {
+  "summary": "In this chapter Tajfel and Turner propose that people gain part of their self-identity from their group and therefore favor their own group. The theory was later called social identity theory.",
+  "enRec.note": "A chapter in a book"
+ },
+ "soc-w-weirdest-people": {
+  "summary": "A Behavioral and Brain Sciences paper pointing out that psychology's participants are mostly from Western, educated, industrialized, rich and democratic societies. On many tasks they are not representative of humanity as a whole.",
+  "enRec.note": "Journal article"
+ },
+ "soc-w-spread-true-false-news": {
+  "summary": "A Science paper analyzing how news spread on Twitter. It found that false news spread faster and farther than true news, driven mainly by people rather than bots.",
+  "enRec.note": "Journal article"
+ },
+ "hum-w-gestalt-therapy": {
+  "summary": "The foundational work on Gestalt therapy. The first half offers a set of experiential exercises; the second half sets out the theory, emphasizing awareness in the present, contact, and unfinished \"business.\"",
+  "enRec.note": "First edition; later reprinted by Gestalt Journal Press"
+ },
+ "hum-w-intrinsic-motivation-self-determination": {
+  "summary": "The first systematic book on self-determination theory. It distinguishes intrinsic from extrinsic motivation, explains when external rewards undermine interest, and describes the roles of the needs for autonomy, competence and relatedness.",
+  "enRec.note": "First edition"
+ },
+ "hum-w-hold-me-tight": {
+  "summary": "Written for general readers by the founder of emotionally focused couple therapy. It treats couples' quarrels as unanswered attachment needs and offers seven conversations as exercises.",
+  "enRec.note": "First edition"
+ },
+ "hum-w-self-compassion-neff": {
+  "summary": "A paper in Self and Identity that proposes three components of self-compassion and develops a measurement scale. Much of the later research on self-compassion grew from it.",
+  "enRec.note": "Journal article"
+ },
+ "hum-w-second-wave-positive-psychology": {
+  "summary": "A paper in the Journal of Happiness Studies that reviews criticism within positive psychology of focusing only on the positive. It proposes a view of well-being in which positive and negative aspects are interdependent. Published online in 2015 and in print in 2016.",
+  "enRec.note": "Journal article"
+ },
+ "dep-w-psychological-automatism": {
+  "summary": "Based on his studies of hysterical patients, Janet proposed that strong emotional experiences can split off from consciousness and operate independently. This was the starting point of the concept of dissociation."
+ },
+ "dep-w-ego-mechanisms-defence": {
+  "summary": "Anna Freud systematically described defense mechanisms such as repression, projection and reaction formation. It is a foundational work of ego psychology. The German original appeared in 1936; the English translation in 1937.",
+  "enRec.note": "The standard revised edition"
+ },
+ "dep-w-ecrits": {
+  "summary": "A collection of Lacan's essays, including \"The Mirror Stage\" and \"The Freudian Thing,\" known for their difficult style.",
+  "enRec.note": "The first complete English translation"
+ },
+ "dep-w-object-relations-psychoanalytic-theory": {
+  "summary": "Traces the opposition between the drive model and the relational model, and provides a framework for later relational psychoanalysis.",
+  "enRec.note": "First edition"
+ },
+ "dep-w-affect-regulation-mentalization": {
+  "summary": "The main theoretical work of the mentalization approach. It explains how children develop the ability to understand themselves and others when caregivers treat them as minds with inner lives.",
+  "enRec.note": "First edition"
+ },
+ "dep-w-brain-inner-world": {
+  "summary": "A popular introduction to neuropsychoanalysis. It sets neuroscience findings on memory, emotion and dreams beside psychoanalytic concepts.",
+  "enRec.note": "First edition"
+ },
+ "dep-w-efficacy-psychodynamic": {
+  "summary": "A review in American Psychologist that brings together several meta-analyses. It shows that psychodynamic therapy is about as effective as other supported therapies.",
+  "enRec.note": "Journal article, easy to find online"
+ },
+ "dep-w-seelenzauber": {
+  "summary": "A German psychology journalist tells the story of how psychotherapy was born and diverged, through the stories of Freud, Jung, Adler and others. The German original appeared in 2024; the Spanish edition is titled \"Arquitectos del alma.\"",
+  "enRec.note": "The English edition is recorded as published in 2026; please confirm the publication details"
+ },
+ "cli-w-clinical-psychology-witmer": {
+  "summary": "Witmer's article in the first issue of The Psychological Clinic, which proposed the name \"clinical psychology.\" It focuses on the individual and uses psychological methods to help people with learning or behavior difficulties.",
+  "enRec.note": "Article in the first issue; in the public domain"
+ },
+ "cli-w-morita-nature-therapy": {
+  "summary": "Morita Shōma's original work on the causes of shinkeishitsu (excessive attention to discomfort) and its treatment (accepting symptoms and doing what needs to be done).",
+  "enRec.note": "English translation, with an introduction by the editor"
+ },
+ "cli-w-need-new-medical-model": {
+  "summary": "A Science paper criticizing a medical model that considers only biological factors. It proposes the biopsychosocial model, which considers biological, psychological and social factors together.",
+  "enRec.note": "Journal article"
+ },
+ "cli-w-cognitive-therapy-basics": {
+  "summary": "The standard introductory textbook on cognitive behavioral therapy. It explains step by step, from case conceptualization to the structure, techniques and common problems of each session. First published in 1995.",
+  "enRec.note": "Third edition, now retitled Cognitive Behavior Therapy"
+ },
+ "cli-w-division12-task-force": {
+  "summary": "A report from the Task Force of APA Division 12 listing treatments with controlled-trial evidence for specific disorders. It marks the starting point of the empirically supported treatments movement.",
+  "enRec.note": "Report, available online"
+ },
+ "cli-w-ebpp-statement": {
+  "summary": "An American Psychological Association policy statement. Evidence-based practice must integrate the best research evidence, clinical expertise, and the client's characteristics, culture and preferences.",
+  "enRec.note": "Policy statement, open access"
+ },
+ "cli-w-unified-protocol-guide": {
+  "summary": "A unified treatment manual for emotional disorders such as anxiety and depression, built around common elements: emotion awareness, cognitive flexibility, acceptance of emotions, and exposure.",
+  "enRec.note": "Second edition, the standard therapist guide"
+ },
+ "cli-w-woebot-trial": {
+  "summary": "A JMIR Mental Health paper reporting a randomized controlled trial. Young adults who used the chat program showed a larger decline in depressive symptoms than the control group. The sample was small and the duration short.",
+  "enRec.note": "Journal article, open access"
+ },
+ "cli-w-process-based-cbt": {
+  "summary": "Argues that therapy should not simply pair diagnoses with treatments, but should target the core psychological processes that maintain problems. It sets out the clinical competencies this requires.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-mdma-phase3": {
+  "summary": "A Nature Medicine paper. In patients with severe PTSD, the group that took MDMA during psychotherapy improved more than the group that took a placebo.",
+  "enRec.note": "Journal article, open access"
+ },
+ "bio-w-king-solomons-ring": {
+  "summary": "Lorenz uses animals he kept, such as greylag geese and jackdaws, to explain imprinting and animal behavior. It is the most readable introduction to ethology.",
+  "enRec.note": "The standard English translation, with a foreword by Tinbergen"
+ },
+ "bio-w-aims-methods-ethology": {
+  "summary": "In this article Tinbergen proposes four questions that the study of behavior must answer: mechanism, development, function and evolution.",
+  "enRec.note": "Journal article, a classic"
+ },
+ "bio-w-disconnexion-syndromes": {
+  "summary": "Geschwind explains aphasia and other syndromes through \"disconnection,\" organizing Wernicke's model into the version that later became standard.",
+  "enRec.note": "A long two-part paper, open access"
+ },
+ "bio-w-organization-of-behavior": {
+  "summary": "Hebb proposes cell assemblies and the principle that neurons firing together strengthen their connections. It is the source of the learning rule used in neural networks.",
+  "enRec.note": "Reprint with a new preface, easy to find"
+ },
+ "bio-w-scoville-milner-1957": {
+  "summary": "Reports on patient H.M., who after removal of the medial temporal lobes could not form new long-term memories, yet could still learn new motor skills.",
+  "enRec.note": "Journal article, open access"
+ },
+ "bio-w-memory-and-brain": {
+  "summary": "Squire reviews evidence from brain damage and animal studies, and shows that memory consists of several systems that depend on different brain regions.",
+  "enRec.note": "First edition"
+ },
+ "bio-w-sectioning-commissures-1962": {
+  "summary": "The first reports from split-brain research. After the corpus callosum is cut, the two hemispheres process information separately, each unaware of what the other knows.",
+  "enRec.note": "Journal article, open access"
+ },
+ "bio-w-cognitive-neuroscience-textbook": {
+  "summary": "The standard textbook of the field, moving from nerve cells to attention, memory, language and consciousness.",
+  "enRec.note": "Fifth edition, a recent one"
+ },
+ "bio-w-quest-for-consciousness": {
+  "summary": "Crick and Koch's approach to searching for the neural correlates of consciousness, using visual research as the entry point.",
+  "enRec.note": "First edition"
+ },
+ "bio-w-evolution-of-desire": {
+  "summary": "Buss draws on a survey across 37 cultures to discuss similarities and differences between men and women in mate preferences, and their evolutionary explanations.",
+  "enRec.note": "Revised and updated edition"
+ },
+ "bio-w-emotions-revealed": {
+  "summary": "Starting from his research on facial expressions, Ekman discusses basic emotions, microexpressions and methods for recognizing emotion.",
+  "enRec.note": "Second edition, widely available"
+ },
+ "bio-w-affective-neuroscience": {
+  "summary": "Panksepp proposes that the mammalian brain contains several basic emotional systems, including seeking, fear, rage, care and play.",
+  "enRec.note": "First edition"
+ },
+ "bio-w-stress-of-life": {
+  "summary": "Selye explains the general adaptation syndrome to the general public, describing three stages: alarm, resistance and exhaustion.",
+  "enRec.note": "The author's revised edition"
+ },
+ "bio-w-stress-appraisal-coping": {
+  "summary": "Proposes that stress depends on how people appraise their situation and their resources for coping, not only on the stimulus itself.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-psilocybin-mystical-2006": {
+  "summary": "A double-blind experiment showed that high-dose psilocybin could lead volunteers to have mystical experiences, which they still regarded as meaningful and spiritually significant months later.",
+  "enRec.note": "Journal article"
+ },
+ "bhv-w-learning-and-behavior": {
+  "summary": "A widely used textbook on the psychology of learning. It explains classical conditioning, operant conditioning and their models clearly.",
+  "enRec.note": "Seventh edition, a recent one"
+ },
+ "bhv-w-theories-of-learning": {
+  "summary": "A classic textbook comparing the learning theories of Thorndike, Pavlov, Hull, Tolman and the Gestalt psychologists.",
+  "enRec.note": "Fifth edition, co-written with Bower"
+ },
+ "bhv-w-behavior-of-organisms": {
+  "summary": "In this book Skinner introduces operant behavior and reinforcement, supporting them with data from experimental chambers.",
+  "enRec.note": "Foundation reprint, easy to find"
+ },
+ "bhv-w-psychology-as-behaviorist": {
+  "summary": "Often called the \"behaviorist manifesto.\" It argues that psychology should study only observable behavior, with the aim of predicting and controlling it.",
+  "enRec.note": "Journal article, in the public domain, easy to find online"
+ },
+ "bhv-w-helplessness": {
+  "summary": "Seligman summarizes how inescapable shocks lead animals and people to give up trying, and links this to depression.",
+  "enRec.note": "The 1992 updated edition"
+ },
+ "bhv-w-dimensions-of-aba": {
+  "summary": "An article in the first issue of the Journal of Applied Behavior Analysis, which sets out seven defining characteristics of the field.",
+  "enRec.note": "Journal article, open access"
+ },
+ "bhv-w-lovaas-1987": {
+  "summary": "Lovaas reports that after early intensive behavioral intervention, nearly half of the children went on to regular classrooms. The design of this study was later widely criticized.",
+  "enRec.note": "Journal article"
+ },
+ "cog-w-memory-ebbinghaus": {
+  "summary": "Ebbinghaus recorded his own forgetting using nonsense syllables and drew the first forgetting curve.",
+  "enRec.note": "Dover reprint of the 1913 English translation"
+ },
+ "cog-w-mentality-of-apes": {
+  "summary": "Köhler observed chimpanzees on Tenerife stacking boxes to reach bananas, and argued that problems are solved through insight rather than trial and error.",
+  "enRec.note": "English translation, in the public domain"
+ },
+ "cog-w-neisser-cognitive-psychology": {
+  "summary": "This book named the emerging field of cognitive psychology and summarized its framework, treating perception and memory as information processing.",
+  "enRec.note": "Reprint of the classic edition"
+ },
+ "cog-w-memory-baddeley": {
+  "summary": "A textbook on memory research, covering multi-store models and Baddeley's model of working memory.",
+  "enRec.note": "Third edition, a newer one"
+ },
+ "cog-w-simple-heuristics": {
+  "summary": "Argues that in the right environment, simple rules of thumb often do as well as complex calculations. This is what the authors call ecological rationality.",
+  "enRec.note": "First edition"
+ },
+ "cog-w-pdp": {
+  "summary": "The foundational collection of connectionism, in two volumes. It includes the well-known model that learns the English past tense with a network.",
+  "enRec.note": "Two volumes, first edition"
+ },
+ "cog-w-ecological-approach-perception": {
+  "summary": "Gibson proposes that people directly perceive the possibilities for action that the environment offers. This is what he called \"affordances.\"",
+  "enRec.note": "Classic edition, with an introduction"
+ },
+ "cog-w-computational-psychiatry-2012": {
+  "summary": "Argues that computational models can describe information-processing biases in mental disorders, such as prediction errors and prior beliefs.",
+  "enRec.note": "Journal review"
+ },
+ "cog-w-how-people-learn": {
+  "summary": "A report from the US National Research Council that brings research on cognition, development and teaching together into an overall view of learning.",
+  "enRec.note": "Expanded edition, freely available to read online"
+ },
+ "cog-w-theory-of-mind-llm": {
+  "summary": "Kosinski tests several language models with classic false-belief tasks and compares their performance with that of children.",
+  "enRec.note": "Journal article, open access"
+ },
+ "dif-w-personality-allport": {
+  "summary": "Allport discusses the concept of traits systematically and argues that personality is a person's own stable set of tendencies.",
+  "enRec.note": "First edition, in the public domain"
+ },
+ "dif-w-scientific-analysis-personality": {
+  "summary": "Cattell uses factor analysis to distill sixteen basic factors from a large vocabulary of personality terms.",
+  "enRec.note": "First edition"
+ },
+ "dif-w-psychological-testing": {
+  "summary": "A classic textbook on psychological testing, covering reliability, validity and the basic issues in test construction.",
+  "enRec.note": "Seventh edition, a classic textbook"
+ },
+ "dif-w-irt-psychologists": {
+  "summary": "An introduction to item response theory written for psychology researchers. It explains how the theory differs from classical test theory.",
+  "enRec.note": "First edition"
+ },
+ "dif-w-beyond-iq": {
+  "summary": "Sternberg argues that intelligence has three aspects, analytical, creative and practical, and that it is more than what IQ tests measure.",
+  "enRec.note": "First edition"
+ },
+ "dif-w-rank-order-consistency": {
+  "summary": "A meta-analysis showing that personality traits become more stable with age, but are not fixed, even into old age.",
+  "enRec.note": "Journal article"
+ },
+ "dif-w-false-positive-psychology": {
+  "summary": "Uses flexible analysis to \"prove\" that listening to a song makes people younger. It shows how researchers' freedom in analysis can produce false positives.",
+  "enRec.note": "Journal article, easy to find online"
+ },
+ "dif-w-neo-pi-r-manual": {
+  "summary": "The manual for one of the most widely used measures of the five-factor model. It gives definitions of the domains and facets, and the norms.",
+  "enRec.note": "Test manual, to be obtained from the publisher"
+ },
+ "dif-w-general-intelligence-1904": {
+  "summary": "Using a correlation matrix, Spearman proposed that the various intelligence tests share a common general factor, g.",
+  "enRec.note": "Journal article, in the public domain"
+ },
+ "dif-w-binet-simon-1905": {
+  "summary": "The paper that introduced the first practical intelligence scale, designed to identify children who need special help.",
+  "enRec.note": "A translated collection by Kite, which includes several papers on the scale"
+ },
+ "dif-w-many-labs-1": {
+  "summary": "Thirty-six laboratories replicated 13 classic effects. Most were replicated, and a few were not.",
+  "enRec.note": "Journal article"
+ },
+ "dev-w-origins-intelligence": {
+  "summary": "Piaget recorded his own children's sensorimotor activity and showed how intelligence is built step by step from reflexes.",
+  "enRec.note": "The standard English translation"
+ }
+}

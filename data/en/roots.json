@@ -1,0 +1,102 @@
+{
+ "hippocrates": {
+  "when": "around 400 BCE",
+  "summary": "The Hippocratic school explained temperament and disease through four body fluids: blood, phlegm, yellow bile and black bile. The later 'four temperaments' theory is the source of typological thinking about temperament. Eysenck once compared his own dimensions with the four temperaments.",
+  "legacy": "Temperament names such as 'sanguine' and 'choleric' still appear in everyday speech and in some popular personality tests. Serious personality research has long since moved to measurable dimensions such as the Big Five, but the idea that people differ in stable temperament types comes from this tradition."
+ },
+ "buddhist": {
+  "when": "from around the 5th century BCE",
+  "summary": "Systematic insight meditation trains attention to observe the arising and passing of feelings and thoughts, and it developed a detailed classification of mental phenomena. Contemporary mindfulness programs and acceptance-based therapies borrow its practices.",
+  "legacy": "Mindfulness-Based Stress Reduction, mindfulness-based cognitive therapy and acceptance and commitment therapy have brought the training of 'observing present experience' into hospitals and clinics. Most of these programs strip out the religious content and keep only the practices."
+ },
+ "aristotle": {
+  "when": "around 350 BCE",
+  "summary": "Studied the soul as the function of a living body. In On Memory and Recollection he proposed that ideas are linked by similarity, contrast and contiguity, the source of associationism.",
+  "legacy": "The three principles of association (similarity, contrast and contiguity) are still the starting point for textbook discussions of associative memory. The view that the soul is a function of the living body echoes today's debates in functionalism and philosophy of mind."
+ },
+ "confucian-daoist": {
+  "when": "pre-Qin era (before 221 BCE)",
+  "summary": "Treats personality as something formed through relationships and self-cultivation, not as an inner property of an isolated individual. This is a resource that Chinese indigenous psychology often returns to.",
+  "legacy": "Chinese indigenous psychology has built its own theories around concepts such as 'relationships,' 'face' and 'self-cultivation,' and often contrasts them with Western psychology, which emphasizes the individual."
+ },
+ "stoic": {
+  "when": "3rd century BCE to 2nd century CE",
+  "summary": "Epictetus said that what troubles people is not things themselves but their views of things. Ellis and Beck both explicitly cited this idea as a philosophical forerunner of cognitive therapy.",
+  "legacy": "The basic approach of cognitive behavioral therapy, that thoughts shape emotions, is often traced back to this tradition. Its founders, Ellis and Beck, both cited Stoic ideas of this kind."
+ },
+ "avicenna": {
+  "when": "1025 CE",
+  "summary": "The Canon of Medicine described and classified psychological conditions such as melancholia, mania and lovesickness, linked them to bodily states, and served as the standard medical textbook of medieval Europe.",
+  "legacy": "The Canon was used as a medical textbook in Europe and the Islamic world for centuries. Its descriptions of melancholia, mania and similar conditions are among the earlier systematic classifications in the history of psychiatry, and today they are mainly used as references in the history of medicine and psychiatry."
+ },
+ "descartes": {
+  "when": "1641",
+  "summary": "The Meditations on First Philosophy divides mind and body into two kinds of substance. This leaves the problem of how the two interact, which later neuroscience and philosophy of mind have continued to address.",
+  "legacy": "The question of how mind and body interact still appears today in the form of the 'hard problem' of consciousness in philosophy of mind and neuroscience. Damasio's Descartes' Error is titled as a critique of this dualism."
+ },
+ "locke": {
+  "when": "1690",
+  "summary": "Locke's An Essay Concerning Human Understanding argues that the mind begins as a blank slate, and that ideas come from experience and their associations. Hume, Mill and others developed these associations into associationism, the ancestor of behaviorist views of learning.",
+  "legacy": "The idea that experience shapes the mind appears in behaviorism and connectionism: association entered learning theory, and neural networks learn by changing the strengths of connections. The 'blank slate' debate still recurs in discussions of nature and nurture."
+ },
+ "rousseau": {
+  "when": "1762",
+  "summary": "Emile argues that childhood has its own stages and value, and that children are not 'small adults.' This idea was one of the starting points for child study and later developmental stage theories.",
+  "legacy": "'Children are not miniature adults, and childhood has its own stages' became a basic premise of developmental psychology, and it can still be seen in contemporary early education ideas."
+ },
+ "mesmer": {
+  "when": "from 1774",
+  "summary": "Mesmer's 'animal magnetism' was rejected by a scientific commission, but the effects of suggestion were noticed. In 1843 Braid renamed the phenomenon 'hypnosis,' opening research on suggestion and the separation of consciousness.",
+  "legacy": "Hypnosis is still used today for pain management and some forms of psychotherapy. The 1784 French royal commission's test of 'animal magnetism' is often seen as an early controlled experiment with a blinding element, and it made 'suggestion' a theme that later placebo research would take up."
+ },
+ "kant": {
+  "when": "1781",
+  "summary": "The Critique of Pure Reason argues that the mind organizes experience using built-in structures (time, space, causality). This idea later influenced Gestalt psychology and constructivist views of development.",
+  "legacy": "The idea that the mind has built-in structures for organizing experience is often compared with Piaget's 'schemas' and Chomsky's innate grammar. Gestalt psychology is also often traced back to this tradition."
+ },
+ "pinel": {
+  "when": "1793",
+  "summary": "At the Bicêtre Hospital in Paris, Pinel practiced 'moral treatment,' regarding madness as a treatable illness and calling for careful observation, description and classification of patients. Details of the story of unchaining patients are partly legendary.",
+  "legacy": "The principle of treating people with mental illness as patients rather than criminals is the starting point of modern mental health services and of debates about deinstitutionalization. However, the famous scene of 'unchaining' differs from the facts: the man who actually did it was more likely the warden Pussin."
+ },
+ "gall": {
+  "when": "1810",
+  "summary": "Gall held that different mental functions are located in different brain regions. Inferring personality from skull shape is pseudoscience, but the idea of functional localization was kept.",
+  "legacy": "Phrenology itself has been rejected, but the idea that different brain regions handle different functions was confirmed after Broca's work, and brain imaging research today still maps functional areas."
+ },
+ "schopenhauer": {
+  "when": "1819",
+  "summary": "In The World as Will and Representation, Schopenhauer argues that people are driven by a non-rational will. Hartmann's Philosophy of the Unconscious (1869) developed the idea further and became part of the intellectual background for Freud and Jung.",
+  "legacy": "Freud himself acknowledged that Schopenhauer had already spoken of repression and the unconscious. The idea that people do not always know their own motives appears today in a different form in implicit cognition research."
+ },
+ "weber": {
+  "when": "1834",
+  "summary": "Weber found that the just-noticeable difference is a fixed proportion of stimulus intensity. This was the first precise measurement of sensation, and Fechner used it to establish psychophysics.",
+  "legacy": "The 'just noticeable difference' and Weber fraction are still used in perception experiments and product design, for example to judge whether two brightness levels or two sounds differ enough to be noticed."
+ },
+ "quetelet": {
+  "when": "1835",
+  "summary": "Quetelet's A Treatise on Man applied the normal distribution to human traits such as height and crime rates, and proposed the 'average man.' Galton later built on this and turned to studying deviations from the average.",
+  "legacy": "The 'average man' became the starting point for describing populations statistically. Today the Body Mass Index is also called the 'Quetelet index.'"
+ },
+ "kierkegaard": {
+  "when": "1844",
+  "summary": "In The Concept of Anxiety, Kierkegaard argues that anxiety comes from the vertigo of facing freedom and possibility, not only from fear of specific dangers.",
+  "legacy": "The argument that anxiety arises from freedom was cited by existential therapists such as Rollo May, and existentially oriented psychotherapy still uses it to understand anxiety."
+ },
+ "helmholtz": {
+  "when": "1850",
+  "summary": "Helmholtz measured the speed of nerve conduction, showing that mental processes take time and can be measured. He also proposed that perception involves 'unconscious inference,' providing Wundt's laboratory with methods and questions.",
+  "legacy": "Measuring nerve conduction speed made reaction-time research possible, and cognitive experiments still use reaction time as a basic measure. His view of perception as unconscious inference has been revived in predictive processing."
+ },
+ "darwin": {
+  "when": "1859",
+  "summary": "On the Origin of Species; in 1872 The Expression of the Emotions in Man and Animals placed emotion on an evolutionary continuum. Adaptation, individual variation and continuity became a shared background across several lines of work.",
+  "legacy": "Evolutionary psychology, animal behavior studies and cross-species comparisons of emotion all start from On the Origin of Species and The Expression of the Emotions in Man and Animals."
+ },
+ "volkerpsychologie": {
+  "when": "1860",
+  "summary": "Lazarus and Steinthal founded a journal that studied language, customs and collective psychology. Wundt's ten-volume Völkerpsychologie, written late in his career, continued this line.",
+  "legacy": "Cultural psychology, and research on the relationship between language and thought, trace back to this tradition of treating 'folk psychology' as a subject of study. Wundt's ten-volume Völkerpsychologie belongs to this line as well."
+ }
+}

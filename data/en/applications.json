@@ -1,0 +1,30 @@
+{
+ "app-education-learning": {
+  "summary": "Applies research findings on spaced review, retrieval practice, prior knowledge and metacognition to classrooms and self-study, to improve learning.",
+  "landmark": "Bransford and colleagues, How People Learn, summarizes research on cognition, development and teaching"
+ },
+ "app-industrial-organizational": {
+  "summary": "Uses research on motivation, leadership, teams and personnel selection to improve work environments and organizational decisions.",
+  "landmark": "Münsterberg, Psychology and Industrial Efficiency"
+ },
+ "app-health-psychology": {
+  "summary": "Studies the relationship between stress, behavior and chronic illness, and designs interventions for smoking cessation, medication adherence and pain management.",
+  "landmark": "The American Psychological Association establishes its Health Psychology division (Division 38)"
+ },
+ "app-forensic": {
+  "summary": "Uses research on memory, judgment and motivation to evaluate eyewitness testimony, interrogation methods and sentencing decisions.",
+  "landmark": "Münsterberg, On the Witness Stand, discusses the reliability of eyewitness testimony"
+ },
+ "app-human-factors": {
+  "summary": "Applies the regularities of perception, attention and memory to interface and product design, making products easier to use and less error-prone.",
+  "landmark": "Norman, The Design of Everyday Things, proposes design principles such as affordances and feedback"
+ },
+ "app-public-policy": {
+  "summary": "Uses research on heuristics, biases and default options to design public policies such as retirement saving and organ donation.",
+  "landmark": "Thaler and Sunstein, Nudge; the UK Behavioural Insights Team is founded in 2010"
+ },
+ "app-self-help": {
+  "summary": "Turns methods such as CBT into self-help books, apps and exercises for people who do not enter treatment. It also includes peer groups such as Alcoholics Anonymous. Some of these methods are supported by controlled trials.",
+  "landmark": "Burns, Feeling Good: The New Mood Therapy, a self-help book based on cognitive therapy"
+ }
+}

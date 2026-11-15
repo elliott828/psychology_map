@@ -1,0 +1,306 @@
+{
+ "hum-w-flourish": {
+  "summary": "Extends from happiness to positive emotion, engagement, relationships, meaning and accomplishment.",
+  "enRec.note": "First edition"
+ },
+ "hum-w-how-of-happiness": {
+  "summary": "Turns happiness research into behavioral strategies that readers can try and review.",
+  "enRec.note": "First edition"
+ },
+ "hum-w-zen-motorcycle": {
+  "summary": "Uses a novel and philosophy to examine reason, values and the practice of everyday life; a neighboring read for psychology.",
+  "enRec.note": "Standard paperback"
+ },
+ "hum-w-motivation-personality": {
+  "summary": "The original source of Maslow's ideas on needs and self-actualization. The book does not contain the famous pyramid.",
+  "enRec.note": "Third revised edition, widely available"
+ },
+ "hum-w-existential-psychotherapy": {
+  "summary": "A systematic account of four ultimate concerns.",
+  "enRec.note": "First edition"
+ },
+ "hum-w-denial-of-death": {
+  "summary": "The intellectual source of terror management theory, discussing the denial of death from psychoanalytic and existentialist perspectives.",
+  "enRec.note": "First edition; the paperback has the same content"
+ },
+ "hum-w-authentic-happiness": {
+  "summary": "An early popular introduction to positive psychology. Some of its conclusions have since been revised.",
+  "enRec.note": "First edition"
+ },
+ "hum-w-mindset": {
+  "summary": "A popular account of the growth mindset. Its effects were substantially reduced in later research.",
+  "enRec.note": "Updated edition, widely available"
+ },
+ "hum-w-meaning-of-anxiety": {
+  "summary": "Rollo May's existential reading of anxiety.",
+  "enRec.note": "The author's revised edition, widely available"
+ },
+ "dep-w-man-symbols": {
+  "summary": "Introduces Jung through dreams, symbols and archetypes. It is full of images and has a low barrier to entry.",
+  "enRec.note": "The last work Jung wrote for a general readership, richly illustrated"
+ },
+ "dep-w-memories-dreams": {
+  "summary": "Uses an autobiographical narrative to explain Jung's experiences, his dreams and how his ideas took shape.",
+  "enRec.note": "The standard revised paperback"
+ },
+ "dep-w-jung-vsi": {
+  "summary": "Explains complexes, archetypes, the shadow and individuation more clearly than Jung's own writings do.",
+  "enRec.note": "First edition; short"
+ },
+ "dep-w-jung-bair": {
+  "summary": "Places the theory within Jung's life, his era and the controversies around him.",
+  "enRec.note": "First edition"
+ },
+ "dep-w-freud-vsi": {
+  "summary": "Begins with Freud's life, his core concepts and his contemporary legacy.",
+  "enRec.note": "First edition; short"
+ },
+ "dep-w-examined-life": {
+  "summary": "Uses short counseling stories to show the unconscious, repetition and change, without a heavy load of jargon.",
+  "enRec.note": "First edition"
+ },
+ "dep-w-interpretation-dreams": {
+  "summary": "The classic original. It is best read after an introduction and is not recommended as a first book.",
+  "enRec.note": "Fluent translation with an introduction and notes"
+ },
+ "dep-w-ego-unconscious": {
+  "summary": "An important original source for understanding the ego, the persona, the collective unconscious and individuation.",
+  "enRec.note": "This essay appears in volume 7 of the Collected Works; the standard English translation"
+ },
+ "dep-w-synchronicity": {
+  "summary": "Jung's original statement of the principle of acausal connection, which should be read alongside work on probability, cognitive bias and scientific critique.",
+  "enRec.note": "Paperback edition, translated from volume 8 of the Collected Works"
+ },
+ "dep-w-dream-monk": {
+  "summary": "Uses Japanese dream culture and Buddhist tradition to show the cross-cultural translation of Jungian psychology.",
+  "enRec.note": "The only English translation, by Mark Unno"
+ },
+ "dep-w-courage-disliked": {
+  "summary": "Introduces Adler's teleology, the separation of tasks and social interest through dialogue.",
+  "enRec.note": "The standard English translation; the copyright page does not credit the translator"
+ },
+ "dep-w-psychological-types": {
+  "summary": "The original work on introversion and extraversion and the four psychological functions; it is the intellectual source of the MBTI.",
+  "enRec.note": "Volume 6 of the Collected Works; the standard English translation"
+ },
+ "dep-w-civilization-discontents": {
+  "summary": "Freud's late reflections on the conflict between civilization and instinct; a short book.",
+  "enRec.note": "Strachey's standard translation, Norton paperback"
+ },
+ "dep-w-playing-reality": {
+  "summary": "Winnicott's collection of essays on play, transitional space and the true self.",
+  "enRec.note": "The standard classic series edition"
+ },
+ "dep-w-understanding-human-nature": {
+  "summary": "Adler's popular account of lifestyle, inferiority and social interest.",
+  "enRec.note": "The earliest English translation; reprinted by several publishers"
+ },
+ "dep-w-neurotic-personality": {
+  "summary": "Horney reinterprets neurosis from cultural and interpersonal perspectives.",
+  "enRec.note": "First edition"
+ },
+ "dep-w-analysis-self": {
+  "summary": "The pioneering work of self psychology.",
+  "enRec.note": "First edition"
+ },
+ "dep-w-fairy-tales": {
+  "summary": "Interprets fairy tales using analytical psychology, an introduction to archetypes and symbols.",
+  "enRec.note": "Revised edition, widely available"
+ },
+ "dep-w-soul-code": {
+  "summary": "Hillman uses the \"acorn theory\" to discuss each person's calling. It is an interpretive and reflective book.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-feeling-good": {
+  "summary": "Brings automatic thoughts, cognitive reappraisal and exercises into everyday life.",
+  "enRec.note": "Revised and updated edition, widely available"
+ },
+ "cli-w-unquiet-mind": {
+  "summary": "A clinical psychologist writes from personal experience about bipolar disorder, diagnosis and treatment.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-noonday-demon": {
+  "summary": "Brings together a personal account of depression, clinical knowledge, and social and cultural context.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-center-cannot-hold": {
+  "summary": "Uses an autobiography to understand the whole person and the life behind serious mental illness.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-book-of-woe": {
+  "summary": "From a journalist's perspective, explains how the DSM classification took shape, and its controversies and limits.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-mind-fixers": {
+  "summary": "Traces the history of psychiatry's search for biological explanations, helping readers understand why RDoC emerged.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-happiness-trap": {
+  "summary": "A popular entry point to ACT: accept discomfort, clarify your values, and take action.",
+  "enRec.note": "US edition"
+ },
+ "cli-w-building-life": {
+  "summary": "The autobiography of the founder of DBT, and an entry point to its philosophy of acceptance and change.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-wherever-you-go": {
+  "summary": "A short-chapter introduction to mindfulness: experience it first, then understand the theory.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-full-catastrophe": {
+  "summary": "A core popular book on MBSR, connecting stress, pain and the care of chronic illness.",
+  "enRec.note": "The author's revised edition"
+ },
+ "cli-w-body-keeps-score": {
+  "summary": "A broad book on trauma, the body and treatment approaches. Specific therapies should still be judged against clinical guidelines.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-trauma-recovery": {
+  "summary": "Connects safety, remembering and rebuilding to social power and relational contexts.",
+  "enRec.note": "Standard edition with a new afterword"
+ },
+ "cli-w-what-my-bones-know": {
+  "summary": "A personal memoir of complex trauma and the search for help. It is suited to entering the subject through experience.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-family-crucible": {
+  "summary": "Uses full therapy stories to show how families maintain their problems and how they change together.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-dance-of-anger": {
+  "summary": "Understands anger and boundaries through relational patterns rather than personal flaws.",
+  "enRec.note": "First edition; several revised reprints since"
+ },
+ "cli-w-go-home-again": {
+  "summary": "Uses the family stories of notable people to explore intergenerational patterns, migration, loss and identity.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-altered-traits": {
+  "summary": "A review of meditation research that distinguishes short-term changes in state from lasting changes in trait.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-living-untethered": {
+  "summary": "A popular book of practices for observing thoughts and loosening psychological attachment. It should be distinguished from scientific mindfulness research.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-dsm-5-tr": {
+  "summary": "The standard manual for diagnosing mental disorders in the United States. It is a reference work rather than an introduction.",
+  "enRec.note": "Official diagnostic manual, current edition"
+ },
+ "cli-w-icd-11-cdddr": {
+  "summary": "The World Health Organization's diagnostic system, which is the official basis for diagnosis in many countries.",
+  "enRec.note": "Published by the WHO; freely available online"
+ },
+ "cli-w-rdoc-matrix": {
+  "summary": "The RDoC matrix of functional domains, units of analysis and methods. It is the original source for understanding the framework.",
+  "enRec.note": "Online resource, continually updated"
+ },
+ "cli-w-stress-prescription": {
+  "summary": "Turns stress research into everyday practices that readers can carry out.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-family-therapy-practice": {
+  "summary": "A collection of Bowen's essays on family systems theory.",
+  "enRec.note": "First edition; a collection of Bowen's essays"
+ },
+ "cli-w-saving-normal": {
+  "summary": "Written by the chair of the DSM-IV task force, who criticizes the expansion of diagnostic categories. An important reflection on diagnostic inflation.",
+  "enRec.note": "First edition"
+ },
+ "cli-w-cognitive-therapy-depression": {
+  "summary": "A practical manual and theoretical account of cognitive therapy.",
+  "enRec.note": "First edition; still in print"
+ },
+ "cli-w-persuasion-healing": {
+  "summary": "The foundational work from the perspective of common factors in psychotherapy.",
+  "enRec.note": "Third edition, co-written with his daughter; widely available"
+ },
+ "bio-w-cerebral-cortex-man": {
+  "summary": "Based on electrical stimulation of the cerebral cortex of awake patients during epilepsy surgery, it maps the body onto the cortex as the \"sensory homunculus\" and \"motor homunculus.\"",
+  "enRec.note": "First edition"
+ },
+ "bio-w-advice-young-investigator": {
+  "summary": "Practical advice from a founder of the neuron doctrine for young researchers: how to choose a topic, how to observe, and how to face failure and vanity. The original was in Spanish (1897); the English translation appeared in 1999.",
+  "enRec.note": "The standard English translation"
+ },
+ "bio-w-human-connectome": {
+  "summary": "A paper in PLoS Computational Biology proposing that the brain's whole neural connectivity be described as one system; it introduced the term \"connectome.\"",
+  "enRec.note": "Journal article, open access"
+ },
+ "bio-w-pgc-108-loci": {
+  "summary": "A Nature paper. Genome analysis of tens of thousands of patients and over 100,000 controls identified 108 genetic loci linked to schizophrenia risk.",
+  "enRec.note": "Journal article, open access"
+ },
+ "bio-w-neural-substrate-prediction-reward": {
+  "summary": "A Science paper that links the firing of monkey dopamine neurons to the prediction error in reinforcement learning algorithms.",
+  "enRec.note": "Journal article"
+ },
+ "bhv-w-animal-intelligence": {
+  "summary": "Thorndike's doctoral dissertation, published in 1898 as a special supplement to Psychological Review. Using puzzle-box experiments, it observes learning in cats, dogs and chickens and proposes an early form of the law of effect.",
+  "enRec.note": "The 1898 dissertation was later expanded into a book; it is in the public domain and easy to find online"
+ },
+ "bhv-w-purposive-behavior": {
+  "summary": "Tolman argues that behavior is purposive and goal-directed. He proposes intervening variables such as \"expectancies\" and \"cognitive maps\" to explain how animals learn in mazes.",
+  "enRec.note": "First edition; later reprinted by the University of California Press"
+ },
+ "bhv-w-reciprocal-inhibition": {
+  "summary": "Wolpe systematically presents systematic desensitization: in a relaxed state, the patient faces anxiety-provoking situations, moving from weak to strong. An early classic of behavior therapy.",
+  "enRec.note": "First edition"
+ },
+ "bhv-w-aba-cooper": {
+  "summary": "The most widely used textbook in the field. It systematically covers behavior measurement, experimental design, reinforcement and extinction procedures, and their application in education and clinical settings. First published in 1987.",
+  "enRec.note": "Third edition, the standard textbook in the field"
+ },
+ "bhv-w-reinforcement-learning": {
+  "summary": "The standard textbook on reinforcement learning, on how an agent learns to act through trial, error and reward. Its temporal-difference methods were later used to explain dopamine signals in the brain. First edition 1998; second edition 2018.",
+  "enRec.note": "Second edition; the authors' website offers a free download"
+ },
+ "bhv-w-human-level-deep-rl": {
+  "summary": "A Nature paper: a deep network learned dozens of Atari games from screen pixels and game scores alone, reaching or exceeding human players in most of them.",
+  "enRec.note": "Journal article"
+ },
+ "cog-w-elements-psychophysics": {
+  "summary": "In this book Fechner proposed that the relationship between mental and physical magnitudes can be studied quantitatively with mathematics. It is generally regarded as one of the starting points of experimental psychology. The German original appeared in 1860; the English translation in 1966.",
+  "enRec.note": "English translation of volume 1"
+ },
+ "cog-w-principles-physiological-psychology": {
+  "summary": "Wundt's foundational work applying the experimental methods of physiology to the study of sensation and consciousness. He founded his psychology laboratory in Leipzig in 1879. The first German edition appeared in 1873–1874.",
+  "enRec.note": "Translated by Titchener from the fifth German edition, volume 1"
+ },
+ "cog-w-imagenet-classification": {
+  "summary": "The AlexNet paper. At the 2012 ImageNet image recognition competition, its error rate was far below earlier methods, sparking the deep learning boom.",
+  "enRec.note": "Conference paper, open access"
+ },
+ "cog-w-using-cognitive-psychology-gpt3": {
+  "summary": "Researchers gave a large language model classic psychology experiments, such as tasks on decision-making, reasoning and causal inference, and compared its performance with that of humans. Preprint in 2022; published in PNAS in 2023.",
+  "enRec.note": "Journal article, open access"
+ },
+ "dif-w-dimensions-personality": {
+  "summary": "Using factor analysis on large volumes of questionnaire and test data, Eysenck identified the basic dimensions of personality (later neuroticism and extraversion) and sought their physiological basis.",
+  "enRec.note": "First edition"
+ },
+ "dif-w-construct-validity": {
+  "summary": "A classic paper in Psychological Bulletin. It proposes a way to test whether a measure really captures an abstract construct, namely \"construct validity.\"",
+  "enRec.note": "Journal article, easy to find online"
+ },
+ "dif-w-private-traits-predictable": {
+  "summary": "A PNAS paper that uses the \"likes\" of tens of thousands of users to predict their gender, political orientation, personality and more.",
+  "enRec.note": "Journal article, open access"
+ },
+ "dif-w-network-analysis-psychopathology": {
+  "summary": "A review in the Annual Review of Clinical Psychology. It treats symptoms as nodes that interact in a network, and introduces methods for estimating and analyzing symptom networks.",
+  "enRec.note": "Review article"
+ },
+ "dif-w-estimating-reproducibility": {
+  "summary": "A Science paper. More than a hundred researchers replicated 100 published psychology experiments; roughly a third to a half of the results were reproduced. It became a landmark piece of evidence for the replication crisis.",
+  "enRec.note": "Journal article"
+ },
+ "dev-w-adolescence-hall": {
+  "summary": "A two-volume work that first treated adolescence systematically as a distinct developmental stage and proposed the idea of \"storm and stress.\" It was very influential, and many of its views were later revised.",
+  "enRec.note": "Two volumes; in the public domain and easy to find online"
+ },
+ "dev-w-life-span-propositions": {
+  "summary": "A paper in Developmental Psychology summarizing several principles of life-span development: that development is lifelong, multidirectional, involves both gains and losses, and is plastic.",
+  "enRec.note": "Journal article"
+ }
+}

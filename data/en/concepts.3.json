@@ -1,0 +1,212 @@
+{
+  "free-association": {
+    "summary": "Say whatever comes to mind, without filtering.",
+    "plain": "The client says everything that surfaces in their mind without judgment, so that avoided themes can be found.",
+    "example": "Lying on the couch and talking about a small event from childhood, you quickly find your thoughts drifting to a current relationship.",
+    "misuse": "This is not just “saying whatever you like” in conversation. It is a therapeutic method carried out under the guidance of a trained practitioner."
+  },
+  "archetype": {
+    "summary": "Typical figures that recur in dreams and myths.",
+    "plain": "Jung's term for typical patterns in the collective unconscious, such as the mother, the hero, the sage or the trickster. They are expressed through symbols.",
+    "example": "Stories of the “hallero's journey” appear in every culture: leaving home, facing trials, returning.",
+    "misuse": "Online, archetypes are often used to label every person with a “type.” That is neither Jung's intent nor backed by any measurement."
+  },
+  "shadow": {
+    "summary": "The side of yourself you refuse to admit.",
+    "plain": "The traits a person will not accept, which have been pushed into the unconscious, and which are often projected onto others.",
+    "example": "Someone who is very bothered by “other people being selfish” may be refusing to admit their own desire to have things for themselves.",
+    "misuse": "The shadow is not just “the bad side.” It also contains suppressed strengths and vitality."
+  },
+  "persona": {
+    "summary": "The role you present to others in society.",
+    "plain": "The “mask” put on to meet social expectations, such as a professional role or a polite self.",
+    "example": "At work you are calm and professional, and only at home do you show your playful, relaxed side.",
+    "misuse": "It is not “falseness.” It is normal social adaptation. The problem comes when you over-identify with the mask and forget who you are underneath."
+  },
+  "anima-animus": {
+    "summary": "The image of the feminine in a man's psyche, and of the masculine in a woman's.",
+    "plain": "Jung believed that everyone's unconscious contains an image of the opposite sex, which shapes how they project onto intimate partners.",
+    "example": "Why someone keeps being drawn to one particular type of person may partly be explained by this.",
+    "misuse": "This binary framing of gender reflects strong limitations of its time and has little empirical testing. It should be treated as a metaphor."
+  },
+  "individuation": {
+    "summary": "The process of becoming a whole, unique self.",
+    "plain": "Gradually integrating unconscious contents into consciousness so that the personality becomes more complete. It usually happens after middle age.",
+    "example": "A person in midlife begins to question the goals others have set for them and rediscovers their own interests.",
+    "misuse": "Often equated with “being yourself” or “self-actualization.” Jung stressed that it requires facing the shadow, and that it has no endpoint."
+  },
+  "complex": {
+    "summary": "A cluster of unconscious feelings and memories built around an emotional experience.",
+    "plain": "Memories and ideas charged with strong emotion gather into a knot that is triggered whenever something related comes up.",
+    "example": "Someone who was treated harshly as a child becomes tense whenever they meet an authority figure.",
+    "misuse": "In everyday speech, “having a complex about something” is often stretched to mean “a hobby or fixation,” which differs from the original meaning."
+  },
+  "inferiority-complex": {
+    "summary": "Feelings of inadequacy dominate life, showing up as withdrawal or bravado.",
+    "plain": "Adler believed everyone feels some inferiority. It becomes a “complex” only when handled badly, with avoidance or showing off used as compensation.",
+    "example": "Someone who constantly brags about their achievements may actually be deeply anxious inside.",
+    "misuse": "Having feelings of inferiority is not the same as having an inferiority complex, and neither means that a person is broken."
+  },
+  "good-enough-mother": {
+    "summary": "No need to be perfect, only reliable enough.",
+    "plain": "At first, the caregiver closely adapts to the baby. Then gradually, reasonable failures occur, so the child learns to tolerate frustration.",
+    "example": "The baby cries, and Mom sometimes does not come right away. But most of the time, she responds.",
+    "misuse": "Treating it as a heavy burden of “motherly duty” misreads it. Winnicott's point was precisely to reduce the pressure of perfection."
+  },
+  "introversion-extraversion": {
+    "summary": "Whether energy is directed more inward or toward the outside world.",
+    "plain": "Jung first proposed this pair of concepts. Modern personality psychology treats it as a continuum rather than two types.",
+    "example": "After a party, some people feel recharged, while others feel tired and need time alone.",
+    "misuse": "Often mistaken for two fixed categories. Most people sit somewhere in the middle, and their position changes with the situation."
+  },
+  "cognitive-distortion": {
+    "summary": "Common biased habits of thinking about problems.",
+    "plain": "Patterns such as catastrophizing, all-or-nothing thinking, mind reading and overgeneralizing, which make things seem worse than they really are.",
+    "example": "After one slip in a presentation, you think, “I'm finished. Everyone thinks I'm an idiot.”",
+    "misuse": "Do not use the term to accuse others of “distorting.” It is a tool for checking your own thoughts."
+  },
+  "exposure": {
+    "summary": "Facing what you fear, under safe conditions.",
+    "plain": "Gradual, repeated contact with the thing that causes anxiety, without escape, so that fear naturally decreases.",
+    "example": "Someone afraid of elevators starts by standing at the elevator door, then gradually rides it for a single floor.",
+    "misuse": "This is not “gritting your teeth” or forcing yourself. It proceeds step by step and is done with a trained practitioner's support."
+  },
+  "avoidance": {
+    "summary": "Relieves anxiety in the short term, but keeps fear alive in the long term.",
+    "plain": "Staying away from certain situations to avoid anxiety, or relying on “safety” behaviors. This brings immediate relief but prevents you from discovering that the danger is smaller than imagined.",
+    "example": "Someone who has always been afraid to give speeches makes excuses to skip every opportunity, so the anxiety never goes down.",
+    "misuse": "It is not “cowardice.” It is a natural human reaction, and it changes gradually, with support."
+  },
+  "mindfulness": {
+    "summary": "Consciously paying attention to the present moment, without judgment.",
+    "plain": "Kabat-Zinn's definition: paying attention in a particular way, on purpose, in the present moment, and without judgment.",
+    "example": "When you eat a grape, you notice only its color, smell and texture, instead of scrolling on your phone at the same time.",
+    "misuse": "Often equated with “relaxing” or “emptying your mind.” It refers to awareness, not to stopping thoughts from appearing."
+  },
+  "psychological-flexibility": {
+    "summary": "Being able to act on your values even when it is uncomfortable.",
+    "plain": "The core idea of ACT: being willing to stay in contact with present thoughts and feelings, while choosing actions guided by your values.",
+    "example": "You still walk up to the podium while nervous, because you value sharing with others.",
+    "misuse": "It is not “controlling your emotions” or “thinking positively.” It means not being driven around by your emotions."
+  },
+  "radical-acceptance": {
+    "summary": "Fully acknowledging that reality is what it is, without approving of it.",
+    "plain": "A skill from DBT: once you stop fighting facts that have already happened, you have the energy to change what can be changed.",
+    "example": "After being laid off, you first accept that it has happened, and only then can you plan your next steps carefully.",
+    "misuse": "Often misunderstood as “giving up” or “endorsing the wrong.” In fact, it is the precondition for change."
+  },
+  "comorbidity": {
+    "summary": "One person meets criteria for more than one diagnosis at the same time.",
+    "plain": "Mental disorders overlap heavily, so a person often meets the criteria for several diagnoses, such as depression and anxiety, at once.",
+    "example": "Someone with long-term anxiety is also quite likely to have depression and insomnia.",
+    "misuse": "Comorbidity does not necessarily mean “several illnesses.” It may point to a problem with how diagnostic categories are drawn, which is the starting point for dimensional models."
+  },
+  "therapeutic-alliance": {
+    "summary": "The relationship in which therapist and client work together.",
+    "plain": "Both sides agree on the goals and methods, and share emotional trust and connection.",
+    "example": "A client says, “I really feel that you understand me,” and is willing to do the homework.",
+    "misuse": "It is not the same as “getting along well.” A good alliance also includes working through difficulties together."
+  },
+  "differentiation-of-self": {
+    "summary": "Staying true to your own thoughts and positions while remaining close to others.",
+    "plain": "Bowen's concept: the ability to separate thinking from feeling under emotional pressure, to avoid being pulled into family emotions, without cutting off contact entirely.",
+    "example": "When relatives push you to get married, you listen patiently and state your own view clearly, without an argument.",
+    "misuse": "Often misunderstood as “keeping distance from family.” It actually means being able to be close and independent at the same time."
+  },
+  "triangulation": {
+    "summary": "When two people are tense, a third person is pulled in to ease it.",
+    "plain": "Conflict between two people is diverted by bringing in a third person, such as a child or a relative. The problem itself, however, stays unresolved.",
+    "example": "During a couple's argument, one partner keeps complaining to the child, and the child gets drawn in.",
+    "misuse": "It is not a judgment about “who is to blame.” It is a description of a relationship pattern."
+  },
+  "rumination": {
+    "summary": "Chewing over the same problem repeatedly without making progress.",
+    "plain": "Repeatedly thinking about one's misery, its causes and consequences without working to solve anything. It is closely linked to depression and anxiety.",
+    "example": "On a sleepless night, you keep asking yourself, “Why am I so hopeless?”",
+    "misuse": "Not the same as “thinking carefully.” Rumination makes people more discouraged, while problem solving helps them move forward."
+  },
+  "post-traumatic-stress": {
+    "summary": "Lasting reactions that follow an extreme event.",
+    "plain": "Intrusive memories, avoidance, negative changes in mood and thinking, and hypervigilance, lasting more than a month.",
+    "example": "For months after a car accident, you feel your heart race at the sound of brakes, and you are afraid to drive.",
+    "misuse": "Not everyone who experiences trauma develops it. Most people recover naturally, and they should not be given the label of a patient."
+  },
+  "aphasia": {
+    "summary": "Loss of language ability after brain injury. Different areas produce different symptoms.",
+    "plain": "After damage to the language areas of the brain (usually in the left hemisphere), a person may have trouble speaking, understanding speech, repeating words or finding words. Intelligence and the vocal organs themselves can be intact.",
+    "example": "After a stroke, one person can understand family members but can only say scattered words. Another speaks fluently, but what they say makes no coherent sense.",
+    "misuse": "Aphasia is not “becoming foolish” or “damage to the voice box.” Most people with aphasia keep their thinking abilities. The problem lies in producing or understanding language."
+  },
+  "synapse": {
+    "summary": "The contact point where signals pass between two neurons.",
+    "plain": "The end of one neuron does not connect directly to the next. A very narrow gap separates them, and signals usually cross it via chemical messengers called neurotransmitters.",
+    "example": "As you read this sentence, visual signals pass through countless synapses, one stop after another, before they become meaning for you.",
+    "misuse": "Thinking of neurons as wires that are simply “connected.” Synaptic transmission can be adjusted in strength, and that is exactly why learning can change the brain."
+  },
+  "chemical-imbalance": {
+    "summary": "The idea that depression and other mood disorders are caused by a shortage of brain chemicals.",
+    "plain": "A popular claim holds that depression is caused by too little serotonin or similar substances, and that medication corrects the shortfall. It grew out of early findings about how drugs work and is a simplified metaphor.",
+    "example": "“Your serotonin is low” is a phrase often heard in pharmaceutical advertisements and clinic visits.",
+    "misuse": "Treating it as a proven cause. Research has not identified a fixed “normal level,” and the way medications work is far more complex than “filling a shortage.”"
+  },
+  "memory-consolidation": {
+    "summary": "New memories take time to move from fragile to stable.",
+    "plain": "What you have just learned is easily lost at first. Over hours to days (sometimes longer), nerve cells synthesize new proteins and change their synapses, and only then does the memory stabilize.",
+    "example": "Material you cram all night before an exam is often remembered better after a night's sleep, because sleep helps consolidate it.",
+    "misuse": "Believing that once a memory is stored, it no longer changes. Each time you recall a memory, it becomes briefly unstable and is stored again, possibly rewritten in the process."
+  },
+  "limbic-system": {
+    "summary": "A collective name for brain structures involved in emotion, motivation and memory.",
+    "plain": "Refers to structures deep in the brain closely tied to emotion and memory, such as the amygdala, hippocampus and cingulate gyrus. It is a convenient category, not a clearly bounded “emotion organ.”",
+    "example": "Your heart races when you are suddenly startled. The amygdala is involved in the rapid response to threat.",
+    "misuse": "Saying “reason lives in the cortex and emotion in the limbic system, and the two are opposed.” Modern research shows that emotion depends on networks spread across the whole brain, and the cortex is involved too."
+  },
+  "trial-and-error": {
+    "summary": "Animals gradually keep the actions that bring good results, through repeated attempts.",
+    "plain": "Thorndike put cats in puzzle boxes. The cats clawed and bumped around until they accidentally hit the mechanism and escaped, and the next time the action appeared more quickly. There was no sudden insight, only effective actions being gradually kept.",
+    "example": "A child learning to ride a bike falls a few times, and gradually finds the feel of balance.",
+    "misuse": "Thinking trial and error is just “blind luck.” Animals' attempts are not completely random, and the consequences systematically change what they do next."
+  },
+  "stimulus-response": {
+    "summary": "Behaviorism's basic unit for describing behavior: an external stimulus triggers an observable response.",
+    "plain": "Watson and others argued that psychology should study only the regularities between observable stimuli and responses, and not invisible “inner minds.”",
+    "example": "When a bell rings, a dog salivates. When a red light comes on, a driver presses the brake.",
+    "misuse": "Believing behaviorists denied that people have inner experiences. The early position was a methodological limit, and later behavior analysis also accepts private events, analyzing them as behavior."
+  },
+  "intervening-variable": {
+    "summary": "Internal processes, such as expectations and purposes, that Tolman placed between stimulus and response.",
+    "plain": "Given the same stimulus, different animals respond differently, because between stimulus and response there are internal states like “expectations” and “cognitive maps.” These states can be defined and tested through experimental conditions.",
+    "example": "A rat in a maze finds the usual exit blocked and immediately takes another route, which suggests it has a map of the whole maze in its head.",
+    "misuse": "Thinking that an intervening variable is a “mental entity.” Tolman used it as a measurable, operationally defined construct, not as an assumption about the soul."
+  },
+  "counterconditioning": {
+    "summary": "Repeatedly pairing a fear-provoking stimulus with a response that is opposite to fear, such as relaxation.",
+    "plain": "A person afraid of dogs practices deep relaxation while approaching a dog gradually from a distance. Over time, “seeing a dog” becomes linked with “relaxation” instead of “tension.”",
+    "example": "Someone afraid of elevators first imagines an elevator while doing relaxation exercises, and then gradually walks up to a real one.",
+    "misuse": "Thinking this means “forcing yourself to face it.” It proceeds in small steps, and at each step the client is kept in a state they can tolerate."
+  },
+  "controllability": {
+    "summary": "The experience that “nothing I do makes a difference” is key to learned helplessness.",
+    "plain": "In Seligman's experiments, dogs that had been forced to endure inescapable shocks later did not try to escape even when escape was possible. What mattered was the lack of control, not the shock itself.",
+    "example": "An employee who has been criticized for years and never earns recognition, however hard they try, gradually stops volunteering ideas.",
+    "misuse": "Treating helplessness as a sign of weak character. Later research suggests that passivity is the default response, and that learning “I can control this” takes experience."
+  },
+  "just-noticeable-difference": {
+    "summary": "The smallest change that can just barely be detected.",
+    "plain": "For a person to notice that two weights differ, the difference must reach a fixed proportion of the original weight. That barely detectable difference is called the just noticeable difference.",
+    "example": "Holding 100 grams, you cannot feel an extra 2 grams. Holding 1,000 grams, you need an extra 20 grams before you feel a change.",
+    "misuse": "Assuming that the size of a sensation corresponds one-to-one with the physical amount. The change in sensation is closer to a logarithmic relationship than a linear one."
+  },
+  "introspection": {
+    "summary": "Trained participants report their immediate feelings and conscious contents.",
+    "plain": "In Wundt's laboratory, participants under tightly controlled stimuli reported the components of their sensations, in order to study how consciousness is built.",
+    "example": "Tasting a sip of wine and describing its sourness, sweetness and temperature separately, rather than just saying “it's good.”",
+    "misuse": "Thinking any self-report counts as introspection. Wundt's introspection required training and standardized conditions. Casual self-impressions do not count."
+  },
+  "i-and-me": {
+    "summary": "James split the self into the part that knows and the part that is known.",
+    "plain": "The “me” is the self you can describe: your body, roles and reputation. The “I” is the part that is thinking and experiencing, and that ties all of this together.",
+    "example": "When you say “I am an introvert,” the “me” is what is being described, and the “I” is the one saying it.",
+    "misuse": "Imagining the “I” as a little person hidden in the brain. James treated it as the flow of thinking itself, not as a separate entity."
+  }
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Psychologymap</title>
+<link rel="icon" type="image/svg+xml" href="{{FAVICON}}">
+<style>
+/*{{STYLES}}*/
+</style>
+</head>
+<body data-v="map" data-sub="glass">
+<canvas id="bgfx" aria-hidden="true"></canvas><div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div><div class="scan" aria-hidden="true"></div>
+<a class="skip" href="#stage" data-i18n="skip"></a>
+<header class="bar">
+  <div class="brand"><span class="logo" aria-hidden="true">{{LOGO:lgb}}</span><b>Psychologymap</b><span class="bsub" data-i18n="brand.sub"></span></div>
+  <nav id="topNav" class="seg topnav" data-i18n-aria="aria.nav"></nav>
+  <div class="search" role="search"><input id="q" type="search" data-i18n-ph="search.placeholder" autocomplete="off" data-i18n-aria="search.aria" aria-controls="results" aria-expanded="false"><div id="results" class="results" role="listbox" data-i18n-aria="search.resultsAria"></div></div>
+  <div class="seg langsw" role="group" data-i18n-aria="aria.language"><button data-lang="en" aria-pressed="true" lang="en">EN</button><button data-lang="zh" aria-pressed="false" lang="zh-CN">中文</button></div>
+</header>
+<div class="sub" id="sub"></div>
+<main>
+  <section id="stage" data-i18n-aria="aria.stage">
+    <div class="view" id="vGlass">
+      <canvas id="glass" data-i18n-aria="glass.aria"></canvas>
+      <div class="hud" aria-hidden="true"><span id="hud"></span></div>
+      <div id="glegend" class="glegend" aria-hidden="true"></div>
+      <div id="glassSide" role="group" data-i18n-aria="aria.threads"></div>
+      <div id="intro"><div class="ihead"><span class="logo big" aria-hidden="true">{{LOGO:lgi}}</span><h1 data-i18n="intro.title"></h1></div><p data-i18n="intro.text"></p><button class="cta" id="enter"><span data-i18n="intro.cta"></span> <span aria-hidden="true">→</span></button></div>
+    </div>
+    <div class="view" id="vRidge"><svg id="ridge" role="img" data-i18n-aria="ridge.aria"></svg></div>
+    <div class="view" id="vCards"></div>
+    <div class="view" id="vThread"></div>
+    <div class="view" id="vStructure"></div>
+    <div class="view" id="vPeople"></div>
+    <div class="view" id="vQuestions"></div>
+    <div class="view" id="vReading"></div>
+    <div id="how" role="dialog" data-i18n-aria="how.aria"></div>
+  </section>
+  <aside id="panel" data-i18n-aria="aria.detail" aria-live="polite"><div class="pin" id="pin"></div></aside>
+</main>
+<nav id="tabbar" class="tabbar" data-i18n-aria="aria.navMobile"></nav>
+<div id="cmp" data-i18n-aria="aria.compare"></div>
+<div id="tip" role="tooltip"></div>
+<div id="pop"></div>
+<noscript><p style="padding:24px;color:#eaf0f8">This page needs JavaScript. 这个页面需要 JavaScript。</p></noscript>
+<script>
+/*{{DATA}}*/
+</script>
+<script>
+/*{{APP}}*/
+</script>
+</body>
+</html>

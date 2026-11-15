@@ -1,0 +1,200 @@
+{
+  "information-processing-metaphor": {
+    "summary": "Treating the mind as a system that takes in, encodes, stores and retrieves information.",
+    "plain": "The cognitive revolution borrowed the language of computers and information theory. Information enters, passes through a chain of processing stages, and yields an output, and each stage can be studied on its own.",
+    "example": "At a noisy party you hear someone say your name. The sound is first filtered, then recognized, and then it triggers your attention to shift toward the speaker.",
+    "misuse": "Taking the brain to be a literal computer. The metaphor helps generate testable models, but the brain works very differently from current computers."
+  },
+  "distributed-representation": {
+    "summary": "A concept is not stored in any single unit. It is represented by the pattern of activity across many units.",
+    "plain": "In connectionist networks there is no “grandmother cell.” The concept “cat” is a large set of units active in a particular pattern together, and similar concepts have similar patterns.",
+    "example": "You smell cookies and suddenly remember your grandmother's house. Several related memories are partly activated at the same time.",
+    "misuse": "Believing that each neuron in the brain corresponds to one concept. Real brains contain highly selective cells as well as large-scale population coding."
+  },
+  "extended-mind": {
+    "summary": "Cognitive processes can extend into tools and the environment outside the body.",
+    "plain": "Clark and Chalmers proposed that if an external tool, such as a notebook, functionally takes on the role of memory, then it can count as part of the cognitive system.",
+    "example": "A person who habitually stores phone numbers in their phone has handed part of their memory load over to the phone.",
+    "misuse": "Taking “the extended mind” to mean “phones make people stupid.” It is a philosophical claim about where cognition's boundaries lie, not a verdict on whether technology is good or bad."
+  },
+  "positive-manifold": {
+    "summary": "Scores on different intelligence tests are almost always positively correlated with one another.",
+    "plain": "Spearman found that scores on verbal, mathematical and spatial tests tend to rise and fall together. This allows a shared common factor to be extracted, called g.",
+    "example": "People who score high on a vocabulary test also tend to score well on numerical reasoning.",
+    "misuse": "Treating g as an “organ” in the brain or a fixed gift. g is a statistical common factor, and its biological basis and malleability are still debated."
+  },
+  "mental-age": {
+    "summary": "Matching a child's test performance to the typical level of children of a given age.",
+    "plain": "The approach of the Binet-Simon scale: if an 8-year-old can pass questions that most 10-year-olds can pass, their mental age is 10.",
+    "example": "A 6-year-old performs at the average level of an 8-year-old, so their mental age is 8.",
+    "misuse": "Using “mental age” for adults or to describe someone as “acting like a person of a certain age.” The concept only fits developing children and loses its meaning in adulthood."
+  },
+  "neuroticism": {
+    "summary": "A tendency to readily experience negative emotions such as anxiety, anger and low mood.",
+    "plain": "Eysenck treated it as a basic dimension of personality. People who score high have larger emotional swings and react strongly to stress. People who score low are more stable.",
+    "example": "Faced with the same curt email, a person high in neuroticism may lie awake all night, while someone low in neuroticism reads it, shrugs and forgets it.",
+    "misuse": "Equating it with “mental illness.” It is a difference in degree within the normal population, and most people fall somewhere in the middle."
+  },
+  "cross-situational-consistency": {
+    "summary": "How consistent a person's behavior is across different settings.",
+    "plain": "Mischel pointed out that a person's behavior in different situations is not strongly correlated. Yet for the same kind of situation, behavior is quite stable, in an “if-then” pattern.",
+    "example": "Someone who is assertive in meetings but easygoing at home is not being inconsistent.",
+    "misuse": "Using this to claim that “personality does not exist.” The more accurate conclusion is that personality traits predict average behavior over the long term better than they predict behavior at a particular moment."
+  },
+  "openness": {
+    "summary": "Interest in and acceptance of new ideas, art and experiences.",
+    "plain": "One dimension of the Big Five. People high in openness are curious, imaginative and willing to try new things. People low in openness prefer the familiar, practical and stable.",
+    "example": "Willing to pick an unfamiliar small restaurant on a trip, and fond of reading books from different fields.",
+    "misuse": "Treating openness as “broad-mindedness,” “morality” or “intelligence.” It is somewhat correlated with intelligence but is not the same thing, and neither end of the scale is better than the other."
+  },
+  "developmental-milestones": {
+    "summary": "Abilities that most children acquire at roughly similar ages.",
+    "plain": "Research on children's motor development, based on large-scale observation and measurement, has produced reference points such as sitting by a few months, walking around one year, and speaking short phrases by age two.",
+    "example": "At a pediatric checkup, the doctor asks whether the child can walk independently and whether they can say a two-word phrase.",
+    "misuse": "Treating milestones as a pass mark that must be reached on time. The age at which a skill appears has a wide normal range, and only clear delays warrant evaluation."
+  },
+  "private-speech": {
+    "summary": "Children talk to themselves while doing things, to help them think and regulate their behavior.",
+    "plain": "Vygotsky argued that children first use external speech to communicate with others, and then “internalize” it, turning it into the inner language they use when thinking.",
+    "example": "A child building with blocks mutters, “First this one, then that one.”",
+    "misuse": "Seeing a child's self-talk as a sign of immaturity or a problem. It is actually more common when a task is difficult, and it serves as self-guidance."
+  },
+  "moral-dilemma": {
+    "summary": "A hypothetical situation with no simple right answer, used to observe how people reason.",
+    "plain": "Kohlberg used stories such as “Heinz steals the drug” and focused not on whether the answer was “stealing is right or wrong,” but on which level of reasoning the justification belongs to.",
+    "example": "Asked whether a husband should steal medicine for his seriously ill wife, one child says, “He would get caught,” and another says, “Life matters more than property.”",
+    "misuse": "Believing the test judges whether a person is “moral.” It measures reasoning style, which is not the same thing as real-world behavior."
+  },
+  "multidirectionality": {
+    "summary": "Different abilities change in different directions across life. Some rise while others fall.",
+    "plain": "Lifespan developmental psychology holds that development is not simply a climb followed by a decline. Some abilities, such as vocabulary, keep growing with age, while others, such as reaction speed, decline.",
+    "example": "A 50-year-old remembers new names more slowly than they did at 20, but handles complex social situations much better.",
+    "misuse": "Assuming aging is only decline. The lifespan view emphasizes that gains and losses coexist, and that compensation is possible."
+  },
+  "violation-of-expectation": {
+    "summary": "Infants who look longer at “impossible” events reveal what they expect.",
+    "plain": "Since infants cannot talk, researchers show them “normal” and “impossible” scenes, such as an object passing through a solid wall. If they look longer at the impossible scene, it suggests they have expectations about the physical world.",
+    "example": "A toy is hidden behind a screen, and when the screen turns, the toy appears to pass straight through it. Infants stare at this event for longer.",
+    "misuse": "Taking “looking longer” to mean “understood.” It can also reflect interest in novel stimuli, so interpretation requires proper control conditions."
+  },
+  "deindividuation": {
+    "summary": "In a group, individual self-awareness and sense of responsibility decline.",
+    "plain": "Researchers after Le Bon found that when people are anonymous, in large crowds and emotionally aroused, they are more likely to do things they would not normally do, whether good or bad.",
+    "example": "Fans in the stands shout coarse words they would never use elsewhere.",
+    "misuse": "Believing that “people lose their reason as soon as they join a crowd.” Research shows that group behavior often follows the group norms of the moment and is not necessarily destructive."
+  },
+  "scapegoating": {
+    "summary": "Blaming and venting frustrations, one's own or a group's, on a vulnerable group.",
+    "plain": "Allport and others pointed out that when people face difficulties and cannot attack the real cause, they often turn their anger toward an easy target, an “outsider.”",
+    "example": "When the economy weakens, some people blame immigrants for their job losses.",
+    "misuse": "Seeing prejudice only as the malice of individuals. Prejudice is often tied to social circumstances and group interests."
+  },
+  "effort-justification": {
+    "summary": "The more effort put into something, the more people tend to think it is worth having.",
+    "plain": "In a study by Aronson and Mills, people who had to go through an embarrassing initiation to join a group later liked the group more, even though it was not especially interesting. Feeling that the effort was “wasted” would cause dissonance.",
+    "example": "A house you spent a lot of money and energy renovating is one you will still insist is great, even if it has flaws.",
+    "misuse": "Treating it as a synonym for “sunk cost.” The sunk cost fallacy is about decisions. Effort justification is about changing attitudes to reduce dissonance."
+  },
+  "guanxi": {
+    "summary": "Networks of personal connection in Chinese society, held together by reciprocity and obligation.",
+    "plain": "Indigenous psychology researchers emphasize that in Chinese interpersonal life, guanxi is not just a matter of contacts. It is a network with obligations, emotions and face, and it shapes choices and decisions.",
+    "example": "When you need something done, you first think, “Do I know anyone who can help?” and ask through a connection rather than going through the formal process.",
+    "misuse": "Equating guanxi simply with “backdoor dealings.” It includes family and friendship ties as well as informal mutual support."
+  },
+  "pursue-withdraw-cycle": {
+    "summary": "One partner pursues for a response, the other withdraws, and each reinforces the other in a vicious cycle.",
+    "plain": "Emotionally focused therapy holds that this is not a matter of either person's character. It is a defensive pattern both partners fall into when their need for attachment goes unheard.",
+    "example": "One person says, “Why do you always ignore me?” The other goes quiet and retreats to another room. The first pursues harder, and the second withdraws further.",
+    "misuse": "Seeing the “pursuer” as the one who likes to fight and the “withdrawer” as cold. The key to therapy is helping both partners see the cycle itself."
+  },
+  "dissociation-concept": {
+    "summary": "A separation of functions that normally integrate, such as consciousness, memory and identity.",
+    "plain": "Janet first used the term to describe strong emotional experiences that are not integrated into personal memory and instead exist separately from awareness. Ranging from everyday “spacing out” to severe dissociative disorders, it is a continuum.",
+    "example": "You drive a familiar route and arrive at your destination without remembering the drive. This is mild dissociation.",
+    "misuse": "Treating all dissociation as a disease. Mild dissociation is very common. Dissociative identity disorder should also not be confused with schizophrenia."
+  },
+  "idealized-self": {
+    "summary": "A perfect image a person builds to cope with inner insecurity.",
+    "plain": "Horney believed that when people feel unaccepted, they construct an image of how they “should be,” and then demand that the real self meet it harshly. This only intensifies inner conflict.",
+    "example": "Someone who insists they “must be flawless” falls into self-blame over the slightest mistake.",
+    "misuse": "Treating it as “narcissism” or “self-confidence.” The idealized self is a defense against insecurity and is often accompanied by intense self-criticism."
+  },
+  "ego-self-axis": {
+    "summary": "The connection between the ego (the center of consciousness) and the Self (the whole psyche).",
+    "plain": "Neumann and later Jungian analysts use this concept to describe how, in early childhood, the ego and the whole psyche are not yet separated. Later the ego differentiates, and it then needs to reconnect with the Self.",
+    "example": "After a major setback, a person feels that their life is being guided by something larger than themselves. This can be described as a rebuilding of the connection between ego and Self.",
+    "misuse": "Treating it as an observable brain structure or an empirically tested developmental stage. It is a theoretical construct within analytical psychology and lacks independent empirical testing."
+  },
+  "imaginary-symbolic-real": {
+    "summary": "Lacan divided the psychological world into three intertwined registers.",
+    "plain": "The imaginary is the world of images and mirror reflections. The symbolic is language, rules and one's place among others. The real is the part that cannot be fully captured in language.",
+    "example": "A baby recognizing themselves in a mirror belongs to the imaginary. Learning to refer to oneself as “I” is entering the symbolic.",
+    "misuse": "Treating these as operational definitions in psychology. They are philosophical concepts within psychoanalytic theory and do not correspond to directly measurable variables."
+  },
+  "mirroring": {
+    "summary": "Caregivers “see” the child with admiration and responsiveness, so the child feels valued.",
+    "plain": "Kohut believed that children need to be genuinely seen and affirmed, and that a healthy sense of self develops from this. Long-term lack of it leaves the self fragile.",
+    "example": "A child draws a picture, and the parent looks at it carefully and says, “You put a lot of care into this.” The child feels seen.",
+    "misuse": "Treating mirroring as nothing more than heaping on praise. It emphasizes responding to the child's real state, not indiscriminate compliments."
+  },
+  "enactment": {
+    "summary": "Therapist and client unknowingly act out the old relationship patterns of both.",
+    "plain": "Relational psychoanalysis holds that therapy is not one-way observation. The therapist's own emotions and reactions are also drawn in, replaying the relationships the client is used to.",
+    "example": "A client often feels abandoned. The therapist, without meaning to, is late a few times, and the client's response becomes a replay of an old relationship.",
+    "misuse": "Treating enactment as the therapist's “mistake.” The relational approach holds that it is unavoidable. What matters is noticing it and talking about it together afterward."
+  },
+  "mentalizing": {
+    "summary": "Understanding your own and others' behavior as driven by thoughts, feelings and intentions.",
+    "plain": "Seeing a person frown is not just seeing an expression. You also think, “They may be worried or unhappy,” and you remember that this is only a guess.",
+    "example": "A friend does not reply to your message. Your first thought is, “They're probably busy,” not, “They hate me.”",
+    "misuse": "Equating it with “empathy” or “mind reading.” Mentalizing includes understanding your own mental states, and it also includes admitting that your guesses may be wrong."
+  },
+  "case-formulation": {
+    "summary": "A therapist organizes a client's problems, their causes and what maintains them into a testable explanation.",
+    "plain": "It is not about attaching a diagnostic label. It answers: why do these difficulties appear at this point, which factors keep them going, and where should work begin?",
+    "example": "Two people both have “insomnia.” One is caused by job stress, the other by an irregular schedule, and the approaches are completely different.",
+    "misuse": "Believing that once a diagnosis is named, formulation is unnecessary. People with the same diagnosis may need entirely different plans."
+  },
+  "categorical-diagnosis": {
+    "summary": "Dividing mental problems into discrete categories of “present” or “absent.”",
+    "plain": "A tradition pioneered by Kraepelin: patients with similar patterns of symptoms are grouped into one disorder, which makes communication, research and treatment easier.",
+    "example": "A diagnosis of “major depressive disorder” means that the number and duration of symptoms have reached a set threshold.",
+    "misuse": "Assuming there are natural, clear boundaries between categories. Many symptoms are distributed on a continuum, and the threshold is an agreed-upon convention. This is where dimensional models offer criticism."
+  },
+  "psychic-interaction": {
+    "summary": "A cycle in which attention focused on discomfort makes the discomfort grow stronger.",
+    "plain": "Morita believed the core of neurosis is excessive attention to a certain sensation. The sensation is magnified, which draws more attention, forming a vicious cycle.",
+    "example": "Lying in bed watching the clock and worrying about insomnia, the more you worry, the more awake you become.",
+    "misuse": "Believing it can be broken by simply “trying harder to overcome it.” Morita therapy instead accepts that the symptom exists and turns attention to doing what needs to be done."
+  },
+  "predisposing-precipitating-perpetuating": {
+    "summary": "When analyzing a problem, causes are sorted into three categories by timing.",
+    "plain": "Predisposing factors are vulnerabilities that were already present. Precipitating factors are the events that trigger the problem. Perpetuating factors are the behaviors and circumstances that keep the problem going. Each of the three can include biological, psychological and social elements.",
+    "example": "Test anxiety: the predisposition is a naturally nervous temperament, the trigger is one bad exam, and the perpetuating factors are the avoidance and repeated self-blame that follow.",
+    "misuse": "Looking only for “one root cause.” Clinically, what started a problem is often different from what keeps it going, and treatment usually targets the perpetuating factors."
+  },
+  "randomized-controlled-trial": {
+    "summary": "Randomly assigning participants to a treatment group and a control group, then comparing outcomes.",
+    "plain": "Random assignment makes the groups roughly equal in other respects, so differences can be attributed to the treatment itself. It is one of the most important sources of evidence in evidence-based practice.",
+    "example": "200 patients with depression are randomly assigned to cognitive behavioral therapy or a waitlist, and their symptoms are compared after 12 weeks.",
+    "misuse": "Assuming the results of a randomized controlled trial apply to every individual. It gives an average effect, and individual responses can vary widely."
+  },
+  "wanting-liking": {
+    "summary": "The drive to want something and the pleasure of enjoying it rely on different brain systems.",
+    "plain": "Berridge's research shows that the dopamine system is more involved in “wanting” (motivation), while “liking” (enjoyment) is handled by other, smaller brain areas. The two can come apart.",
+    "example": "You cannot stop scrolling on your phone, yet you do not feel especially happy about it. Here, wanting outweighs liking.",
+    "misuse": "Calling dopamine the “pleasure molecule.” Dopamine is mainly linked to expectation, motivation and learning, and it is not the same thing as pleasure itself."
+  },
+  "common-humanity": {
+    "summary": "Recognizing that pain and failure are experiences everyone encounters.",
+    "plain": "Neff describes three components of self-compassion: being kind to yourself, recognizing common humanity, and being mindfully aware without being swept away by emotion. Common humanity reduces the sense of isolation that comes with feeling “only I am like this.”",
+    "example": "After a failed exam, you think, “Many people have gone through this kind of setback,” rather than, “I'm really useless.”",
+    "misuse": "Taking it to mean “others have it worse, so I should be content.” Common humanity is not about comparison. It is about reducing isolation."
+  },
+  "affective-consciousness": {
+    "summary": "Feeling itself is the most basic form of consciousness, arising from deep in the brainstem.",
+    "plain": "Solms and colleagues propose that consciousness does not come only from the cortex. A more basic “feeling” arises from the arousal systems of the brainstem. This is close to the psychoanalytic emphasis on desire and affect.",
+    "example": "Even when you are not thinking about anything in particular, you can still sense whether you feel “comfortable” or “uncomfortable.”",
+    "misuse": "Treating it as a broadly accepted conclusion. It is a contested hypothesis within the neuropsychoanalytic school."
+  }
+}
