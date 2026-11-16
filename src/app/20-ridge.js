@@ -65,14 +65,16 @@ function drawRidge(anim) {
     g.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go({ view: 'map', sub: 'thread', thread: id }); } });
   });
   focusRidge(); applyFilterDim();
-  if (anim && !reduced()) revealRidge(Wd);
+  // A re-render (e.g. a resize) during the reveal replaces the clip rect, so the old reveal can never finish:
+  // clear its state here, otherwise #marks and #labels would stay hidden.
+  if (anim && !reduced()) revealRidge(Wd); else svg.classList.remove('revealing');
 }
 
 function revealRidge(Wd) {
   const svg = $('ridge'), rc = svg.querySelector('#revealRect'); if (!rc) return;
   svg.classList.add('revealing'); rc.setAttribute('width', 0);
   const t0 = performance.now(), dur = 1500, done = () => { rc.setAttribute('width', Wd); svg.classList.remove('revealing'); };
-  const step = (t) => { if (!rc.isConnected) return; const k = Math.min(1, (t - t0) / dur); rc.setAttribute('width', Wd * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); else done(); };
+  const step = (t) => { if (!rc.isConnected) return; const k = Math.max(0, Math.min(1, (t - t0) / dur)); rc.setAttribute('width', Wd * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); else done(); };
   requestAnimationFrame(step);
   setTimeout(() => { if (rc.isConnected) done(); }, dur + 500);   // safety net for hidden tabs where rAF is paused
 }

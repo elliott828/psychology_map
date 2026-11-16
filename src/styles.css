@@ -153,7 +153,7 @@ svg.focus .sch:not(.rel),svg.focus .lab:not(.rel){opacity:.14}
 .flow{fill:none;stroke:var(--accent);stroke-width:2.6;stroke-linecap:round;stroke-dasharray:2 22;animation:flow 1s linear infinite;filter:drop-shadow(0 0 5px var(--accent))}
 @keyframes flow{to{stroke-dashoffset:-24}}
 .etag{fill:var(--accent);font:12px var(--mono);paint-order:stroke;stroke:var(--bg);stroke-width:4px}
-.cross line{stroke:var(--accent);opacity:.5}.cross text{fill:var(--accent);font:12px var(--mono)}
+#ridge #edges,.cross{pointer-events:none}.cross line{stroke:var(--accent);opacity:.5}.cross text{fill:var(--accent);font:12px var(--mono)}
 
 #tip{position:fixed;z-index:60;max-width:320px;padding:10px 13px;border:1px solid var(--line2);border-radius:8px;background:rgba(14,20,32,.96);pointer-events:none;display:none;font-size:13px;box-shadow:0 0 30px rgba(106,168,255,.18)}
 #tip b{display:block;font-size:14px}#tip span{color:var(--ink2)}#tip em{font-style:normal;font-family:var(--mono);color:var(--accent);margin-right:6px}
@@ -250,7 +250,7 @@ dt{margin-top:8px;font-size:12px;color:var(--mute);letter-spacing:.1em}dd{margin
 .band{display:flex;align-items:flex-start;margin-bottom:26px}
 .cw{flex:none}
 .col{background:rgba(10,15,25,.94);border:1px solid var(--line);border-top:2px solid var(--c);border-radius:8px;padding:6px 8px 8px;transition:opacity .2s,border-color .2s}
-.col:hover,.col.rel{border-color:var(--c)}
+.col:hover,.col.relc{border-color:var(--c)}
 .ch{display:grid;width:100%;gap:0;padding:2px 0 4px;min-height:44px;align-content:start}
 .ch .cy{font-size:12px;color:var(--mute)}.ch b{font-size:14px;line-height:1.3}.ch:hover b{color:var(--accent)}
 .ch .badge,.ch .tbc{justify-self:start;margin:3px 0 0}
@@ -277,7 +277,7 @@ dt{margin-top:8px;font-size:12px;color:var(--mute);letter-spacing:.1em}dd{margin
 .tl.hl path{opacity:1;stroke:var(--accent)}.tl.hl text{display:block}
 .tlinks.focus .tl:not(.hl) path{opacity:.1}
 .rflow{fill:none;stroke:var(--accent);stroke-opacity:.45;stroke-dasharray:3 5}
-#vThread.tfocus .col:not(.rel){opacity:.45}
+#vThread.tfocus .col:not(.relc){opacity:.45}
 
 /* structure */
 .vhead{max-width:900px;margin:0 0 16px}

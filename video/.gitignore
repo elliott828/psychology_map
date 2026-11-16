@@ -1,0 +1,8 @@
+frames/
+qa/
+tts/
+*.mp4
+frames.txt
+audio.txt
+marks.json
+subs.ass

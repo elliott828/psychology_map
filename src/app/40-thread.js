@@ -88,7 +88,7 @@ function threadHover(box, sid, on) {
   const svg = box.querySelector('.tlinks'); if (!svg) return;
   const rel = new Set([sid]); svg.querySelectorAll('.tl').forEach((g) => { const hit = on && (g.dataset.a === sid || g.dataset.b === sid); g.classList.toggle('hl', hit); if (hit) { rel.add(g.dataset.a); rel.add(g.dataset.b); } });
   svg.classList.toggle('focus', !!on); svg.querySelectorAll('.lead2').forEach((p) => p.classList.toggle('hl', on && p.dataset.s === sid));
-  box.querySelectorAll('.col').forEach((c) => c.classList.toggle('rel', on && rel.has(c.dataset.s)));
+  box.querySelectorAll('.col').forEach((c) => c.classList.toggle('relc', on && rel.has(c.dataset.s)));
   box.classList.toggle('tfocus', !!on);
 }
 
