@@ -32,6 +32,7 @@ export const scenes = [
       { sub: '点左侧的脉络名称，这条脉络会转到正面。', p: 0.6 },
       { sub: '鼠标停在节点上，会出现它的简介。', p: 0.8 },
       { sub: '圆点越大，代表它在大众中越有名。' },
+      { sub: '滚动鼠标滚轮可以放大沙漏，看清密集处的名字；在手机上，用双指缩放。', p: 1.2 },
     ],
     async run(A) {
       await A.at(1, 0.2); A.hl(745, 112, 720, 270, 3600); await A.move(1110, 250, 1200);
@@ -41,6 +42,7 @@ export const scenes = [
       await A.at(5, 0.2); await A.clickSel('#glassSide button', '无意识与深度');
       await A.at(6, 0.1); await A.move(1166, 531, 1100); await A.sleep(1600); await A.move(1021, 625, 900);
       await A.at(7, 0.1); A.hlSel('#glegend', 2600, 8); await A.move(1166, 531, 1000);
+      await A.at(8, 0.2); await A.wheel(1000, 600, -600, 1400); await A.sleep(2600); await A.clickSel('#gzoom button[data-z="reset"]');
     },
   },
   {

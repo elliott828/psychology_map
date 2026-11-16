@@ -49,6 +49,7 @@ const U = {
   peopleSort: 'year', peopleThread: null, labelMode: 'school',
   readDepth: new Set(), readRole: new Set(),
   rot: -.5, auto: true, rotTarget: null,
+  zoom: { k: 1, x: 0, y: 0, t: null }, // hourglass zoom: screen = base * k + (x, y); t = animation target
   openCards: new Set(),
 };
 let IDX = null;          // set at boot

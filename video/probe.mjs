@@ -6,10 +6,11 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const PAGE_FILE = ['index.html', 'psychologymap-v2.html'].map((f) => path.resolve(here, '..', f)).find((f) => fs.existsSync(f) && fs.readFileSync(f, 'utf8').includes('window.PSYMAP'));
 const PAGE = 'file:///' + PAGE_FILE.split(path.sep).join('/');
 const [hash = '#/map?lang=zh', out = 'probe', js = '', wait = '1800'] = process.argv.slice(2);
-const H = +(process.env.H || 1080); const b = await launch(9333, { width: 1920, height: H });
+const W = +(process.env.W || 1920), H = +(process.env.H || 1080), phone = W < 760; const b = await launch(9333, { width: W, height: H });
 try {
   await b.send('Page.enable'); await b.send('Page.bringToFront'); await b.send('Emulation.setFocusEmulationEnabled', { enabled: true });
-  await b.send('Emulation.setDeviceMetricsOverride', { width: 1920, height: H, deviceScaleFactor: 1, mobile: false });
+  await b.send('Emulation.setDeviceMetricsOverride', { width: W, height: H, deviceScaleFactor: phone ? 2 : 1, mobile: phone });
+  if (phone) await b.send('Emulation.setTouchEmulationEnabled', { enabled: true, maxTouchPoints: 5 });
   await b.send('Page.navigate', { url: PAGE + hash });
   await sleep(+wait);
   if (js) console.log(JSON.stringify(await b.ev(`(async()=>{${js}})()`), null, 1));
