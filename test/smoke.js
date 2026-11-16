@@ -398,6 +398,17 @@ ok(PM.parseHash('#/map?lang=fr').lang === null && PM.parseHash('#/map?lang=zh').
 { const r = PM.parseHash(`#/reading/path/${thId}`), p = PM.parseHash('#/people/full'); ok(r.view === 'reading' && r.path === thId && p.view === 'people' && p.full === true && !PM.parseHash('#/people').full, 'reading path and full-timeline routes parse to path / full'); }
 ok(PM.getLang() === 'zh' || PM.getLang() === 'en', 'language is one of en / zh');
 
+/* regressions found while recording the tutorial video */
+{
+  const css = fs.readFileSync(path.join(here, '..', 'src', 'styles.css'), 'utf8').replace(/\s+/g, '');
+  const ridge = fs.readFileSync(path.join(here, '..', 'src', 'app', '20-ridge.js'), 'utf8');
+  const thread = fs.readFileSync(path.join(here, '..', 'src', 'app', '40-thread.js'), 'utf8');
+  const pe = css.match(/([^{}]*)\{pointer-events:none\}/g) || [];
+  ok(pe.some((r) => r.includes('#edges')) && pe.some((r) => r.includes('.cross')), 'ridge crosshair and relation curves ignore the pointer, so clicks reach the school dots underneath');
+  ok(/else svg\.classList\.remove\('revealing'\)/.test(ridge), 'a ridge re-render during the reveal clears the "revealing" state (dots and labels never stay hidden)');
+  ok(!/classList\.toggle\('rel'/.test(thread) && /\.col\.relc/.test(css), 'thread-view hover marks columns with .relc, not the panel row class .rel (whose grid layout squeezed the columns)');
+}
+
 console.log(`\n${passed} passed, ${failed} failed`);
 if (warnings.length) { console.log('\nwarnings (first ' + Math.min(warnings.length, 40) + ' of ' + warnings.length + '):'); warnings.slice(0, 40).forEach((w) => console.log('  - ' + w)); }
 process.exit(failed ? 1 : 0);
