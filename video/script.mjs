@@ -42,7 +42,7 @@ export const scenes = [
       await A.at(5, 0.2); await A.clickSel('#glassSide button', '无意识与深度');
       await A.at(6, 0.1); await A.move(1166, 531, 1100); await A.sleep(1600); await A.move(1021, 625, 900);
       await A.at(7, 0.1); A.hlSel('#glegend', 2600, 8); await A.move(1166, 531, 1000);
-      await A.at(8, 0.2); await A.wheel(1000, 600, -600, 1400); await A.sleep(2600); await A.clickSel('#gzoom button[data-z="reset"]');
+      await A.at(8, 0.2); await A.wheel(1000, 600, -600, 1200); await A.sleep(1800); await A.clickSel('#gzoom button[data-z="reset"]');
     },
   },
   {
@@ -57,9 +57,9 @@ export const scenes = [
     async run(A) {
       await A.at(0, 0.6); await A.clickSel('#enter');
       await A.at(1, 0.3); A.hl(1000, 120, 640, 175, 3000); await A.move(1290, 175, 1000);
-      await A.at(2, 0.1); await A.hoverSel('#ridge g.sch', '认知心理学', 1600); await A.hoverSel('#ridge g.sch', '依恋理论', 1600);
-      await A.at(3, 0.2); await A.clickSel('#sub button', '人物', true); await A.sleep(1400); await A.clickSel('#sub button', '著作', true); await A.sleep(1400); await A.clickSel('#sub button', '学派', true);
-      await A.at(4, 0.4); await A.clickSel('#sub button', '高度怎么算'); await A.sleep(3600); await A.closeHow();
+      await A.at(2, 0.1); await A.hoverSel('#ridge g.sch', '认知心理学', 1600);
+      await A.at(3, 0.0); await A.clickSel('#sub button', '人物', true); await A.sleep(900); await A.clickSel('#sub button', '学派', true);
+      await A.at(4, 0.0); await A.clickSel('#sub button', '高度怎么算'); await A.sleep(2600); await A.closeHow();
     },
   },
   {
@@ -122,7 +122,7 @@ export const scenes = [
     async run(A) {
       await A.at(0, 0.4); await A.clickSel('#topNav button', '人物');
       await A.at(1, 0.1); await A.hoverSel('#vPeople [data-open]', '查尔斯·达尔文', 2200);
-      await A.at(2, 0.1); A.hlSel('#vPeople .ppre', 2400, 6); await A.sleep(1400); await A.clickSel('#vPeople [data-pfull]'); await A.sleep(2200); await A.clickSel('#sub button, #vPeople button', '现代', true);
+      await A.at(2, 0.1); A.hlSel('#vPeople .ppre', 2400, 6); await A.sleep(1400); await A.clickSel('#vPeople [data-pfull]'); await A.sleep(1600); await A.clickSel('#sub button, #vPeople button', '现代', true);
       await A.at(3, 0.2); await A.clickSel('#vPeople [data-psort]', '影响'); await A.sleep(900); await A.clickSel('#vPeople [data-pthread]', '无意识与深度');
       await A.at(4, 0.2); await A.clickSel('#vPeople [data-open]', '卡尔·古斯塔夫·荣格');
     },
@@ -153,7 +153,7 @@ export const scenes = [
     ],
     async run(A) {
       await A.at(0, 0.6); await A.move(1560, 30, 1000); await A.sleep(300); await A.key('/');
-      await A.at(2, 0.0); await A.type('依恋', 380); await A.sleep(2200); await A.selectAll(); await A.type('Bowlby', 170);
+      await A.at(2, 0.0); await A.type('依恋', 300); await A.sleep(1300); await A.selectAll(); await A.type('Bowlby', 170);
       await A.at(3, 0.1); await A.clickSel('#results button[data-id]');
     },
   },
@@ -168,8 +168,9 @@ export const scenes = [
     ],
     async run(A) {
       await A.closePanel(); await A.quiet(`document.getElementById('q').value='';document.getElementById('q').blur()`);
-      await A.at(0, 0.3); await A.clickSel('#topNav button', '阅读'); await A.sleep(500); await A.clickSel('#pathq'); await A.type('认知心理学', 260); await A.sleep(700); await A.clickSel('#pathres [data-pick]', '认知心理学');
+      await A.at(0, 0.3); await A.clickSel('#topNav button', '阅读'); await A.sleep(500); await A.clickSel('#pathq'); await A.type('认知心理学', 200); await A.sleep(450); await A.clickSel('#pathres [data-pick]', '认知心理学');
       await A.at(1, 0.3); A.hlSel('#vReading .pcol.up', 2400, 6, { h: 60 }); await A.sleep(900); A.hlSel('#vReading .pcol.me', 2400, 6, { h: 60 }); await A.sleep(900); A.hlSel('#vReading .pcol.dn', 2400, 6, { h: 60 });
+      await A.at(2, 0.2); A.hlSel('#vReading .pcol.up', 2400, 6); await A.at(2, 2.8); A.hlSel('#vReading .pcol.dn', 3400, 6);
       await A.at(3, 0.1); A.hlSel('#vReading .pcol.me .ed.zh', 3400, 6); await A.sleep(1700); A.hlSel('#vReading .pcol.me .ed.en', 3000, 6);
       await A.at(4, 0.0); await A.wheel(1000, 640, 420, 1400);
     },
@@ -183,7 +184,7 @@ export const scenes = [
       { sub: '祝你在这张地图上，找到自己的路。', p: 1.0 },
     ],
     async run(A) {
-      await A.at(0, 0.3); await A.clickSel('[data-lang="en"]'); await A.sleep(2000); await A.clickSel('[data-lang="zh"]');
+      await A.at(0, 0.3); await A.clickSel('[data-lang="en"]'); await A.sleep(1400); await A.clickSel('[data-lang="zh"]');
       await A.at(1, 0.2); await A.clickSel('#topNav button', '脉络'); await A.sleep(400); await A.clickSel('#sub button', '时间沙漏', true);
       await A.at(2, 0.3); await A.drag(1300, 640, 1000, 640, 3000);
       await A.at(3, 0.2); await A.move(1700, 600, 1400); await A.hideCursor();
