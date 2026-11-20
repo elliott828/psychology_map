@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { build } from '../build.js';
+import { SITE } from '../tools/static-site.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const FIX = path.join(here, 'fixtures');
@@ -29,11 +30,16 @@ let built;
 try { built = build(); ok(true, `build.js succeeded (${(built.bytes / 1024).toFixed(0)} KB)`); } catch (e) { ok(false, 'build.js failed: ' + e.message); console.log(`\n${passed} passed, ${failed} failed`); process.exit(1); }
 built.warnings.forEach((w) => warnings.push('build: ' + w));
 const html = built.html;
-const markup = html.replace(/<script[\s\S]*?<\/script>/gi, '<script></script>').replace(/<style[\s\S]*?<\/style>/gi, '<style></style>');
+// search-engine tags (canonical, Open Graph, Twitter card) name the site's own address; they are not requests the page makes
+const SEO_TAG = /<link rel="canonical"[^>]*>|<meta (?:property="og:|name="twitter:)[^>]*>/gi;
+const seoTags = html.match(SEO_TAG) || [];
+ok(seoTags.length >= 6 && seoTags.every((t) => (t.match(/https?:\/\/[^\s"']+/g) || []).every((u) => u.startsWith(SITE))), `SEO tags (${seoTags.length}) only reference the site itself (${SITE})`);
+ok(/<meta name="description" content="[^"]{80,}"/.test(html) && !/\{\{(SITE|DESC)\}\}/.test(html), 'meta description is filled in');
+const markup = html.replace(SEO_TAG, '').replace(/<script[\s\S]*?<\/script>/gi, '<script></script>').replace(/<style[\s\S]*?<\/style>/gi, '<style></style>');
 const scripts = [...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/gi)];
 ok(!/(https?:)?\/\/[a-z0-9.-]+\.[a-z]{2,}/i.test(markup), 'static markup has no http(s):// or protocol-relative URL');
 const hrefs = [...markup.matchAll(/\b(src|href)\s*=\s*"([^"]*)"/gi)];
-ok(hrefs.every((m) => m[1].toLowerCase() === 'href' && (m[2] === '#stage' || /^data:image\/svg\+xml;base64,[A-Za-z0-9+/=]+$/.test(m[2]))), 'static markup has no src= and no href= other than the skip link and the data: favicon');
+ok(hrefs.every((m) => m[1].toLowerCase() === 'href' && (m[2] === '#stage' || m[2] === 'zh/' || m[2] === 'en/' || /^data:image\/svg\+xml;base64,[A-Za-z0-9+/=]+$/.test(m[2]))), 'static markup has no src= and no href= other than the skip link, the text-index links and the data: favicon');
 ok(scripts.every((m) => !/\bsrc\s*=/.test(m[1])), 'no <script src>');
 ok((markup.match(/<link\b/gi) || []).length === 1 && /<link rel="icon"[^>]*href="data:image\/svg\+xml;base64,/.test(markup), 'the only <link> is the data: favicon');
 ok(!/@import|url\(\s*["']?(https?:)?\/\//i.test(html), 'no @import or remote url()');
@@ -147,7 +153,7 @@ const missingFam = []; Object.entries(families).forEach(([p, ks]) => ks.forEach(
 ok(!missingFam.length, 'dictionary has every key of the families built at run time (relations, evidence, levels, depths, roles, types, paths...)' + (missingFam.length ? ': ' + missingFam.join(', ') : ''));
 const cjkOffenders = srcFiles.filter((f) => f !== '00-i18n.js').filter((f) => fs.readFileSync(path.join(srcDir, f), 'utf8').split('\n').some((l) => CJK.test(l) && !/VERDICT_(CLASS|SLUG)|页面启动出错/.test(l)));
 ok(!cjkOffenders.length, 'no Chinese string is hard-coded in the modules (only the dictionary and the verdict key table)' + (cjkOffenders.length ? ': ' + cjkOffenders.join(', ') : ''));
-ok(!CJK.test(fs.readFileSync(path.join(here, '..', 'src', 'index.template.html'), 'utf8').replace(/<script>[\s\S]*?<\/script>/g, '').replace(/<noscript>[\s\S]*?<\/noscript>/, '').replace(/<button data-lang="zh"[^>]*>中文<\/button>/, '')), 'the page template has no hard-coded Chinese except the language button and the <noscript> notice');
+ok(!CJK.test(fs.readFileSync(path.join(here, '..', 'src', 'index.template.html'), 'utf8').replace(/<script>[\s\S]*?<\/script>/g, '').replace(/<noscript>[\s\S]*?<\/noscript>/, '').replace(/<button data-lang="zh"[^>]*>中文<\/button>/, '').replace(/<title>[^<]*<\/title>|<meta [^>]*>/g, '')), 'the page template has no hard-coded Chinese except the language button, the <noscript> notice and the bilingual title/meta tags');
 { // font sizes: nothing below 12px
   const css = fs.readFileSync(path.join(here, '..', 'src', 'styles.css'), 'utf8'), small = [];
   for (const m of css.matchAll(/font(?:-size)?\s*:\s*(?:[a-z0-9 ]*\s)?(\d+(?:\.\d+)?)px/g)) if (+m[1] < 12) small.push(m[0]);
@@ -407,6 +413,43 @@ ok(PM.getLang() === 'zh' || PM.getLang() === 'en', 'language is one of en / zh')
   ok(pe.some((r) => r.includes('#edges')) && pe.some((r) => r.includes('.cross')), 'ridge crosshair and relation curves ignore the pointer, so clicks reach the school dots underneath');
   ok(/else svg\.classList\.remove\('revealing'\)/.test(ridge), 'a ridge re-render during the reveal clears the "revealing" state (dots and labels never stay hidden)');
   ok(!/classList\.toggle\('rel'/.test(thread) && /\.col\.relc/.test(css), 'thread-view hover marks columns with .relc, not the panel row class .rel (whose grid layout squeezed the columns)');
+}
+
+/* 10. static pages for search engines, and the default language */
+section('10. static pages (zh/, en/) and sitemap');
+{
+  const { buildStatic } = await import('../tools/static-site.mjs');
+  const repo = path.join(here, '..');
+  const st = buildStatic(built, repo, { write: false }), F = st.files;
+  const I0 = PM.buildIndex(built.data), entryCount = [...I0.byId.values()].filter((n) => ['school', 'theory', 'person', 'concept', 'work', 'application', 'root', 'question', 'debate', 'myth'].includes(n.type)).length;
+  ok(st.pages.length === 2 * (entryCount + I0.threads.length + 6), `one page per entry, thread, list and hub in each language (${st.pages.length})`);
+  const exists = (rel) => F.has(rel) || fs.existsSync(path.join(repo, rel));
+  const bad = [], ldBad = [], extBad = [], noAlt = [], titles = { zh: new Map(), en: new Map() };
+  for (const pg of st.pages) {
+    const h = F.get(pg.rel + 'index.html');
+    const title = (h.match(/<title>([^<]*)<\/title>/) || [])[1], desc = (h.match(/<meta name="description" content="([^"]*)"/) || [])[1] || '';
+    if (!title || desc.length < 8 || !h.includes(`<link rel="canonical" href="${SITE}${pg.rel}">`)) bad.push(pg.rel + ' (head)');
+    if (!F.has(pg.alt + 'index.html') || !h.includes(`hreflang="${pg.lang === 'zh' ? 'en' : 'zh-CN'}" href="${SITE}${pg.alt}"`)) noAlt.push(pg.rel);
+    titles[pg.lang].set(title, (titles[pg.lang].get(title) || 0) + 1);
+    for (const m of h.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)) { if (!/type="application\/ld\+json"/.test(m[1])) ldBad.push(pg.rel + ' (script)'); else { try { JSON.parse(m[2]); } catch (e) { ldBad.push(pg.rel); } } }
+    for (const m of h.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
+      const u = m[1].replace(/&amp;/g, '&');
+      if (/^https?:/.test(u)) { if (!u.startsWith(SITE) && !ALLOWED.test(u)) extBad.push(pg.rel + ' -> ' + u); continue; }
+      const target = path.posix.normalize(path.posix.join(pg.rel, u.split('#')[0] || './'));
+      const file = target === '.' || target === './' ? 'index.html' : target.endsWith('/') ? target + 'index.html' : target;
+      if (!exists(file.replace(/^\.\//, ''))) bad.push(pg.rel + ' -> ' + u);
+    }
+  }
+  ok(bad.length === 0, 'every page has title, description and canonical, and every internal link resolves' + (bad.length ? ` (${bad.length}: ${bad.slice(0, 3).join(', ')})` : ''));
+  ok(noAlt.length === 0, 'every page links its other-language twin with hreflang' + (noAlt.length ? ` (${noAlt.slice(0, 3).join(', ')})` : ''));
+  ok(ldBad.length === 0, 'the only scripts are JSON-LD, and all of it parses' + (ldBad.length ? ` (${ldBad.slice(0, 3).join(', ')})` : ''));
+  ok(extBad.length === 0, 'outside links only go to the site itself, Douban or Open Library' + (extBad.length ? ` (${extBad.slice(0, 2).join(', ')})` : ''));
+  const dups = ['zh', 'en'].map((l) => [...titles[l].values()].filter((c) => c > 1).length);
+  ok(dups[0] + dups[1] <= 0.01 * st.pages.length, `titles are (nearly) unique: ${dups[0]} zh / ${dups[1]} en duplicated`);
+  const sm = F.get('sitemap.xml'), locs = (sm.match(/<loc>/g) || []).length;
+  ok(locs === st.pages.length + 1 && st.pages.every((pg) => sm.includes(`<loc>${SITE}${pg.rel}</loc>`)), `sitemap.xml lists the app and all ${st.pages.length} pages`);
+  ok(F.has('.nojekyll'), '.nojekyll is written (no Jekyll processing of 2000+ pages)');
+  ok(PM.regionLang('Asia/Shanghai') === 'zh' && PM.regionLang('Asia/Urumqi') === 'zh' && PM.regionLang('America/New_York') === 'en' && PM.regionLang('Europe/Berlin') === 'en', 'default language: mainland China time zones get Chinese, others English');
 }
 
 console.log(`\n${passed} passed, ${failed} failed`);

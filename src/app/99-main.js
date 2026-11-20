@@ -27,10 +27,14 @@ function renderView(anim) {
 /* ---- language ---- */
 const LANG_KEY = 'psymap.lang';
 function setLang(l) { if (l !== 'en' && l !== 'zh') return; LANG = l; try { localStorage.setItem(LANG_KEY, l); } catch (e) { /* storage may be unavailable */ } }
+/* no saved or linked language: mainland China time zones get Chinese, everywhere else English.
+   (static hosting cannot see the visitor's IP; the device time zone needs no network request) */
+const CN_TZ = ['Asia/Shanghai', 'Asia/Chongqing', 'Asia/Chungking', 'Asia/Harbin', 'Asia/Urumqi', 'Asia/Kashgar', 'PRC'];
+function regionLang(tz) { try { return CN_TZ.includes(tz || Intl.DateTimeFormat().resolvedOptions().timeZone) ? 'zh' : 'en'; } catch (e) { return 'en'; } }
 function initLang() {
   let l = null; try { l = parseHash(location.hash).lang; } catch (e) { /* no location */ }
   if (!l) { try { l = localStorage.getItem(LANG_KEY); } catch (e) { /* storage may be unavailable */ } }
-  LANG = l === 'zh' || l === 'en' ? l : 'en';
+  LANG = l === 'zh' || l === 'en' ? l : regionLang();
 }
 /* interface text that lives in the static page (and in places that are not re-rendered by views) */
 function applyStatic() {
@@ -45,6 +49,7 @@ function applyStatic() {
     $('how').innerHTML = `<p><b>${esc(ui('how.b1'))}</b>${esc(ui('how.t1'))}</p><p>${esc(ui('how.t2'))}</p><p><b>${esc(ui('how.b3'))}</b>${esc(ui('how.t3'))}</p><p>${esc(ui('how.t4'))}</p>`;
     renderGlassSide();
   }
+  const tv = $('textver'); if (tv) tv.setAttribute('href', LANG + '/');
   $('glegend').innerHTML = `${SIZE_SVG}<span>${esc(ui('legend.size'))}</span>`;
 }
 
@@ -203,6 +208,7 @@ function boot() {
 window.__PM = {
   parseHash, serializeRoute, buildIndex, renderNodeDrawer, renderCompareBar, buildSearch, runSearch, searchResultsHtml, tipHtml, go, openNode,
   readingPath, pathHtml, pathCandidates, editionsHtml, personEnd, isPreModern, ridgeLabel, trunc, wrapText, tw,
+  regionLang,
   nm, nmAlt, nmShort, personShort, L, ui, DICT, setLang, getLang: () => LANG, popR, safeUrl, safeCover, coverOf,
   get R() { return R; }, get IDX() { return IDX; }, U,
 };

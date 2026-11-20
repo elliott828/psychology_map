@@ -10,6 +10,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
+import { buildStatic, SITE } from './tools/static-site.mjs';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const P = (...a) => path.join(root, ...a);
@@ -104,6 +105,11 @@ function cleanCovers(raw, D, warn) {
   return out;
 }
 
+const siteDescription = (D) => {
+  const c = (t) => D.nodes.filter((n) => n.type === t).length;
+  return `A neutral, bilingual map of psychology: ${D.threads.length} threads, ${c('school')} schools, ${c('person')} people, ${c('theory')} theories and ${c('work')} books, with a reading path for every school. 中立的心理学思想地图：${D.threads.length} 条脉络、${c('school')} 个学派、${c('person')} 位人物、${c('theory')} 个理论、${c('work')} 本书，每个学派都有阅读路径。`;
+};
+
 export function build({ write = true, enDir, linksPath, coversPath } = {}) {
   const parts = readParts(), warnings = [], warn = (m) => warnings.push(m);
   // 1. data must parse and have the expected shape
@@ -157,8 +163,10 @@ export function build({ write = true, enDir, linksPath, coversPath } = {}) {
     .replace('{{FAVICON}}', () => faviconUri(parts.logo))
     .replace('/*{{STYLES}}*/', () => safeStyle(parts.css))
     .replace('/*{{DATA}}*/', () => safeScript(dataText))
-    .replace('/*{{APP}}*/', () => safeScript(app));
-  if (/\{\{(STYLES|DATA|APP|LOGO|FAVICON)\b/.test(html)) throw new Error('template placeholder was not replaced');
+    .replace('/*{{APP}}*/', () => safeScript(app))
+    .replace(/\{\{SITE\}\}/g, () => SITE)
+    .replace(/\{\{DESC\}\}/g, () => siteDescription(D));
+  if (/\{\{(STYLES|DATA|APP|LOGO|FAVICON|SITE|DESC)\b/.test(html)) throw new Error('template placeholder was not replaced');
   if (write) fs.writeFileSync(OUT, html);
   return { html, app: appJs, data: D, bytes: Buffer.byteLength(html), warnings, overlays: { enFiles, enApplied, linkCount, coverCount } };
 }
@@ -166,7 +174,9 @@ export function build({ write = true, enDir, linksPath, coversPath } = {}) {
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   try {
     const r = build();
+    const st = buildStatic(r, root);
     console.log(`built ${path.basename(OUT)}: ${(r.bytes / 1024).toFixed(0)} KB, ${readParts().files.length} app files, data v${r.data.meta && r.data.meta.version}; English overlay: ${r.overlays.enFiles} file(s), ${r.overlays.enApplied} fields; book links: ${r.overlays.linkCount}; covers: ${r.overlays.coverCount}`);
+    console.log(`static pages: ${st.pages.length} (zh/, en/) + sitemap.xml`);
     r.warnings.forEach((w) => console.warn('  warning: ' + w));
   } catch (e) {
     console.error('BUILD FAILED: ' + e.message + '\n(previous output kept)');

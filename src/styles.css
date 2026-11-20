@@ -116,6 +116,7 @@ main{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr
 .chip{margin-right:7px}
 #intro{position:absolute;left:26px;bottom:26px;z-index:4;max-width:320px}
 #intro .ihint{display:none}
+#intro .textver{display:block;margin-top:12px;font-size:13px;color:var(--mute);text-decoration:underline;text-underline-offset:3px}#intro .textver:hover{color:var(--accent)}
 .gzoom{position:absolute;right:26px;bottom:60px;z-index:4;display:flex;flex-direction:column;gap:4px}
 .gzoom button{width:34px;height:34px;border:1px solid var(--line2);border-radius:8px;background:rgba(10,15,25,.88);color:var(--ink);font:18px/1 var(--mono)}
 .gzoom button:hover:not(:disabled){color:var(--accent);border-color:var(--accent)}
@@ -426,6 +427,7 @@ dt{margin-top:8px;font-size:12px;color:var(--mute);letter-spacing:.1em}dd{margin
   #intro .ihead{flex:1;min-width:0;margin:0}#intro .logo.big,#intro .ilong{display:none}
   #intro h1{font-size:15px;margin:0;text-shadow:none}
   #intro .ihint{display:block;margin:2px 0 0;font-size:12px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #intro .textver{display:none}
   #intro .cta{flex:none;min-height:36px;padding:0 14px;font-size:13px;gap:6px;animation:none;box-shadow:none}
   .gzoom{right:10px;bottom:auto;top:40px}
   .gzoom button{width:36px;height:36px}
