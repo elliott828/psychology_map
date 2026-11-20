@@ -2,9 +2,11 @@
 // Page.startScreencast in real time, then muxes frames + narration + burned-in subtitles with ffmpeg.
 //   node video/record.mjs            full render -> video/psychologymap-guide.mp4
 //   node video/record.mjs --only ridge,detail   render a subset (preview)
+//   add --voice to narrate with the recording in video/voice/ (see voice.mjs) instead of the synthesized voice
 import fs from 'node:fs'; import path from 'node:path'; import { spawnSync } from 'node:child_process'; import { fileURLToPath } from 'node:url';
 import { launch, sleep } from './cdp.mjs';
 import { synth, FF, LEAD } from './tts.mjs';
+import { voicePlan } from './voice.mjs';
 import { scenes as ALL, W, H, START } from './script.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -65,8 +67,9 @@ function mkA(T0, timing) {
     async showCursor(x, y) { cx = x; cy = y; await mouse('mouseMoved', x, y); await b.ev('__ov.show(1)'); await sleep(350); },
     async hideCursor() { await b.ev('__ov.show(0)'); },
     async move(x, y, ms = 700) {
-      const x0 = cx, y0 = cy, n = Math.max(6, Math.round(ms / 34)), t0 = Date.now();
-      for (let i = 1; i <= n; i++) { const k = ease(i / n); cx = x0 + (x - x0) * k; cy = y0 + (y - y0) * k; await mouse('mouseMoved', cx, cy); const w = t0 + (ms * i) / n - Date.now(); if (w > 0) await sleep(w); }
+      // time-based: when the page is slow to handle a move event (the ridge redraws on hover), skip ahead instead of falling behind
+      const x0 = cx, y0 = cy, t0 = Date.now();
+      for (;;) { const u = Math.min(1, (Date.now() - t0) / ms), k = ease(u); cx = x0 + (x - x0) * k; cy = y0 + (y - y0) * k; await mouse('mouseMoved', cx, cy); if (u >= 1) break; await sleep(Math.min(34, Math.max(0, t0 + ms - Date.now()))); }
     },
     async clickXY(x, y, ms) { await A.move(x, y, ms ?? Math.min(900, 300 + Math.hypot(x - cx, y - cy) * 0.6)); await sleep(120);
       await mouse('mousePressed', x, y, { button: 'left', clickCount: 1, buttons: 1 }); await sleep(70); await mouse('mouseReleased', x, y, { button: 'left', clickCount: 1 }); await sleep(150); },
@@ -112,7 +115,8 @@ function mkA(T0, timing) {
 }
 
 // ---------- run ----------
-const plan = synth(scenes);
+const VOICE = process.argv.includes('--voice');
+const plan = VOICE ? voicePlan(scenes) : synth(scenes);
 try {
   await b.send('Page.enable'); await b.send('Page.bringToFront');
   await b.send('Emulation.setDeviceMetricsOverride', { width: W, height: H, deviceScaleFactor: 1, mobile: false });
@@ -130,7 +134,9 @@ try {
     const w = T0 * 1000 - Date.now(); if (w > 0) await sleep(w);
     marks.push(T0); console.log(`scene ${s.id} @${off.toFixed(1)}s (${p.total.toFixed(1)}s)`);
     try { await s.run(mkA(T0, p.timing)); } catch (e) { console.warn(`  ! ${s.id}: ${e.message}`); }
-    const late = Date.now() / 1000 - (T0 + p.total); if (late > 0) console.warn(`  ! ${s.id} actions overran by ${late.toFixed(2)}s`);
+    // actions that run past the narration get silence of the same length appended, so the next scene's voice waits for the picture
+    const late = Date.now() / 1000 - (T0 + p.total);
+    if (late > 0) { p.extra = late + 0.15; p.total += p.extra; console.warn(`  ! ${s.id} actions overran by ${late.toFixed(2)}s, narration pauses ${p.extra.toFixed(2)}s`); }
     off += p.total;
   }
   const w = (T + off) * 1000 - Date.now(); if (w > 0) await sleep(w);
@@ -146,12 +152,16 @@ try {
   list.push(`file '${frames[frames.length - 1].f.split(path.sep).join('/')}'`);
   fs.writeFileSync(path.join(here, 'frames.txt'), list.join('\n'));
   // narration track
-  fs.writeFileSync(path.join(here, 'audio.txt'), plan.map((p) => `file '${p.wav.split(path.sep).join('/')}'`).join('\n'));
+  const audio = []; plan.forEach((p, i) => {
+    audio.push(`file '${p.wav.split(path.sep).join('/')}'`);
+    if (p.extra) { const pad = path.join(FR, `pad${i}.wav`); spawnSync(FF + 'ffmpeg', ['-y', '-v', 'error', '-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=mono', '-t', p.extra.toFixed(3), '-c:a', 'pcm_s16le', pad]); audio.push(`file '${pad.split(path.sep).join('/')}'`); }
+  });
+  fs.writeFileSync(path.join(here, 'audio.txt'), audio.join('\n'));
   // subtitles (ASS, in the band under the page)
   const ts = (s) => { const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), x = (s % 60).toFixed(2).padStart(5, '0'); return `${h}:${String(m).padStart(2, '0')}:${x}`; };
   const srt = (s) => { const ms = Math.round(s * 1000); const h = Math.floor(ms / 3600000), m = Math.floor((ms % 3600000) / 60000), sec = Math.floor((ms % 60000) / 1000); return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')},${String(ms % 1000).padStart(3, '0')}`; };
   const ev = []; const srtL = []; let n = 0, acc = 0;
-  plan.forEach((p) => { p.timing.forEach((l) => { const a = acc + l.start - 0.05, z = acc + l.end + 0.25; ev.push(`Dialogue: 0,${ts(a)},${ts(z)},Sub,,0,0,0,,${l.text}`); srtL.push(`${++n}\n${srt(a)} --> ${srt(z)}\n${l.text}\n`); }); acc += p.total; });
+  plan.forEach((p) => { (p.subs || p.timing).forEach((l, j, all) => { const a = acc + l.start - 0.05, z = acc + (p.subs ? Math.min(l.end + 0.15, j + 1 < all.length ? all[j + 1].start - 0.06 : p.total) : l.end + 0.25); ev.push(`Dialogue: 0,${ts(a)},${ts(z)},Sub,,0,0,0,,${l.text}`); srtL.push(`${++n}\n${srt(a)} --> ${srt(z)}\n${l.text}\n`); }); acc += p.total; });
   const ass = `[Script Info]\nScriptType: v4.00+\nPlayResX: 1920\nPlayResY: 1080\nWrapStyle: 0\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: Sub,Microsoft YaHei,42,&H00F4F7FA,&H000000FF,&H00140B07,&H00140B07,0,0,0,0,100,100,1,0,1,0,0,2,80,80,38,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n${ev.join('\n')}\n`;
   fs.writeFileSync(path.join(here, 'subs.ass'), ass, 'utf8');
   if (!argOnly) fs.writeFileSync(path.join(here, 'psychologymap-guide.srt'), srtL.join('\n'), 'utf8');

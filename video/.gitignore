@@ -6,3 +6,6 @@ frames.txt
 audio.txt
 marks.json
 subs.ass
+voice/narration.mp3
+voice/*.wav
+broll/build/
