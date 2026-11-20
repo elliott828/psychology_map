@@ -21,7 +21,9 @@ Live site: https://elliott828.github.io/psychology_map/
 ```text
 psychology_map/
 ├─ index.html            # Built page (do not edit by hand; run the build)
-├─ build.js              # Builds index.html from src/ and data/
+├─ build.js              # Builds index.html from src/ and data/, then the static pages
+├─ zh/, en/              # Static pages for search engines (generated, one per entry and language)
+├─ sitemap.xml           # All pages with zh/en alternates (generated)
 ├─ src/                  # Page template, styles and app modules (src/app/*.js)
 ├─ data/
 │  ├─ psychologymap-data.js   # Canonical dataset (window.PSYMAP)
@@ -31,7 +33,7 @@ psychology_map/
 │  ├─ validate.js             # Schema and consistency checks
 │  └─ verification-log.md     # Fact-check log
 ├─ covers/               # Book cover thumbnails (Open Library)
-├─ tools/                # Book lookup pipeline (see tools/README.md)
+├─ tools/                # Book lookup pipeline (see tools/README.md); static-site.mjs builds zh/ and en/
 ├─ test/                 # Smoke test and fixtures
 ├─ docs/
 │  ├─ V2_FRAMEWORK.md    # Knowledge structure and visual framework (v2)
@@ -46,9 +48,22 @@ psychology_map/
 Requires Node.js 18+; no dependencies.
 
 ```bash
-npm run build      # node build.js -> index.html
+npm run build      # node build.js -> index.html, zh/, en/, sitemap.xml
 npm test           # data validator + pipeline self-test + page smoke test
 ```
+
+## Search engines
+
+The interactive map lives behind `#/...` routes, which search engines treat as one page. So the build also writes a plain HTML page for every school, theory, person, concept, book, source, question, debate and myth, in Chinese (`zh/`) and English (`en/`), plus thread pages, list pages and a hub per language: about 2,400 pages in all. They need no JavaScript, carry their own title, description, canonical URL, zh/en `hreflang` links, Open Graph tags and schema.org JSON-LD, and link back into the map at the same entry. `sitemap.xml` lists them all. The site address comes from `PSYMAP_SITE` (default `https://elliott828.github.io/psychology_map/`).
+
+Without a saved choice or a `lang` in the link, the map opens in Chinese on devices set to a mainland China time zone and in English elsewhere. Static hosting cannot see the visitor's IP, and the time zone needs no network request.
+
+To get the pages indexed, add the site as a URL-prefix property and submit `sitemap.xml` in:
+- Google Search Console: https://search.google.com/search-console
+- Bing Webmaster Tools (also feeds DuckDuckGo and several AI search tools): https://www.bing.com/webmasters
+- Baidu 搜索资源平台: https://ziyuan.baidu.com
+
+A `robots.txt` only counts at the root of a domain, so this project site does not have one; submit the sitemap directly instead.
 
 ## Book pipeline
 
